@@ -1,2 +1,2 @@
 # GitHubGameOff
-GitHub Game Off
+GitHub Game Off Repo
