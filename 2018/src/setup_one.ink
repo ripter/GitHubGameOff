@@ -15,4 +15,16 @@
   "Damn it" Rex muttered. He quickly grabbed his gear and started sliding down the cliff face, moving as fast as he could without falling. "I have to get to the Atals first."
   Once Rex reached the vally floor, he stopped a moment to catch his breath and scan the drop ship.
   The Ship was old, but not the ancent egg shaped ships used in the old wars. This looked more like a large cargo plane. The back opened up to let Mechs walk in and out of the craft.
+  
+  * [PROXIMITY ALERT] "The Hell?" was all Rex could manage before dropping the zoom and looking next to him. He almost yelled as a familiar black metal wolf sat down next to him. Rex was sure that Wolf wasn't there when he first reached the vally floor.
+  
+  "Hey buddy" Rex said with an edge of nerviousness in his voice.
+  The Wolf turned its head a little, looking at Rex.
+  "I would love to stop, but you see that giant over there?" Rex slowly reached out an arm and pointed. The Wolf looked in the direction for a moment. "I have to get to him before those people do" Rex pointed to the Drop Ship. The wolf looked again, sighed, stood up, and then started to walk twords the people.
+  "Whoa wait!" Rex shouted.
+  The wolf stopped, and looked back at him.
+  "Can you understand me?"
+  The Wolf just looked at him.
+  "If you can, don't kill them. I just need a distraction."
+  The Wolf turned back and started a light jog in the directon of the Drop Ship.
   ->->
