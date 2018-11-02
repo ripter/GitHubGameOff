@@ -16,7 +16,7 @@ There are 16 beats, meaning if each beat were of equal length (which they should
   -> DONE
   
 == beat_sheet
-  * [Opening Image] -> opening_image ->
+  * [Opening Image] -> opening_image_draft2 ->
   * [Set-up Part One] -> setup_one ->
   * [Theme Stated] -> theme_stated ->
   * [Set-up Part Two] -> setup_two ->
