@@ -14,6 +14,8 @@
   Awesome - belongs to Clan Lyran
   Axman - Clan MRB; Captured in setup_one
   Blackjack - Clan MRB; Captured in setup_one
+  Wolfhound - Clan MRB; Tammy; captured in setup_one
+  Tora - Clan MRB; Phil
 * [Clans]
   MRB - small scrappy clan
   Lyran - The biggest most popular clan and winner of the last 6 years tourniments.
