@@ -65,7 +65,4 @@
   Tammy wasn't sure what she saw. The creature's body opened up along it's belly, the leggs grew in size as the boy was pulled inside as the creature turned into a four legged Mech. Tammy had be studying and training at the best schools to become a champon. She has never even heard of such a Mech. Sure there was fictional stories of transforming robots, but the physics did not work.
   Tammy made sure to save a recording of the transformation. But she didn't tell her teammates when they cought up to her. She told them all about the annoying boy that crashed her suit and cost her a chanch at the Atlas.
   The Atlas, being more than Tammy could capture, was left alone and the team pulled back to find an easier target. Tammy protested but the leader said it was just too big of a risk for their small crew. 
-  
-  
-
   ->->
