@@ -4,6 +4,9 @@
   Tammy - Rival, belongs to Clan MRB
 * [Mechs]
   IronWolf - NextGen Mech, bonded to Rex
+  CopperBanshee - NextGen Mech, belongs to Clan Kirby
+  Thunderbolt - belongs to Clan Lyran
+  Awesome - belongs to Clan Lyran
 * [Clans]
   MRB - small scrappy clan
   Lyran - The biggest most popular clan and winner of the last 6 years tourniments.
