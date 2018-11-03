@@ -72,5 +72,18 @@
   "I can take the Atlas" Tammy protested. "That boy got in the way."
   "That boy was probably crushed to death for his stupidly. Imaging, trying to capture a Mech by yourself. Not even, he tried to capture an Atlas by himself."
   Willson poked his head in, showing that he had been easedropping on the converstation. "I think that boy just wanted to die. Nothing else explains it."
+  "Did you find another Mech yet?" Phil called back.
+  "Actually, yeah, but shes not going to like it." Willson responded.
+  
+  * "What kind of Mech is it?"
+  
+  -
+  The room filled with the agumented projection of the local terran. Out along a tree line, pillers of smoke could be seen. The trees burning from multiple spots, indicating a random blaze.
+  Will typed in a command and the view zoomed in and focused on a Wolfhound, a short 35 ton mech.
+  "No" Tammy said simply.
+  They watched as the Mech jogged though the trees, blasting at random with its lasors. As they watched, a window filled with stats about the Mech.
+  "Five lasors and heavy armor that acts as a heat sink. That slow Atlas knocked itself out every time it fired its lasors. This thing is crusing at a good seventy kelometers per hour and firing like crazy." Phil said. "I would rather have this Mech by my side than the walking target. Willson, get the crew ready, Tammy is about to get her first Mech."
+  "Yes sir" said Willson.
+  
   
   ->->
