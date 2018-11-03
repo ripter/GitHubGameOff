@@ -85,5 +85,34 @@
   "Five lasors and heavy armor that acts as a heat sink. That slow Atlas knocked itself out every time it fired its lasors. This thing is crusing at a good seventy kelometers per hour and firing like crazy." Phil said. "I would rather have this Mech by my side than the walking target. Willson, get the crew ready, Tammy is about to get her first Mech."
   "Yes sir" said Willson.
   
+  -
+  By the time they reached the Wolfhound, it had stopped in a river and was just standing there. Engine readings showed that the Mech was in a low power mode.
+  "Maybe it's sleeping after its tantrum" Willson joked.
+  "With any luck, Tammy can board without combat" Phil added.
+  Tammy roleld her eyes "Fine, lets get this over with." She was in a set of backup armor the team and brought with them. It was used and old and had no personal jump jets. Tammy was going to have to climb up the Mech's leg to reach the cockpit.
+  "I think my Tora can handle one lone Wolfhound" Phil said. "This is a stealth mission, so I want the rest of you to stay back. Watch the scanners and let us know if anything unexpected shows up."
+  "Yes Sir" Willson said.
   
+  Soon Tammy was moving along the river, making her way behind the Mech. She did not need to be that careful. The Machine was the size of the three story building. 
+  The Mech had a humon like shape. Instead of a right hand, the Wolfhound had a large laser cannon. And instead of a round head, it looked more like someone landed a very small plane on the Mechs shoulders and cut off the wings, but left the tail. 
+  That stupid boxy cockpit was all the way at the top of the Mech, on it's shoulders like a head. Tammy thought to herself as she apprached from behind. She was sure it would detect her before she reached the release latch.
+  The plan, accodring to Phil, was that he would keep the Mech from running away with Long Range Missiles.  When she protested that the Mech could still just crush her, Phil shrugged and said "You should probably keep that in mind while you are out there."
+  The Mech Wolfhound was sitting in the river. It's legs bend up into it's chest, arms wrapped around it's knees.
+  Trying to move with the sounds of nature, Tammy slipped into the river and made her way up behind the Wolfhound. The river had a swft flow twords the machine. Tammy found a good size branch and floated down the river to the robot. She positioned herself so when the tree branch hit the Mech, she jumped/reached just high enought to catch a ladder rung on the back of the Mech.
+  The Wolfhound moved his right arm and reached behind him. The massive laser, large enought that Tammy could walk inside of it, scrapped along the Mechs back as it smashed the treebranch into peices small enough that they flowed around the Mech and further down the river.
+  
+  "Do you think she'll do it?" Willson asked Phil over their private channel.
+  "She's almost there, she can do it." Phil responded.
+  
+  As the Mech brought it arm back around, to wrap around its knees again, Tammy quickly jumped up and along the arm, using the moving surface to get her quickly up to the head. She landed on the Mechs right shoulder.
+  "I did it!" she yelled.
+  
+  The Wolfhound stood up, Tammy lost her footing and started to fall off the Mech. She finds perchase for her fingers along the Mechs armorned neck plate. Tammy hanging by her fingers, starts to shimmy to the left shoulder while the Mech turns its head and brushed at its right shoulder. When it found nothing there it turned around. Tammy straneged against the forces trying to pull her off the Mech as it moved. She barely hung on, but managed to reach the left shoulder.
+  She pulled the release level on the left side of the Mech head. It's movements suddenly slowing and then stopping. It's shoulders leveled out as it stood up streight, making it easer for Tammy to keep her footing. The door opened, inside was a black leather chair srounded by controls and displays. She got in, and the door automatically closed after her.
+  Tammy was in complete darkness. Her heart raced in that long moment. Her brain flashing worries and doubts into the darkness. Did she do something wrong? Is there a button? If this is light proof, is it also air tight? How much air would be in a cockpit of this size?  When did I start breathing so fast? Why can't I stop breathing so fast?
+  A faint blue light started in front of her and slowly grew in brightness. The screens and controls lighting up. Soon she could see a 180 arch in front of her. The metal walls seemingly to turn translusent, giving her a great view. She smiled and gently pushed forward on the controls. The Mech started walking forward. She pushed a little harder and the Wolfhound broke into a full sprint. Tammy started laughing as she pressed harder onthe controls. She jerked back on the control and the Mech swiched poses to a skidding stop, leaving a deep grove in the ground were she slid.
+  Tammy looked around and spotted a tree not too far away. She used the joystick to target lock on the tree and fired the large laser. A bright flash of red and white light came from the Wolfhounds cannon arm. The blast desentrigrating the tree, leaving nothing but a burn mark.
+  "Alright" Tammy said into the team channel. "I'll keep her."
+  Willson laughed for a moment before he cut his mike.
+  "Great, let's pack it up" Phil said in the channel. "Time to go home and get paid."
   ->->
