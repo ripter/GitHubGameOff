@@ -51,5 +51,18 @@
   "Only one way to find out." IronWolf said. 
   
   -
+  "We are being haled" Wilson said. "Small four legged Mech identified as IronWolf."
+  "Never heard of that desgnination before" Phil remarked. "Put him on the screen."
+  
+  The screen flashed and the image of boy in his late teens apeared. "Uh hello?" He said. "I was hoping I could talk to you before you take off."
+  Phil nodded at Willson and he started a full sensor sweep of the area. This charged sweet would detect any cloaked Mechs in the area. When the scan showed the boy was along, Phil responded. "What clan are you?" He asked.
+  "No Clan, I'm just looking for a ride offworld. I was hoping we could work something out."
+  "You have money?" Phil asked.
+  "Uh.. not on me exactly." Rex replied.
+  "Fine, We will see you outside." Phil said and signled Wilson to disconnect.
+  Willson shook his head. "No clan, no money. you are going to help this brat aren't you?"
+  "He better not!" Tammy screamed. "He destoryed my armor! He stole my Atlas! Blast him now!"
+  "He managed to get a Mech, and survive the Atlas." Phil muesed. "We can at least hear his offer. Maybe there is a way to make some money from this."
+  
   
   ->->
