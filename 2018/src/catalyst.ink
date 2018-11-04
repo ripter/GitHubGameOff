@@ -131,6 +131,31 @@
       
       Rex and Tammy started their walk back to the drop ship. Both refusing to talk to the other. About half way there, Willson drove past on his way to pick up Tammy's mech Wolfhound. By the time the pair made it to the ship, both Mechs had been loaded into the ship and all flights checks complete.
      
+    -
+    That night after everyone retured to their rooms, Rex went down to the cargo bay to IronWolf.
+    "How are you doing?" Rex asked the Mech.
+    #The full size Mech slowly stood up. "Much better. The repairs should be complete by morning."
+    "Both my knees are destroyed and we lost the cannon." said IronWolf, "nothing serious. I just need to return to my normal size."
+    Rex looked around, "alright."
+    Blue lights traced around the armor panals that make up IronWolfs body. The plates moving and collapsing on top of each other. Within a moment IronWolf shrunk to half of his previous size.
+    IronsWolf's face and eyes became more expressive and alive. "That is much better." he said. His back legs still streched and broken. The wolf curled and started to lick his wounds.
+    "Uh is that going to help?" Rex asked.
+    "Sort of, It's like how I healed you." IronWolf said without lifting his head.
+    "Yeah, I've never heard of a healing Mech before either." Rex said. 
+    "While I'm repairing anyway, I think I learned a few things from that battle that we could use to upgrade my parts."
+    Rex sat down next to IronWolf and plugged into the blue tipped cable. In his mind he could see a window of stats and other information.
+    
+    * Speed Upgrade
+      Scamatics appear before Rex along with IronWolf's voice. "If we adjust the leg structure we can get a nice increase to sprinting speed.
+    * Stealth Upgrade
+      A proection of a device appeared before Rex. 
+      "Watching Woulfhounds active sensor ping gave me an idea. This is a radar decoy. I can carry one, and you can drop it in battle. It should fool the ancestors sansors into thinking we are a scanning error while the box is deployed.
+    
+    -
+    "You can upgrade?" Rex asked in shock.
+    "Well yeah, assuming we have the materals." IronWolf responded. "It's just like repairing up with intenatal changes right?"
+    "Can we do both upgrades?" Rex asked, knowing the answer.
+    "Maybe, you get me the materals I need, and who knows what we could make." IronWolf said.
     
     
     
