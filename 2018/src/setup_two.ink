@@ -37,7 +37,7 @@
   "I thought that's how it worked." Rex said, "The pilot controls the Mech, driving it and firing the weapons to victory or defeat."
   "Listen" The wolf looked into Rex's eyes. "Everything you think of as you, the part that makes plans and descisions and has hopes and dreams. That part, is a little tiny pieace of your brain called the Frontal Cortex."
   "Uh ok" Rex said.
-  "When you decide to move your body, it's really you the Frontal Cortex piloting your body."
+  "When you decide to move your body, it's really you the Frontal Cortex piloting your body. Haven't you ever noticed that the You that other peole see, is not the same you that you know and experense?"
   "So a Mech pilot is like the Frontal Cortex?"
   "Exactly", said IronWolf, "I am the body, and you are my pilot. Alone we will both fail, but together we can do amazing things."
   "So you do what I say" Rex said with a grin.

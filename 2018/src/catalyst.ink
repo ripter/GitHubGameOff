@@ -64,5 +64,26 @@
   "He better not!" Tammy screamed. "He destoryed my armor! He stole my Atlas! Blast him now!"
   "He managed to get a Mech, and survive the Atlas." Phil muesed. "We can at least hear his offer. Maybe there is a way to make some money from this."
   
-  
+    The full sized IronWolf laied down with his left side away from the the dropship, hiding Rex's less than graceful exit from the Mech.
+    
+    Phil, Willson, and Tammy walked out to meet Rex and his Mech. Phil was the frist to speak once Rex walked around his Mech to face them. "Nice machine you have here." Phil said. "Did you capture it here?"
+    Rex smilled. "IronWolf is home grown from this factory here. I clamed him in the hunt which gives me legal athority over him."
+    "Uh, what?" Willson mumbled.
+    Tammy stamped up to Rex. She was slightly taller than him. "You intrupted *my* hunt and cost my personal armor suit and an Atlas."
+    "Oh, that was you?" Rex said. "I seem to remember it differently."
+    "Surprised you even survived." Tammy poked at the endcap over his missing arm, "so glad most of you managed to survive anyway."
+    Rex jerked his stump away from Tammys priny finger. "I am just looking for transport for me and my Mech IronWolf."
+    Tammy stepped aside as Phil aprached. "Why do you think you didn't get the Atlas?"
+    "Excuse me?" Rex said, taken by surprise by the older mans question.
+    Phil looked at Rex's ears, "It seems the Atlas did not take your ears. It has been almost two days since you attempted to catpure the Atlas. I'm sure you remember." Phil pointed at Rex's arm stub. "If you could do it again, what would you change so you would win?"
+    Rex racked his brain, the only reason he failed was because of Tammy. But she was obviousally part of the crew, so he shouldn't insult her. But what else could he say? He had been perfect, it was her fault he lost the arm, it was her fault he didn't have the atlas, it was her fault he was now begging for a ride. He didn't care if it was the right answer or not, he said it. "Her, if she was not there, I would have captured the Atlas."
+    
+    Phil and Wilson both shook their heads. After a moment of disapointing looks, Phil responded, "You blame others for your mistakes. Tammy, also blames you for her mistakes. So, I will give you transport with us, on one condition."
+    
+    * "What condition?
+    
+    -
+    Phil smiled "You and Tammy will have a Mech battle, in your new Mechs. Whoever wins, gets to go home with us, whoever loses stays here for a year."
+    Whilson's eyes grew into sausors. "Captian Sir, We .."
+    Phil shot Willson a look and he quickly closed his mouth.
   ->->
