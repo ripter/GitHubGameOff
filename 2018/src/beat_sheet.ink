@@ -78,50 +78,97 @@ There are 16 beats, meaning if each beat were of equal length (which they should
   Agreed, Rex and his Neminus move into position for a battle.
   ->->
   
-== debate
+== debate_draft_one
   In the start of the fight, Rex is confident and IronWolf responds quickly to his commands.
   As the fight drags on, IronWolf becomes annoyed with Rex's fighting style and starts to act on his own, ignoring Rex. Abanding the tridtional Mech fighting that we say Rex watch on screen, and instead fight using the environment and surprise.
   IronWolf defeats the other Mech and ejects Rex out. But he does not transform back into the wolf while around the others.
   ->->
-  
-== break_into_two
-  On the ride home, while they are alone. IronWolf and Rex talk about the fight. About how Rex is upset that IronWolf did not listen to him. IronWolf tells Rex that he has never had control of him. That he sees Rex as a guide, but not his master. IronWolf wants to explore the galaxy, but he does not understand humans or the our ways.
+== debate
+  Rex arrives on the planet with clan MRB after getting a tie in the fight with Tammy. Tammy proving she is the more skilled fighter, but Rex able to use a nextGen mech and fight in new ways.
+  Phil offers Rex a chanch to work with their crew after seeing his Mech repaired. Phil assuming Rex is a wiz kid of some sorts. That would explain his strange and very custom Mech.
+  At first Rex is still greatful for the ride and helps Clan MRB, but eventually Rex wants to do everything on his own. He needs to prove himself to the world, and he feels like he can't do that if he accepts help. His arrigance causing him to take risks. He wins some underground fights, earning himself a bit of cash and getting the attentions of Clan Aurigan.
+  Rex has to make a choice, take Clan Aurigan's offer and fight in the underground and make a lot of money. Or Join up with Phil and Tammy with Clan MRB and fight in the offical tournaments.
   ->->
   
-== b_story
+== break_into_two_draft_one
+  On the ride home, while they are alone. IronWolf and Rex talk about the fight. About how Rex is upset that IronWolf did not listen to him. IronWolf tells Rex that he has never had control of him. That he sees Rex as a guide, but not his master. IronWolf wants to explore the galaxy, but he does not understand humans or the our ways.
+  ->->
+== break_into_two
+  Rex agrees to Clan Aurigan's offer and dives into the underworld fighting. At first he is winning and being treated like a king, everything he asks for. Then his manager tells him he has to take a dive. The Clan will make a killing off his loss. This is their investments in him paying off.
+  IronWolf refuses to take a dive. Rex is unsure, he can repair IronWolf after all.
+  The pair stuggle in the battle for control, and IronWolf is struck down and loses the fight. Clan Aurigan pays him, but Rex suddenly finds himself with the sleps he was beating before. During his next fight, he is asked to take another dive. 
+  Rex starts to wonder if his fights were fixed, if he is really a good fighter or not.
+  ->->
+  
+== b_story_draft_one
   Rex's nemisus, Tammy suspects that Rex cheated somehow. She takes some scans of IronWolf and discovers the Mech does not match any known models. It's flagged as a new unknown model.
   Tammy, spies on part of Rex's converstation with IronWolf, revealing that Rex is not in control. She plans to use this against him.
   ->->
+== b_story
+  Tammy has been following Rex's progress in the underground fights. She sees the areana master cheat to disable IronWolf in his losing match.
+  # Tammy confronts Rex with proof, and discovers that IronWolf is more 
+  Confrunted with the truth, Rex realeases he is in over his head and needs help. He tries to escape with Tammy. She helps him onces he comes clean about IronWolf to her. She wants her own nextGen Mech, and Rex convinces IronWolf to promise to lead her to one.
+  When they try to leave, Clan Aurigan stops them and takes both IronWolf and Wolfhound from them.
+  ->->
   
-== fun_and_games
+== fun_and_games_draft_one
   Back on planet side, Tammy suggests that Rex stay with them until he can find a place of his own. He can't just walk a 10 ton war machine down main street.
   Reluctantly, Rex agrees. IronWolf does not like being locked up in a garage. At first they are able to get out at night so IronWolf can run around and change back into his normal wolf form.
   With help from the clan, they help Rex join one of the battle leages.
   This section is a bunch of Mech Battles. Rex and IronWolf get stronger, get more skills and abilities.
   As time passes IronWolf grows restless and starts to resent Rex.
   ->->
-  
-== midpoint
-  IronWolf starts to grow restless and start to resent Rex. He does not like being in his Battle mode for long peiords of time. And the times he gets ro run around in his wolf form is getting rarer as they move up the ranks in battle. He also wants to explore the planet outside of the battle ring.
+== fun_and_games
+  When Phil and Willson learn that Clan Aurigan and taken the Mechs. They call the local lawenforcement, who ask for proof of ownership. 
+  None of the new Mechs had beed registered since they landed plantside. The only proof of ownership was possession, and the Aurigan clan possesed both Mechs.
+  Rex and Tammy break into the garage from the areana, but their Mechs are no longer there.
+  Rex and Tammy come up with a plan to get their Mech back, and get Phil and Willson to help them.
+  They have to hack their way into clan Aurigan's database to find out where their Mechs were taken. 
+  # They get the location of a garage in the old district. Filled with the poor living in the ruined buildings of the past.
+  They get the location of a garage in the middle of the city. The pair break in, get their Mechs back, and then have a Mech battle in the city to get out. Rex, Tammy, Phil, and Willson all want to avoid anyone getting hurt. Their plan resolves around deception.
+  Once they get the mechs out of the living city and into one of the old dead cities. They are confronted by clen Aurigan, having a four versus five intercity mech battle. Buildings be damned.
   ->->
   
-== bad_guys_close_in
+== midpoint_draft_one
+  IronWolf starts to grow restless and start to resent Rex. He does not like being in his Battle mode for long peiords of time. And the times he gets ro run around in his wolf form is getting rarer as they move up the ranks in battle. He also wants to explore the planet outside of the battle ring.
+  ->->
+== midpoint
+  After resucing IronWolf and Wolfhound, and defeating/losing to clan Aurigan. They return home. 
+  IronWolf reveals his feelings to Rex. That he doesn't see much diffrence between being locked up by clan Aurigan, or by Rex.
+  Rex tries to reassure IronWolf, but then does something stupid. IronWolf runs away.
+  ->->
+  
+== bad_guys_close_in_draft_one
   The Aurigan clan runs the arena Rex and friends have been fighting in. One of them noticed the strange IronWolf mech. He rigs a fight so IronWolf's reactor will be badly damaged and will need to shut down.
   IronWolf is defeated, and ejects Rex before compressing down into it's wolf form. In front of the entire arena. The place goes crazy and with Tammy's help, Rex and IronWolf barely manage to get back to the garage.
   ->->
   
+== bad_guys_close_in
+  Rex has to battle for the first time in an old generation Mech. And he loses horribly, costing the clan the match.
+  Depressed, Rex is angered and frustrated that he could not keep IronWolf happy. He can not understand how his actions resulted in IronWolf comapiring him to the ones that kidnapped him.
+  ->->
   
-== all_is_lost
+  
+== all_is_lost_draft_one
   IronWolf disapears. Rex thinks he has been kidnapped, Tammy thinks/hopes IronWolf just ran away.
   Tammy reveals to the group that Rex was never in control, and that the Mech could be a gold mine in the right hands.
   The group kicks out Rex, and plans to find and recapture IronWolf on their own.
   Rex is back to how he started, except worse because now he misses IronWolf. He is friendless, pennyless, and homeless on an uncaring planet. Without IronWolf he can't even get a job.
   ->->
+== all_is_lost
+  Rex and the clan's last chance to win their way into the tournament, and Rex is still fubling around in an old gen Mech. They lose the battle again.
+  Tammy blames Rex for the losses of both IronWolf and the match. But she does not say anything about his promise to lead her to a next gen Mech. Tammy wants to be a bitch to him because she is angry, but she is not that curel. She is really upset because she thought she could win without Rex's help. But without Rex and IronWolf, she failed too. The entire team failed. Tammy didn't want to bealive that she and her clan could need Rex.
+  Tammy pushes Rex away, trying to prove to herself that she does not need him. She ends up getting Rex to leave on his own.
+  ->->
   
-== dark_night_of_the_soul
+== dark_night_of_the_soul_draft_one
   Rex is going to get IronWolf back, no matter what. He plans to break into Aurigan clan's complex.
   He calls in every favour and makes some dangorse promises to get the resources he needs. His money having been conficasded by the M.R.B when they kicked him out.
   Using skills he learned training with IronWolf, he gets inside the complex and finds IronWolf in a cage, in his wolf form. Two Atlas guard the garage. Rex is able to get inside, but he would be cought trying to leave with the 10 ton mech.
+  ->->
+== dark_night_of_the_soul
+  Without a Mech or a place to stay, Rex quickly burns though the money he has and feels worthless. He can not get even a basic job because of his missing arm.
+  Rex tries a doctor to see if he can get a repalcement arm, but it is too expensinve for him now. It's a price that seemed incondquencal when Rex was on top, but now it is a vast sum that is keeping him from being anything other than a begger on the street.
   ->->
   
 == break_into_three
