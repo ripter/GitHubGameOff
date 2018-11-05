@@ -16,11 +16,11 @@ There are 16 beats, meaning if each beat were of equal length (which they should
   -> DONE
   
 == beat_sheet
-  * [Opening Image] -> opening_image_draft2 ->
-  * [Set-up Part One] -> setup_one ->
+  * [Opening Image: 618 words] -> opening_image_draft2 ->
+  * [Set-up Part One: 1,996 words] -> setup_one ->
   * [Theme Stated] -> theme_stated ->
-  * [Set-up Part Two] -> setup_two ->
-  * [Catalyst] -> catalyst ->
+  * [Set-up Part Two: 2,320 words] -> setup_two ->
+  * [Catalyst: 2,839 words] -> catalyst ->
   * [Debate] -> debate ->
   * [Break into Two] -> break_into_two ->
   * [B Story] -> b_story ->
@@ -88,6 +88,8 @@ There are 16 beats, meaning if each beat were of equal length (which they should
   Phil offers Rex a chanch to work with their crew after seeing his Mech repaired. Phil assuming Rex is a wiz kid of some sorts. That would explain his strange and very custom Mech.
   At first Rex is still greatful for the ride and helps Clan MRB, but eventually Rex wants to do everything on his own. He needs to prove himself to the world, and he feels like he can't do that if he accepts help. His arrigance causing him to take risks. He wins some underground fights, earning himself a bit of cash and getting the attentions of Clan Aurigan.
   Rex has to make a choice, take Clan Aurigan's offer and fight in the underground and make a lot of money. Or Join up with Phil and Tammy with Clan MRB and fight in the offical tournaments.
+  Clan Aurigan wines and dines Rex, offering him everything in the world he could want. Everything he really wanted when he thought he wanted to be Mech Warrior Chamapion.
+  To Rex, it looks like Clan Aurigan is offering him a shortcut to the real reasons he wanted to be a champaion. Fame, money, and the depths of sleeze those things bring.
   ->->
   
 == break_into_two_draft_one
@@ -169,22 +171,45 @@ There are 16 beats, meaning if each beat were of equal length (which they should
 == dark_night_of_the_soul
   Without a Mech or a place to stay, Rex quickly burns though the money he has and feels worthless. He can not get even a basic job because of his missing arm.
   Rex tries a doctor to see if he can get a repalcement arm, but it is too expensinve for him now. It's a price that seemed incondquencal when Rex was on top, but now it is a vast sum that is keeping him from being anything other than a begger on the street.
+  Rex barely manages to scrape enough money to get a basic arm. 
+  # On his way to get it, he overhears someone talking about a really weird four legged Mech clan Aurigan used to win a spot at the tournament.
+  On this way to get his arm, or not, he overhears a dock worker talk about a crazy four legged wolf mech Clan Kirby just bought.
   ->->
   
-== break_into_three
+== break_into_three_draft_one
   Rex runs into Tammy, who is also there to free IronWolf. For a moment they start fighting eachother, then almost get cought by security.
   Tammy questions Rex, bringing up his lack of control.
   Rex wonders if any of them are ever really in control. No one was piloting the Atlas that clamed his arm. Maybe all they can do is try to set things up for success.
   Tammy finnaly agrees to help Rex, if he will help her get her own next generation Mech.
   ->->
-  
-== finale
-  The other members of the M.R.B clan cause a distraction and together Rex and Tammy are able to wake up IronWolf and escape the complex.
+== break_into_three
+  Rex is determent to go with IronWolf as his pilot. But he has no idea how to approach it. So he goes back to the only people who have been there for him, Phil, Whilson, and Tammy at clan MRB.
+  With some hussle, Phil gets a member of Clan Kirby to have a meeting with Rex. At the meeting, the clan Kirby representive does not want to let the boy pilot.
+  After some convincing, he agrees if the boy can win a fight using IronWolf. It seems that the Mech's cockpit was missing any sort of controls or screens. No one had yet been able to pilot IronWolf. So if the boy could do it, he could use IronWolf to apply for membership to clan Kirby.
+  Tammy insists on comming or stoesaway.
   ->->
   
-== final_image
+== finale_draft_one
+  The other members of the M.R.B clan cause a distraction and together Rex and Tammy are able to wake up IronWolf and escape the complex.
+  ->->
+== finale
+  Rex fights the pilot of CopperBanshee. Both next gen Mechs.
+  Rex does not know Banshee is a next gen mech called CopperBanshee until part way though the fight.
+  During the fight, Rex is stopped at every turn. It starts to become clear that CopperBanshee is messing with Rex.
+  In anger Rex manages to hit CopperBanshee. The fight is over and Clan Kirby agrees to let him join as a junior member.
+  After the fight, Rex watches CopperBanshee transform down into a large cleaming white metal rabbit.
+  With both next gen Mechs transformed back into their normal states. The wolf and the rabbit sniff at each other before running around and playing.
+  ->->
+  
+== final_image_draft_one
   Rex, Tammy, and the other members of their small clan reach a ridge on some unknown planet. (Maybe IronWolf had an idea?) 
   They overlook a cliff. A Large metal bird flys over them. Orange engine exaust comming from under the Falcon's wings. 
   The bird lands in front of IronWolf and caws loudly at the Mech.  IronWolf roars back and both Mechs transform into Battle Mode.
   Rex and Tammy smile at each other before running off to join the Mechs.
+  ->->
+== final_image
+  Rex, Tammy, and the pilot of CopperBanshee are standing at a cliff. When they look down, clouds and fog obsure the bottom. A large metal bird fly out though the fog and overhead.
+  "That" IronWolf said, "Is SteelFalcon, as promised Tammy."
+  Tammy jumps off the cliff, activating her personal jump jets and flys after the large metal bird.
+  The pilot of CopperBanshee tells Rex that they have been approved to fight for Clan Kirby in this years Tournament. Three next gen mechs could be unstoppable.
   ->->
