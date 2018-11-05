@@ -5,8 +5,8 @@
   Rose - a recurit for clan MRB
   Phil - Captian and mission commander in Clan MRB
   Willson - Ship/Mech Pilot and point man for Phil
-  
-  
+
+
 * [Mechs]
   + IronWolf - NextGen Mech, bonded to Rex
     IronWolf, Level 1 Scout Class.
@@ -25,7 +25,9 @@
   + Awesome - belongs to Clan Lyran
   + Axman - Clan MRB; Captured in setup_one
   + Blackjack - Clan MRB; Captured in setup_one
-  
+  + Red Shift - 20 ton, arena mech. Fast with two small lasors.
+  + Osiris - 30 ton, arena mech. 4 LRM, 1 small lasor.
+
   Tora - Clan MRB; Phil
 * [Clans]
   MRB - small scrappy clan
@@ -33,4 +35,3 @@
   Kirby - New and unknown clan from a forgoten sector of the galxy. They make a name for themselves when they reach the final battle in the tournament with Clan Lyran.
   Aurigan - Runs the underground tournaments.
   - -> top
-  
