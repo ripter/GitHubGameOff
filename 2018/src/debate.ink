@@ -120,5 +120,17 @@
 
   Rex and Tammy are taken to the winners circle, crowds cheering them and the annoucer awarding them their metals. It was everything Rex dreamed it would be. All the screaming fans, everyone trying to ask him questions and wanting to spend time with him. Afterward they went out to enjoy some of the money they earned.
 
+  That night at one of the clubs a scessy looking man aproached Rex and handing him a card. ( but like, future scifi version of a card. Like a contact or something.) 
   
+  "Saw you at the fight tonight" the man said. His car said his name was Leroy. "You have quite an intresting Mech there."
+  "Thanks" Rex said and took a long drink, eyes lockedon he man.
+  "Are you sighed up with a clan yet?" He asked, "or do you perfer merchanry, maybe one on one combat?"
+  "Uh, no I guess not." Rex said.
+  "You were teamed up with a member of Clan MRB tonight, are you joining them?" The man slide over closer to Rex. So close that Rex could smell the cheap calon and stale beer. "Because, if you are up for a real challenge, I mean you would have to be able to hold your own here, I have a client that could make you some serious coin."
+  "How much are we talking?" Rex asked.
+  "You could lose, and walk away with four times what you made tonight. If you win, well, lets just say the V.I.P. treatment won't be good enough for you."
+  "What do I have to do?" Rex asked.
+  "Fight for my client and win. Easy peasy." Leroy said with a big smile.
+  "What's the catch?" Rex asked suspecusly.
+  "Who said there is a catch? This isn't some gene in the bottle deal." Leroy turned his whole body to face Rex and looked into his eyes. "It's simple. Winning fighters not only win money for themselves, but also for the team they represent. I was impressed with your Mech and that claw attack. As you know Clan Kirby almost won this years champonship with a mech that punched though other mechs. You win, we all make money and maybe you can be our secret weapon in the next championship tournament."
   ->->
