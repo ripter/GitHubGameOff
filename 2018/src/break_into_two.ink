@@ -55,8 +55,8 @@
   The buzzer rang out over the battle field.
   
   # Range: Long
-  IronWolf rushed forward, firing a wide spread of long range missiles at Red Shift.
-  The bipedal Red Shift ran forward on thin looking legs with extra large feet. This one was not as fast as the other one Rex fought.
+  IronWolf rushed forward, firing a wide spread of long range missiles at Red Shift. - IronWolf rushes forward. A sixty second count down in Rex's vision. IronWolf calculated some probably future locations based on the speed the last Red Shift showed. Ad soon as the sixty second time finished, the missile fired, streaking across the battle field. 
+  The bipedal Red Shift ran forward on thin looking legs with extra large feet. This one was not as fast as the other one Rex fought. - Red Shift runs forward. The Mech's feet larger, like it was wearing big boots cause it to take longer to get up to running speed.
   
   # Range: Medium
   Missiles rain down around Red Shift. The nimble mech dodging left and right. A missile landed directly in front of the Mech, vapersising the ground Red Shift was running on. In a panic Red Shift's pilot activated Jump Jets and sored into the air.
@@ -103,8 +103,8 @@
   
   The buzzer rang, starting the battle.
   
-  IronWolf darts forward, running right at Gurkha.
-  Gurkha fires four extended range lasors at IronWolf.
+  IronWolf darts forward, running right at Gurkha. - As soon as the buzzer finishes IronWolf is running forward at full speed, Gurkha in his sights.
+  Gurkha fires four extended range lasors at IronWolf. - Undetered, Gurkha stood his ground, reaching out with his lasor hand and firing. Four small lasors blasing from the stubby arm.
   IronWolf dodges out of the way, but loses some momentum as he reaches Gurkha. IronWolf leaps, claws egnighting into blue flame.
   Gurkha's sword bocks, IronWolfs claws fighting the sword. Little blue fractures start to form along the sword blade.
   Gurkha fires his partical projector cannon. With IronWolf streched up, belly exposed. The blast knocks IronWolf back and onto the ground. A hole in it's belly. A few remaining missiles rolled out and away harmlessly.
@@ -117,4 +117,26 @@
   The buzzer rang over the arena.
   "Winner Rex!" said the announcer. "What an amazing day! I will see you all next week. Will Rex continue his winning streak or is it all beginners luck. Find out next time!"
   
+  - (battle_two_post)
+  After the battle, Rex and IronWolf went back to their home slash garage. Once the place of empty of just the two of them, IronWolf decompressed back to his normal size.
+  
+  * "The missiles are an issue."
+    IronWolf layed down. "I don't have a lot of storage options, are you sure you need missiles?"
+  * "We have to protect our weak spot, the underbelly."
+    IronWolf sat down. "I could add more armor while I repair. But you'll have to get me some materials."
+  * "You took quite a beating, two lucky hits. Are you going to be ok?"
+    IronWolf curled up and started licking his wounds. "I'm going to need some materials to repair everything, but nothing too bad."
+  -
+  "While we are talking about it" IronWolf said. "I have leveled up. I think I could use this repair time to upgrade one of my systems."
+  
+  - (upgrades)
+  * [Faster]
+    With some adjustments to the composition of IronWolf's legs and joins. He will be able to run faster.
+    -> upgrades
+  * [Increased Storage Space]
+    Some careful thining of armor and placement, IronWolf can increase the number of storage slots. These can hold missiles, decoys, and other consumable items.
+  * [Higher Jump]
+    Strong tension lines in the back legs will allow IronWolf to charge up a bit of energy and the release it as a power jump.
+  -
+  Rex rubbed his only hand along IronWolf's giant metal nose. "Don't worry, with my winnings tonight I'll get all the parts you need."
   ->->
