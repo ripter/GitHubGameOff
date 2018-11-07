@@ -13,7 +13,7 @@
     Weight: 10 tons
     Aspects: Heal Pilot, Transform
     Approaches: Careful +1; Clever +2; Flashy +1; Forceful 0; Quick +2; Sneaky +3
-    Weapons: 1 large partical projector cannon; Wolf claws;
+    Weapons:  -1 large partical projector cannon-; Wolf claws;
   + Wolfhound - Clan MRB; Tammy; captured in setup_one
     Level 1, Scout Class
     Weight 35 tons
