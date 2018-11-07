@@ -4,7 +4,7 @@ INCLUDE setup_two.ink
 INCLUDE catalyst.ink
 INCLUDE debate.ink
 INCLUDE break_into_two.ink
-
+INCLUDE b_story.ink
 
 
 
@@ -16,8 +16,6 @@ by Chris Richards
 // -> setup_two.start ->
 // -> catalyst.start ->
 // -> debate.start ->
--> break_into_two.start ->
+// -> break_into_two.start ->
+-> b_story.start ->
 -> DONE
-
-
-  
