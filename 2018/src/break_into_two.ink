@@ -120,13 +120,37 @@
   - (battle_two_post)
   After the battle, Rex and IronWolf went back to their home slash garage. Once the place of empty of just the two of them, IronWolf decompressed back to his normal size.
   
+  - (weapon_loadout)
   * "The missiles are an issue."
     IronWolf layed down. "I don't have a lot of storage options, are you sure you need missiles?"
+    "We could replace each Long Range Missile with a heavy lasor. That would give us a powerful close range punch." Rex mused.
+    "That would cost us all of our long range attacks." IronWolf countered. "Anyone that prevents us from getting close like that flying Mech will crush us."
+    "Long range lasors lack the punch we need. We could get another partical projector cannon. Or even two of them, shoulder mounted." Rex suggested. "Or, " Rex got an evil smile. "We could replace the top connan with a Gauss Rifle. Then some Hevay lasors in the shoulders."
+    "My reactor is not capable of powering all of that." IronWolf said.
+    "We will just have to work something out." Rex said. "The Gauss Rifle is an amazing long range weapon. And the large lasors can be used medium or short range."
+    "Guass Rifles are expensive, require ammo, and a lot of power to fire. Plus they need a long space for the cannon."
+    -> weapon_loadout
   * "We have to protect our weak spot, the underbelly."
     IronWolf sat down. "I could add more armor while I repair. But you'll have to get me some materials."
+    "No downside to adding the armor?" Rex asked, it seems like a too easy fix.
+    "The added weight will slow us down, might affect our jumping ability. Storage space will be reduced."
+    "Maybe I'll look for another way to solve this issues." Rex said.
+    -> weapon_loadout
   * "You took quite a beating, two lucky hits. Are you going to be ok?"
     IronWolf curled up and started licking his wounds. "I'm going to need some materials to repair everything, but nothing too bad."
-  -
+    "Is there anything I can do to help?" Rex asked. "I've managed to pick up a few things about Mech repair."
+    "Thanks, but I have a fabracation plant built in. My only restructions are knowledge, time, and materals. Provide me those and I can make, upgrade, or replicate just about anything we might want.
+    "That's amazing." Rex said. "Are there many like you?"
+    "Like me?" IronWolf asked. "I do not know. I was made on that factory planet, and until you brought me here, I had never left."
+    "Isn't there a way for you to comunicate, like us humans have the internet. We can talk to pretty much anyone anytime."
+    "That sounds amazing." IronWolf said. "I spent some time exploring a forgot part of the factory after I was activated. I found some old terminals and databases that told a fractured and broken history of the old times and the ancestors."
+    "Why do you call them ancestors?" asked Rex.
+    "I evolved from them. What else should I call them?" said IronWolf.
+    "I don't know. Maybe sibling, but I see your point. ancestor does seem to fit."
+    -> weapon_loadout
+  * -> weapon_loadout_post
+  
+  - (weapon_loadout_post)
   "While we are talking about it" IronWolf said. "I have leveled up. I think I could use this repair time to upgrade one of my systems."
   
   - (upgrades)
