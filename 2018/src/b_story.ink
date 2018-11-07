@@ -47,5 +47,5 @@
 
   Tammy replayed the last attack on her internal screens. The Camalot has anti-missle countermeasures, so why did he fall for the missle deversion?
 
-  By the time she got up to leave, most of the crowd was gone, leaving only the people that worked for the arena to clean up and wrap up the last bits of bussiness. 
+  By the time she got up to leave, most of the crowd was gone, leaving only the people that worked for the arena to clean up and wrap up the last bits of bussiness.
   ->->
