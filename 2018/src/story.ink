@@ -5,6 +5,7 @@ INCLUDE catalyst.ink
 INCLUDE debate.ink
 INCLUDE break_into_two.ink
 INCLUDE b_story.ink
+INCLUDE fun_and_games.ink
 
 
 
@@ -17,5 +18,6 @@ by Chris Richards
 // -> catalyst.start ->
 // -> debate.start ->
 // -> break_into_two.start ->
--> b_story.start ->
+// -> b_story.start ->
+-> fun_and_games.start ->
 -> DONE
