@@ -35,3 +35,13 @@
   Kirby - New and unknown clan from a forgoten sector of the galxy. They make a name for themselves when they reach the final battle in the tournament with Clan Lyran.
   Aurigan - Runs the underground tournaments.
   - -> top
+
+* [Lasors]
+  Lasors have a short effective range. Technically they can reach a long distance, but the amount of heat transfered reduces by distance squared.
+  Short range means 100% of the power used to fire turns into heat on the defender.
+  Medum range means  10% of the power used is turned into heat on the defending mech.
+  Long range  means   0% of the power will turn into heat on the target.
+
+  Small lasor: 2 power unit to fire, generate 1 heat units.
+  Medium Lasor: 4 power units to fire for the turn. Generates 2 heat units.
+  Heavy Lasor: 8 power units to fire, generate 6 heat units.

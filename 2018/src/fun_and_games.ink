@@ -50,6 +50,29 @@
 
   + Overview
     Heat Management, limits how often you can attack/move.
-    Weapons/Armor Management, limits speed and acceleration, and scanner signal.
-    Equipment, provides special overrids to limits or new abilites.
+    Weapons/Armor Management, limits speed, acceleration, and scanner footprint.
+    Equipment, provides special overrides to limits or new abilites.
+    Weight, Limits the number and how much weapons, armor, and equipment a mech can carry.
+  + Game Dev notes
+    Each trackable area of a mech, the body, arms, legs, etc all have a heat meter. Each turn that meter will reduce by the number of active heat sinks connected to it (and functional.)
+    The player can take an action, which causes one or more parts to generate some amount of heat.
+    The player can get hit with energy weapons, which generate some amount of heat across one or more areas.
+    Each area has a different reaction to the overheating depending on what is inside the mech. Example: and area holding missiles could explode if it generates too much heat. Weapons will refuse to fire after they have too much heat and will be destroyed or disabled if then get even hotter.
+    Water will cool heated area, like walking in a river or rain falling.
+  + Parts of a Mech.
+    Body, Cockpit, four limbs, (left arm, left leg, right arm, right leg or in cases like IronWolf just call all the limbs arms or legs or whatever makes you feel better about the terminaligy.)
+    Each part has: Head, Armor, Internal structure; (Equiment and ammo must be stored in one of the internal stucture areas), and hardpoints; (Places where it's structurely safe to mount weapons and other external equipment like countermeasure devices, cloaking devices, extra heat sinks.)
+    The Mechs type and construction will determin the heat displacement, size of the internal storage and number of hard points. These factors are static on the mech type level. The NextGen mechs have the ability to change these factors.
+  + Stat idea
+    Catapult, 65 tons.
+    Speed 43 kph - 64 kph.
+    Weapons: 2 Long Range Missiles (ammo for 4 shots total), 4 medium lasors.
+    Equipment: Jump Jets
+    Body: reactor generating 10 power units per turn. Four hard points mount the four medium lasors. Each lasor uses 4 power units per turn to fire and generate 2 heat units.
+    Cockpit: Has Armor and Heat meter, internal storage hold pilot.
+    Left Arm: Arm is an armored missle rack (one hard point). Armor, heat, meteres. Holds one round inside the rack.
+    Right Arm: the arm is just an armored missle rack (one hard point). Holds one round inside the rack.
+    Left Leg: Interal holds one missle ammo reload. jump jets equiped
+    Right left: Internal storage holds one missile reload. jump jets equiped.
+
   ->->
