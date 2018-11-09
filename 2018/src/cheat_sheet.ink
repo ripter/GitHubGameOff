@@ -2,8 +2,8 @@
 * [People]
   Rex - MC
   Tammy - Rival, belongs to Clan MRB
-  Rose - a recurit for clan MRB
-  Phil - Captian and mission commander in Clan MRB
+  Rose - a recruit for clan MRB
+  Phil - Captain and mission commander in Clan MRB
   Willson - Ship/Mech Pilot and point man for Phil
 
 
@@ -13,7 +13,7 @@
     Weight: 10 tons
     Aspects: Heal Pilot, Transform
     Approaches: Careful +1; Clever +2; Flashy +1; Forceful 0; Quick +2; Sneaky +3
-    Weapons:  -1 large partical projector cannon-; Wolf claws;
+    Weapons:  -1 large particle projector cannon-; Wolf claws;
   + Wolfhound - Clan MRB; Tammy; captured in setup_one
     Level 1, Scout Class
     Weight 35 tons
@@ -32,14 +32,14 @@
 * [Clans]
   MRB - small scrappy clan
   Lyran - The biggest most popular clan and winner of the last 6 years tournaments.
-  Kirby - New and unknown clan from a forgoten sector of the galxy. They make a name for themselves when they reach the final battle in the tournament with Clan Lyran.
+  Kirby - New and unknown clan from a forgotten sector of the galaxy. They make a name for themselves when they reach the final battle in the tournament with Clan Lyran.
   Aurigan - Runs the underground tournaments.
   - -> top
 
 * [Lasers]
-  Lasers have a short effective range. Technically they can reach a long distance, but the amount of heat transfered reduces by distance squared.
+  Lasers have a short effective range. Technically they can reach a long distance, but the amount of heat transferred reduces by distance squared.
   Short range means 100% of the power used to fire turns into heat on the defender.
-  Medum range means  10% of the power used is turned into heat on the defending mech.
+  Medium range means  10% of the power used is turned into heat on the defending mech.
   Long range  means   0% of the power will turn into heat on the target.
 
   Small laser: 2 power unit to fire; generates 1 heat unit; shut down at 3 heat units, destroyed at 4 heat units.
@@ -47,8 +47,8 @@
   Heavy Laser: 8 power units to fire; generates 6 heat units; shut down at 20 heat units, destroyed at 30 heat units.
 
 * [Missiles]
-  Missiles are a Long/Medium range weapon that does mostly physcal damage. It also causes a lot of collateral damage.
-  Missiles can be distrupted or even stopped by countermeasures.
+  Missiles are a Long/Medium range weapon that does mostly physical damage. It also causes a lot of collateral damage.
+  Missiles can be disrupted or even stopped by countermeasures.
 
   Long Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; Disabled at 5 heat units, destroyed at 10 heat units.
   Medium Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; disabled at 7 heat units; destroyed at 10 heat units.

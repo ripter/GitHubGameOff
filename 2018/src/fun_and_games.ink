@@ -28,30 +28,30 @@
   + How do you disable the opponent?
     Physical damage, which is protected by armor.
     Overheating, which is protected by heat sinks.
-    Weapons destoried/out of ammo.
+    Weapons destroyed/out of ammo.
   + How does Heat work?
-    Heat builds up in both mechs when lasers are fired. Most of the heat conentrated on a single point on the defender.
+    Heat builds up in both mechs when lasers are fired. Most of the heat concentrated on a single point on the defender.
     Weapons will not fire if they are too hot.
     Engines shut down if they get too hot.
     Missiles explode if they get too hot.
     Armor and superstructure can warp and melt if they get too hot.
-    The main goal of lasers is to disable parts of the opoinent or melt though their armor. Setting off missiles inside an opponent mech can be quite the show.
+    The main goal of lasers is to disable parts of the opponent or melt though their armor. Setting off missiles inside an opponent mech can be quite the show.
     Moving and firing weapons generate heat.
-    Heat Sinks will continusally disipate heat.
+    Heat Sinks will continually dissipate heat.
   + How does power generation work?
-    Weapons and movement have a power requirement to work. When the Mech wants to take an action, like moving or fireing, or jumping, it uses up some of the stored power in the mech. It's internal rector is continusally recharging these internal batteries.
-    It is possible for Mechs to not have battery systems (a lot of the old generation mech are this way) which limits their action to the max continus output of their reactors.
+    Weapons and movement have a power requirement to work. When the Mech wants to take an action, like moving or firing, or jumping, it uses up some of the stored power in the mech. It's internal rector is continually recharging these internal batteries.
+    It is possible for Mechs to not have battery systems (a lot of the old generation mech are this way) which limits their action to the max contous output of their reactors.
     The reactor has a set temperature cutoff value and the amount of heat it generates to produce that continues output.
-    This means it is possible for a Mech to do something like fire it's lasers continusally. The reactor will have no issue, but the laser will eventurally heat up to the point it shuts down or breaks.
-  + Phsyscal Damage and armor
-    Mechs weigh a lot because of all their Equipment and armor. Armor protects the mechs from physcal damage, like IronWolf's physcal claws, or the swords and hatchets some mechs carry.
-    The more armor, the slower the acceloration/max speed and the more power required to move the mech.
+    This means it is possible for a Mech to do something like fire it's lasers continually. The reactor will have no issue, but the laser will eventually heat up to the point it shuts down or breaks.
+  + Physical Damage and armor
+    Mechs weigh a lot because of all their Equipment and armor. Armor protects the mechs from physical damage, like IronWolf's physical claws, or the swords and hatchets some mechs carry.
+    The more armor, the slower the acceleration/max speed and the more power required to move the mech.
     This armor protects from missiles, and redirects heat to heatsinks.
 
   + Overview
     Heat Management, limits how often you can attack/move.
     Weapons/Armor Management, limits speed, acceleration, and scanner footprint.
-    Equipment, provides special overrides to limits or new abilites.
+    Equipment, provides special overrides to limits or new abilities.
     Weight, Limits the number and how much weapons, armor, and equipment a mech can carry.
   + Game Dev notes
     Each trackable area of a mech, the body, arms, legs, etc all have a heat meter. Each turn that meter will reduce by the number of active heat sinks connected to it (and functional.)
@@ -60,9 +60,9 @@
     Each area has a different reaction to the overheating depending on what is inside the mech. Example: and area holding missiles could explode if it generates too much heat. Weapons will refuse to fire after they have too much heat and will be destroyed or disabled if then get even hotter.
     Water will cool heated area, like walking in a river or rain falling.
   + Parts of a Mech.
-    Body, Cockpit, four limbs, (left arm, left leg, right arm, right leg or in cases like IronWolf just call all the limbs arms or legs or whatever makes you feel better about the terminaligy.)
-    Each part has: Head, Armor, Internal structure; (Equiment and ammo must be stored in one of the internal stucture areas), and hardpoints; (Places where it's structurely safe to mount weapons and other external equipment like countermeasure devices, cloaking devices, extra heat sinks.)
-    The Mechs type and construction will determin the heat displacement, size of the internal storage and number of hard points. These factors are static on the mech type level. The NextGen mechs have the ability to change these factors.
+    Body, Cockpit, four limbs, (left arm, left leg, right arm, right leg or in cases like IronWolf just call all the limbs arms or legs or whatever makes you feel better about the terminology.)
+    Each part has: Head, Armor, Internal structure; (Equipment and ammo must be stored in one of the internal structure areas), and hard points; (Places where it's structurally safe to mount weapons and other external equipment like countermeasure devices, cloaking devices, extra heat sinks.)
+    The Mechs type and construction will determine the heat displacement, size of the internal storage and number of hard points. These factors are static on the mech type level. The NextGen mechs have the ability to change these factors.
   + Stat idea
     Catapult, 65 tons.
     Speed 43 kph - 64 kph.
@@ -70,9 +70,9 @@
     Equipment: Jump Jets
     Body: reactor generating 10 power units per turn. Four hard points mount the four medium lasers. Each laser uses 4 power units per turn to fire and generate 2 heat units.
     Cockpit: Has Armor and Heat meter, internal storage hold pilot.
-    Left Arm: Arm is an armored missile rack (one hard point). Armor, heat, meteres. Holds one round inside the rack.
+    Left Arm: Arm is an armored missile rack (one hard point). Armor, heat, meters. Holds one round inside the rack.
     Right Arm: the arm is just an armored missile rack (one hard point). Holds one round inside the rack.
-    Left Leg: Interal holds one missile ammo reload. jump jets equipped
+    Left Leg: Internal holds one missile ammo reload. jump jets equipped
     Right left: Internal storage holds one missile reload. jump jets equipped.
 
   ->->
