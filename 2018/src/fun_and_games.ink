@@ -19,6 +19,74 @@
 = battle_one
   Axman vs Catapult in a one on one battle. These are two evenly matched mechs, both weighting 65 tons and featuring the same fusion engine.
   
+  -
+  The Axman and Catapult are in long range.
+  The Catapult has 0 Power and generates 10 power; giving it 10 power this turn. It has 0 Head and dispenses 0 heat.
+  The Axman has 0 Power and generates 10 power; giving it 10 power this turn. It have 0 heat and dispenses 0 heat.
+  The Catapult fires both shoulder mounted rack of missiles. releaseing 10 missiles into the air. This generates 2 heat. This costs 4 power.
+  The Axman runs at full speed, allowing it to change range from long to medium in one turn. This generates 5 heat and costs 10 power.
+  The Catapult takes evasive manuevers, costing 2 power and generating 1 heat.
+  At the end of the turn, the Catapult has used 6 power (4 on missiles, 2 on movement) and generated 3 heat (2 on missiles, 1 on movement).
+  At the end of the turn, the Axman has used 10 power (on movement) and 5 heat (on movement).
+
+  -
+  The Axman and the Catapult are in medium range.
+  At the start, the Catapult generates 10 power, giving it 14 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
+  At the start, the Axman generates 10 power, giving it 10 power. It dispenses 6 heat leaving it wiht 0 heat to deal with.
+  The Catapult reloads both missile racks, costing 1 power.
+  The Axman continues her run at full speed. Costing 10 power and generating 5 heat.
+  The Catapult fires 3 medium lasers, costing 12 power and generating 6 heat.
+  The Catapults 3 medium lasers hit Axman, dealing 2 heat damage after the distance pentalty.
+  At the end of the turn, Catapult has used 13 power and generated 6 heat.
+  At the end of the turn, Axman has used 10 power and generated 7 heat.
+  
+  -
+  The Axman and the Catapult are now in close range.
+  At the start, the Axman generates 10 power, giving it 10 power. It dispenses 6 heat, leaving it with 1 heat to deal with.
+  At the start, the Catapult generates 10 power, giving it 11 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
+  Axman attacks with Hatcet, costing 3 power and generating 1 heat. The attack cuts though the left shoudler of the catapult. Chopping off the missile rack.
+  The Catapult attempts to run past the Axman, ripping of the rest of the missile rack. Costing 3 power and generating 2 heat.
+  The Catapult fires 2 medium lasers; costing 8 power and generating 4 heat. The lasers dealing 8 heat to Axman.
+  At the end of the turn, Catapult used 11 power and generated 6 heat.
+  At the end of the turn, Axman used 3 power and has 11 heat. (1+1+8)
+  
+  -
+  The Axman and the Catapult are still in close range.
+  Axman is overheated (11 heat > 10 before powerdown), the mech's movement system has shut down. The Mech can not move this turn.
+  Catapult generates 10 power, it now has 10 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
+  Axman generates 10 power, it now has 17 power. It disipates 6 heat, leaving it 5 heat to deal with.
+  The Catapult runs forward trying to put distance between it and the Axmen. It uses 3 power and generates 2 heat.
+  Axman turns and fires 3 medium lasers. It uses 12 power and generates 6 heat.  The Catapult takes 12 heat.
+  The Catapult fires 1 medium lasers; costing 4 power and generating 2 heat. The lasers dealing 4 heat to Axman.
+  At the end of the turn, The Catapult: used 7 power, leaving 3 power. generated 16 heat, leaving it with 21 heat.
+  At the end of the turn, the Axman: used 12 power, leaving it with 5 power. It has generated 6 heat, leaving it wiht 11 heat.
+  
+  -
+  The Axman and Catapult as in medium range.
+  Axman has overheated, it has 11 heat and shutdown happens at 10 heat. It's lasers shut down for the turn.
+  Catapult has overheated, it has 21 heat, it attempted shutdown at 10 heat, but has suffered major damage at 15 heat and then signifant damage at 20 heat. The missiles stored inside of the the Catapult start to explode randomly in the mech legs.
+  Catapult has lots it's legs when stored missiles exploded due to over heating.
+  Axman wins!
+  ->->
+  
+= battle_one_draft_two
+  Axman vs Catapult in a one on one battle. These are two evenly matched mechs, both weighting 65 tons and featuring the same fusion engine.
+  
+  - (turn1_b1_draft_two)
+  Catapult goes first. It fires both shoulder missiles; ten missiles fly off into the air, targing the ax man; costing 4 power and leaving 6 power left. He takes evasive manuevers by starting a walk to the left. Using 3 power and leaving 3 power left. The missiles generated 2 heat (1x per missile rack), Moving costs 1.5 Heat, and the heat sinks removed -6 heat; leaving the Mech at 0 heat overall.
+  Axman runs at the Catapult, using 10 power to move from long range to medium range. The movement generates 5 Heat, the heat sinks removed -6 heat; leaving the Mech with 0 heat overall.
+  The Catapult has 3 remaining power and 2 Heat.
+  Axman as 0 remaining power and 5 Heat.
+  
+  - (turn2)
+  Catapult is the first to respond. Its power reactor generates 7 power while the mech continues a slow walk to the left; giving the Catapult 10 power (7 + the stored 3 from the last turn.) It reloads the missile racks, costs 2 power (1x per rack) leaving the mech with 8 power.
+  Axman moves too fast for the missiles and they land harmlessly behind the mech. It continues to run at full speed, moving from medium range to close range; This costs 10 power and generates 5 Heat. The reactor generates 10 power and the heat sinks remove 6 heat. Leaving the mech with 0 stored power and 0 heat.
+  The Catapult had 3 Power; generated 10 power; It used 2 Power reloading; Leaving it with 10 remaining power (max 10 power). It had 2 Heat, it lost 6 heat from the heat sinks, then generated 
+  
+  - (turn3)
+  The Axman reaches the Catapult in close range. The Mechs generator providing 10 power. It brings its ax down the Catapult's left shoulder. The damange is significant, destorying the missile rack on that shoulder.
+  The Catapult manages to stay on it's feet while an entire missile rack, that holds five missiles, was chopped off it's body. The power reactor provides 10 power, and the mech already had 8 power; but without a battery system it is only able to keep a max of 10 power. It fires two medium lasers at close range on the Axman; using eight power, leaving the mech with only two power. The lasers generate four heat on the Catapult which then attempts to run past the axman using the last two power.
+  The Axman takes 8 Heat from the Catapult's 2 Medium lasers.
   ->->
 = battle_one_draft_one
   * [IronWolf Status]

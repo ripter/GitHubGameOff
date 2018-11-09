@@ -53,7 +53,12 @@
   Long Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; Disabled at 5 heat units, destroyed at 10 heat units.
   Medium Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; disabled at 7 heat units; destroyed at 10 heat units.
   missiles explode when heated to 10 heat units.
+  Reload cost: 1 Power
 
 * [Guass Rifle]
   Projects a solid core of metal at near light speed using electro magnets.
   Requires 10 power units to fire; Reload time is 2 time units; generates 3 heat units; disabled at 15 heat units, destroyed at 20 heat units.
+
+* [Movement]
+  Max reactor output provides max speed at power cost/2 heat.
+  Moving full speed costs 10 power and generates 5 heat.
