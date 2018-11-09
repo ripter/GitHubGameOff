@@ -97,10 +97,10 @@
     Tammy's Wolfhound appears to have the advantage. A humanoid bipedal filled with lasers. Rex's IronWolf on the other hand had only a single PPC cannon mounted on the top.
     With both pilots ready and in position, Phil counted down the match."
     
-    As soon as the timer reaches zero, Tammy blasts with her long range heavy arm lasor and started moving forward. The lasor focused on the large partical projector cannon on IronWolf's mach. The lasor stuck with persision on the connecting join, causing it to heat up rapidaly. IronWolf yelped in mechanical exaust and tried to move out of the way. The weak joint no longer able to properly support the gun warped and bent under the pressure and heat.
+    As soon as the timer reaches zero, Tammy blasts with her long range heavy arm laser and started moving forward. The laser focused on the large partical projector cannon on IronWolf's mach. The laser stuck with persision on the connecting join, causing it to heat up rapidaly. IronWolf yelped in mechanical exaust and tried to move out of the way. The weak joint no longer able to properly support the gun warped and bent under the pressure and heat.
     
     Rex could feel a slight burning sensation along his back. He was in his virtual agumented reality cockpit inside of IronWolf. He saw as the Mech saw, and to a limited extent felt what the Mech felt. Including the searing pain on his back.
-    IronWolf doged to the left and ran twords a large rut cut into the dirt. IronWolf jumped down into the ditch as another lasor beam blased overhead. A radar display floated in Rex's vision, showing the trench and Tammy as she slowed her mech down to a walk. Rex herd a ping sound.
+    IronWolf doged to the left and ran twords a large rut cut into the dirt. IronWolf jumped down into the ditch as another laser beam blased overhead. A radar display floated in Rex's vision, showing the trench and Tammy as she slowed her mech down to a walk. Rex herd a ping sound.
     "She is doing an active scan" IronWolf said in responsise to the half question.
     
     * [Hide from the sensor scan] # sneak
@@ -112,15 +112,15 @@
       Lasers blasted overhead, Tammy's Mech walking slowly in the direction of Rex. The Radar showed this trench intersects another one that is right next to Tammy and her mech. Lasers fired again as he reached the intersection. Instead of staying in the trench, IronWolf jumped out and up on the plane. He quickly dashed across and into the other trench before Tammy could fire again.
       
       -
-      IronWolf leaped, long black claws extending from it's feet, a large cannon bent at an odd angle on it's back. IronWolf landed directly into the side of WolfHoud, kocking the bipedal Mech to the ground. Claws raked the Mech. WolfHoud held up its cannon arm to protect the cockpit from the claws. IronWolfs claws tour into the metal of the arm, destroying the lasor projector and causing a short in the older Mech.
+      IronWolf leaped, long black claws extending from it's feet, a large cannon bent at an odd angle on it's back. IronWolf landed directly into the side of WolfHoud, kocking the bipedal Mech to the ground. Claws raked the Mech. WolfHoud held up its cannon arm to protect the cockpit from the claws. IronWolfs claws tour into the metal of the arm, destroying the laser projector and causing a short in the older Mech.
       
       "I won't lose to a scrub like you" Tammy's voice resonaned out of her Mech's external speakers. 
-      Rex could feel a sudden heat underhim, and saw the one lasor arm starting the glow red. Tammy was trying to fire the gun. 
+      Rex could feel a sudden heat underhim, and saw the one laser arm starting the glow red. Tammy was trying to fire the gun. 
       The arm exploded, throwing IronWolf off of it. The Mech rolled on it's side, the damanged partical parjector cannon tearing off the top of the Mech. IronWolf and Rex howled in pain. He tried to stand up but his back legs would not obay him. "Move! Get Up!" Rex yelled. He looked back and could see his two back legs damaged and flenching as he tried to use them. "Nooooo" He screamed.
       
       A voice echoed in everyone's ears. "Match is over." Phil said. "It is a tie. Both Mechs have been knocked out of the fight."
       
-      Rex and Tammy got out of their Mech and walked over to each other. Tammy's once long hair was burned on one side to the scalp. Rex pointed at the bald spot. "Is that from your dumbass firing a lasor without a focusing crystal?"
+      Rex and Tammy got out of their Mech and walked over to each other. Tammy's once long hair was burned on one side to the scalp. Rex pointed at the bald spot. "Is that from your dumbass firing a laser without a focusing crystal?"
       "Fuck you" Tammy said. She pushed Rex on the cap that covered his missing arm. "Did you lose that because you took a nap under an Atlas?"
       
       Willson in a bright yellow construction vechacl showed up before the two could fight any more. "Who needs a lift back to the ship?" They both sneared at him.

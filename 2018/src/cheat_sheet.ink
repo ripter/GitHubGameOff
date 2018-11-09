@@ -19,14 +19,14 @@
     Weight 35 tons
     Aspects:
     Approaches: Careful +1; Clever +2; Flashy +2; Forceful +3; Quick +1; Sneaky 0;
-    Weapons: 4 Medium Range Lasers, 1 extended range large lasor.
+    Weapons: 4 Medium Range Lasers, 1 extended range large laser.
   + CopperBanshee - NextGen Mech, belongs to Clan Kirby
   + Thunderbolt - belongs to Clan Lyran
   + Awesome - belongs to Clan Lyran
   + Axman - Clan MRB; Captured in setup_one
   + Blackjack - Clan MRB; Captured in setup_one
   + Red Shift - 20 ton, arena mech. Fast with two small lasers.
-  + Osiris - 30 ton, arena mech. 4 LRM, 1 small lasor.
+  + Osiris - 30 ton, arena mech. 4 LRM, 1 small laser.
 
   Tora - Clan MRB; Phil
 * [Clans]
@@ -42,9 +42,9 @@
   Medum range means  10% of the power used is turned into heat on the defending mech.
   Long range  means   0% of the power will turn into heat on the target.
 
-  Small lasor: 2 power unit to fire; generates 1 heat unit; shut down at 3 heat units, destroyed at 4 heat units.
-  Medium Lasor: 4 power units to fire for the turn. Generates 2 heat units; shut down at 12 heat units; destroyed at 17 heat units.
-  Heavy Lasor: 8 power units to fire; generates 6 heat units; shut down at 20 heat units, destroyed at 30 heat units.
+  Small laser: 2 power unit to fire; generates 1 heat unit; shut down at 3 heat units, destroyed at 4 heat units.
+  Medium Laser: 4 power units to fire for the turn. Generates 2 heat units; shut down at 12 heat units; destroyed at 17 heat units.
+  Heavy Laser: 8 power units to fire; generates 6 heat units; shut down at 20 heat units, destroyed at 30 heat units.
 
 * [Missiles]
   Missiles are a Long/Medium range weapon that does mostly physcal damage. It also causes a lot of collateral damage.

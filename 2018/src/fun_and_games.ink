@@ -42,7 +42,7 @@
     Weapons and movement have a power requirement to work. When the Mech wants to take an action, like moving or fireing, or jumping, it uses up some of the stored power in the mech. It's internal rector is continusally recharging these internal batteries.
     It is possible for Mechs to not have battery systems (a lot of the old generation mech are this way) which limits their action to the max continus output of their reactors.
     The reactor has a set temperature cutoff value and the amount of heat it generates to produce that continues output.
-    This means it is possible for a Mech to do something like fire it's lasers continusally. The reactor will have no issue, but the lasor will eventurally heat up to the point it shuts down or breaks.
+    This means it is possible for a Mech to do something like fire it's lasers continusally. The reactor will have no issue, but the laser will eventurally heat up to the point it shuts down or breaks.
   + Phsyscal Damage and armor
     Mechs weigh a lot because of all their Equipment and armor. Armor protects the mechs from physcal damage, like IronWolf's physcal claws, or the swords and hatchets some mechs carry.
     The more armor, the slower the acceloration/max speed and the more power required to move the mech.
@@ -68,7 +68,7 @@
     Speed 43 kph - 64 kph.
     Weapons: 2 Long Range Missiles (ammo for 4 shots total), 4 medium lasers.
     Equipment: Jump Jets
-    Body: reactor generating 10 power units per turn. Four hard points mount the four medium lasers. Each lasor uses 4 power units per turn to fire and generate 2 heat units.
+    Body: reactor generating 10 power units per turn. Four hard points mount the four medium lasers. Each laser uses 4 power units per turn to fire and generate 2 heat units.
     Cockpit: Has Armor and Heat meter, internal storage hold pilot.
     Left Arm: Arm is an armored missile rack (one hard point). Armor, heat, meteres. Holds one round inside the rack.
     Right Arm: the arm is just an armored missile rack (one hard point). Holds one round inside the rack.

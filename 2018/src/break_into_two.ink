@@ -28,14 +28,14 @@
   * IronWolf
     Level 2, 35 Tons
     Approaches: Careful +1; Clever +2; Flashy +1; Forceful 0; Quick +2; Sneaky +3
-    Weapons: 2 Claws, 2 Long Range Missiles, 1 Short Range Heavy lasor.
+    Weapons: 2 Claws, 2 Long Range Missiles, 1 Short Range Heavy laser.
     Skills: 1 Decoy Drone, Jump
     -> battle_one
   
   * Red Shift
     20 Tons
     Approaches: Careful +1; Clever +1; Flashy +2; Forceful +3; Quick +2; Sneaky 0;
-    Weapons: 1 Medium Range lasers, 1 short range heavy lasor.
+    Weapons: 1 Medium Range lasers, 1 short range heavy laser.
     Skills: Jump jets
     ->battle_one
   * [Wait for match] -> battle_one_ready
@@ -63,13 +63,13 @@
   IronWolf tracked the jump mid air. It was too high for IronWolf to jump. Rex hoped that the Mech's jumpt jets were only short range.
   
   # Range: Medium
-  IronWolf kept running twords the flying Mech, but it easily kept back. He was too close for his missile to hit that flying target. He was too faraway for his heavy lasor or claws.
-  Red Shift fired his medium range lasor at IronWolf. He was flying backwards and getting closer to the edge of the arena. He fired seveal more shots at IronWolf, but the Mech was to nimble and dodged each time. His jump jet fuel finnaly ran out a few meters from the arena wall. Red Shift landed hard.
+  IronWolf kept running twords the flying Mech, but it easily kept back. He was too close for his missile to hit that flying target. He was too faraway for his heavy laser or claws.
+  Red Shift fired his medium range laser at IronWolf. He was flying backwards and getting closer to the edge of the arena. He fired seveal more shots at IronWolf, but the Mech was to nimble and dodged each time. His jump jet fuel finnaly ran out a few meters from the arena wall. Red Shift landed hard.
   
   # Range: Close
   IronWolf was there the moment Red Shift crashed. He leaped into the air, claws glowing with blue flame.
-  Red Shift fired his heavy lasor at the exposed underbelly of the leaping IronWolf. The shot hit dead center. The Mech twisted in the air.
-  IronWolf and Rex felt the punch to the gut when the heavy lasor hit. An alert flashed in Rex's vision The stored missiles had reached a critical temperature. IronWolf stored its extra missile along the belly of the Mech. An area that also has lighter armor to fit the missile storage.
+  Red Shift fired his heavy laser at the exposed underbelly of the leaping IronWolf. The shot hit dead center. The Mech twisted in the air.
+  IronWolf and Rex felt the punch to the gut when the heavy laser hit. An alert flashed in Rex's vision The stored missiles had reached a critical temperature. IronWolf stored its extra missile along the belly of the Mech. An area that also has lighter armor to fit the missile storage.
   A section of IronWolf's underbelly opened out and dozens of missiles rolled out. the Mech twisting in the air as it rolled away from the missiles it ejected.
   Red Shift's pilot got a moment to realise what happened before the missiles exploded. Red Shift now much closer than IronWolf.
    * Critical hit on Red Shift
@@ -84,7 +84,7 @@
   * IronWolf
     Level 2, 35 Tons
     Approaches: Careful +1; Clever +2; Flashy +1; Forceful 0; Quick +2; Sneaky +3
-    Weapons: 2 Claws, 2 Long Range Missiles, 1 Short Range Heavy lasor.
+    Weapons: 2 Claws, 2 Long Range Missiles, 1 Short Range Heavy laser.
     Skills: 1 Decoy Drone, Jump
     -> battle_one
   
@@ -104,12 +104,12 @@
   The buzzer rang, starting the battle.
   
   IronWolf darts forward, running right at Gurkha. - As soon as the buzzer finishes IronWolf is running forward at full speed, Gurkha in his sights.
-  Gurkha fires four extended range lasers at IronWolf. - Undetered, Gurkha stood his ground, reaching out with his lasor hand and firing. Four small lasers blasing from the stubby arm.
+  Gurkha fires four extended range lasers at IronWolf. - Undetered, Gurkha stood his ground, reaching out with his laser hand and firing. Four small lasers blasing from the stubby arm.
   IronWolf dodges out of the way, but loses some momentum as he reaches Gurkha. IronWolf leaps, claws egnighting into blue flame.
   Gurkha's sword bocks, IronWolfs claws fighting the sword. Little blue fractures start to form along the sword blade.
   Gurkha fires his partical projector cannon. With IronWolf streched up, belly exposed. The blast knocks IronWolf back and onto the ground. A hole in it's belly. A few remaining missiles rolled out and away harmlessly.
   Gurkha rases his sword up, over IronWolf. His blade drops, slicing though the head. causing it to roll a little. The Gurkha pilot could see the inside of the head was hallow. It was a decoy drone.
-  IronWolf, the real one, damaged from the blast went around to flake Gurkha. Not wanting to get cought again, Rex carefully targeted the sword arm with the heavy lasor. The powerful red beam superheated the sword, causing the circuts inside to melt and disconnect. IronWolf leaped again as Gurkha turned around.
+  IronWolf, the real one, damaged from the blast went around to flake Gurkha. Not wanting to get cought again, Rex carefully targeted the sword arm with the heavy laser. The powerful red beam superheated the sword, causing the circuts inside to melt and disconnect. IronWolf leaped again as Gurkha turned around.
   Gurkha lost control of the sword arm. As the mech turned around, the swinging arm made contact with the jumping IronWolf, knocking both mechs to the ground.
   IronWolf was the first to recover. His claws engighted into blue flames again. A claw digging into the Mechs body, digging at the reactor that powered the mech.
   Gurkha thrashed wildly, the four lasers taking wild shots. Then the mech powered down. IronWolfs claws reached the reactor and the mech's safety system shut it down.
@@ -123,7 +123,7 @@
   - (weapon_loadout)
   * "The missiles are an issue."
     IronWolf layed down. "I don't have a lot of storage options, are you sure you need missiles?"
-    "We could replace each Long Range Missile with a heavy lasor. That would give us a powerful close range punch." Rex mused.
+    "We could replace each Long Range Missile with a heavy laser. That would give us a powerful close range punch." Rex mused.
     "That would cost us all of our long range attacks." IronWolf countered. "Anyone that prevents us from getting close like that flying Mech will crush us."
     "Long range lasers lack the punch we need. We could get another partical projector cannon. Or even two of them, shoulder mounted." Rex suggested. "Or, " Rex got an evil smile. "We could replace the top connan with a Gauss Rifle. Then some Hevay lasers in the shoulders."
     "My reactor is not capable of powering all of that." IronWolf said.
