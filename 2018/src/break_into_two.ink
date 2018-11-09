@@ -69,9 +69,9 @@
   # Range: Close
   IronWolf was there the moment Red Shift crashed. He leaped into the air, claws glowing with blue flame.
   Red Shift fired his heavy lasor at the exposed underbelly of the leaping IronWolf. The shot hit dead center. The Mech twisted in the air.
-  IronWolf and Rex felt the punch to the gut when the heavy lasor hit. An alert flashed in Rex's vision The stored missiles had reached a critical tempature. IronWolf stored its extra missile along the belly of the Mech. An area that also has lighter armor to fit the missle storage.
-  A section of IronWolf's underbelly opened out and dozens of missles rolled out. the Mech twisting in the air as it rolled away from the missles it ejected.
-  Red Shift's pilot got a moment to realise what happened before the missles exploded. Red Shift now much closer than IronWolf.
+  IronWolf and Rex felt the punch to the gut when the heavy lasor hit. An alert flashed in Rex's vision The stored missiles had reached a critical temperature. IronWolf stored its extra missile along the belly of the Mech. An area that also has lighter armor to fit the missile storage.
+  A section of IronWolf's underbelly opened out and dozens of missiles rolled out. the Mech twisting in the air as it rolled away from the missiles it ejected.
+  Red Shift's pilot got a moment to realise what happened before the missiles exploded. Red Shift now much closer than IronWolf.
    * Critical hit on Red Shift
    
   -

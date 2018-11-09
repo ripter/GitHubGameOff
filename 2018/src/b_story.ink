@@ -45,7 +45,7 @@
 
   After the match, the crowed started filing out. Some people grumbling and others excited and talking about how they are going to spend their winnings.
 
-  Tammy replayed the last attack on her internal screens. The Camalot has anti-missle countermeasures, so why did he fall for the missile diversion?
+  Tammy replayed the last attack on her internal screens. The Camalot has anti-missile countermeasures, so why did he fall for the missile diversion?
 
   By the time she got up to leave, most of the crowd was gone, leaving only the people that worked for the arena to clean up and wrap up the last bits of business. Tammy made her way down to the arena floor, lingering just at the edges, enough that everyone that was there didn't pay her any attention. She listened to the people working. She was not from this sort of area, but she knew people who worked in garages and she really knew people. She blended in and listened, she followed and watched people talk. She made her way to a bar in the old ruins outside arena.
 

@@ -64,15 +64,15 @@
   * [Active Sensors]
     "These can detect even cloaked Mechs, but they also tell everyone else where you are."
   * [Energy Shild]
-    "A short lasting energy shild that deflects lasor and heat blasts." There is a small video that shows a mech activating the energy shild while another mech shoots six medium lasers at close range. The internal tempature of the shielded mech only rose a quarter of a degree.
+    "A short lasting energy shild that deflects lasor and heat blasts." There is a small video that shows a mech activating the energy shild while another mech shoots six medium lasers at close range. The internal temperature of the shielded mech only rose a quarter of a degree.
   * [Electronic Counter Mesures]
-    "Keep the oponiont from targeting you. Screws up missle guidence systems and decreases the accracy of all computer based targeting."
+    "Keep the oponiont from targeting you. Screws up missile guidence systems and decreases the accracy of all computer based targeting."
 
   -
 
   It was not long until Rex was called up for his first battle. A regional battle, two verses two. Rex and Tammy were selected to reprecent the group.
 
-  IronWolf, decked out with a heavy lasor and two long range missle reacks. Wolfhound, decked out with an extended range heavy lasor and four medium range lasers.
+  IronWolf, decked out with a heavy lasor and two long range missile reacks. Wolfhound, decked out with an extended range heavy lasor and four medium range lasers.
   The areana  started out as a dirt circle a kelometer in diameter. Camera drones flew around and followed each mech. A clear barrior seprates the Mech battle from the audance.
   The annoucer hovers out on a platform. "This is a standard two versus two match. Terrain will be randomly generated at the start of the match. Weapons free sixty seconds after start. Winner gets a cash prize."
 
@@ -109,7 +109,7 @@
 
   Tammy's displays automatically started feeding in the battle information into her view. Showing the most likely location of Red Shift based on the firing. Which told her that Osiris must be targeting her. His missiles would fly right over the forest, while her lasers must blast a clear path to him. She managed to get a quarter around the areana so far, hoping to get close enough that Osiris wouldn't be able to use it's Long Range Missiles and she could use her very effective medium range lasers.
 
-  Flashes of light as a barrage of missiles flew out from the missle of the forest, near the suspected position of Red Shift and IronWolf. The missiles flew wildly, covering a much larger area than they normally would. She got a ping from IronWolf's AI to her Mechs AI, a blue highlight in the distance. Tammy's sensors wouldn't have been able to detect it on their own. A missile had landed close to the Osiris, opening a vary narrow clear shot. She would lose the shot if the Mech moved. Holding her breath, she stopped and fired everything. her AI targeting cordanting with IronWolfs AI. The four medium lasor blased first, burning away everything in the way, but not reaching the distant mech. The extended range hevay lasor focused on the leg join of the Osiris, the leg glowing red from over heating. The Mech tried to take a step, and the weakend join bent and collapsed under the weight. The Osiris fell to one knee.
+  Flashes of light as a barrage of missiles flew out from the missile of the forest, near the suspected position of Red Shift and IronWolf. The missiles flew wildly, covering a much larger area than they normally would. She got a ping from IronWolf's AI to her Mechs AI, a blue highlight in the distance. Tammy's sensors wouldn't have been able to detect it on their own. A missile had landed close to the Osiris, opening a vary narrow clear shot. She would lose the shot if the Mech moved. Holding her breath, she stopped and fired everything. her AI targeting cordanting with IronWolfs AI. The four medium lasor blased first, burning away everything in the way, but not reaching the distant mech. The extended range hevay lasor focused on the leg join of the Osiris, the leg glowing red from over heating. The Mech tried to take a step, and the weakend join bent and collapsed under the weight. The Osiris fell to one knee.
 
   Rex was in tight pursuit of Red Shift. The other Mech running between large trees, and firing off a lasor shot behind it when able. Rex and IronWolf were running, easly doging the half aimed shots taken at it. He should couldn't quite catch up. Every time Rex got close to Red Shift, the mech would change directions, causing IronWolf to lose momentum. With trees breaking all around him, Rex continued to follow Red Shift right out of the forest and heading twords Tammy in her Wolfhound. Rex tried to push the already fully extended throttle. His mind felt like it was becomeing one with IronWolf's, he could feel his hands tingling.
 

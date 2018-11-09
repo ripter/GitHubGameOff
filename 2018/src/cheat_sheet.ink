@@ -52,7 +52,7 @@
 
   Long Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; Disabled at 5 heat units, destroyed at 10 heat units.
   Medium Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; disabled at 7 heat units; destroyed at 10 heat units.
-  Missles explode when heated to 10 heat units.
+  missiles explode when heated to 10 heat units.
 
 * [Guass Rifle]
   Projects a solid core of metal at near light speed using electro magnets.
