@@ -30,19 +30,19 @@
     Overheating, which is protected by heat sinks.
     Weapons destoried/out of ammo.
   + How does Heat work?
-    Heat builds up in both mechs when lasors are fired. Most of the heat conentrated on a single point on the defender.
+    Heat builds up in both mechs when lasers are fired. Most of the heat conentrated on a single point on the defender.
     Weapons will not fire if they are too hot.
     Engines shut down if they get too hot.
     Missiles explode if they get too hot.
     Armor and superstructure can warp and melt if they get too hot.
-    The main goal of lasors is to disable parts of the opoinent or melt though their armor. Setting off missiles inside an oponent mech can be quite the show.
+    The main goal of lasers is to disable parts of the opoinent or melt though their armor. Setting off missiles inside an oponent mech can be quite the show.
     Moving and firing weapons generate heat.
     Heat Sinks will continusally disipate heat.
   + How does power generation work?
     Weapons and movement have a power requirement to work. When the Mech wants to take an action, like moving or fireing, or jumping, it uses up some of the stored power in the mech. It's internal rector is continusally recharging these internal batteries.
     It is possible for Mechs to not have battery systems (a lot of the old generation mech are this way) which limits their action to the max continus output of their reactors.
     The reactor has a set tempature cutoff value and the amount of heat it generates to produce that continues output.
-    This means it is possible for a Mech to do soemthing like fire it's lasors continusally. The reactor will have no issue, but the lasor will eventurally heat up to the point it shuts down or breaks.
+    This means it is possible for a Mech to do soemthing like fire it's lasers continusally. The reactor will have no issue, but the lasor will eventurally heat up to the point it shuts down or breaks.
   + Phsyscal Damage and armor
     Mechs weigh a lot because of all their Equipment and armor. Armor protects the mechs from physcal damage, like IronWolf's physcal claws, or the swords and hatchets some mechs carry.
     The more armor, the slower the acceloration/max speed and the more power required to move the mech.
@@ -66,9 +66,9 @@
   + Stat idea
     Catapult, 65 tons.
     Speed 43 kph - 64 kph.
-    Weapons: 2 Long Range Missiles (ammo for 4 shots total), 4 medium lasors.
+    Weapons: 2 Long Range Missiles (ammo for 4 shots total), 4 medium lasers.
     Equipment: Jump Jets
-    Body: reactor generating 10 power units per turn. Four hard points mount the four medium lasors. Each lasor uses 4 power units per turn to fire and generate 2 heat units.
+    Body: reactor generating 10 power units per turn. Four hard points mount the four medium lasers. Each lasor uses 4 power units per turn to fire and generate 2 heat units.
     Cockpit: Has Armor and Heat meter, internal storage hold pilot.
     Left Arm: Arm is an armored missle rack (one hard point). Armor, heat, meteres. Holds one round inside the rack.
     Right Arm: the arm is just an armored missle rack (one hard point). Holds one round inside the rack.

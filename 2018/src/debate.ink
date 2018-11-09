@@ -31,7 +31,7 @@
   Tammy pulled an agumented file from her core and displayed it in front of her for the salesman. He started scanning the list, making little check marks next to some items and crosses on others.
   "We have most of this ready, things like an extended range focusing crystal are ... a bit more challenging."
 
-  Rex wondered off and was walking down an asile of lasors and cannons that could be mounted to a Mech. There was a wide array of small to large lasors, missiles, and cannons. Rex was trying to figure out the difference between two similar looking heavy lasors when IronWolf opened a channel to his core. "Perfect timing" Rex said to IronWolf. "I'm looking for some weapons for you. Since we wrecked the only one you had. Do you have any restrictions I should know about? I mean with your tranformation and everything. Do I need some special adaptors or something?"
+  Rex wondered off and was walking down an asile of lasers and cannons that could be mounted to a Mech. There was a wide array of small to large lasers, missiles, and cannons. Rex was trying to figure out the difference between two similar looking heavy lasers when IronWolf opened a channel to his core. "Perfect timing" Rex said to IronWolf. "I'm looking for some weapons for you. Since we wrecked the only one you had. Do you have any restrictions I should know about? I mean with your tranformation and everything. Do I need some special adaptors or something?"
   # "I know, I've been watching."
   "I can adapt to work with any ancestor tech." IronWolf said. "Right now I am limited on power."
 
@@ -50,9 +50,9 @@
   * [Buy another partical projector cannon]
     "I think the PPC is still a good bet" Rex said as he added one to his list.
     PPC (Partical Projector Cannon) Level 1, Power usage 55% of power, range long, long charge time, heat medium.
-  * [Buy three small lasors]
-    "Tammy and her Wolfhound was impressive. All those lasors forced my move during the battle."
-    3 Small Lasors, Power usage 45%, short range, short charge time, heat large.
+  * [Buy three small lasers]
+    "Tammy and her Wolfhound was impressive. All those lasers forced my move during the battle."
+    3 Small Lasers, Power usage 45%, short range, short charge time, heat large.
   * [Buy one Heavy Lasor and two Long Range Missile racks.]
     "We need a mix of stragies. Everyone we fight will be different." Rex said.
     1 Heavy Lasor, Power usage 40%, medium range, medum recharge time, heat large.
@@ -64,7 +64,7 @@
   * [Active Sensors]
     "These can detect even cloaked Mechs, but they also tell everyone else where you are."
   * [Energy Shild]
-    "A short lasting energy shild that deflects lasor and heat blasts." There is a small video that shows a mech activating the energy shild while another mech shoots six medium lasors at close range. The internal tempature of the shielded mech only rose a quarter of a degree.
+    "A short lasting energy shild that deflects lasor and heat blasts." There is a small video that shows a mech activating the energy shild while another mech shoots six medium lasers at close range. The internal tempature of the shielded mech only rose a quarter of a degree.
   * [Electronic Counter Mesures]
     "Keep the oponiont from targeting you. Screws up missle guidence systems and decreases the accracy of all computer based targeting."
 
@@ -72,11 +72,11 @@
 
   It was not long until Rex was called up for his first battle. A regional battle, two verses two. Rex and Tammy were selected to reprecent the group.
 
-  IronWolf, decked out with a heavy lasor and two long range missle reacks. Wolfhound, decked out with an extended range heavy lasor and four medium range lasors.
+  IronWolf, decked out with a heavy lasor and two long range missle reacks. Wolfhound, decked out with an extended range heavy lasor and four medium range lasers.
   The areana  started out as a dirt circle a kelometer in diameter. Camera drones flew around and followed each mech. A clear barrior seprates the Mech battle from the audance.
   The annoucer hovers out on a platform. "This is a standard two versus two match. Terrain will be randomly generated at the start of the match. Weapons free sixty seconds after start. Winner gets a cash prize."
 
-  Across from them, Rex could see the other team. They faced a Red Shift, a bipedial mech like Tammy's Wolfhound. Red Shift only carries two medium lasors instead of hands. But the 20 ton mech had a top speed of 151 kph. They also had a 30 ton Osiris featuring only one small lasor, but four racks of long range missiles.
+  Across from them, Rex could see the other team. They faced a Red Shift, a bipedial mech like Tammy's Wolfhound. Red Shift only carries two medium lasers instead of hands. But the 20 ton mech had a top speed of 151 kph. They also had a 30 ton Osiris featuring only one small lasor, but four racks of long range missiles.
 
   The annoucher pulled a lever and a big display showing all the possible areana layout scrolled by.
   "Looks like we are evenly matched." Tammy said to Rex over their private channel. "Red Shift is a speed Mech like you, do you think you can keep him from getting close?"
@@ -98,7 +98,7 @@
   "That wasn't me" Tammy said.
 
   The next lasor did not miss. A lasor got a direct hit on the side of IronWolf. Rex could feel the Mechs pain as his right side started to heat and burn. IronWolf turned around facing Red Shift. Rex pulled the trigger, a volly of long range missiles said over Red Shift and crashed randomly far behind it's target.
-  "No!" Rex shouded. "Lasors!"
+  "No!" Rex shouded. "Lasers!"
 
   Another blast from Red Shift's other arm, sliced down the side of IronWolf. A warning popped up in Rex's vision.
 
@@ -107,7 +107,7 @@
   -
   Red Shift turned to run back in the forest. Rex's leg slipped as he tried to move IronWolf into a chase, the mech falling and slipping in the carbon remains of the trees and plantlife.
 
-  Tammy's displays automatically started feeding in the battle information into her view. Showing the most likely location of Red Shift based on the firing. Which told her that Osiris must be targeting her. His missiles would fly right over the forest, while her lasors must blast a clear path to him. She managed to get a quarter around the areana so far, hoping to get close enough that Osiris wouldn't be able to use it's Long Range Missiles and she could use her very effective medium range lasors.
+  Tammy's displays automatically started feeding in the battle information into her view. Showing the most likely location of Red Shift based on the firing. Which told her that Osiris must be targeting her. His missiles would fly right over the forest, while her lasers must blast a clear path to him. She managed to get a quarter around the areana so far, hoping to get close enough that Osiris wouldn't be able to use it's Long Range Missiles and she could use her very effective medium range lasers.
 
   Flashes of light as a barrage of missiles flew out from the missle of the forest, near the suspected position of Red Shift and IronWolf. The missiles flew wildly, covering a much larger area than they normally would. She got a ping from IronWolf's AI to her Mechs AI, a blue highlight in the distance. Tammy's sensors wouldn't have been able to detect it on their own. A missile had landed close to the Osiris, opening a vary narrow clear shot. She would lose the shot if the Mech moved. Holding her breath, she stopped and fired everything. her AI targeting cordanting with IronWolfs AI. The four medium lasor blased first, burning away everything in the way, but not reaching the distant mech. The extended range hevay lasor focused on the leg join of the Osiris, the leg glowing red from over heating. The Mech tried to take a step, and the weakend join bent and collapsed under the weight. The Osiris fell to one knee.
 

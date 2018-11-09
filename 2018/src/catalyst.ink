@@ -94,7 +94,7 @@
     -
     The two mechs stood facing each other from each end of the makeshift arena. The scared and burnt earth where they both lost the Atlas. The trenches meant the smaller IronWolf could find cover, even without lots of trees for large boulders.
     
-    Tammy's Wolfhound appears to have the advantage. A humanoid bipedal filled with lasors. Rex's IronWolf on the other hand had only a single PPC cannon mounted on the top.
+    Tammy's Wolfhound appears to have the advantage. A humanoid bipedal filled with lasers. Rex's IronWolf on the other hand had only a single PPC cannon mounted on the top.
     With both pilots ready and in position, Phil counted down the match."
     
     As soon as the timer reaches zero, Tammy blasts with her long range heavy arm lasor and started moving forward. The lasor focused on the large partical projector cannon on IronWolf's mach. The lasor stuck with persision on the connecting join, causing it to heat up rapidaly. IronWolf yelped in mechanical exaust and tried to move out of the way. The weak joint no longer able to properly support the gun warped and bent under the pressure and heat.
@@ -106,10 +106,10 @@
     * [Hide from the sensor scan] # sneak
       "Stop" Rex pulled his own limbs back, causing the Mech to slow and stop. "Lets use her sensors aganst her." Rex said.
       Rex waited for the ping, then moved quickly down the trench. When the ping came again he moved back to his original position. Tammy's Mech changing directions to match the new ping. 
-      When the next ping came, Rex and IronWolf was out of the trench directly behind Tammy's WolfHound, just too far away. When Tammy's ping hit, her Mech swinged around in panic as all five lasors fired on the spot.
+      When the next ping came, Rex and IronWolf was out of the trench directly behind Tammy's WolfHound, just too far away. When Tammy's ping hit, her Mech swinged around in panic as all five lasers fired on the spot.
     * [Run faster down the trench] # speed
       Rex tried to move his own limbs faster as they ran down the trench. Speed is the key here, she will back away from the trenches, so this is IronWolfs best chance to get in close enought to use his claws.
-      Lasors blasted overhead, Tammy's Mech walking slowly in the direction of Rex. The Radar showed this trench intersects another one that is right next to Tammy and her mech. Lasors fired again as he reached the intersection. Instead of staying in the trench, IronWolf jumped out and up on the plane. He quickly dashed across and into the other trench before Tammy could fire again.
+      Lasers blasted overhead, Tammy's Mech walking slowly in the direction of Rex. The Radar showed this trench intersects another one that is right next to Tammy and her mech. Lasers fired again as he reached the intersection. Instead of staying in the trench, IronWolf jumped out and up on the plane. He quickly dashed across and into the other trench before Tammy could fire again.
       
       -
       IronWolf leaped, long black claws extending from it's feet, a large cannon bent at an odd angle on it's back. IronWolf landed directly into the side of WolfHoud, kocking the bipedal Mech to the ground. Claws raked the Mech. WolfHoud held up its cannon arm to protect the cockpit from the claws. IronWolfs claws tour into the metal of the arm, destroying the lasor projector and causing a short in the older Mech.

@@ -19,13 +19,13 @@
     Weight 35 tons
     Aspects:
     Approaches: Careful +1; Clever +2; Flashy +2; Forceful +3; Quick +1; Sneaky 0;
-    Weapons: 4 Medium Range Lasors, 1 extended range large lasor.
+    Weapons: 4 Medium Range Lasers, 1 extended range large lasor.
   + CopperBanshee - NextGen Mech, belongs to Clan Kirby
   + Thunderbolt - belongs to Clan Lyran
   + Awesome - belongs to Clan Lyran
   + Axman - Clan MRB; Captured in setup_one
   + Blackjack - Clan MRB; Captured in setup_one
-  + Red Shift - 20 ton, arena mech. Fast with two small lasors.
+  + Red Shift - 20 ton, arena mech. Fast with two small lasers.
   + Osiris - 30 ton, arena mech. 4 LRM, 1 small lasor.
 
   Tora - Clan MRB; Phil
@@ -36,8 +36,8 @@
   Aurigan - Runs the underground tournaments.
   - -> top
 
-* [Lasors]
-  Lasors have a short effective range. Technically they can reach a long distance, but the amount of heat transfered reduces by distance squared.
+* [Lasers]
+  Lasers have a short effective range. Technically they can reach a long distance, but the amount of heat transfered reduces by distance squared.
   Short range means 100% of the power used to fire turns into heat on the defender.
   Medum range means  10% of the power used is turned into heat on the defending mech.
   Long range  means   0% of the power will turn into heat on the target.

@@ -35,7 +35,7 @@
   * Red Shift
     20 Tons
     Approaches: Careful +1; Clever +1; Flashy +2; Forceful +3; Quick +2; Sneaky 0;
-    Weapons: 1 Medium Range lasors, 1 short range heavy lasor.
+    Weapons: 1 Medium Range lasers, 1 short range heavy lasor.
     Skills: Jump jets
     ->battle_one
   * [Wait for match] -> battle_one_ready
@@ -91,10 +91,10 @@
   * Gurkha
     35 Tons
     Approaches: Careful +1; Clever +1; Flashy +2; Forceful +3; Quick +2; Sneaky 0;
-    Weapons: Sword. 1 Extended Range PPC, 4 Extended Range small lasors.
+    Weapons: Sword. 1 Extended Range PPC, 4 Extended Range small lasers.
     Skills: Jump jets
     
-    This bipedal Mech has a sword for a right hand, and four small lasors for a left hand. It's chest holds a partical projector cannon.
+    This bipedal Mech has a sword for a right hand, and four small lasers for a left hand. It's chest holds a partical projector cannon.
     ->battle_one
   * [Wait for match] -> battle_two_ready
    
@@ -104,7 +104,7 @@
   The buzzer rang, starting the battle.
   
   IronWolf darts forward, running right at Gurkha. - As soon as the buzzer finishes IronWolf is running forward at full speed, Gurkha in his sights.
-  Gurkha fires four extended range lasors at IronWolf. - Undetered, Gurkha stood his ground, reaching out with his lasor hand and firing. Four small lasors blasing from the stubby arm.
+  Gurkha fires four extended range lasers at IronWolf. - Undetered, Gurkha stood his ground, reaching out with his lasor hand and firing. Four small lasers blasing from the stubby arm.
   IronWolf dodges out of the way, but loses some momentum as he reaches Gurkha. IronWolf leaps, claws egnighting into blue flame.
   Gurkha's sword bocks, IronWolfs claws fighting the sword. Little blue fractures start to form along the sword blade.
   Gurkha fires his partical projector cannon. With IronWolf streched up, belly exposed. The blast knocks IronWolf back and onto the ground. A hole in it's belly. A few remaining missiles rolled out and away harmlessly.
@@ -112,7 +112,7 @@
   IronWolf, the real one, damaged from the blast went around to flake Gurkha. Not wanting to get cought again, Rex carefully targeted the sword arm with the heavy lasor. The powerful red beam superheated the sword, causing the circuts inside to melt and disconnect. IronWolf leaped again as Gurkha turned around.
   Gurkha lost control of the sword arm. As the mech turned around, the swinging arm made contact with the jumping IronWolf, knocking both mechs to the ground.
   IronWolf was the first to recover. His claws engighted into blue flames again. A claw digging into the Mechs body, digging at the reactor that powered the mech.
-  Gurkha thrashed wildly, the four lasors taking wild shots. Then the mech powered down. IronWolfs claws reached the reactor and the mech's safety system shut it down.
+  Gurkha thrashed wildly, the four lasers taking wild shots. Then the mech powered down. IronWolfs claws reached the reactor and the mech's safety system shut it down.
   
   The buzzer rang over the arena.
   "Winner Rex!" said the announcer. "What an amazing day! I will see you all next week. Will Rex continue his winning streak or is it all beginners luck. Find out next time!"
@@ -125,9 +125,9 @@
     IronWolf layed down. "I don't have a lot of storage options, are you sure you need missiles?"
     "We could replace each Long Range Missile with a heavy lasor. That would give us a powerful close range punch." Rex mused.
     "That would cost us all of our long range attacks." IronWolf countered. "Anyone that prevents us from getting close like that flying Mech will crush us."
-    "Long range lasors lack the punch we need. We could get another partical projector cannon. Or even two of them, shoulder mounted." Rex suggested. "Or, " Rex got an evil smile. "We could replace the top connan with a Gauss Rifle. Then some Hevay lasors in the shoulders."
+    "Long range lasers lack the punch we need. We could get another partical projector cannon. Or even two of them, shoulder mounted." Rex suggested. "Or, " Rex got an evil smile. "We could replace the top connan with a Gauss Rifle. Then some Hevay lasers in the shoulders."
     "My reactor is not capable of powering all of that." IronWolf said.
-    "We will just have to work something out." Rex said. "The Gauss Rifle is an amazing long range weapon. And the large lasors can be used medium or short range."
+    "We will just have to work something out." Rex said. "The Gauss Rifle is an amazing long range weapon. And the large lasers can be used medium or short range."
     "Guass Rifles are expensive, require ammo, and a lot of power to fire. Plus they need a long space for the cannon."
     -> weapon_loadout
   * "We have to protect our weak spot, the underbelly."

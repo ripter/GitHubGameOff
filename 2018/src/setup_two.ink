@@ -81,8 +81,8 @@
   The room filled with the agumented projection of the local terran. Out along a tree line, pillers of smoke could be seen. The trees burning from multiple spots, indicating a random blaze.
   Will typed in a command and the view zoomed in and focused on a Wolfhound, a short 35 ton mech.
   "No" Tammy said simply.
-  They watched as the Mech jogged though the trees, blasting at random with its lasors. As they watched, a window filled with stats about the Mech.
-  "Five lasors and heavy armor that acts as a heat sink. That slow Atlas knocked itself out every time it fired its lasors. This thing is crusing at a good seventy kelometers per hour and firing like crazy." Phil said. "I would rather have this Mech by my side than the walking target. Willson, get the crew ready, Tammy is about to get her first Mech."
+  They watched as the Mech jogged though the trees, blasting at random with its lasers. As they watched, a window filled with stats about the Mech.
+  "Five lasers and heavy armor that acts as a heat sink. That slow Atlas knocked itself out every time it fired its lasers. This thing is crusing at a good seventy kelometers per hour and firing like crazy." Phil said. "I would rather have this Mech by my side than the walking target. Willson, get the crew ready, Tammy is about to get her first Mech."
   "Yes sir" said Willson.
   
   -
