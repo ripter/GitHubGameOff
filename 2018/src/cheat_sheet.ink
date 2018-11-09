@@ -42,6 +42,18 @@
   Medum range means  10% of the power used is turned into heat on the defending mech.
   Long range  means   0% of the power will turn into heat on the target.
 
-  Small lasor: 2 power unit to fire, generate 1 heat units.
-  Medium Lasor: 4 power units to fire for the turn. Generates 2 heat units.
-  Heavy Lasor: 8 power units to fire, generate 6 heat units.
+  Small lasor: 2 power unit to fire; generates 1 heat unit; shut down at 3 heat units, destroyed at 4 heat units.
+  Medium Lasor: 4 power units to fire for the turn. Generates 2 heat units; shut down at 12 heat units; destroyed at 17 heat units.
+  Heavy Lasor: 8 power units to fire; generates 6 heat units; shut down at 20 heat units, destroyed at 30 heat units.
+
+* [Missiles]
+  Missiles are a Long/Medium range weapon that does mostly physcal damage. It also causes a lot of collateral damage.
+  Missiles can be distrupted or even stopped by countermeasures.
+
+  Long Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; Disabled at 5 heat units, destroyed at 10 heat units.
+  Medium Range Missiles: 2 power units to fire; 1 time unit to re-load; generates 1 heat unit; disabled at 7 heat units; destroyed at 10 heat units.
+  Missles explode when heated to 10 heat units.
+
+* [Guass Rifle]
+  Projects a solid core of metal at near light speed using electro magnets.
+  Requires 10 power units to fire; Reload time is 2 time units; generates 3 heat units; disabled at 15 heat units, destroyed at 20 heat units.
