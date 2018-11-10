@@ -21,18 +21,24 @@ VAR defender_heat_dissipate = 3
   Two mechs, the challenger, an {attacker} and the defender, a {defender} stand across the battle arena from each other. Each Mech standing 10 meters tall and weighing 65 tons. The buzzer rings over the battle channel, starting the battle.
   The Axman's signature move is it's Hatcet for a left hand. 
   The Catapult's signature move it's the two missile racks mounded on it's shoulders.
-  <- display_turn
   
+  // Turn 1
+  <- display_turn
   <- fire_lrm(defender, defender_power, defender_heat)
   <- run_full_speed(attacker, attacker_power, attacker_heat)
+ 
   * [Next Turn]
   - <- turn_post
-  ~ range = MEDIUM
   
+  
+  // Turn 2
+  ~ range = MEDIUM
   <- display_turn
   
   The first rack of 5 missiles land. <>
-  <- attempt_dodge(attacker, attacker_power, attacker_heat)
+  <- attempt_dodge(attacker)
+  The second rack of 5 missiles land. <>
+  <- attempt_dodge(attacker)
   
   
   * [Next Turn]
@@ -50,8 +56,12 @@ VAR defender_heat_dissipate = 3
   -> DONE
   
 = turn_post
-  <- recharge("Catapult", defender_power, defender_power_regen, defender_heat, defender_heat_dissipate)
-  <- recharge("Axman", attacker_power, attacker_power_regen, attacker_heat, attacker_heat_dissipate)
+  <- recharge(attacker)
+  <- recharge(defender)
+  -> DONE
+= turn_post_draft_one
+  <- recharge_draft_one("Catapult", defender_power, defender_power_regen, defender_heat, defender_heat_dissipate)
+  <- recharge_draft_one("Axman", attacker_power, attacker_power_regen, attacker_heat, attacker_heat_dissipate)
   
   -> DONE
   
@@ -59,7 +69,24 @@ VAR defender_heat_dissipate = 3
   {name} Status: POWER: {power}; HEAT {heat}
   -> DONE
 
-= recharge(name, ref power, ref power_regen, ref heat, ref heat_dissipate)
+= recharge(name)
+  ~ temp added_power = 0
+  ~ temp removed_heat = 0
+  // get the right numbers based on name
+  {
+  - name == attacker:
+    ~ added_power = attacker_power_regen
+    ~ removed_heat = attacker_heat_dissipate
+  - name == defender:
+    ~ added_power = defender_power_regen
+    ~ removed_heat = defender_heat_dissipate
+  }
+  // Update based on name.
+  ~ update_power(name, added_power)
+  ~ update_heat(name, -removed_heat)
+  {name}'s {~fusion reactor|reactor|generator} added {added_power} POWER while the heat sinks dissipated {removed_heat} HEAT.
+  -> DONE
+= recharge_draft_one(name, ref power, ref power_regen, ref heat, ref heat_dissipate)
   {name}'s reactor regenerated {power_regen} POWER. It's heat sinks dissipated {heat_dissipate} HEAT.
   ~ power += power_regen
   ~ heat -= heat_dissipate
@@ -79,17 +106,30 @@ VAR defender_heat_dissipate = 3
   ~ power -= 10
   ~ heat += 5
   -> DONE
-= attempt_dodge(name, ref power, ref heat)
+= attempt_dodge(name)
+  {did_dodge(attacker_power):
+    {attacker} manages zig zags around the missiles as they land around him.
+  - else:
+    {attacker} attempts to dodge, but is not fast enough. Several missiles strike, destorying a heat sink.
+    ~ attacker_heat_dissipate -= 1
+  }
+  -> DONE
+= attempt_dodge_draft_one(name, ref power)
+  ~ temp hit_result = "{~hit|miss}"
   {name} attempts to doge,
   {power >= 2:
     <> using 2 POWER.
     ~ power -= 2
   - else:
     but does not have enough POWER.
+    ~ hit_result = "hit"
   }
   
-  The doge is successful.
-  {name} stumbles and just is not quite fast enough. The attack hits.
+  {hit_result == "miss":
+    {name} manages to doge the attack.
+  - else:
+    {name} attempts to dodge, but is too slow.
+  }
   -> DONE
   
 = cap_stats(ref power, max_power, ref heat)
@@ -100,11 +140,6 @@ VAR defender_heat_dissipate = 3
     ~ heat = 0
   }
   -> DONE
-
-
-
-
-  
   
 = start_draft_one
   Battle Starts!
@@ -197,4 +232,45 @@ VAR defender_heat_dissipate = 3
   {name} has {power} POWER avialable and {heat} HEAT buildup.
   -> DONE
   
+ 
+ 
+// Functions Down below! 
+ 
+ 
+== function update_power(name, delta)
+{
+- name == attacker:
+  ~ attacker_power += delta
+  ~ return attacker_power
+- name == defender:
+  ~ defender_power += delta
+  ~ return defender_power
+}
+== function update_heat(name, delta)
+{
+- name == attacker:
+  ~ attacker_heat = min_zero(delta + attacker_heat)
+  ~ return attacker_heat
+- name == defender:
+  ~ defender_heat = min_zero(delta + defender_heat)
+  ~ return defender_heat
+}
+== function min_zero(value)
+{value < 0:
+  ~ return 0
+}
+~ return value
+
   
+== function did_dodge(ref power)
+  // 2 POWER required to dodge missiles.
+  {power <= 2:
+    ~ return false
+  }
+  
+  ~ temp hit_result = "{~hit|miss}"
+  
+  {hit_result == "miss":
+    ~ return true
+  }
+  ~ return false
