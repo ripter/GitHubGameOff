@@ -2,13 +2,16 @@ This battle features two mech fighting. {attacker} and {defender}.
 -> start
 -> END
 
+
 == start
 
 // Turn 1
 <- mech_attempt_to_launch_missiles(defender, attacker, 2)
-
 -> player_turn ->
 
+// Turn 2
+<- mech_turn_start(defender)
+<- mech_turn_start(attacker)
 Add more content
 -> DONE
 
@@ -44,8 +47,18 @@ at {to}.
   {not laser_possible(from, laser_count):
     Attempts to fire a laser, but does not have enough power.
     -> DONE
+  - else:
+    ~ prop_power(from, -laser_fire_cost(laser_count))
   }
-  {from} fires {laser_count} lasers at {to}. Crimson flashes of light flash across the battle field. (actually that does not make sense, if you saw the flash of light it would be a terrable laser.)
+  Fire Cost: {laser_count}x {laser_fire_cost(laser_count)} POWER
+  ~ temp damage = laser_damage(laser_count)
+  ~ temp waste = laser_fire_waste(laser_count)
+  ~ prop_heat(from, waste)
+  ~ prop_heat(to, damage)
+
+  {from} fires {laser_count} laser{laser_count > 1:s} at {range} range. Crimson flashes of light flash across the battle field. (actually that does not make sense, if you saw the flash of light it would be a terrable laser.)
+  {to} gains {damage} HEAT from the blast.
+  {from} gains {waste} HEAT as waste from the laser.
 ->->
 
 
@@ -66,29 +79,40 @@ at {to}.
   }
   ->->
 
+== mech_turn_start(who)
+  ~ temp regen = prop_power_regen(who, 0)
+  ~ temp heatsinks = prop_heatsinks(who, 0)
+  ~ temp power = prop_power(who, 0)
+  ~ temp heat = prop_heat(who, 0)
+  ~ prop_power(who, regen)
+  ~ prop_heat(who, -heatsinks)
+  {who}'s reactor generated {regen} POWER, and  heatsinks removed {heatsinks} HEAT. Giving {who} a total POWER: {prop_power(who, 0)}, HEAT: {prop_heat(who, 0)} 
+//   {who} has {heatsinks} heatsinks; and regenerates {regen} power per turn.
+  -> DONE
+
+
 
 //
 // Combat functions
 VAR attacker_missiles_in_air = 0
 VAR defender_missiles_in_air = 0
 == function missile_launch_start(name, racks)
-~ temp power = prop_power(name, 0)
-// Power up the missiles
-{missile_launch_possible(power, racks):
-  ~ prop_power(name, missile_launch_cost(racks))
-- else:
-  ~ return 0
-}
-
-// Launch the missiles.
-{
-- name == attacker:
-  ~ attacker_missiles_in_air += racks
-  ~ return attacker_missiles_in_air
-- name == defender:
-  ~ defender_missiles_in_air += racks
-  ~ return defender_missiles_in_air
-}
+  ~ temp power = prop_power(name, 0)
+  // Power up the missiles
+  {missile_launch_possible(power, racks):
+    ~ prop_power(name, missile_launch_cost(racks))
+  - else:
+    ~ return 0
+  }
+  // Launch the missiles.
+  {
+  - name == attacker:
+    ~ attacker_missiles_in_air += racks
+    ~ return attacker_missiles_in_air
+  - name == defender:
+    ~ defender_missiles_in_air += racks
+    ~ return defender_missiles_in_air
+  }
 
 == function missile_launch_possible(value, racks)
 {value >= missile_launch_cost(racks):
@@ -109,9 +133,22 @@ VAR defender_missiles_in_air = 0
   ~ return defender_missiles_in_air
 }
 
-== function laser_possible(name, laser_count)
-  ~ return prop_power(name, 0) >= laser_count * 4
-
+== function laser_possible(name, count)
+  ~ return prop_power(name, 0) >= laser_fire_cost(count)
+== function laser_fire_cost(count)
+  ~ return count * 4
+== function laser_fire_waste(count)
+  ~ return laser_fire_cost(count) / 4
+== function laser_damage(count)
+  ~ temp base = laser_fire_cost(count)
+  {
+  - range == SHORT:
+    ~ return base
+  - range == MEDIUM:
+    ~ return base / 2
+  - range == LONG:
+    ~ return base / 4
+  }
 
 //
 // Movement Functions
@@ -143,14 +180,18 @@ VAR range_turn_delta = 0
 //
 // Mech Data
 LIST MECHS = Catapult, Axman
-LIST WEAPONS = Laser, Missiles, Autocannon, Hatchet
+// LIST WEAPONS = Laser, Missiles, Autocannon, Hatchet
 VAR attacker = Axman
 VAR attacker_power = 5
-VAR attacker_heatsinks = 6
+VAR attacker_power_regen = 5
+VAR attacker_heat = 0
+VAR attacker_heatsinks = 3
 
 VAR defender = Catapult
 VAR defender_power = 5
-VAR defender_heatsinks = 6
+VAR defender_power_regen = 5
+VAR defender_heat = 0
+VAR defender_heatsinks = 3
 == function prop_power(name, delta)
 {
 - name == attacker:
@@ -159,6 +200,33 @@ VAR defender_heatsinks = 6
 - name == defender:
   ~ defender_power += delta
   ~ return defender_power
+}
+== function prop_power_regen(name, delta)
+{
+- name == attacker:
+  ~ attacker_power_regen += delta
+  ~ return attacker_power_regen
+- name == defender:
+  ~ defender_power_regen += delta
+  ~ return defender_power_regen
+}
+== function prop_heat(name, delta)
+{
+- name == attacker:
+  ~ attacker_heat = min_zero(delta + attacker_heat)
+  ~ return attacker_heat
+- name == defender:
+  ~ defender_heat += min_zero(delta + defender_heat)
+  ~ return defender_heat
+}
+== function prop_heatsinks(name, delta)
+{
+- name == attacker:
+  ~ attacker_heatsinks += delta
+  ~ return attacker_heatsinks
+- name == defender:
+  ~ defender_heatsinks += delta
+  ~ return defender_heatsinks
 }
 
 == function template(name, delta)
