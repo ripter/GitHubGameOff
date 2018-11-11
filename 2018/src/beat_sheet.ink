@@ -43,7 +43,7 @@ There are 16 beats, meaning if each beat were of equal length (which they should
   Rex was sitting next to a campfire along a quite crystal lake. No signs of humans or civilation could be seen for miles an every direction. Rations cooked on the campfire while Rex was focused on the display projected into his field of view by his cybernetic eyes. On the display he could see the Mech Warrior Grand Tournament.
   Two teams of Mech start on either side of an area. As the announcer speaks, the area transforms into a rocky scene with a river running though it.
   The area used solid holigrams to create the battle scape. Keeping the audance and areana safe.
-  Team Lyran, Mechs all painted with blue battle colors, qucikly spreads across the battle field. Their tank, a Banshee. This 95 ton mech was built for close combat, runs at full speed twords the rivers that divides the areana. it has a loadout of two Arm Actuators, each powering an arm. Flamers sounding the Mech, causing it to look like it is wearing a coat of flames when active.
+  Team Lyran, Mechs all painted with blue battle colors, qucikly spreads across the battle field. Their tank, a Banshee. This 95 ton mech was built for close combat, runs at full speed towards the rivers that divides the areana. it has a loadout of two Arm Actuators, each powering an arm. Flamers sounding the Mech, causing it to look like it is wearing a coat of flames when active.
   The other two Mech on the Lyran side quickly activate stealth and dissapeared except for a faint shimmer of light. Acording to the announcer they were a Black Knight, a laser heavy Mech known for overheating; And an Orion loaded out with Long Range Missiles.
   ->->
   

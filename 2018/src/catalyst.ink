@@ -86,7 +86,7 @@
     Phil smiled "You and Tammy will have a Mech battle, in your new Mechs. Whoever wins, gets to go home with us, whoever loses stays here for a year."
     Whilson's eyes grew into sausors. "Captian Sir, We .."
     Phil shot Willson a look and he quickly closed his mouth.
-    Phil held out a hand twords Rex. "Deal?"
+    Phil held out a hand towards Rex. "Deal?"
     Rex shaked his hand firmly "Deal."
     Phil turned to Tammy, hand still out, "and you?"
     Tammy shook his hand quickly, "You better beleave it."
@@ -100,7 +100,7 @@
     As soon as the timer reaches zero, Tammy blasts with her long range heavy arm laser and started moving forward. The laser focused on the large partical projector cannon on IronWolf's mach. The laser stuck with persision on the connecting join, causing it to heat up rapidaly. IronWolf yelped in mechanical exaust and tried to move out of the way. The weak joint no longer able to properly support the gun warped and bent under the pressure and heat.
     
     Rex could feel a slight burning sensation along his back. He was in his virtual agumented reality cockpit inside of IronWolf. He saw as the Mech saw, and to a limited extent felt what the Mech felt. Including the searing pain on his back.
-    IronWolf doged to the left and ran twords a large rut cut into the dirt. IronWolf jumped down into the ditch as another laser beam blased overhead. A radar display floated in Rex's vision, showing the trench and Tammy as she slowed her mech down to a walk. Rex herd a ping sound.
+    IronWolf doged to the left and ran towards a large rut cut into the dirt. IronWolf jumped down into the ditch as another laser beam blased overhead. A radar display floated in Rex's vision, showing the trench and Tammy as she slowed her mech down to a walk. Rex herd a ping sound.
     "She is doing an active scan" IronWolf said in responsise to the half question.
     
     * [Hide from the sensor scan] # sneak

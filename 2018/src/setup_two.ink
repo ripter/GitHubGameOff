@@ -98,7 +98,7 @@
   That stupid boxy cockpit was all the way at the top of the Mech, on it's shoulders like a head. Tammy thought to herself as she apprached from behind. She was sure it would detect her before she reached the release latch.
   The plan, accodring to Phil, was that he would keep the Mech from running away with Long Range Missiles.  When she protested that the Mech could still just crush her, Phil shrugged and said "You should probably keep that in mind while you are out there."
   The Mech Wolfhound was sitting in the river. It's legs bend up into it's chest, arms wrapped around it's knees.
-  Trying to move with the sounds of nature, Tammy slipped into the river and made her way up behind the Wolfhound. The river had a swft flow twords the machine. Tammy found a good size branch and floated down the river to the robot. She positioned herself so when the tree branch hit the Mech, she jumped/reached just high enough to catch a ladder rung on the back of the Mech.
+  Trying to move with the sounds of nature, Tammy slipped into the river and made her way up behind the Wolfhound. The river had a swft flow towards the machine. Tammy found a good size branch and floated down the river to the robot. She positioned herself so when the tree branch hit the Mech, she jumped/reached just high enough to catch a ladder rung on the back of the Mech.
   The Wolfhound moved his right arm and reached behind him. The massive laser, large enough that Tammy could walk inside of it, scrapped along the Mechs back as it smashed the treebranch into peices small enough that they flowed around the Mech and further down the river.
   
   "Do you think she'll do it?" Willson asked Phil over their private channel.

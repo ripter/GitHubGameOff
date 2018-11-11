@@ -63,7 +63,7 @@
   IronWolf tracked the jump mid air. It was too high for IronWolf to jump. Rex hoped that the Mech's jumpt jets were only short range.
   
   # Range: Medium
-  IronWolf kept running twords the flying Mech, but it easily kept back. He was too close for his missile to hit that flying target. He was too faraway for his heavy laser or claws.
+  IronWolf kept running towards the flying Mech, but it easily kept back. He was too close for his missile to hit that flying target. He was too faraway for his heavy laser or claws.
   Red Shift fired his medium range laser at IronWolf. He was flying backwards and getting closer to the edge of the arena. He fired seveal more shots at IronWolf, but the Mech was to nimble and dodged each time. His jump jet fuel finnaly ran out a few meters from the arena wall. Red Shift landed hard.
   
   # Range: Close

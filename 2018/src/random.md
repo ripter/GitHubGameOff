@@ -1,3 +1,21 @@
+# Ideas about distance and power.
+For all of this, we will assume a standard mech, perfectly average with all values at the base level. Once we have this, we can make special adjustments and scaling as needed.
+
+Distance between the two fighting mechs determine their fighting range. Long Range, Medium Range, and Short Range. Every 5 POWER changes the range by 1 in either direction. This is a total movement spent by each mech.
+>>> Attacker uses 3 power to move forward, range is still long.
+>>> Defender uses 2 power to move forward, range is now medium because a total of 5 power was used moving forward (aka moving towards each other)
+
+
+## Range Weapons
+* Long Range
+** Missiles, Guass Rifles
+* Medium Range
+** Lasers, Autocannon
+* Short Range
+** Melee Weapons, Lasers, Autocannons
+
+
+---
 what if real world paid like loot boxes in games like overwatch?
 
 maybe there are some real world examples that are paid like that.  slot machines

@@ -25,7 +25,7 @@
   -
   "Hey buddy" Rex said with an edge of nerviousness in his voice.
   The Wolf turned its head a little, looking at Rex.
-  "I would love to stop, but you see that giant over there?" Rex slowly reached out an arm and pointed. The Wolf looked in the direction for a moment. "I have to get to him before those people do" Rex pointed to the Drop Ship. The wolf looked again, sighed, stood up, and then started to walk twords the people.
+  "I would love to stop, but you see that giant over there?" Rex slowly reached out an arm and pointed. The Wolf looked in the direction for a moment. "I have to get to him before those people do" Rex pointed to the Drop Ship. The wolf looked again, sighed, stood up, and then started to walk towards the people.
   "Whoa wait!" Rex shouted.
   The wolf stopped, and looked back at him.
   "Can you understand me?"
@@ -36,7 +36,7 @@
   * [Scan the people exiting the dropship]
     Rex scans the ship and it's crew as they exit the Drop Ship. Five total, two in Mechs and three walking in light armor and personal jump jets. It was a pretty standard crew for a Mech hunt. A few soon to be pilots and a couple of seniors to make sure they don't get in over their head.
     Rex's mind clouded with anger as he thought about those kids, able to buy there way here. He would show them, he thought. He would get that Atlas.
-  * [Move quickly twords the Atlas]
+  * [Move quickly towards the Atlas]
     Rex wasted no time in moving to the Atlas. He would just have to hope that metal wolf creature understood him. Or at least the for the creature to not intrupt him again. After this was over, Rex told himself he was going to figure out how the wolf kept sneaking up on him.
   
   -
@@ -46,9 +46,9 @@
   The flash of light as the hulk of a machine fired made Rex shield his eyes. When he could see again he had spots in his vision and the air around him was signifiantly hotter. 
   The attacking Mech unleashed another volly of missiles, this time the Atlas's missile defence took down the missiles before they hit. Two laser blasts his the Atlas along the side while it was distracted with the missiles.
   Rex saw the top of the Mech start to move, he had seen that attack before. Rex quickly pressed himself to the ground, trying to dig into the dirt as much as he could.
-  The top of the Atlas started to spin, while it's feet started talking twords the attackers. As the spinning top of the Mech reached speed, it unleashed continus blasts of all four lasers. Creating a beam of death that cut though everything in it's path. As the Atlas walked, the ground was uneven, causing the beams to slice in arcs, sometimes cutting the ground and others firing into the sky.
+  The top of the Atlas started to spin, while it's feet started talking towards the attackers. As the spinning top of the Mech reached speed, it unleashed continus blasts of all four lasers. Creating a beam of death that cut though everything in it's path. As the Atlas walked, the ground was uneven, causing the beams to slice in arcs, sometimes cutting the ground and others firing into the sky.
   As Rex watches the carnage, he spots the three kids in armor jumping their way to the Atlas. Rex knew it was now or never, he was much closer to the Mech, but he didn't have armor or personal jump jets.
-  Rex abandoned all sense of steath and made a bold run twords the Atlas. It's laser barrage finnaly over, it's guns red hot from over heating and the spinning slowing to a stop. The Mech glowed red hot at the head sinks in it's body. That was a powerful but stupid attack. Now that the Atlas had overheated, it was a sitting duck.
+  Rex abandoned all sense of steath and made a bold run towards the Atlas. It's laser barrage finnaly over, it's guns red hot from over heating and the spinning slowing to a stop. The Mech glowed red hot at the head sinks in it's body. That was a powerful but stupid attack. Now that the Atlas had overheated, it was a sitting duck.
   Rex reached the foot of the Atlas. A latter went up the left leg and to the torso, where the cockpit was located. Rex started climbing up the leg.
   A bullet shot rang next to Rex's ear causing him to lose grip on the ladder for a moment. We quickly hugged to it for dear life. Rex looked back and could see one the armored kids just reaching the foot of the Mech.
   "Who the hell are you?" A voice boomed out. "This is my Mech" said a female voice as the kid activated her personal jump jets and passed Rex on the ladder. She was jumping straight for the cockpit.

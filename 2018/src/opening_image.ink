@@ -5,7 +5,7 @@
   Each team had three Mechs, giant multi-ton fighting machines. Leftover from the old wars. The arena was large and featured a river running though the center and a dense forest on one side, with large rocks and dirt on the other side.
   The landscape of the Arena was fake of course, designed to give each side an even balance of risk and reward.
   Clan Kirby featured some strange Mechs, namely a 95 ton Mech named Banshee that featured a deadly punch and what appeared to be a cloak of flames. He won the last battle by punching a hole in the back of another Mech.
-  The Banshee rushed as soon as the fight began, running at full speed twords Clan Lyran's Thunderbolt. As he did so, Clan Lyran's Mech Awesome moved into the desert side of the arena and opened fire with it's parical projector cannon on the Banshee. The beam of energy just missed as the Banshee charged forward, gaining speed.
+  The Banshee rushed as soon as the fight began, running at full speed towards Clan Lyran's Thunderbolt. As he did so, Clan Lyran's Mech Awesome moved into the desert side of the arena and opened fire with it's parical projector cannon on the Banshee. The beam of energy just missed as the Banshee charged forward, gaining speed.
   Before Mech Awesome could fire another shot, it was barraged with an array of long range missiles from Clan Kirby's Dervish. This caused the Mech to step back and lose focus on the Banshee.
   Clan Lyran's Thunderbold jumps into the air, it's twin gattling guns raining bullets on the rushing Banshee. And then it was gone.
   Even the annoucer sounded shocked. When the smoke cleared there was nothing for a moment, then a brilliant flash of ligth were the Banshee once stood.
