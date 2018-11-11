@@ -1,19 +1,82 @@
-# Ideas about distance and power.
+# Ideas
 For all of this, we will assume a standard mech, perfectly average with all values at the base level. Once we have this, we can make special adjustments and scaling as needed.
 
+## Ideas about distance and power.
 Distance between the two fighting mechs determine their fighting range. Long Range, Medium Range, and Short Range. Every 5 POWER changes the range by 1 in either direction. This is a total movement spent by each mech.
 >>> Attacker uses 3 power to move forward, range is still long.
 >>> Defender uses 2 power to move forward, range is now medium because a total of 5 power was used moving forward (aka moving towards each other)
 
+## Ideas about Health, Damage, Heat, etc
+A Mech can keep fighting until it reaches 20 HEAT. At that point it loses and the fight is over. The Mech automatically shuts down to avoid exploding.
 
-## Range Weapons
-* Long Range
-** Missiles, Guass Rifles
-* Medium Range
-** Lasers, Autocannon
-* Short Range
-** Melee Weapons, Lasers, Autocannons
+There is no health or damage. Combat is about balancing POWER and HEAT.
+Physical attacks like Missiles, Guass Rifles, Autocannon, and melee weapons destroy HEATSINKs. If a mech has no more HEATSINKs, then it will not only not dissipate any more heat, but the fusion reactor will produce 1 HEAT per turn. (This reactor heat is negated by having at least one heatsink.)
+Energy attacks like Particle Projectors and Lasers turn POWER into HEAT on the opponent.
 
+Unlike physical weapons that are ineffective or dodge-able and specific ranges, energy weapons always hit with a target lock. Energy weapons do loser power over distance.
+
+* Long Range Weapons:
+  * Physical: Missiles, Gauss Rifle
+  * Energy: Particle Projector
+* Medium Range Weapons:
+  * Physical: Gauss Rifle, Autocannon
+  * Energy: Laser
+* Short Range Weapons:
+  * Physical: Melee, Autocannon
+  * Energy: Laser
+
+### Long Range
+* Missiles
+  * Physical, destroys a heatsink if hit.
+  * Can only be fired when at LONG range.
+  * Takes 1 turn to reach target.
+  * If target is in MEDIUM range, there is a chance for the other mech to spend POWER and dodge the missiles.
+  * If target is in LONG range, missiles hit.
+  * If target is in SHORT range, missiles miss.
+  * Takes 1 turn to reload missiles.
+  * Takes very little power, long waiting time.
+* Particle Projector
+  * Energy, increases the target's heat.
+  * LONG range.
+  * Takes a large amount of power.
+  * Generates some HEAT when fired.
+* Gauss Rifle
+  * Physical, destroy heatsink if it hits.
+  * LONG or MEDIUM
+  * Takes 1 turn to reload the slug.
+  * Takes a large amount of power.
+
+### Medium Range
+* Gauss Rifle
+  * Physical, destroy heatsink if it hits.
+  * LONG or MEDIUM
+  * Takes 1 turn to reload the slug.
+  * Takes a large amount of power.
+* Laser
+  * Energy, adds HEAT to the target.
+  * MEDIUM or SHORT
+  * Generates some HEAT to fire.
+* Autocannon
+  * Physical, destroys heatsink if it hits.
+  * MEDIUM or SHORT
+  * Takes 1 turn to reload rounds.
+  * Takes little energy
+
+### Short Range
+* Melee
+  * Physical, destroys heatsink if it hits.
+  * No reload time, no ammo.
+  * SHORT
+  * Takes little energy.
+* Laser
+  * Energy, adds HEAT to the target.
+  * MEDIUM or SHORT
+  * Generates some HEAT to fire.
+* Autocannon
+  * Physical, destroys heatsink if it hits.
+  * MEDIUM or SHORT
+  * Takes 1 turn to reload rounds.
+  * Takes little energy
 
 ---
 what if real world paid like loot boxes in games like overwatch?
