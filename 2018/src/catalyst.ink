@@ -108,7 +108,7 @@
       Rex waited for the ping, then moved quickly down the trench. When the ping came again he moved back to his original position. Tammy's Mech changing directions to match the new ping. 
       When the next ping came, Rex and IronWolf was out of the trench directly behind Tammy's WolfHound, just too far away. When Tammy's ping hit, her Mech swinged around in panic as all five lasers fired on the spot.
     * [Run faster down the trench] # speed
-      Rex tried to move his own limbs faster as they ran down the trench. Speed is the key here, she will back away from the trenches, so this is IronWolfs best chance to get in close enought to use his claws.
+      Rex tried to move his own limbs faster as they ran down the trench. Speed is the key here, she will back away from the trenches, so this is IronWolfs best chance to get in close enough to use his claws.
       Lasers blasted overhead, Tammy's Mech walking slowly in the direction of Rex. The Radar showed this trench intersects another one that is right next to Tammy and her mech. Lasers fired again as he reached the intersection. Instead of staying in the trench, IronWolf jumped out and up on the plane. He quickly dashed across and into the other trench before Tammy could fire again.
       
       -
@@ -127,7 +127,7 @@
       
       "If I remember correctly" Tammy said, "Only the winner gets to go back, and this gimpy boy did not win."
       "You didn't win either" Rex retorted.
-      Willson moved the truck under IronWolf, lifing the Mech off the ground. "Captian says he'll make enought money from all the repairs you both are going to owe him that he can bring you both along." Willson drove off with the truck and IronWolf.
+      Willson moved the truck under IronWolf, lifing the Mech off the ground. "Captian says he'll make enough money from all the repairs you both are going to owe him that he can bring you both along." Willson drove off with the truck and IronWolf.
       
       Rex and Tammy started their walk back to the drop ship. Both refusing to talk to the other. About half way there, Willson drove past on his way to pick up Tammy's mech Wolfhound. By the time the pair made it to the ship, both Mechs had been loaded into the ship and all flights checks complete.
      

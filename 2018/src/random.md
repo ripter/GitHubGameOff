@@ -27,4 +27,4 @@ Fans are limited by a number if factors including; still living, know about the 
 
 So, to maximize sales, you need a lot of health, employed, people who make a lot of money.
 
-todo: graph over time that shows the profit change over time as they factors go io and down. 
+todo: graph over time that shows the profit change over time as they factors go io and down.

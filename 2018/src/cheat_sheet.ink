@@ -39,8 +39,11 @@
 * [Lasers]
   Lasers have a short effective range. Technically they can reach a long distance, but the amount of heat transferred reduces by distance squared.
   Short range means 100% of the power used to fire turns into heat on the defender.
-  Medium range means  10% of the power used is turned into heat on the defending mech.
-  Long range  means   0% of the power will turn into heat on the target.
+//  Medium range means  10% of the power used is turned into heat on the defending mech.
+  Medium range decreases by half rounded down, because it's more fun than the other methods.
+//  Long range  means   0% of the power will turn into heat on the target.
+  Long range means a quarter rounded down, because it's more fun. Most cases this rounding down means it will be 0.
+
 
   Small laser: 2 power unit to fire; generates 1 heat unit; shut down at 3 heat units, destroyed at 4 heat units.
   Medium Laser: 4 power units to fire for the turn. Generates 2 heat units; shut down at 12 heat units; destroyed at 17 heat units.
