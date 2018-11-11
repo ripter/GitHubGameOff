@@ -15,6 +15,14 @@ Energy attacks like Particle Projectors and Lasers turn POWER into HEAT on the o
 
 Unlike physical weapons that are ineffective or dodge-able and specific ranges, energy weapons always hit with a target lock. Energy weapons do loser power over distance.
 
+Laser weapons work on a scale, Heaver lasers are able to use larger amounts of power to generate more heat in the target, while light lasers take less power, but provide little heat.
+
+### Hardpoints
+How many weapons can a mech hold? How many heatsinks?
+Every Weapon or Equipment that can be mounted on a mech is also half a heatsink! The downside is that when two heatsinks are destroyed, so is the thing the heatsinks are attached to are also destoyed.
+Hardpoints are fixed by the frame, weight, and size of the mech.
+
+### Weapons
 * Long Range Weapons:
   * Physical: Missiles, Gauss Rifle
   * Energy: Particle Projector
