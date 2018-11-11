@@ -96,9 +96,9 @@ VAR defender_heat_dissipate = 3
   <- display_turn_draft_three
 
   <- charge_back(defender)
-  {attacker} POWER: {get_power(attacker)}
+  
   <- fire_medium_laser(attacker, defender)
-
+  {attacker} POWER: {get_power(attacker)}
 
   * [Next Turn]
 //   - <- turn_post
