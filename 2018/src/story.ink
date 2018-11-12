@@ -6,6 +6,8 @@ INCLUDE debate.ink
 INCLUDE break_into_two.ink
 INCLUDE b_story.ink
 INCLUDE fun_and_games.ink
+INCLUDE midpoint.ink
+
 
 
 
@@ -19,5 +21,6 @@ by Chris Richards
 // -> debate.start ->
 // -> break_into_two.start ->
 // -> b_story.start ->
--> fun_and_games.start ->
+// -> fun_and_games.start ->
+-> midpoint.start ->
 -> DONE
