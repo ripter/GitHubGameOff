@@ -12,6 +12,14 @@ This battle features two mech fighting. {attacker} and {defender}.
 // Turn 2
 <- mech_turn_start(defender)
 <- mech_turn_start(attacker)
+-> mech_land_missiles(defender, attacker, 2) ->
+{
+- range == MEDIUM:
+  Medium range
+- range == LONG:
+  <- mech_attempt_to_launch_missiles(defender, attacker, 2)
+}
+-> player_turn ->
 Add more content
 -> DONE
 
@@ -28,20 +36,32 @@ Add more content
   + {laser_possible(name, 1)} Fire Laser
     -> mech_attempt_fire_laser(name, defender, 1) ->
     -> player_turn
+  + [Stats]
+    POWER: {prop_power(name, 0)}
+    HEAT: {prop_heat(name, 0)}
+    -> player_turn
   + [End Turn]
     ->->
 
   
 == mech_attempt_to_launch_missiles(from, to, racks)
-~ temp racks_launched = missile_launch_start(from, racks)
-{from} launches <>
-{racks > 1: 
-  {racks_launched} racks of missiles <>
-- else:
-  a missle rack <>
-}
-at {to}.
--> DONE
+  ~ temp racks_launched = missile_launch_start(from, racks)
+  {from} launches <>
+  {racks > 1: 
+    {racks} racks of missiles <>
+  - else:
+    a missle rack <>
+  }
+  at {to}.
+  -> DONE
+== mech_land_missiles(from, to, racks)
+  {racks * 5} missiles rain down on {to}.
+  
+  + {move_dodge_possible(to)} [{move_dodge_cost()} POWER: Attempt to dodge]
+    -> mech_attempt_dodge(to, racks) ->
+    ->->
+  + [Brace for the missiles to hit]
+  ->->
 
 == mech_attempt_fire_laser(from, to, laser_count)
   {not laser_possible(from, laser_count):
@@ -77,6 +97,17 @@ at {to}.
   {old_range != range:
    moving into {range} range.
   }
+  ->->
+== mech_attempt_dodge(name, racks)
+  ~ temp power = prop_power(name, 0)
+  ~ temp delta_power = -racks * move_dodge_cost()
+  {not move_dodge_possible(name):
+    Not enought POWER to dodge.
+    ->->
+  - else :
+    ~ prop_power(name, -move_dodge_cost())
+  }
+  {name} manages to dodge the incomming attack.
   ->->
 
 == mech_turn_start(who)
@@ -166,7 +197,10 @@ VAR range_turn_delta = 0
   }
 == function move_reset_delta()
   ~ range_turn_delta = 0
-  
+== function move_dodge_possible(name)
+  ~ return prop_power(name, 0) >= move_dodge_cost()
+== function move_dodge_cost()
+  ~ return 2
 
 //
 // Math Functions
