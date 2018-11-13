@@ -1,6 +1,11 @@
 # Ideas
 For all of this, we will assume a standard mech, perfectly average with all values at the base level. Once we have this, we can make special adjustments and scaling as needed.
 
+## Ideas about Environment and Water
+Standing in water, dissipates heat every turn. How much it dissipates depends on how much of the mech is underwater.
+
+Environmental effects like rain, a desert, etc can affect how equipment works during battle. For example in a hot desert heatsinks don't work as well, dissipating less heat than normal.
+
 ## Ideas about distance and power.
 Distance between the two fighting mechs determine their fighting range. Long Range, Medium Range, and Short Range. Every 5 POWER changes the range by 1 in either direction. This is a total movement spent by each mech.
 >>> Attacker uses 3 power to move forward, range is still long.
