@@ -7,6 +7,8 @@ INCLUDE break_into_two.ink
 INCLUDE b_story.ink
 INCLUDE fun_and_games.ink
 INCLUDE midpoint.ink
+INCLUDE bad_guys_close_in.ink
+
 
 
 
@@ -22,5 +24,6 @@ by Chris Richards
 // -> break_into_two.start ->
 // -> b_story.start ->
 // -> fun_and_games.start ->
--> midpoint.start ->
+// -> midpoint.start ->
+-> bad_guys_close_in.start ->
 -> DONE
