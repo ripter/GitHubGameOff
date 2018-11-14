@@ -120,8 +120,8 @@
 
   Rex and Tammy are taken to the winners circle, crowds cheering them and the annoucer awarding them their metals. It was everything Rex dreamed it would be. All the screaming fans, everyone trying to ask him questions and wanting to spend time with him. Afterward they went out to enjoy some of the money they earned.
 
-  That night at one of the clubs a scessy looking man aproached Rex and handing him a card. ( but like, future scifi version of a card. Like a contact or something.) 
-  
+  That night at one of the clubs a scessy looking man aproached Rex and handing him a card. ( but like, future scifi version of a card. Like a contact or something.)
+
   "Saw you at the fight tonight" the man said. His car said his name was Leroy. "You have quite an intresting Mech there."
   "Thanks" Rex said and took a long drink, eyes lockedon he man.
   "Are you sighed up with a clan yet?" He asked, "or do you perfer merchanry, maybe one on one combat?"
@@ -134,3 +134,18 @@
   "What's the catch?" Rex asked suspecusly.
   "Who said there is a catch? This isn't some gene in the bottle deal." Leroy turned his whole body to face Rex and looked into his eyes. "It's simple. Winning fighters not only win money for themselves, but also for the team they represent. I was impressed with your Mech and that claw attack. As you know Clan Kirby almost won this years champonship with a mech that punched though other mechs. You win, we all make money and maybe you can be our secret weapon in the next championship tournament."
   ->->
+
+= theme_and_notes
+  The point I want to make with this story is about how we see ourselves in relation to our mind and body. (point is the wrong word I think.)
+  Most people assume they are in complete control of their bodies. For the most part our body does what we want, so it makes sense that we are in control. Some people have noticed and written about over the years that we do not have complete control. They describe things like demons or angles that force them to act. A great modern day example of this is The Oatmeal's charecter the Blerch. A fat little deamon that is lazy and fights against what The Oatmeal wants to accomplish. (There are many other refrences go back as far as the greeks.)
+
+  The Blerch is a good way of thinking about it, but I think it is still backwards.
+  We don't have a Blerch that tries to get us to do bad/lazy things. We are the Anti-Blerch trying to tell the body what to do. We are the deamon, the part we think of when we think of ourselves. Some call it a soul, I call the the frontal cortex (named because right now thats the part of the brain I understand to be responsable for everything we call the self.)
+
+  The old style Mech reflect the old understanding. A human/soul/frontal cortex is in complete control of the mech. It doesn't move without direct control.
+
+  The new style Mechs reflect the new understanding. The body is not a dumb machine, but a syphisticated system of emotions and survival instincts.
+
+  Most of the time, the body listens, most of the time you only ask simple things of it, like brush teeth, goto work. Things you do without thinking about how you are doing it. Sometimes the body reacts on it's own, blerting out a comment you wish it hadn't said, or altering the messages and signals to be more emotional than the sender actualy put into it.
+
+  
