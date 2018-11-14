@@ -69,7 +69,7 @@
   "Neither do I, but when I get a job from the head office, I take it." Willson said.
 
   ->->
-= writers_notes:
+= writers_notes
   I'm not sure what to do here. So the bad guys are supposed to defeat the player, and I guess that happened with the loss of IronWolf and the match. But it's not enough yet.
 
   ->->

@@ -8,6 +8,8 @@ INCLUDE b_story.ink
 INCLUDE fun_and_games.ink
 INCLUDE midpoint.ink
 INCLUDE bad_guys_close_in.ink
+INCLUDE all_is_lost.ink
+
 
 
 
@@ -25,5 +27,6 @@ by Chris Richards
 // -> b_story.start ->
 // -> fun_and_games.start ->
 // -> midpoint.start ->
--> bad_guys_close_in.start ->
+// -> bad_guys_close_in.start ->
+-> all_is_lost.start ->
 -> DONE
