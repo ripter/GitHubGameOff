@@ -12,5 +12,8 @@
   "Good job" she said. "I need you to do that as slow as possible a few more times for me. Can you handle that?" she asked.
   Rex focused everything on his breathing. Taking a long controlled deep breath, holding it for a moment, then just as slowly letting it out. His mind and heart calmed.
   
-  
+  After several physical tests and some scans, Dr Jones was ready.
+  "You have a few options to replace your missing arm. Normally we would just regrow the missing limb naturaly. It does mean another year before the arm is full size, and it would be a lot weaker unless you spent time exercising it back up. But you have that interface cap where your arm should go. We can't regrow your new one with that in place. We would have to remove it."
+  Rex instinctavly touched the cap. It was his interface with IronWolf. In a way it felt like it was part of IronWolf as much as it was a part of himself.
+  "A year? I can not afford to wait a year. I have to go back to work tomorrow." Rex protested.
   ->->
