@@ -11,7 +11,71 @@ Distance between the two fighting mechs determine their fighting range. Long Ran
 >>> Attacker uses 3 power to move forward, range is still long.
 >>> Defender uses 2 power to move forward, range is now medium because a total of 5 power was used moving forward (aka moving towards each other)
 
-## Ideas about Health, Damage, Heat, etc
+## Energy, Heat, Physical Damage (Draft 2)
+The match is won by overheating your opponent before they overheat you.
+Reactor generates POWER every turn, heatsinks remove HEAT every turn.
+The number of Weapons/Equipment determines how many heatsinks are provided. ~Typically there is a 2-1 ratio as the baseline.~ Or it could be the waste HEAT + 1 is the baseline formula for heatsinks. Weapons can always cover their own waste and a little more. Makes sense that they would be build that way. I also like the idea that the base mech determines the number of heatsinks, and that limits the weapons, instead of the other way around. Plus equipment and abilities will adjust the final numbers.
+Every action has a POWER cost to perform, including things like dodge or cloak or jump jets.
+There are two types of weapons: Energy and Projectile.
+
+### Energy
+These weapons turn energy spent into heat damage on an opponent. These weapons are not 100% efficient so some of the energy is turned into waste HEAT on the mech that fired the laser. As an example, our baseline laser takes 4 POWER to charge is 3 HEAT Damage, 1 HEAT waste. This base line sets up the base laser formula. Then it can be scaled and modified to create other energy weapons. It would keep the formula and scaling the same.
+Energy weapons lose energy over distance.
+
+* Base
+  * 4 POWER to fire.
+  * 3 HEAT Damage dealt to the mech hit.
+  * 1 HEAT wasted on the mech that fired.
+  * Damage / 2 per range after close. (Medium divides the final damage by two, Long divides it by 4)
+  * Chance to dodge: 0
+  * Type: Instant
+  * Number of heat sinks provided/required: 2
+
+### Projectile
+These weapons use a small amount of POWER because everything costs POWER. But instead of dealing HEAT damage, they deal physical damage in the form of destroying heatsinks. You can not win with physical projectiles alone, to win you need to overheat the opponent, not deal physical damage. Projectile weapons carry a limited number of rounds ~and must be reloaded~.
+Example baseline projectile might be missiles. 1 POWER to launch. Takes 1 Turn to reach target, Destroys 1 heatsink, 3 Rounds.
+
+* Base
+  * 1 POWER and 1 Ammo to fire.
+  * 1 destroyed heat sink as damage
+  * 0 HEAT waste
+  * Chance to dodge is 10%
+  * Type: Delayed Hit +1 Turn
+  * Number of heat sinks provided/required: 1
+
+### Mechs
+Mechs come in all shapes and forms. A little bit like pokemon. The baseline mech is a 65 ton Catapult. It features both Missiles and Lasers, all at baseline levels.
+
+* Base
+  * Fusion Power Reactor that generates 5 POWER per turn.
+  * Provides 10 heatsinks that remove 10 HEAT per turn.
+  * Overheats at 20 HEAT.
+  * Batteries can store 10 POWER total. Each turn the reactor puts power into the batteries, and during a turn the mech pulls power out of the batteries.
+  * 5 POWER to change range in 1 turn. (Full Run)
+
+
+### Abilities, Equipment, and Other
+There are a limited number of variables that are used in the different calculations. Each of these parts of the formula can be altered by abilities, skills, equipment, whatever you want to call it. Since it's a battle tech style game, equipment works well.
+
+An Example: Jump Jets. 4 POWER + 2 HEAT to add 1 height unit. 2 POWER + 1 HEAT to maintain existing height. Effect of being 1 unit height above opponent. All opponent dodge change is -45%, and your dodge chance is +10%. Range is increased by 1 for each height unit. So a mech using Jump Jets, can never be in close range to a mech on the ground. Even directly under the other mech, they would still be at medium range.
+
+* Variables
+  * POWER generation rate per turn.
+  * HEAT dissipation rate per turn.
+  * Max POWER limit (aka battery)
+  * Max HEAT limit (aka overheating)
+  * Range or distance between the mechs.
+  * Cost to fire a weapon, POWER and/or Ammo.
+  * Type and amount of damage dealt from weapons. Does it add HEAT or lower dissipation rate? By how much?
+  * Chance to dodge an attack.
+  * Number of heatsinks when the mech is 100% (In a way, the heatsinks are the mechs health.)
+  * Projectiles in air.
+  * Power requires for a full run (aka change the range in one turn.)
+  * Position in 3D(-ish) space.
+  * Energy cost type: One time like weapons, or every turn like jump jets, cloaks, power melee weapons
+
+
+## Ideas about Health, Damage, Heat, etc (Draft 1)
 A Mech can keep fighting until it reaches 20 HEAT. At that point it loses and the fight is over. The Mech automatically shuts down to avoid exploding.
 
 There is no health or damage. Combat is about balancing POWER and HEAT.

@@ -16,4 +16,14 @@
   "You have a few options to replace your missing arm. Normally we would just regrow the missing limb naturaly. It does mean another year before the arm is full size, and it would be a lot weaker unless you spent time exercising it back up. But you have that interface cap where your arm should go. We can't regrow your new one with that in place. We would have to remove it."
   Rex instinctavly touched the cap. It was his interface with IronWolf. In a way it felt like it was part of IronWolf as much as it was a part of himself.
   "A year? I can not afford to wait a year. I have to go back to work tomorrow." Rex protested.
+  
+  "Hmm, well" The doctor said. "You could get someone to print you a new arm. I am assuming here that you know how to interface to that port you had installed."
+  Rex's face revealed his shock at the thought.
+  Dr Jone noticed and elabrated. "It was the only method before we could regrow limbs. If you can beleave it, humans used to use sticks and metal for limbs and joints in the ancent times. It's rare these days, but I know of a few places that still make prosthedics."
+  Rex imagined a giant robot paw, like IronWolf's only scaled down to his size. "Uh thanks. are these prosthetics expensive? Could they make me one today?" Rex tried to move forward and get the emberssaning thougts out of his mind.
+  "Go and ask them yourself" Dr Jone said. She transfered the location of several shops to Rex's core.
+  
+  The problem, Rex quickly discovered, was that prostectics was expensive. Made even more expensive because Rex did not know how his port interface worked. He would have to get someone to map it before anyone could start on the printed arm.
+  
+  
   ->->

@@ -147,5 +147,6 @@
   The new style Mechs reflect the new understanding. The body is not a dumb machine, but a syphisticated system of emotions and survival instincts.
 
   Most of the time, the body listens, most of the time you only ask simple things of it, like brush teeth, goto work. Things you do without thinking about how you are doing it. Sometimes the body reacts on it's own, blerting out a comment you wish it hadn't said, or altering the messages and signals to be more emotional than the sender actualy put into it.
+  ->->
 
   
