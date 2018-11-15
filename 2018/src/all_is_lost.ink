@@ -25,5 +25,14 @@
   
   The problem, Rex quickly discovered, was that prostectics was expensive. Made even more expensive because Rex did not know how his port interface worked. He would have to get someone to map it before anyone could start on the printed arm.
   
+  Back at the clan MRB, Rex sat on his cot, looking over his bitcoins. He was broke. He felt like an idoit. He had almost all of his bitcoins in a wallet provided by Aurigan clan. Everything was tied up with IronWolf, and he was gone. Everything was gone.
+  
+  Tammy sat down next to him on the couch. "When can you pilot again?" She asked.
+  Rex couldn't look up at her. "Re-growning the arm is a long process." he said.
+  "Oh" Tammy said. "You have money from all your winnings right?"
+  "Well, the think is" rex said. "I kept my wallet with all my winnings in IronWolf." Rex put his head in his hands. "I can't afford to wait for a replacement arm, I can not afford to buy a prostetic  arm, I can not pilot without an arm, I can not work, or pay for a place to stay or even get IronWolf back.
+  Tammy put a hand on Rex's back. He didn't shrug her off. "We will get IronWolf back. You can do it, you just need to hang in there a little bit longer. Yeah you've hit a rough patch, but you got a job here with us, and we care about you."
+  Rex shrugged off Tammy's hand. "You do not get it. You have both of your arms. You have your family and your mech. You are a whole person." Rex was crying now. "I am just some freak. Without IronWolf I am nothing. I was not a good pilot because of him, he was a good mech dispite of me."
+  
   
   ->->

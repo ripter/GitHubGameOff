@@ -74,6 +74,25 @@ An Example: Jump Jets. 4 POWER + 2 HEAT to add 1 height unit. 2 POWER + 1 HEAT t
   * Position in 3D(-ish) space.
   * Energy cost type: One time like weapons, or every turn like jump jets, cloaks, power melee weapons
 
+* Mech
+  * Current POWER, HEAT, HEATSINKS
+  * POWER Regeneration rate.
+  * Max POWER
+  * HEAT dissipation rate.
+  * Max HEAT
+  * Speed, Power over Range.
+  * Position/distance on the battle field.
+  * Dodge chance based on power/speed.
+* Weapon
+  * Cost to fire, POWER, HEAT, AMMO.
+  * Damage dealt at range to HEAT or HEATSINKS
+  * Number of heatsinks requires to equip the weapon.
+  * Dodge chance
+* Environment
+  * End turn affects to POWER, HEAT, or AMMO.
+  * Missiles in the air? (or should this be on the weapon?)
+  * Things that affect Dodge chance (like smoke or obstacles.)
+
 
 ## Ideas about Health, Damage, Heat, etc (Draft 1)
 A Mech can keep fighting until it reaches 20 HEAT. At that point it loses and the fight is over. The Mech automatically shuts down to avoid exploding.
