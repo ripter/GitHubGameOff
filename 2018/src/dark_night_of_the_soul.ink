@@ -19,6 +19,17 @@
   "In the Blackjack, the AI is there sure, but you are in control. It does what you tell it to do." Rex said. "IronWolf is not like that, it's more like we share the body. He has a far stronger control than I do, but for the most part he agrees with my desisions and we move as if we were one, not two." Rex tried again. "I drive the Blackjack, but I become part of IronWolf."
   "Does that mean you feel the hits?" Tammy asked.
   "Yeah. but not that bad. It's like a feel the echo or ghost of what the body feels." Rex said.
+  
+  * Practice Battle
+  -
+  Tammy and Rex faced each other, Wolfhound piloted by Tammy, and Blackjack piloted by Rex. 
+  
+  Battle starts and Rex pushing the throttle fill forward. The Mech learches forward. The AI trying to keep the Mech standing upright the legs quickly moved from zero to max. The mech was slow.
+  Tammy launched two racks of missiles at Rex. They flew through the air and targeted the stumbling mech. Rex was unable to take evasive manuvers, both racks of missiles hitting him.
+  Rex's mech fell to one knees. The Mech's AI struggling to keep the mech upright while also putting full power into running forward. Instead of doing either the giant machine shuttered in place as another set of missiles rained down on him.
+  In a rush Rex tried pulling back and then forward on the throttle, and moving the joystick around wildly. He was furisy and yelling inside the mech.
+  Tammy walked closer and ended the fight with a flash of her lasers. Rex's mech over heated and shutdown.
+  
   ->->
 
 = start_draft_one

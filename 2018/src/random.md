@@ -18,6 +18,9 @@ The number of Weapons/Equipment determines how many heatsinks are provided. ~Typ
 Every action has a POWER cost to perform, including things like dodge or cloak or jump jets.
 There are two types of weapons: Energy and Projectile.
 
+#### Dodge
+Every attack has both a a chance to detect, and a chance to dodge. This includes all weapon types, physical and energy. Missiles tend to be easier to detect and thus easier to dodge. Energy weapons are much harder to detect, but easier to dodge if you do detect them.
+
 ### Energy
 These weapons turn energy spent into heat damage on an opponent. These weapons are not 100% efficient so some of the energy is turned into waste HEAT on the mech that fired the laser. As an example, our baseline laser takes 4 POWER to charge is 3 HEAT Damage, 1 HEAT waste. This base line sets up the base laser formula. Then it can be scaled and modified to create other energy weapons. It would keep the formula and scaling the same.
 Energy weapons lose energy over distance.
@@ -35,12 +38,14 @@ Energy weapons lose energy over distance.
 These weapons use a small amount of POWER because everything costs POWER. But instead of dealing HEAT damage, they deal physical damage in the form of destroying heatsinks. You can not win with physical projectiles alone, to win you need to overheat the opponent, not deal physical damage. Projectile weapons carry a limited number of rounds ~and must be reloaded~.
 Example baseline projectile might be missiles. 1 POWER to launch. Takes 1 Turn to reach target, Destroys 1 heatsink, 3 Rounds.
 
+Thinking about it more, get rid of the delayed attack mechanic completely, keep the recharge (so projectiles do cost less POWER, but they spread it over two turns.)
+
 * Base
   * 1 POWER and 1 Ammo to fire.
   * 1 destroyed heat sink as damage
   * 0 HEAT waste
   * Chance to dodge is 10%
-  * Type: Delayed Hit +1 Turn
+  * ~Type: Delayed Hit +1 Turn~
   * Number of heat sinks provided/required: 1
 
 ### Mechs
