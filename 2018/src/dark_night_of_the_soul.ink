@@ -20,7 +20,7 @@
   "Does that mean you feel the hits?" Tammy asked.
   "Yeah. but not that bad. It's like a feel the echo or ghost of what the body feels." Rex said.
   
-  * Practice Battle
+  * [Practice Battle]
   -
   Tammy and Rex faced each other, Wolfhound piloted by Tammy, and Blackjack piloted by Rex. 
   
@@ -30,6 +30,13 @@
   In a rush Rex tried pulling back and then forward on the throttle, and moving the joystick around wildly. He was furisy and yelling inside the mech.
   Tammy walked closer and ended the fight with a flash of her lasers. Rex's mech over heated and shutdown.
   
+  * [After battle]
+  -
+  Tammy did not make it half way to Rex and his mech before he exited the cockpit and ran off. Leaving Tammy with the two mechs. "What the hell happened?" She said outloud to no one. After a moment she sighed and used her core to call up the mech transport. It would load the overheated mech back in it's spot in the garage.
+  
+  Rex ran out of there. He Ran, his face stinging from the rage and frustration and fear. He wasn't even paying attention to where he was running. After he could no longer breath, he stopped and threw up in the street. He was in the city, not a part of it he knew. But he could see the tell tail signs of resturants, bussiness, and shops. This area was more run down. The shops and resturants havely advertising their alchole and drugs. All night VR cafies with smoke billowing out of them like opiom dens of the ancent humans.
+  An escape, that is what Rex wanted at the moment. His life had fallen apart after he came so close. He risked everything, and he had won. Or he thought he was winning. Instead it was blind luck, and his luck had run out.
+  Following his craving Rex walked into a dark den filled with strange smelling vapers.
   ->->
 
 = start_draft_one
