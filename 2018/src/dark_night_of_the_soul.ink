@@ -36,7 +36,38 @@
   
   Rex ran out of there. He Ran, his face stinging from the rage and frustration and fear. He wasn't even paying attention to where he was running. After he could no longer breath, he stopped and threw up in the street. He was in the city, not a part of it he knew. But he could see the tell tail signs of resturants, bussiness, and shops. This area was more run down. The shops and resturants havely advertising their alchole and drugs. All night VR cafies with smoke billowing out of them like opiom dens of the ancent humans.
   An escape, that is what Rex wanted at the moment. His life had fallen apart after he came so close. He risked everything, and he had won. Or he thought he was winning. Instead it was blind luck, and his luck had run out.
-  Following his craving Rex walked into a dark den filled with strange smelling vapers.
+  Following his craving Rex walked into a dark den filled with strange smelling vapers. Everything in this place was much cheaper than Rex had expected. His meger little money could last him quite a while.
+  
+  Over a week later, when Rex was trying to figure out how much money he could pawn his arm for, in order to buy more drugs, that he had a sudden moment of clarity. Or maybe a little voice had been yelling all this time and he only now noticed it. He could not continue like this. Eventually he would run out of money, and while he was not sad, he also was unfulled. Rex still wanted to be a champon, but his gref and guilt had overwhelmed him, leading him down this dark path. Rex thoguht that he should call Tammy or Phil. He should work or something, he thought and drifted off to sleep again.
+  
+  Rex woke up being half dragged in the open streets. The cold air stung his nose and mouth. His very very dry nose and mouth. Rex tried to look around to see what was happening. Someone was dragging him out. "What is going on?" He slired out.
+  The figure carrying him stopped, letting him slump down on his butt. Sitting in the street Rex could see a face now. It was Tammy. "Hey I need some money" was all Rex could say. He wanted to say so much. He wanted to say he missed her and phil, and IronWolf most of all. he wanted to say that he had to get IronWolf back. That he would find a way. He wanted to say a million things. But what he actually said was. "Hey I need some money."
+  "You are disgusting" Tammy said. "I wanted to leave you to rot. I still have not figured out your scam with that IronWolf mech, but one thing is clear. You are not a mech pilot."
+  Rex wanted to say he was sorry. That he was a fruad, come clean to her about IronWolf and the special interface. Or maybe he had told her all of that. Which parts were the ones he wanted to tell and which ones were the one he already told?
+  Tammy slapped Rex across the face. "Get you shit together you stung out junkie. We invested a lot into you, and Phil still thinks he can make it back. One way or another." She put her shoulder under his armpet again and carried him into a waiting car. The Automated driver taking them back the Clam MRB's tiny garage and home.
+  Tammy dropped Rex on the floor unsarmonusally. Everyone else was already in bed asleep. Tammy left him there, turned off the lights, and went to her own bed. Leaving Rex to lay in the dark, in the middile of a hard concrete floor covered in oil and greese. Rex agreed with her.
+  
+  * [That night]
+  -
+  Rex was unable to sleep as the drugs and chemical levels in his body tried to normalize for the first time in almost two weeks. His mind was racing, leaving the world to move at a snales pace. Rex could see the time displayed over his vision from his core. Each second took forever to pass. Rex would try to think of something to distract himself, and when he would look back at the clock, not even a second would have passed.
+  This thoughts and memories played and replied looping together and back again as he laied on the cold floor. His body feeling like it was spinning at hight speeds, celentrical force pulling at his extremities, causing his feelings to build there. He remembered IronWolf and wondered what was actually keeping him from getting IronWolf back. Did the mech even want to come back? He probably felt like Rex had abandonded him. Rex should have broke in to save IronWolf the night it happened. Now, now it had been so long that IronWolf would surely hate Rex. As he should. Rex really had abanonded his best and only friend in the world. Which was sadder Rex wondered. The boy who's only friend is an AI warmachine, or the boy who abandoned who friend to kidnappers.
+  He did not want to say it outloud. He did not know why, but the words fought him when he tried to speak them. "IronWolf ws kidnapped" he managed to sqeak and such a low volume that only the ghosts could have heard it. Then he said it a little louder "IronWolf was kidnapped". Then again louder, "IronWolf was kidnapped!"
+  The light turned on. "Good morning Rex" Phil said. He was holding two cups of coffee, standing in his evening clothes. He walked over to Rex, handed him a coffee, and then walked to the far wall and opened the garage shutters. Early morning light flooded the garage. Rex held up his real arm to cover his eyes. After making his mornign round, Phil came over to Rex; who was sipping the coffee; and sat down on the concrete next to him.
+  "IronWolf was kidnapped" Rex said in a normal voice while looking at Phil.
+  "Yeah" Phil said.
+  "It has been so long, he probably hates me" Rex said. His eyes had run out of tears hours ago.
+  "Maybe" Phil said.
+  "What do I do?" Rex asked, looking at Phil with the eyes of a lost little boy.
+  "What do you want?" Phil asked.
+  "I want IronWolf back." Rex cryed.
+  "Then go get him: Phil said.
+  "But what if he doesn't want me? What if I lose? What if.." Rex was saying.
+  Phil put a hand on Rex and he quited down. 
+  "Anything could happen, maybe IronWolf does hate you, or you end up in prision. Those are very real possiblites. So do you want IronWolf bad enough to at least *try*?"
+  "Yes" Rex mouthed wordlessly. "I am a terrable Mech pilot. But IronWolf and I are not mech and pilot. We become one, one new creature, something bigger than both of us together. I've been thinking a lot, and apart we are weak, but together we become something much greater than the sum of the parts. Does that make sense?" Rex asked.
+  Phil smiled, nodded, and sipped his coffee. 
+  Together, sitting side by side, they watched the morning street though the window and drank coffee together.
+  
   ->->
 
 = start_draft_one
