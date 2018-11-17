@@ -51,7 +51,43 @@
   "I am not a kid" Rex blurted.
   "I do not care if you are 100 years old, for this story to work you are kid." Sally snapped. She was no longer looking at him, but had glazed over her eyes as she looked at screens only visible to her.
 
-  
+  Over the next day, more interviews appeared online from pilots like Rex. People who had been lured in, then their mechs all broke down in the final battle. When the video of several overalyed  battles from the other clan, it was quite convincing. The people started a petition and got the votes needed to investigate the issue. People where boycotting the arenas, and government officals would be appointed and sent to every arena on the planet.
+
+  Rex only had to lose two more battles, not that he was trying to lose. But he just could not make his artifical limb work properly and ended up only really being able to do one thing at a time, MOVE, AIM, FIRE. let alone something as complicated as DODGE, AIM, FIRE. With the AI helping, Rex could manage one of the the three, moving or dodgeing the mech (aka moving in a zig zag pattern), aiming the weapons on a target, and managing the weapons fire so he didn't overlaod the mech. In more than one fight he lost because he was to excited about getting a possible shot after a dodge that he did not know how much heat had built up plus the amount of heat firing the lasers could add.
+
+  Finnaly, the time had arrived. Phil and Wilson dressed up in inspector outfits. Tammy had tapped into the security and found out the date and time the real inspectors would show up. The timing was perfect. Phil and Wilson designed as the inspectors showed up right on time. The clan's own head of house came to greet them and show them around the compound and arena.
+
+  Tammy and Rex slipped unnoticed though one of the delivery entrences. Everyone was focuced on the inspection and did not bother with the van that drove them. When Tammy and Rex stepped out of the van in the compound garage, they were dressed in proper employee outfits. They walked though the halls without anyone noticing them. Right past armed guards who were wearing their presentation uniforms and worried a lot more about looking right than about stopping the two unknown people from walking into a secure area. Augmented vision showed helpful arrows and hallway information as the pair made their way to the research lab holding IronWolf. When they got there they found the area was secured with encrypted locked doors. Way beyond Tammy's ability to hack.
+
+  "Now What?" Tammy asked.
+  "We either find anther way in, or we wait for someone to come in or out of that room." Rex said. "We could split up."
+  "You didn't plan for the lab to be locked?" Tammy asked suspcisally.
+  "Its not like I had blueprints or anything. I have never been to these labs before." Rex said defensivly.
+  "Locked doors. The idea that a door might be locked did not come up in your planning?" Tammy asked.
+
+  "Wait here a moment." Rex said, then he quick stepped back down the hallway. A moment later he returned with a badge in his hand.
+  "Where did you get that?" Tammy asked.
+  "I borrowed it." Rex said as he scanned the badge at the door.
+
+  * [4th Wall]
+    "Why would they use badges and not cores? Is this not a constancy issue?" The reader asked. In that case Rex would not be able to steal a key so easily. Plus the building would see their cores right? and alert securty about this ideotic plan?
+    They could probably hide in the caos of the inspection. But the locked door is still a problem and stealing a key is not going to work here.
+  -
+
+  Tammy pulled the fire alarm. All doors in the building unlocked as the sprinklers rained down a special chemical that puts out fires without getting anything wet. Great for places full of sensitive parts that don't mix well with water.
+  The Fire alarm filled the air and the emergy safty lights flashed unnervingly bright white light.
+  "I am impressed" Rex said. He moved to let her in first, but she waved him on. So Rex opened the doors and stepped into the lab.
+  People runing all over the place, screaming at each other and over voice channels to other unseen people. The wetless water rained down, starting to form small puddles in the floor. In the middle of it all, chained down to the ceiment ground, was a normal size, decompressed IronWolf.
+
+  Not thinking about whre he was or what was happening. He ran to IronWolf, the large wolfs eyes finally spotting him. Fear and hope semeed to fill the machines eyes, but that should be impossible for an AI. Rex ran up to IronWolf and hugged the machine. "I missed you so much" He said.
+
+  Tammy walked over to the control panel, looking for a release button.
+
+  "Who are you?" A voice said from behind Tammy. She looked back, a man in a lab couat stood behind her. "Who is your supervisor?" The man demanded.
+  Tammy smiled, without looking her hand found the lever she was looking for. "I" she said slowly. "am Tammy, Pilot of Axman. And that" she pointed over to Rex and the IronWolf, still mid embrase. "does not belong to you." She pulled the lever and the chains holding IronWolf down went slack. The Mech stood up, streching it's legs as if he had not stood in weeks. He shook off the last of the chains and then sat in front of Rex.
+
+  "Are you thinking what I am thinking?" Rex asked IronWolf.
+  Cables snalked their way from IronWolf's body and found the interface built into the cap over Rex's missing arm. They connected and suddenly IronWolf opened up and pulled Rex inside. In one voice that sounded a little like each of them said. "It is payback time."
   ->->
 
 = plan_ideas
