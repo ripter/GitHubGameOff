@@ -11,6 +11,8 @@ INCLUDE bad_guys_close_in.ink
 INCLUDE all_is_lost.ink
 INCLUDE dark_night_of_the_soul.ink
 INCLUDE break_into_three.ink
+INCLUDE finale.ink
+
 
 
 
@@ -34,5 +36,6 @@ by Chris Richards
 // -> bad_guys_close_in.start ->
 // -> all_is_lost.start ->
 // -> dark_night_of_the_soul.start ->
--> break_into_three ->
+// -> break_into_three.start ->
+-> finale.start ->
 -> DONE
