@@ -39,6 +39,18 @@
   IronWolf fired the partical projector at the Catapult in the distance, strikign a direct hit and breaking it's leg. IronWolf was out of power. The Catapult staning over it only realised then, that the missiles were still tracking IronWolf.
   The Last of the missiles struck the Catapult, and finsihing it off. IronWolf rested a moment until he had enough power to move again. The red line haveing faded off.
   
+  * [A voice boomed over the arena]
+  -
+  "Aw, is the little wolf too tired to play?" The menicing voice ecohed. "I would have been here sooner, but I had to take care of a rat."
+  The arena's holidgraph displays showed a video of Tammy struggling against armed security guards. They had her locked in a holding cell the arena uses for drunks and other disorderlies.
+  
+  IronWolf stood up. A blue lines started faint, and grew brighter, the line that tattoted around IronWolfs body. "Bring it" IronWolf called out right after he rushed in a zag across the field.
+  The ground IronWolf had been standing on exploded as a giant slug slammed into it. The Atlas walked out from the arena exit.
+  
+  "This time kid" the Atlas said. "This time you will lose a lot more than an arm."
+  
+  * [Boss Battle]
+  -
   
   
   ->->
