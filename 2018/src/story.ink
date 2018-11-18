@@ -12,6 +12,8 @@ INCLUDE all_is_lost.ink
 INCLUDE dark_night_of_the_soul.ink
 INCLUDE break_into_three.ink
 INCLUDE finale.ink
+INCLUDE final_image.ink
+
 
 
 
@@ -37,5 +39,6 @@ by Chris Richards
 // -> all_is_lost.start ->
 // -> dark_night_of_the_soul.start ->
 // -> break_into_three.start ->
--> finale.start ->
+// -> finale.start ->
+-> final_image.start ->
 -> DONE
