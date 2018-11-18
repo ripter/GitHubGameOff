@@ -1,12 +1,14 @@
 
+<- axman.status
 <- ironwolf.status
+-> ironwolf.pick_action ->
 
-Battle Test three, the player action menu loop test.
--> battle_test_three.pick_action ->
+Now {mech_defender} gets a chance to attack.
+// -> battle_test_three.pick_action ->
 
 Wow, such action. maybe you could pick another?
 
--> battle_test_three.pick_action ->
+// -> battle_test_three.pick_action ->
 
 And again to show that the menu keep continuing.
 
@@ -23,19 +25,20 @@ And again to show that the menu keep continuing.
   IronWolf: {heat(IronWolf, 0)} HEAT, {power(IronWolf, 0)} POWER
   -> DONE
 = pick_action
-  + [Fire Laser!]
+  ~ temp currentPower = power(IronWolf, 0)
+  + {currentPower >= 4} [Fire Laser!]
     You fired a laser! Pew Pew!
     -> pick_action
-  + [Fire Missile!]
+  + {currentPower >= 1} [Fire Missile!]
     You fired some missiles! Whoosh Boom!
     -> pick_action
-  + [Dodge!]
+  + {currentPower >= 2} [Dodge!]
     That was a close one, but you managed to doge!
     -> pick_action
-  + [Move Closer!]
+  + {currentPower >= 5} [Move Closer!]
     You run ahead, trying to get in range.
     -> pick_action
-  + [Move Away!]
+  + {currentPower >= 5} [Move Away!]
     You back up, trying to put some distance between the two of you.
     -> pick_action
   + [End Turn]
@@ -49,7 +52,9 @@ And again to show that the menu keep continuing.
   ~ power_defender = 5
   ~ heatsinks_defender = 10
   -> DONE
-
+= status
+  Axman: {heat(Axman, 0)} HEAT, {power(Axman, 0)} POWER
+  -> DONE
 
 
 
