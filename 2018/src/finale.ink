@@ -51,6 +51,13 @@
   
   * [Boss Battle]
   -
+  Final boss gameplay goes here.
   
-  
+  * [Rex Wins]
+  -
+  The Atlas lay in ruins, Rex and IronWolf making the final blow. The head of the compound trapped in the crushed cockpit.
+  "Please" the man said. "You have to help me."
+  Rex and IronWolf scoffed at him. "Your cockpit collapsed because you used a thiner weaker metal instead of the regulation carbon steel. Looks like it was really good at dissipating heat as well. Shame you cut back on silly things like life support and structural integraty."
+  The man spit blood at Rex and IronWolf. "No one ever got a hit on me. It did not need to be strong."
+  "I happen to agree" Rex and IronWolf said as they turned and walked away.
   ->->

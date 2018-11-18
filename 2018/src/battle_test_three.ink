@@ -1,3 +1,6 @@
+
+<- ironwolf.status
+
 Battle Test three, the player action menu loop test.
 -> battle_test_three.pick_action ->
 
@@ -5,41 +8,92 @@ Wow, such action. maybe you could pick another?
 
 -> battle_test_three.pick_action ->
 
-And again to show that the menu keep continuing. 
+And again to show that the menu keep continuing.
 
-== battle_test_three
+
+== ironwolf
+= start
+  ~ mech_attacker = IronWolf
+  ~ heat_attacker = 0
+  ~ power_attacker = 5
+  ~ power_regen_attacker = 5
+  ~ heatsinks_attacker = 10
+  -> DONE
+= status
+  IronWolf: {heat(IronWolf, 0)} HEAT, {power(IronWolf, 0)} POWER
+  -> DONE
 = pick_action
   + [Fire Laser!]
-    <- fire_laser 
+    You fired a laser! Pew Pew!
     -> pick_action
   + [Fire Missile!]
-    <- fire_missile 
+    You fired some missiles! Whoosh Boom!
     -> pick_action
   + [Dodge!]
-    <- dodge 
+    That was a close one, but you managed to doge!
     -> pick_action
   + [Move Closer!]
-    <- forward 
+    You run ahead, trying to get in range.
     -> pick_action
   + [Move Away!]
-    <- back 
+    You back up, trying to put some distance between the two of you.
     -> pick_action
   + [End Turn]
     ->->
   -> DONE
-  
-= fire_laser
-  You fired a laser! Pew Pew!
+
+== axman
+= start
+  ~ mech_defender = Axman
+  ~ heat_defender = 0
+  ~ power_defender = 5
+  ~ heatsinks_defender = 10
   -> DONE
-= fire_missile
-  You fired some missiles! Whoosh Boom!
-  -> DONE
-= dodge
-  That was a close one, but you managed to doge!
-  -> DONE
-== forward
-  You run ahead, trying to get in range.
-  -> DONE
-== back
-  You back up, trying to put some distance between the two of you.
-  -> DONE
+
+
+
+
+
+
+LIST RANGE = Long, Medium, Short
+LIST MECHS = IronWolf, Axman, Catapult, Atlas
+
+
+VAR mech_attacker = IronWolf
+VAR mech_defender = Axman
+
+VAR power_attacker = 5
+VAR power_defender = 5
+== function power(who, delta)
+{
+  - who == mech_attacker:
+    ~ power_attacker += delta
+    ~ return power_attacker
+  - who == mech_defender:
+    ~ power_defender += delta
+    ~ return power_defender
+}
+VAR heat_attacker = 0
+VAR heat_defender = 0
+== function heat(who, delta)
+{
+  - who == mech_attacker:
+    ~ heat_attacker += delta
+    ~ return heat_attacker
+  - who == mech_defender:
+    ~ heat_defender += delta
+    ~ return heat_defender
+}
+VAR heatsinks_attacker = 10
+VAR heatsinks_defender = 10
+== function heatsinks(who, delta)
+{
+  - who == mech_attacker:
+    ~ heatsinks_attacker += delta
+    ~ return heatsinks_attacker
+  - who == mech_defender:
+    ~ heatsinks_defender += delta
+    ~ return heatsinks_defender
+}
+VAR power_regen_attacker = 0
+VAR power_regen_defender = 0
