@@ -66,5 +66,58 @@
   "Maybe they have" Wilson suggested.
   
   
+  * [Arrive on planet]
+  -
+  The arrived above the planet. Sesors shows extreme winds in the upper atmosphere. Willson and Phil were looking over display of the plant condtions. 
+  "It wold be safer to just drop them" Wilson said.
+  "How would we get them back up?" Phil asked.
+  "We could always figure that out later." Wilson said.
+  "No, if we have to take the dropship down to get them anyway, then we might as well all go together."
+  "The weather could clear?" Wilson suggested half hartly. "Or if they survive the drop we could drop some fuel. or maybe they could buy some fuel down there."
+  "Too risky." Phil said.
+  
+  Rex and Tammy entered the room. "What is a drop?" Rex asked.
+  "basically, " Tammy said, "you and your mech stand on top of a rocket, and try not to hit the ground so hard you die."
+  "Sounds fun" said Rex.
+  "See" Wilson interjected, "they are all for it."
+  "It is just too risky. We can barely scan past that interfearence. We would not be able to help them if anything went wrong. It would be better if we stay together."
+  "We are not children" Tammy said. "Are we able to talk to the settlement down there?"
+  "Yeah" Wilson answered.
+  "Then we will be fine. If something goes wrong, then you can bring in the ship. Otherwise gather some fuel and be ready to drop it when we need to return." Tammy turned and walked out of the room.
+  Everyone else just looked at Phil.
+  "Alright, Rex, you and Tammy will drop together in an egg with IronWolf. When you find her mech, we will drop the other egg with enough fuel to bring you both back. Is that understood?" Phil said.
+  "Yes sir." Rex said surpressing a smile. He turned and quickly left the room.
+  
+  Once they were alone, Phil turned the star back to another set of planets. He pointed at a small moon. "There."
+  Wilson looked worried. "Are you sure they will be fine without us?"
+  "Were you not the one just fighting for them to go out on their own?" Phil asked.
+  "Well, on their own when we are in orbit is one thing. But it will take us six weeks round trip alone. We should at least tell them."
+  "No." said Phil. "It will be fine. I got Tammy so worked up that she'll call once, and then forget until she has her mech."
+  "What if they find the mech quickly?" Wilson asked.
+  Phil smiled. "Guess we will have to figure that out later."
+  
+  * [Drop to the planet]
+  -
+  Rex and Tammy were fittend with hazard suits. They could protect them in the vacum of space, or a hard fall from a short distance. Lighter that battle armor, they provided a wider range of critical systems.
+  The egg looked exactly like that. A large black egg, the tip held a small cockpit that sat two people. And in the widest part of the ship held one mech, IronWolf. Although with IronWolf being in his shrunk down size, there was enough room to load up on extra food, fuel, and camping and survival supplies. Even the ship could be used as a shelter in an emgeracy.
+  
+  With everything loaded, the countdown started. At Zero the large hatch doors under the egg opened up, revealing the planet below. In what felt like slow motion, the egg started to fall from the mother ship. Soon the bottom was red hot as it crashed though the planets thicker atmosphere. The screens inside showed a radar and scanner enhanched view. Strong currents pushed the Egg signifiantly off course as it made its way into the lower atmosphere. Without the extra weight of a heavy mech, the egg started to tip in the high winds.
+  
+  "IronWolf, quick, we need you to be as heavy as possible" Tammy yelled over the roar of the wind.
+  IronWolf's blue line glowed brighter as the mech started to grow larger. first to 10 tons, then to 15 tons, 20 tons, 25 tons, 40 tons, 45 tons. 50 tons.
+  "Ok stop!" Tammy yelled.
+  IronWolf stopped growing at 55 tons.
+  Rex looked back, "I did not know you could do that!" he yelled.
+  "I could not do it before. Our experense has lead to a number of improvements of my systems."
+  "You two can flirt later" Tammy Yelled, "Brace for impact.
+  
+  The rockets fired, causing everything inside to jerk as the ship suddenly slowed. It continued to slow mroe and more until it landed softly on the ground.
+  
+  The egg opened up, Tammy and Rex walked out into a green medow. It was filled with short shin high grass as far as they could see. A cool wind swept over the medow, forming patterns of light and darkeness as the wind moved the grass.
+  
+  IronWolf walked out in his normal wolf size. He sniffed the air. "Good, we are close" he said as he walked off.
+  "Close to what?" Rex asked as he followed after.
+  Tammy looked around. The sky was filled with birds of all sizes. She did not see any of those on the scanners. Tammy could smell salt in the air. She followed the smell, away from Rex and IronWolf. Soon she found herself standing on the ledge of a tall cliff. She could not see to the bottom, fog or mist or maybe even a cloud blocked the view. She could see for miles on the horizon. huge never ending cliff walls. Bright whie with spots of vegitation. 
+  A large flying bird flew up from the cliff in front of her. A single wing spanning larger than the entire egg ship. "Whoa" is all Tammy could say.
   
   ->->
