@@ -162,4 +162,4 @@ VAR speed_defender = 0
     ~ return speed_defender
 }
 == function update_speed(who, delta)
-  ~ return set_dodge(who, delta + get_dodge(who))
+  ~ return set_speed(who, delta + get_speed(who))

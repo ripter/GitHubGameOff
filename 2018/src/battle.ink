@@ -82,12 +82,10 @@ Post game stuff I think.
   + Evasive Maneuvers
     ->->
   + Increase Speed
-    ~ update_speed(IronWolf, 1)
-    ~ update_power(IronWolf, -1)
+    ~ mech_change_speed(IronWolf, 1, 1)
     ->->
   + Decrease Speed
-    ~ update_speed(IronWolf, -1)
-    ~ update_power(IronWolf, -1)
+    ~ mech_change_speed(IronWolf, -1, 1)
     ->->
   -> DONE
 
@@ -117,7 +115,12 @@ Post game stuff I think.
 
 == function mech_change_speed(who, delta, level)
   ~ update_speed(who, delta)
-  ~ update_power(who, delta * power_cost(Move, level))
+  ~ update_range(delta)
+  {delta < 0:
+    ~ delta = -1 * delta
+  }
+  ~ update_power(who, -delta * power_cost(Move, level))
+  
 
 
 
@@ -152,3 +155,7 @@ Post game stuff I think.
 // Wow, such action. maybe you could pick another?
 // // -> battle_test_three.pick_action ->
 // And again to show that the menu keep continuing.
+// ~ update_speed(IronWolf, -1)
+// ~ update_power(IronWolf, -1)
+// ~ update_speed(IronWolf, 1)
+// ~ update_power(IronWolf, -1)
