@@ -71,7 +71,7 @@ Post game stuff I think.
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
     -> pick_action
-  + [Move]
+  + {currentPower >= 1} [Move]
     -> menu_move ->
     -> pick_action
   + [End Turn]
@@ -81,11 +81,13 @@ Post game stuff I think.
   {IronWolf} is moving at {get_speed(IronWolf)} POWER/Kilometer PPK Power per Kilometer, Power over Range
   + Evasive Maneuvers
     ->->
-  + Increase Speed
+  + [Increase Speed]
     ~ mech_change_speed(IronWolf, 1, 1)
+    {IronWolf} moves faster, increasing speed to {get_speed(IronWolf)} kpp.
     ->->
   + Decrease Speed
     ~ mech_change_speed(IronWolf, -1, 1)
+    {IronWolf} slows down, decreasing speed to {get_speed(IronWolf)} kpp.
     ->->
   -> DONE
 
@@ -116,6 +118,7 @@ Post game stuff I think.
 == function mech_change_speed(who, delta, level)
   ~ update_speed(who, delta)
   ~ update_range(delta)
+  // use a positive delta for cost calculations.
   {delta < 0:
     ~ delta = -1 * delta
   }
