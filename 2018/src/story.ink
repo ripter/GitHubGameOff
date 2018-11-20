@@ -15,30 +15,24 @@ INCLUDE finale.ink
 INCLUDE final_image.ink
 
 
-
-
-
-
-
-
-
-
 A Boy and his Mech
 by Chris Richards
+Written for NaNoWriMo 2018 and GitHub Game Off 2018
+A Novel Game inspired by LitRPG.
 
-// -> opening_image.start ->
-// -> setup_one.start ->
-// -> setup_two.start ->
-// -> catalyst.start ->
-// -> debate.start ->
-// -> break_into_two.start ->
-// -> b_story.start ->
-// -> fun_and_games.start ->
-// -> midpoint.start ->
-// -> bad_guys_close_in.start ->
-// -> all_is_lost.start ->
-// -> dark_night_of_the_soul.start ->
-// -> break_into_three.start ->
-// -> finale.start ->
+-> opening_image.start ->
+-> setup_one.start ->
+-> setup_two.start ->
+-> catalyst.start ->
+-> debate.start ->
+-> break_into_two.start ->
+-> b_story.start ->
+-> fun_and_games.start ->
+-> midpoint.start ->
+-> bad_guys_close_in.start ->
+-> all_is_lost.start ->
+-> dark_night_of_the_soul.start ->
+-> break_into_three.start ->
+-> finale.start ->
 -> final_image.start ->
 -> DONE
