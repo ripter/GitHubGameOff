@@ -4,11 +4,11 @@ INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
 
 
-LIST turn_states = ATTACKING, END_TURN
+LIST turn_states = PLAY_TURN, END_TURN, GAMEOVER
 VAR mech_attacker = IronWolf
-VAR mech_attacker_turn_state = ATTACKING
+VAR mech_attacker_turn_state = PLAY_TURN
 VAR mech_defender = Axman
-VAR mech_defender_turn_state = ATTACKING
+VAR mech_defender_turn_state = PLAY_TURN
 
 // Setup the mechs for battle
 <- ironwolf.start
@@ -26,17 +26,37 @@ Post game stuff I think.
 
 == arena
 = battle_hub
-//   {~Challenger|} {mech_attacker}
-//   {mech_attacker} faces off against {mech_defender} at {get_range()} range.
+  ~ temp state_attacker = get_turn_state(mech_attacker)
+  ~ temp state_defender = get_turn_state(mech_defender)
 
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
   <- axman.status
   <- ironwolf.status
 
+  - (turn_loop)
   // Player and AI pick moves until they run out of power or end the turn.
-  ~ temp state_attacker = get_turn_state(mech_attacker)
-  ~ temp state_defender = get_turn_state(mech_defender)
+  ~ state_attacker = get_turn_state(mech_attacker)
+  ~ state_defender = get_turn_state(mech_defender)
+  {
+  - state_attacker == PLAY_TURN:
+    Player Attack!
+    -> ironwolf.pick_action -> turn_loop
+  - state_defender == PLAY_TURN:
+    Defender Attack!
+  }
+  
+  -
+  ~ state_attacker = get_turn_state(mech_attacker)
+  ~ state_defender = get_turn_state(mech_defender)
+  {state_attacker == GAMEOVER || state_defender == GAMEOVER:
+    Battle Over!
+    ->->
+  - else:
+    -> battle_hub ->
+  }
+  Post play turn loop
+  
   // {
   // - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) == ATTACKING:
   //   Next Turn! Random order
@@ -106,11 +126,14 @@ Post game stuff I think.
     -> menu_move ->
     // -> pick_action
   + [End Turn]
+    -> post_turn ->
     ->->
   -
   // If we have enough power for more actions.
   {currentPower > 0:
     -> pick_action
+  - else:
+    -> post_turn ->
   }
   -> DONE
 = menu_move
@@ -131,7 +154,9 @@ Post game stuff I think.
     Range changed to {get_range()}
   }
   ->->
-
+= post_turn
+  ~ set_turn_state(IronWolf, END_TURN)
+  ->->
 
 == axman
 = start
@@ -222,3 +247,5 @@ Post game stuff I think.
 // ~ update_power(IronWolf, -1)
 // ~ update_speed(IronWolf, 1)
 // ~ update_power(IronWolf, -1)
+//   {~Challenger|} {mech_attacker}
+//   {mech_attacker} faces off against {mech_defender} at {get_range()} range.
