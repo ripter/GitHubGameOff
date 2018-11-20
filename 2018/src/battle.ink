@@ -4,6 +4,7 @@ INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
 
 
+LIST MECHS = IronWolf, Axman
 LIST turn_states = PLAY_TURN, END_TURN, GAMEOVER
 VAR mech_attacker = IronWolf
 VAR mech_attacker_turn_state = PLAY_TURN

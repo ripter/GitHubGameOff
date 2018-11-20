@@ -1,5 +1,3 @@
-LIST MECHS = IronWolf, Axman, Catapult, Atlas, TEMP
-
 //
 // Range Functions
 LIST RANGE = Long, Medium, Melee
