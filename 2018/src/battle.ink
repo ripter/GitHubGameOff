@@ -115,7 +115,9 @@ Post game stuff I think.
   ~ update_power(who, get_power_regen(who))
   ~ update_heat(who, -get_heatsinks(who))
 
-
+== function mech_change_speed(who, delta, level)
+  ~ update_speed(who, delta)
+  ~ update_power(who, delta * power_cost(Move, level))
 
 
 
