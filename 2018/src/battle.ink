@@ -59,6 +59,7 @@ Post game stuff I think.
   ~ set_heatsinks(IronWolf, 10)
   ~ set_power_regen(IronWolf, 5)
   ~ set_dodge(IronWolf, 10)
+  ~ set_speed(IronWolf, 0)
   -> DONE
 = status
   IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
@@ -71,18 +72,23 @@ Post game stuff I think.
     <- laser.fire(IronWolf, Axman)
     -> pick_action
   + [Move]
-    <- menu_move
+    -> menu_move ->
     -> pick_action
   + [End Turn]
     ->->
   -> DONE
 = menu_move
+  {IronWolf} is moving at {get_speed(IronWolf)} POWER/Kilometer PPK Power per Kilometer, Power over Range
   + Evasive Maneuvers
-    -> pick_action
+    ->->
   + Increase Speed
-    -> pick_action
+    ~ update_speed(IronWolf, 1)
+    ~ update_power(IronWolf, -1)
+    ->->
   + Decrease Speed
-    -> pick_action
+    ~ update_speed(IronWolf, -1)
+    ~ update_power(IronWolf, -1)
+    ->->
   -> DONE
 
 
@@ -94,6 +100,7 @@ Post game stuff I think.
   ~ set_heatsinks(Axman, 10)
   ~ set_power_regen(Axman, 5)
   ~ set_dodge(Axman, 10)
+  ~ set_speed(Axman, 0)
   -> DONE
 = status
   Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER

@@ -24,6 +24,7 @@ VAR mech_range = 15
   ~ mech_range += delta
 
 //
+//
 // Heat Functions
 VAR heat_attacker = 0
 VAR heat_defender = 0
@@ -69,6 +70,7 @@ VAR heatsinks_defender = 0
 
 
 //
+//
 // Power Functions
 VAR power_attacker = 0
 VAR power_defender = 0
@@ -111,8 +113,9 @@ VAR power_regen_defender = 0
 }
 == function update_power_regen(who, delta)
   ~ return set_power_regen(who, delta + get_power_regen(who))
+
   
-  
+//  
 //
 // Dodge Functions
 VAR dodge_attacker = 0
@@ -134,4 +137,29 @@ VAR dodge_defender = 0
     ~ return dodge_defender
 }
 == function update_dodge(who, delta)
+  ~ return set_dodge(who, delta + get_dodge(who))
+
+
+//  
+//
+// Speed Functions
+VAR speed_attacker = 0
+VAR speed_defender = 0
+== function get_speed(who)
+{
+  - who == mech_attacker:
+    ~ return speed_attacker
+  - who == mech_defender:
+    ~ return speed_defender
+}
+== function set_speed(who, value)
+{
+  - who == mech_attacker:
+    ~ speed_attacker = value
+    ~ return speed_attacker
+  - who == mech_defender:
+    ~ speed_defender = value
+    ~ return speed_defender
+}
+== function update_speed(who, delta)
   ~ return set_dodge(who, delta + get_dodge(who))
