@@ -70,8 +70,19 @@ Post game stuff I think.
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
     -> pick_action
+  + [Move]
+    <- menu_move
+    -> pick_action
   + [End Turn]
     ->->
+  -> DONE
+= menu_move
+  + Evasive Maneuvers
+    -> pick_action
+  + Increase Speed
+    -> pick_action
+  + Decrease Speed
+    -> pick_action
   -> DONE
 
 
