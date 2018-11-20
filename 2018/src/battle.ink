@@ -50,7 +50,6 @@ Post game stuff I think.
     -> axman.random_action -> turn_loop
   - else:
     No one can attack
-    ->->
   }
 
   -
