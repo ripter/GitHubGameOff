@@ -9,6 +9,7 @@ VAR mech_attacker = IronWolf
 VAR mech_attacker_turn_state = PLAY_TURN
 VAR mech_defender = Axman
 VAR mech_defender_turn_state = PLAY_TURN
+VAR mech_overheat = 20
 
 // Setup the mechs for battle
 <- ironwolf.start
@@ -44,19 +45,31 @@ Post game stuff I think.
     -> ironwolf.pick_action -> turn_loop
   - state_defender == PLAY_TURN:
     Defender Attack!
+    -> axman.random_action -> turn_loop
   }
-  
+
   -
-  ~ state_attacker = get_turn_state(mech_attacker)
-  ~ state_defender = get_turn_state(mech_defender)
-  {state_attacker == GAMEOVER || state_defender == GAMEOVER:
-    Battle Over!
+  // Check for losing condition
+  {
+  - get_heat(mech_defender) >= mech_overheat:
+    Defender loses!
+    ->->
+  - get_heat(mech_attacker) >= mech_overheat:
+    Attacker Loses!
     ->->
   - else:
-    -> battle_hub ->
+    -> battle_hub
   }
   Post play turn loop
-  
+  // ~ state_attacker = get_turn_state(mech_attacker)
+  // ~ state_defender = get_turn_state(mech_defender)
+  // {state_attacker == GAMEOVER || state_defender == GAMEOVER:
+  //   Battle Over!
+  //   ->->
+  // - else:
+  //   -> battle_hub ->
+  // }
+
   // {
   // - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) == ATTACKING:
   //   Next Turn! Random order
@@ -73,17 +86,7 @@ Post game stuff I think.
   // -> axman.fire_laser ->
   //
 
-  // Check for losing condition
-  // {
-  // - get_heat(mech_defender) >= 20:
-  //   Defender loses!
-  //   ->->
-  // - get_heat(mech_attacker) >= 20:
-  //   Attacker Loses!
-  //   ->->
-  // - else:
-  //   -> battle_hub
-  // }
+
   ->->
 = how_battle_works
   This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}.
@@ -176,8 +179,11 @@ Post game stuff I think.
   ->->
 = random_action
   <- laser.fire(Axman, IronWolf)
+  -> post_turn ->
   ->->
-
+= post_turn
+  ~ set_turn_state(Axman, END_TURN)
+  ->->
 
 
 == function mech_recharge(who)
