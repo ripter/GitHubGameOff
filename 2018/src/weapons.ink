@@ -1,13 +1,24 @@
 == laser
 = fire(attacker, defender)
-  {attacker} shoots a laser at {defender} costing {power_cost(Laser, 1)} POWER.
-  <> He has {get_power(attacker)} POWER before the attack 
-  // Cost to fire
-  ~ update_power(attacker, -power_cost(Laser, 1))
-  ~ update_heat(attacker, heat_cost(Laser, 1))
+  ~ temp level = 1
+  // First, make sure we can afford this shot.
+  ~ temp power = get_power(attacker)
+  {power_cost(Laser, level) > power:
+    {attacker} attempted to fire a Laser, but could not muster the required power.
+    -> DONE
+  }
+  // Then charge the attacker for the shot.
+  ~ update_power(attacker, -power_cost(Laser, level))
+  ~ update_heat(attacker, heat_cost(Laser, level))
   
-  // Damage delt
-  ~ update_heat(defender, heat_damage(Laser, 1))
+  // Next, let the defender attempt a dodge.
+  {did_dodge(get_dodge(defender)):
+    {defender} quickly dodged out of the way.
+    -> DONE
+  }
   
-  <> and {get_power(attacker)} POWER after the attack.
+  // Finally, deal damage to defender.
+  ~ update_heat(defender, heat_damage(Laser, level))
+  
+  {attacker} blasts {defender} with a laser, dealing {heat_damage(Laser, level)} HEAT to {defender}.
   -> DONE

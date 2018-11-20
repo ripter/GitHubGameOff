@@ -86,4 +86,27 @@ VAR power_regen_defender = 0
 }
 == function update_power_regen(who, delta)
   ~ return set_power_regen(who, delta + get_power_regen(who))
-
+  
+  
+//
+// Dodge Functions
+VAR dodge_attacker = 0
+VAR dodge_defender = 0
+== function get_dodge(who)
+{
+  - who == mech_attacker:
+    ~ return dodge_attacker
+  - who == mech_defender:
+    ~ return dodge_defender
+}
+== function set_dodge(who, value)
+{
+  - who == mech_attacker:
+    ~ dodge_attacker = value
+    ~ return dodge_attacker
+  - who == mech_defender:
+    ~ dodge_defender = value
+    ~ return dodge_defender
+}
+== function update_dodge(who, delta)
+  ~ return set_dodge(who, delta + get_dodge(who))

@@ -32,13 +32,16 @@ And again to show that the menu keep continuing.
 = battle_hub
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
-
   <- axman.status
   <- ironwolf.status
 
-  {get_power(IronWolf) > 0: -> ironwolf.pick_action ->}
+  // Player and AI pick moves until they run out of power or end the turn.
+  {get_power(IronWolf) > 0: 
+    -> ironwolf.pick_action ->
+  }
 
   -> axman.fire_laser ->
+
 
   // Check for losing condition
   {
@@ -49,7 +52,6 @@ And again to show that the menu keep continuing.
     Attacker Loses!
     ->->
   - else:
-    ~ update_power(IronWolf, 5)
     -> battle_hub
   }
   ->->
@@ -62,9 +64,7 @@ And again to show that the menu keep continuing.
   ~ set_power(IronWolf, 0)
   ~ set_heatsinks(IronWolf, 10)
   ~ set_power_regen(IronWolf, 5)
-  -> DONE
-= recharge
-  ~ mech_recharge(IronWolf)
+  ~ set_dodge(IronWolf, 10)
   -> DONE
 = status
   IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
@@ -103,9 +103,7 @@ And again to show that the menu keep continuing.
   ~ set_power(Axman, 0)
   ~ set_heatsinks(Axman, 10)
   ~ set_power_regen(Axman, 5)
-  -> DONE
-= recharge
-  ~ mech_recharge(Axman)
+  ~ set_dodge(Axman, 10)
   -> DONE
 = status
   Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER
@@ -126,4 +124,12 @@ And again to show that the menu keep continuing.
   <> {who} now has {get_power(who)} POWER.
 
 
+
+
+//
+// defunt code that can be deleted after NaNoWriMo
+// I am going to pick some random numbers to see if my function works. {random_numner()}, {random_numner()}, oh and {random_numner()} we should never forget {random_numner()}. 
+// But what we want to know the most, is if we can compare with a number: {random_numner() > 10: Grater than 10! Oh my!}
+// Because the random numbers did not work, now I am going back to the string method I tested in battle_test_one.
+// At 10% {did_dodge(10, 1)}, 20% {did_dodge(20, 1)}, 30% {did_dodge(30, 1)}, 40% {did_dodge(40, 1)}, 50% {did_dodge(50, 1)}, 60% {did_dodge(60, 1)}, 70% {did_dodge(70, 1)}, 80% {did_dodge(80, 1)}, 90% {did_dodge(90, 1)}, 100% {did_dodge(100, 1)}
 
