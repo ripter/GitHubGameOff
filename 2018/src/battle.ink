@@ -28,7 +28,7 @@ Post game stuff I think.
 = battle_hub
 //   {~Challenger|} {mech_attacker}
 //   {mech_attacker} faces off against {mech_defender} at {get_range()} range.
-  
+
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
   <- axman.status
@@ -43,13 +43,13 @@ Post game stuff I think.
   - get_turn_state(mech_attacker) != ATTACKING && get_turn_state(mech_defender) == ATTACKING:
     Just Defender Turn!
   }
-  
-  {get_power(IronWolf) > 0: 
-    -> ironwolf.pick_action ->
-  }
 
-  -> axman.fire_laser ->
-
+  // {get_power(IronWolf) > 0: 
+  //   -> ironwolf.pick_action ->
+  // }
+  //
+  // -> axman.fire_laser ->
+  //
 
   // Check for losing condition
   {
@@ -64,9 +64,9 @@ Post game stuff I think.
   }
   ->->
 = how_battle_works
-  This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}. 
-  <> Each mech is powered by a reactor that genrates POWER each turn; and HEATSINKS that reduce HEAT each turn. 
-  <> The first mech to reach 20 HEAT loses the battle. 
+  This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}.
+  <> Each mech is powered by a reactor that genrates POWER each turn; and HEATSINKS that reduce HEAT each turn.
+  <> The first mech to reach 20 HEAT loses the battle.
   <> Firing weapons, moving, dodging, all cost POWER and generate some HEAT.
   ->->
 
@@ -91,12 +91,12 @@ Post game stuff I think.
   ~ temp currentHeat = get_heat(IronWolf)
   ~ temp currentHeatsinks = get_heatsinks(IronWolf)
   ~ temp currentSpeed = get_speed(IronWolf)
-  
+
   POWER: {currentPower}
   HEAT: {currentHeat}
   HEATSINKS: {currentHeatsinks}
   Speed: {currentSpeed} KPP
-  
+
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
     // -> pick_action
@@ -114,7 +114,7 @@ Post game stuff I think.
 = menu_move
   ~ temp currentRange = get_range()
   {IronWolf} is moving at {get_speed(IronWolf)} POWER/Kilometer PPK Power per Kilometer, Power over Range
-  
+
   + Evasive Maneuvers
     # TODO add this feature
   + [Increase Speed]
@@ -123,7 +123,7 @@ Post game stuff I think.
   + Decrease Speed
     ~ mech_change_speed(IronWolf, -1, 1)
     {IronWolf} slows down, decreasing speed to {get_speed(IronWolf)} kpp.
-    
+
   -
   {currentRange != get_range():
     Range changed to {get_range()}
@@ -166,7 +166,7 @@ Post game stuff I think.
     ~ delta = -1 * delta
   }
   ~ update_power(who, -delta * power_cost(Move, level))
-  
+
 == function get_turn_state(who)
 {
 -  who == mech_attacker:
@@ -187,7 +187,7 @@ Post game stuff I think.
 
 //
 // defunt code that can be deleted after NaNoWriMo
-// I am going to pick some random numbers to see if my function works. {random_numner()}, {random_numner()}, oh and {random_numner()} we should never forget {random_numner()}. 
+// I am going to pick some random numbers to see if my function works. {random_numner()}, {random_numner()}, oh and {random_numner()} we should never forget {random_numner()}.
 // But what we want to know the most, is if we can compare with a number: {random_numner() > 10: Grater than 10! Oh my!}
 // Because the random numbers did not work, now I am going back to the string method I tested in battle_test_one.
 // At 10% {did_dodge(10, 1)}, 20% {did_dodge(20, 1)}, 30% {did_dodge(30, 1)}, 40% {did_dodge(40, 1)}, 50% {did_dodge(50, 1)}, 60% {did_dodge(60, 1)}, 70% {did_dodge(70, 1)}, 80% {did_dodge(80, 1)}, 90% {did_dodge(90, 1)}, 100% {did_dodge(100, 1)}
