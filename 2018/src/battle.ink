@@ -28,18 +28,19 @@ Post game stuff I think.
 
 == arena
 = battle_hub
-  ~ temp state_attacker = get_turn_state(mech_attacker)
-  ~ temp state_defender = get_turn_state(mech_defender)
+  ~ set_turn_state(mech_attacker, PLAY_TURN)
+  ~ set_turn_state(mech_defender, PLAY_TURN)
 
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
   <- axman.status
   <- ironwolf.status
 
-  - (turn_loop)
   // Player and AI pick moves until they run out of power or end the turn.
-  ~ state_attacker = set_turn_state(mech_attacker, PLAY_TURN)
-  ~ state_defender = set_turn_state(mech_defender, PLAY_TURN)
+  - (turn_loop)
+  ~ temp state_attacker = get_turn_state(mech_attacker)
+  ~ temp state_defender = get_turn_state(mech_defender)
+  Turn Loop: Player: {state_attacker}; AI: {state_defender}
   {
   - state_attacker == PLAY_TURN:
     Player Attack!
@@ -137,6 +138,7 @@ Post game stuff I think.
   ->->
 = post_turn
   ~ set_turn_state(IronWolf, END_TURN)
+  Ending Player Turn {get_turn_state(IronWolf)}
   ->->
 
 == axman
