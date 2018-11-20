@@ -1,3 +1,5 @@
+LIST MECHS = IronWolf, Axman, Catapult, Atlas, TEMP
+
 //
 // Range Functions
 LIST RANGE = Long, Medium, Melee
@@ -52,18 +54,18 @@ VAR heatsinks_defender = 0
 == function get_heatsinks(who)
 {
   - who == mech_attacker:
-    ~ return heat_attacker
+    ~ return heatsinks_attacker
   - who == mech_defender:
-    ~ return heat_defender
+    ~ return heatsinks_defender
 }
 == function set_heatsinks(who, value)
 {
   - who == mech_attacker:
-    ~ heat_attacker = value
-    ~ return heat_attacker
+    ~ heatsinks_attacker = value
+    ~ return heatsinks_attacker
   - who == mech_defender:
-    ~ heat_defender = value
-    ~ return heat_defender
+    ~ heatsinks_defender = value
+    ~ return heatsinks_defender
 }
 == function update_heatsinks(who, delta)
   ~ return set_heatsinks(who, min_zero(delta + get_heatsinks(who)))

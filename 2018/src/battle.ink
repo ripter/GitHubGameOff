@@ -4,7 +4,7 @@ INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
 
 
-LIST MECHS = IronWolf, Axman, Catapult, Atlas
+
 VAR mech_attacker = IronWolf
 VAR mech_defender = Axman
 
@@ -24,7 +24,7 @@ Post game stuff I think.
 
 == arena
 = battle_hub
-  {~Challenger|} {mech_attacker}
+//   {~Challenger|} {mech_attacker}
 //   {mech_attacker} faces off against {mech_defender} at {get_range()} range.
   
   ~ mech_recharge(mech_attacker)
@@ -74,17 +74,31 @@ Post game stuff I think.
   IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
   -> DONE
 = pick_action
-  Pick an action.
-  You have {get_power(IronWolf)} POWER left.
+//   Pick an action.
+//   You have {get_power(IronWolf)} POWER left.
   ~ temp currentPower = get_power(IronWolf)
+  ~ temp currentHeat = get_heat(IronWolf)
+  ~ temp currentHeatsinks = get_heatsinks(IronWolf)
+  ~ temp currentSpeed = get_speed(IronWolf)
+  
+  POWER: {currentPower}
+  HEAT: {currentHeat}
+  HEATSINKS: {currentHeatsinks}
+  Speed: {currentSpeed} KPP
+  
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
-    -> pick_action
+    // -> pick_action
   + {currentPower >= 1} [Move]
     -> menu_move ->
-    -> pick_action
+    // -> pick_action
   + [End Turn]
     ->->
+  -
+  // If we have enough power for more actions.
+  {currentPower > 0:
+    -> pick_action
+  }
   -> DONE
 = menu_move
   ~ temp currentRange = get_range()
@@ -92,10 +106,10 @@ Post game stuff I think.
   
   + Evasive Maneuvers
   + [Increase Speed]
-    ~ mech_change_speed(IronWolf, -1, 1)
+    ~ mech_change_speed(IronWolf, 1, 1)
     {IronWolf} moves faster, increasing speed to {get_speed(IronWolf)} kpp.
   + Decrease Speed
-    ~ mech_change_speed(IronWolf, 1, 1)
+    ~ mech_change_speed(IronWolf, -1, 1)
     {IronWolf} slows down, decreasing speed to {get_speed(IronWolf)} kpp.
     
   -
@@ -130,7 +144,8 @@ Post game stuff I think.
 
 == function mech_change_speed(who, delta, level)
   ~ update_speed(who, delta)
-  ~ update_range(delta)
+  // range counts down to move forward, so flip the sign on delta
+  ~ update_range(-1 * delta)
   // use a positive delta for cost calculations.
   {delta < 0:
     ~ delta = -1 * delta
