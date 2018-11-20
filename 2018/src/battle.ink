@@ -78,18 +78,22 @@ Post game stuff I think.
     ->->
   -> DONE
 = menu_move
+  ~ temp currentRange = get_range()
   {IronWolf} is moving at {get_speed(IronWolf)} POWER/Kilometer PPK Power per Kilometer, Power over Range
+  
   + Evasive Maneuvers
-    ->->
   + [Increase Speed]
-    ~ mech_change_speed(IronWolf, 1, 1)
-    {IronWolf} moves faster, increasing speed to {get_speed(IronWolf)} kpp.
-    ->->
-  + Decrease Speed
     ~ mech_change_speed(IronWolf, -1, 1)
+    {IronWolf} moves faster, increasing speed to {get_speed(IronWolf)} kpp.
+  + Decrease Speed
+    ~ mech_change_speed(IronWolf, 1, 1)
     {IronWolf} slows down, decreasing speed to {get_speed(IronWolf)} kpp.
-    ->->
-  -> DONE
+    
+  -
+  {currentRange != get_range():
+    Range changed to {get_range()}
+  }
+  ->->
 
 
 == axman
