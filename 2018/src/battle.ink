@@ -4,9 +4,11 @@ INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
 
 
-
+LIST turn_states = ATTACKING, END_TURN
 VAR mech_attacker = IronWolf
+VAR mech_attacker_turn_state = ATTACKING
 VAR mech_defender = Axman
+VAR mech_defender_turn_state = ATTACKING
 
 // Setup the mechs for battle
 <- ironwolf.start
@@ -33,6 +35,15 @@ Post game stuff I think.
   <- ironwolf.status
 
   // Player and AI pick moves until they run out of power or end the turn.
+  {
+  - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) == ATTACKING:
+    Next Turn! Random order
+  - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) != ATTACKING:
+    Just Attacker Turn!
+  - get_turn_state(mech_attacker) != ATTACKING && get_turn_state(mech_defender) == ATTACKING:
+    Just Defender Turn!
+  }
+  
   {get_power(IronWolf) > 0: 
     -> ironwolf.pick_action ->
   }
@@ -65,7 +76,7 @@ Post game stuff I think.
   ~ mech_attacker = IronWolf
   ~ set_heat(IronWolf, 0)
   ~ set_power(IronWolf, 0)
-  ~ set_heatsinks(IronWolf, 10)
+  ~ set_heatsinks(IronWolf, 5)
   ~ set_power_regen(IronWolf, 5)
   ~ set_dodge(IronWolf, 10)
   ~ set_speed(IronWolf, 0)
@@ -105,6 +116,7 @@ Post game stuff I think.
   {IronWolf} is moving at {get_speed(IronWolf)} POWER/Kilometer PPK Power per Kilometer, Power over Range
   
   + Evasive Maneuvers
+    # TODO add this feature
   + [Increase Speed]
     ~ mech_change_speed(IronWolf, 1, 1)
     {IronWolf} moves faster, increasing speed to {get_speed(IronWolf)} kpp.
@@ -124,7 +136,7 @@ Post game stuff I think.
   ~ mech_defender = Axman
   ~ set_heat(Axman, 0)
   ~ set_power(Axman, 0)
-  ~ set_heatsinks(Axman, 10)
+  ~ set_heatsinks(Axman, 5)
   ~ set_power_regen(Axman, 5)
   ~ set_dodge(Axman, 10)
   ~ set_speed(Axman, 0)
@@ -133,6 +145,9 @@ Post game stuff I think.
   Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER
   -> DONE
 = fire_laser
+  <- laser.fire(Axman, IronWolf)
+  ->->
+= random_action
   <- laser.fire(Axman, IronWolf)
   ->->
 
@@ -152,7 +167,22 @@ Post game stuff I think.
   }
   ~ update_power(who, -delta * power_cost(Move, level))
   
-
+== function get_turn_state(who)
+{
+-  who == mech_attacker:
+  ~ return mech_attacker_turn_state
+- who == mech_defender:
+  ~ return mech_defender_turn_state
+}
+== function set_turn_state(who, value)
+{
+-  who == mech_attacker:
+  ~ mech_attacker_turn_state = value
+  ~ return mech_attacker_turn_state
+- who == mech_defender:
+  ~ mech_defender_turn_state = value
+  ~ return mech_defender_turn_state
+}
 
 
 //
