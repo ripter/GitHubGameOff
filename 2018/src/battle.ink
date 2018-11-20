@@ -4,8 +4,6 @@ INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
 
 
-
-LIST RANGE = Long, Medium, Short
 LIST MECHS = IronWolf, Axman, Catapult, Atlas
 VAR mech_attacker = IronWolf
 VAR mech_defender = Axman
@@ -28,8 +26,11 @@ Wow, such action. maybe you could pick another?
 
 And again to show that the menu keep continuing.
 
+
 == arena
 = battle_hub
+  {mech_attacker} faces off against {mech_defender} at {get_range()} range.
+  
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
   <- axman.status

@@ -1,4 +1,29 @@
 //
+// Range Functions
+LIST RANGE = Long, Medium, Melee
+VAR mech_range = 15
+== function get_range()
+{
+- mech_range <= 5:
+  ~ return Melee
+- mech_range <= 10:
+  ~ return Medium
+- else:
+  ~ return Long
+}
+== function set_range(value)
+{
+- value >= 15:
+  ~ mech_range = 15
+- value <= 0:
+  ~ mech_range = 0
+- else:
+  ~ mech_range = value
+}
+== function update_range(delta)
+  ~ mech_range += delta
+
+//
 // Heat Functions
 VAR heat_attacker = 0
 VAR heat_defender = 0
