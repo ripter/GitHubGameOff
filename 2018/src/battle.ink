@@ -35,16 +35,18 @@ Post game stuff I think.
   <- ironwolf.status
 
   // Player and AI pick moves until they run out of power or end the turn.
-  {
-  - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) == ATTACKING:
-    Next Turn! Random order
-  - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) != ATTACKING:
-    Just Attacker Turn!
-  - get_turn_state(mech_attacker) != ATTACKING && get_turn_state(mech_defender) == ATTACKING:
-    Just Defender Turn!
-  }
+  ~ temp state_attacker = get_turn_state(mech_attacker)
+  ~ temp state_defender = get_turn_state(mech_defender)
+  // {
+  // - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) == ATTACKING:
+  //   Next Turn! Random order
+  // - get_turn_state(mech_attacker) == ATTACKING && get_turn_state(mech_defender) != ATTACKING:
+  //   Just Attacker Turn!
+  // - get_turn_state(mech_attacker) != ATTACKING && get_turn_state(mech_defender) == ATTACKING:
+  //   Just Defender Turn!
+  // }
 
-  // {get_power(IronWolf) > 0: 
+  // {get_power(IronWolf) > 0:
   //   -> ironwolf.pick_action ->
   // }
   //
@@ -52,16 +54,16 @@ Post game stuff I think.
   //
 
   // Check for losing condition
-  {
-  - get_heat(mech_defender) >= 20:
-    Defender loses!
-    ->->
-  - get_heat(mech_attacker) >= 20:
-    Attacker Loses!
-    ->->
-  - else:
-    -> battle_hub
-  }
+  // {
+  // - get_heat(mech_defender) >= 20:
+  //   Defender loses!
+  //   ->->
+  // - get_heat(mech_attacker) >= 20:
+  //   Attacker Loses!
+  //   ->->
+  // - else:
+  //   -> battle_hub
+  // }
   ->->
 = how_battle_works
   This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}.
