@@ -38,8 +38,8 @@ Post game stuff I think.
 
   - (turn_loop)
   // Player and AI pick moves until they run out of power or end the turn.
-  ~ state_attacker = get_turn_state(mech_attacker)
-  ~ state_defender = get_turn_state(mech_defender)
+  ~ state_attacker = set_turn_state(mech_attacker, PLAY_TURN)
+  ~ state_defender = set_turn_state(mech_defender, PLAY_TURN)
   {
   - state_attacker == PLAY_TURN:
     Player Attack!
