@@ -12,6 +12,8 @@ VAR mech_defender = Axman
 <- ironwolf.start
 <- axman.start
 
+-> arena.how_battle_works ->
+
 -> arena.battle_hub ->
 -
 Post game stuff I think.
@@ -22,7 +24,8 @@ Post game stuff I think.
 
 == arena
 = battle_hub
-  {mech_attacker} faces off against {mech_defender} at {get_range()} range.
+  {~Challenger|} {mech_attacker}
+//   {mech_attacker} faces off against {mech_defender} at {get_range()} range.
   
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
@@ -48,6 +51,12 @@ Post game stuff I think.
   - else:
     -> battle_hub
   }
+  ->->
+= how_battle_works
+  This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}. 
+  <> Each mech is powered by a reactor that genrates POWER each turn; and HEATSINKS that reduce HEAT each turn. 
+  <> The first mech to reach 20 HEAT loses the battle. 
+  <> Firing weapons, moving, dodging, all cost POWER and generate some HEAT.
   ->->
 
 
