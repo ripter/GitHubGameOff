@@ -38,7 +38,11 @@ VAR turn_count = 0
 }
 
 -
-Post Battle stuff goes here.
+{get_value (mech_defender, HEAT) >= mech_overheat:
+  You win!
+- else:
+  You lost!
+}
 
 
 
