@@ -114,38 +114,33 @@ VAR power_regen_defender = 0
 == function update_power_regen(who, delta)
   ~ return set_power_regen(who, delta + get_power_regen(who))
 
-  
-//  
+
+//
 //
 // Dodge Functions
 VAR dodge_attacker = 0
 VAR dodge_defender = 0
 == function get_dodge(who)
-// ^^{who} is getting Dodge <>
-// ^^ get_dodge({who}) == <>
-{
-  - who == mech_attacker:
-^^A: "{dodge_attacker}"^^
-    ~ return dodge_attacker
-  - who == mech_defender:
-// D: "{dodge_defender}"^^
-    ~ return dodge_defender
-}
+  {
+    - who == mech_attacker:
+      ~ return dodge_attacker
+    - who == mech_defender:
+      ~ return dodge_defender
+  }
 == function set_dodge(who, value)
-^^{who} is setting Dodge to {value}
-{
-  - who == mech_attacker:
-    ~ dodge_attacker = value
-    ~ return dodge_attacker
-  - who == mech_defender:
-    ~ dodge_defender = value
-    ~ return dodge_defender
-}
+  {
+    - who == mech_attacker:
+      ~ dodge_attacker = value
+      ~ return dodge_attacker
+    - who == mech_defender:
+      ~ dodge_defender = value
+      ~ return dodge_defender
+  }
 == function update_dodge(who, delta)
   ~ return set_dodge(who, delta + get_dodge(who))
 
 
-//  
+//
 //
 // Speed Functions
 VAR speed_attacker = 0
@@ -168,8 +163,8 @@ VAR speed_defender = 0
 }
 == function update_speed(who, delta)
   ~ return set_speed(who, delta + get_speed(who))
-  
-  
+
+
 //
 // Turn State Functions
 VAR mech_attacker_turn_state = VOLLEY

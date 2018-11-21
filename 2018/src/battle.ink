@@ -106,7 +106,7 @@ VAR turn_count = 0
   ~ set_power(IronWolf, 0)
   ~ set_heatsinks(IronWolf, 0)
   ~ set_power_regen(IronWolf, 5)
-  ~ set_dodge(IronWolf, 10)
+  ~ set_dodge(IronWolf, 0)
   ~ set_speed(IronWolf, 0)
   -> DONE
 = status
@@ -157,7 +157,7 @@ VAR turn_count = 0
   ~ set_power(Axman, 0)
   ~ set_heatsinks(Axman, 0)
   ~ set_power_regen(Axman, 5)
-  ~ set_dodge(Axman, 10)
+  ~ set_dodge(Axman, 0)
   ~ set_speed(Axman, 0)
   -> DONE
 = status

@@ -15,11 +15,10 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
   - type == SPEED:
     ~ return get_speed (who)
   - type == DODGE:
-// ^^get_value({who}, {type}) = "{get_dodge (who)}"^^
     ~ return get_dodge (who)
   }
   ~ return 0
-  
+
 == function set_value(who, type, value)
   {
   - type == POWER:
@@ -36,7 +35,7 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return set_dodge (who, value)
   }
   ~ return false
-  
+
 == function update_value(who, type, delta)
   {
   - type == POWER:
@@ -53,4 +52,3 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return update_dodge (who, delta)
   }
   ~ return false
-  

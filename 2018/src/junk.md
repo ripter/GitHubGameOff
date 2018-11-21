@@ -256,3 +256,9 @@
 //  ^^Raw Damage: {damage}
 //  ^^Total Damage to deal {damage}
 // {attacker} deals {damage} HEAT to {defender}.
+// ^^get_value({who}, {type}) = "{get_dodge (who)}"^^
+// ^^{who} is getting Dodge <>
+// ^^ get_dodge({who}) == <>
+// ^^A: "{dodge_attacker}"^^
+// D: "{dodge_defender}"^^
+// ^^{who} is setting Dodge to {value}
