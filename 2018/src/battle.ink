@@ -24,6 +24,9 @@ VAR turn_count = 0
   ~ turn_count += 1
   Loop Numner {turn_count}
 
+  {is_gameover():
+    ~ battle_state = GAMEOVER
+  }
   {turn_count >= 5:
     ~ battle_state = GAMEOVER
   }
@@ -211,6 +214,9 @@ Post Battle stuff goes here.
   ~ set_turn_state(Axman, Wait)
   ->->
 
+
+== function is_gameover
+  ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
 
 == function mech_recharge(who)
   ~ update_power(who, get_power_regen(who))
