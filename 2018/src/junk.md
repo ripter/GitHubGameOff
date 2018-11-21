@@ -226,3 +226,13 @@
 = post_turn
   ~ set_turn_state(Axman, PASS)
   ->->
+//   Starting Volley
+//    {mech_attacker} is the first to make a move.
+//    -> ironwolf.pick_action ->
+//    -> axman.random_action ->
+//       {mech_attacker} is ready.
+//    {mech_defender} is the first to make a move.
+//    -> axman.random_action ->
+//    -> ironwolf.pick_action ->
+//    Both are done
+//   Repeat for another volley
