@@ -36,10 +36,8 @@ LIST WEAPONS = Laser, Missile, Dodge, Move
 == function did_dodge(chance)
 {
 - chance <= 10:
-    // ~ return "{~miss|hit|hit|hit|hit}" == "miss"
     ~ return chance_10()
 - chance <= 20:
-  // ~ return "{~miss|miss|hit|hit|hit}" == "miss"
   ~ return chance_20()
 - chance <= 30:
   ~ return "{~miss|miss|miss|hit|hit}" == "miss"

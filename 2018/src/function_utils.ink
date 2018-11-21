@@ -15,22 +15,12 @@
   ~ return 0
 
 == function did_chance_pass(result, win)
-//  ~ temp result = rnd
-//  Result was: {result}
-  
   {result == win:
-//    ^^Winner Winner^^
     ~return true
   }
-//  ^^Loser Poser^^
   ~ return false
 
 == function chance_10()
-//   ~ temp result = "{~win|lose|lose|lose|lose|lose|lose|lose|lose|lose}"
-//   {result == "win":
-//     ~ return true
-//   }
-//   ~ return false
   ~ return did_chance_pass ("{~win|lose|lose|lose|lose|lose|lose|lose|lose|lose}", "win")
 == function chance_20()
   ~ return did_chance_pass("{~win|win||||||||}", "win")

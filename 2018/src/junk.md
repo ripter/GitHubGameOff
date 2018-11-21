@@ -242,3 +242,14 @@
 //     ~ return 1
 //   }
 //   ~ return 0
+//  ~ temp result = rnd
+//  Result was: {result}
+//    ^^Winner Winner^^
+//  ^^Loser Poser^^
+//   ~ temp result = "{~win|lose|lose|lose|lose|lose|lose|lose|lose|lose}"
+//   {result == "win":
+//     ~ return true
+//   }
+//   ~ return false
+// ~ return "{~miss|hit|hit|hit|hit}" == "miss"
+// ~ return "{~miss|miss|hit|hit|hit}" == "miss"
