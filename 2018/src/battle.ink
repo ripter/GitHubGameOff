@@ -24,7 +24,10 @@ VAR turn_count = 0
 // Loop Numner {turn_count}
   Round {turn_count}:
 
+  // Recharge, Upkeep, Dissipate Heat
   -> arena.turn_start ->
+  
+  As the round begins. {mech_attacker} and {mech_defender} are within {get_value (mech_attacker, RANGE)} range. 
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
@@ -151,10 +154,11 @@ VAR turn_count = 0
 
   Continue current speed of {speed}kpp?
   + [Yes, Keep up speed]
-    ~ mech_upkeep_speed(IronWolf, 1)
+    <- reactor.upkeep_speed (IronWolf)
+// ~ mech_upkeep_speed(IronWolf, 1)
   + [No, cut speed]
     <- reactor.reset_speed (IronWolf)
-    // ~ mech_clear_speed(IronWolf)
+// ~ mech_clear_speed(IronWolf)
   -
   ->->
 

@@ -75,5 +75,9 @@
   <- reset_speed (self)
   -> DONE
 = upkeep_speed (self)
-
+  // Pay for the speed again.
+  ~ temp speed = get_value (self, SPEED)
+  ~ update_value (self, POWER, -power_cost (Move, speed))
+  // Update range change first because of running start (because I say so)
+  ~ update_value (self, RANGE, speed)
   -> DONE
