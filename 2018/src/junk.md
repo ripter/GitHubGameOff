@@ -95,3 +95,111 @@
 // <- arena.battle_hub
 // Loop Again.
 // Post game stuff I think.
+//   {get_turn_state (mech_attacker) == GAMEOVER:
+//     Player is DONE
+//   }
+//   Ending Volley
+
+= battle_hub
+  ~ set_turn_state(mech_attacker, Volley)
+  ~ set_turn_state(mech_defender, Volley)
+
+  // Turn Start, Recharge everyone
+  ~ mech_recharge(mech_attacker)
+  ~ mech_recharge(mech_defender)
+
+  // Perform upkeep costs
+  -> ironwolf.upkeep ->
+
+  <- axman.status
+  <- ironwolf.status
+
+  // Player and AI pick moves until they run out of power or end the turn.
+  - (turn_loop)
+  ~ temp state_attacker = get_turn_state(mech_attacker)
+  ~ temp state_defender = get_turn_state(mech_defender)
+  Turn Loop: Player: {state_attacker}; AI: {state_defender}
+
+  // First step, check for gameover
+  {get_heat (mech_defender) >= mech_overheat:
+    // Attacker wins!
+    Player Wins!
+    -> DONE
+  }
+  {get_heat (mech_attacker) >= mech_overheat:
+    Player Loses!
+    -> DONE
+  }
+
+  ^^^^Start Volley^^^^
+  {
+  - state_attacker == state_defender && state_attacker == Volley:
+    ~ temp first_volley = "{~attacker|defender}"
+    {first_volley == "attacker":
+      Player is the first to act.
+       -> ironwolf.pick_action_draft_one ->
+       -> axman.random_action
+    - else:
+      AI is the first to respond.
+    }
+    We all equal playing dudes.
+  - state_attacker == state_defender && state_attacker == Wait:
+    We are all done taking turns dude.
+  }
+
+  // Repeat!
+  ^^^^Calling turn_loop^^^^
+  -> turn_loop
+
+
+  -
+  Post play turn loop
+  -> DONE
+
+//   IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
+= pick_action_draft_one
+//   Pick an action.
+  ~ temp currentPower = get_power(IronWolf)
+  ~ temp currentHeat = get_heat(IronWolf)
+  ~ temp currentHeatsinks = get_heatsinks(IronWolf)
+  ~ temp currentSpeed = get_speed(IronWolf)
+
+  IronWolf Status: {currentPower} POWER; {currentHeat} HEAT; {currentSpeed} Speed kpp.
+  What would you like to do?
+  + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
+    <- laser.fire(IronWolf, Axman)
+    // -> pick_action_draft_one
+  + {currentPower >= 1} [Move]
+    -> menu_move ->
+    // -> pick_action_draft_one
+  + [Wait for now]
+    // -> post_turn ->
+    ->->
+  -
+  // If we have enough power for more actions.
+  {currentPower > 0:
+    -> pick_action_draft_one
+  - else:
+    -> post_turn ->
+  }
+  -> DONE
+= menu_move
+  ~ temp currentRange = get_range()
+  {IronWolf} is moving at {get_speed(IronWolf)} POWER/Kilometer PPK Power per Kilometer, Power over Range
+
+  + Evasive Maneuvers
+    # TODO add this feature
+  + [Increase Speed]
+    ~ mech_change_speed(IronWolf, 1, 1)
+    {IronWolf} moves faster, increasing speed to {get_speed(IronWolf)} kpp.
+  + Decrease Speed
+    ~ mech_change_speed(IronWolf, -1, 1)
+    {IronWolf} slows down, decreasing speed to {get_speed(IronWolf)} kpp.
+
+  -
+  {currentRange != get_range():
+    Range changed to {get_range()}
+  }
+  ->->
+
+//   Ending Player Turn {get_turn_state(IronWolf)}
