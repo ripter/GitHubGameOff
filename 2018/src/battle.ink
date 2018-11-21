@@ -34,6 +34,7 @@ Post game stuff I think.
   // Turn Start, Recharge everyone
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
+  
   // Perform upkeep costs
   -> ironwolf.upkeep ->
   
@@ -47,10 +48,10 @@ Post game stuff I think.
 //   Turn Loop: Player: {state_attacker}; AI: {state_defender}
   {
   - state_attacker == PLAY_TURN:
-    Player Attack!
+    // Player Attack!
     -> ironwolf.pick_action -> turn_loop
   - state_defender == PLAY_TURN:
-    Defender Attack!
+    // Defender Attack!
     -> axman.random_action -> turn_loop
   - else:
     No one can attack
@@ -89,7 +90,11 @@ Post game stuff I think.
   ~ set_speed(IronWolf, 0)
   -> DONE
 = status
-  IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
+//   IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
+  {IronWolf} {get_power(IronWolf)} POWER 
+  <>; {get_heat(IronWolf)} HEAT 
+  <>; {get_heatsinks(IronWolf)} HEATSINKS
+  <>; {get_speed(IronWolf)} Kilometer per POWER
   -> DONE
 = pick_action
 //   Pick an action.
@@ -99,10 +104,10 @@ Post game stuff I think.
   ~ temp currentHeatsinks = get_heatsinks(IronWolf)
   ~ temp currentSpeed = get_speed(IronWolf)
 
-  POWER: {currentPower}
-  <>; HEAT: {currentHeat}
-  <>; HEATSINKS: {currentHeatsinks}
-  <>; Speed: {currentSpeed} KPP
+//   POWER: {currentPower}
+//   <>; HEAT: {currentHeat}
+//   <>; HEATSINKS: {currentHeatsinks}
+//   <>; Speed: {currentSpeed} KPP
 
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
@@ -141,7 +146,7 @@ Post game stuff I think.
   ->->
 = post_turn
   ~ set_turn_state(IronWolf, END_TURN)
-  Ending Player Turn {get_turn_state(IronWolf)}
+//   Ending Player Turn {get_turn_state(IronWolf)}
   ->->
 = upkeep
   ~ temp speed = get_speed(IronWolf)
