@@ -60,3 +60,33 @@
   //
   // -> axman.fire_laser ->
   //
+
+//   {
+// //  - state_attacker == Volley && state_defender == Volley:
+//  //   Alternate turns.
+//   - state_attacker == Volley:
+//     // Player Attack!
+//     -> ironwolf.pick_action -> turn_loop
+//   - state_defender == Volley:
+//     // Defender Attack!
+//     -> axman.random_action -> turn_loop
+//   - else:
+//     No one can attack
+//   }
+
+  // Check for losing condition
+//   {
+//   - get_heat(mech_defender) >= mech_overheat:
+//     Defender loses!
+//     ->->
+//   - get_heat(mech_attacker) >= mech_overheat:
+//     Attacker Loses!
+//     ->->
+//   - else:
+//     -> battle_hub
+//   }
+//   You have {get_power(IronWolf)} POWER left.
+//   POWER: {currentPower}
+//   <>; HEAT: {currentHeat}
+//   <>; HEATSINKS: {currentHeatsinks}
+//   <>; Speed: {currentSpeed} KPP

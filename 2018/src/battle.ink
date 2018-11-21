@@ -18,7 +18,8 @@ VAR mech_overheat = 20
 
 -> arena.how_battle_works ->
 
--> arena.battle_hub ->
+// -> arena.battle_hub ->
+<- arena.battle_hub
 
 -
 // Post game stuff I think.
@@ -48,25 +49,25 @@ Post Battle stuff goes here.
   ~ temp state_attacker = get_turn_state(mech_attacker)
   ~ temp state_defender = get_turn_state(mech_defender)
   Turn Loop: Player: {state_attacker}; AI: {state_defender}
-  
+
   // First step, check for gameover
   {get_heat(mech_defender) >= mech_overheat:
     // Attacker wins!
-    Player Wins! 
-    ->->
+    Player Wins!
+    -> DONE
   }
   {get_heat(mech_attacker) >= mech_overheat:
     Player Loses!
-    ->->
+    -> DONE
   }
-  
+
   ^^^^Start Volley^^^^
   {
   - state_attacker == state_defender && state_attacker == Volley:
     ~ temp first_volley = "{~attacker|defender}"
     {first_volley == "attacker":
       Player is the first to act.
-       -> ironwolf.pick_action -> 
+       -> ironwolf.pick_action ->
        -> axman.random_action
     - else:
       AI is the first to respond.
@@ -75,39 +76,17 @@ Post Battle stuff goes here.
   - state_attacker == state_defender && state_attacker == Wait:
     We are all done taking turns dude.
   }
-  
+
   // Repeat!
   ^^^^Calling turn_loop^^^^
   -> turn_loop
 
 
-//   {
-// //  - state_attacker == Volley && state_defender == Volley:
-//  //   Alternate turns.
-//   - state_attacker == Volley:
-//     // Player Attack!
-//     -> ironwolf.pick_action -> turn_loop
-//   - state_defender == Volley:
-//     // Defender Attack!
-//     -> axman.random_action -> turn_loop
-//   - else:
-//     No one can attack
-//   }
-
   -
-  // Check for losing condition
-//   {
-//   - get_heat(mech_defender) >= mech_overheat:
-//     Defender loses!
-//     ->->
-//   - get_heat(mech_attacker) >= mech_overheat:
-//     Attacker Loses!
-//     ->->
-//   - else:
-//     -> battle_hub
-//   }
   Post play turn loop
-  ->->
+  -> DONE
+
+
 = how_battle_works
   This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}.
   <> Each mech is powered by a reactor that genrates POWER each turn; and HEATSINKS that reduce HEAT each turn.
@@ -135,16 +114,10 @@ Post Battle stuff goes here.
   -> DONE
 = pick_action
 //   Pick an action.
-//   You have {get_power(IronWolf)} POWER left.
   ~ temp currentPower = get_power(IronWolf)
   ~ temp currentHeat = get_heat(IronWolf)
   ~ temp currentHeatsinks = get_heatsinks(IronWolf)
   ~ temp currentSpeed = get_speed(IronWolf)
-
-//   POWER: {currentPower}
-//   <>; HEAT: {currentHeat}
-//   <>; HEATSINKS: {currentHeatsinks}
-//   <>; Speed: {currentSpeed} KPP
 
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
@@ -221,7 +194,7 @@ Post Battle stuff goes here.
 = random_action
   <- laser.fire(Axman, IronWolf)
   -> post_turn ->
-  ->->
+  -> DONE
 = post_turn
   ~ set_turn_state(Axman, Wait)
   ->->
