@@ -5,7 +5,7 @@ INCLUDE function_attributes.ink
 INCLUDE function_core.ink
 
 
-
+== gameoff_battle_draft_one
 LIST MECHS = IronWolf, Axman
 VAR battle_state = PLAYING
 VAR mech_attacker = IronWolf
@@ -55,6 +55,7 @@ VAR turn_count = 0
 - else:
   Game Tied!
 }
+->->
 
 
 

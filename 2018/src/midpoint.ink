@@ -33,40 +33,40 @@
   -
   "The challenger Rex has earned the right to fight our champion!" The Announcer said over the channel. "Will he win? will he even last past the first shot? Our Atlas is a devastating foe to challenge."
 
-  IronWolf was ready. The moment the buzzer rang, he took off in a zig zag across the battle field. Running at incredible speed. IronWolf used {power_cost(Run, 1)} POWER and generated {heat_cost(Run, 1)} waste HEAT.
-  ~ perform(IronWolf, Run, 1)
+  // IronWolf was ready. The moment the buzzer rang, he took off in a zig zag across the battle field. Running at incredible speed. IronWolf used {power_cost(Run, 1)} POWER and generated {heat_cost(Run, 1)} waste HEAT.
+  // ~ perform(IronWolf, Run, 1)
 
 
   Milliseconds after IronWolf moved a large slug slammed into IronWolf's starting position. The loud sonic boom quickly following. The slug was the size of IronWolf's heat.
-  Atlas had fired it's Guass Rifle, using {power_cost(GuassRifle, 1)} POWER and generating {heat_cost(GuassRifle, 1)} waste HEAT.
-  ~ perform(Atlas, GuassRifle, 1)
+  // Atlas had fired it's Guass Rifle, using {power_cost(GuassRifle, 1)} POWER and generating {heat_cost(GuassRifle, 1)} waste HEAT.
+  // ~ perform(Atlas, GuassRifle, 1)
 
   IronWolf tried to calculate the best evasive maneuvers while Rex guided the general direction. They where moving forward, which was easy considering the areana lacked any obsticals Rex and IronWolf could use.
   A breif wave of heat soared past IronWolf right when he zagged. The plasma ball from the Atla's partical projector seared by, missing by meters.
-  Atlas fired it's Partical Projector Cannon, using {power_cost(PPC, 1)} and generating {heat_cost(PPC, 1)} waste heat. IronWolf used {power_cost(Dodge, 1)} POWER to dodge the attack; generating {heat_cost(Dodge, 1)} waste HEAT.
-  ~ perform(Atlas, PPC, 1)
-  ~ perform(IronWolf, Dodge, 1)
+  // Atlas fired it's Partical Projector Cannon, using {power_cost(PPC, 1)} and generating {heat_cost(PPC, 1)} waste heat. IronWolf used {power_cost(Dodge, 1)} POWER to dodge the attack; generating {heat_cost(Dodge, 1)} waste HEAT.
+  // ~ perform(Atlas, PPC, 1)
+  // ~ perform(IronWolf, Dodge, 1)
 
 
 
   * [Next Turn]
   * [Atlas Status]
-    Atlas: {power(Atlas)} POWER, {heat(Atlas)} HEAT
+    // Atlas: {power(Atlas)} POWER, {heat(Atlas)} HEAT
   * [IronWolf Status]
-    IronWolf: {power(IronWolf)} POWER, {heat(IronWolf)} HEAT
+    // IronWolf: {power(IronWolf)} POWER, {heat(IronWolf)} HEAT
   -
-  ~ update_power(IronWolf, 5)
-  ~ update_heat(IronWolf, -3)
-  ~ update_power(Atlas, 10)
-  ~ update_heat(Atlas, -10)
+  // ~ update_power(IronWolf, 5)
+  // ~ update_heat(IronWolf, -3)
+  // ~ update_power(Atlas, 10)
+  // ~ update_heat(Atlas, -10)
 
 
   IronWolf managed to close the distance down to medium. Rex let IronWolf keep running while he aimed the Guass Rifle. A boom struck out as the slug impacted the unmoving Atlas.
-  IronWolf fired his Guass Rifle, using {power_cost(GuassRifle, 1)} POWER and generating {heat_cost(GuassRifle, 1)} waste HEAT.
-  ~ perform(IronWolf, GuassRifle, 1)
+  // IronWolf fired his Guass Rifle, using {power_cost(GuassRifle, 1)} POWER and generating {heat_cost(GuassRifle, 1)} waste HEAT.
+  // ~ perform(IronWolf, GuassRifle, 1)
 
   The Atlas returned fire with 5 lasers. IronWolf was not able to dodge as the beams fired in the flash of light. IronWolf suddenly suffered from 10 HEAT damage, causing warning to flash on Rex's screen. He could feel the heat. One of the beams hat struct the cockpit.
-  Atlas fired 5 lasers, using {power_cost(Laser, 5)} POWER and generating {heat_cost(Laser, 5)} waste HEAT.
+  // Atlas fired 5 lasers, using {power_cost(Laser, 5)} POWER and generating {heat_cost(Laser, 5)} waste HEAT.
 
   "I can't take another hit like that" IronWolf said over the channel.
   "Good thing we updated your heatsinks" Rex responded "or we would be out of the battle all ready."
@@ -81,15 +81,15 @@
   "Winner!" The announcer said. "Atlas has overheated IronWolf!" The crowd cheered and booed, depending on who they bet on.
   Rex sat in the cockpit dumbfounded. How did he miss that? Did the Atlas hit him with something? He was in shock and frozen inside IronWolf's body.
 
-  ~ update_power(IronWolf, 5)
-  ~ update_heat(IronWolf, -5)
-  ~ update_power(Atlas, 10)
-  ~ update_heat(Atlas, -10)
+  // ~ update_power(IronWolf, 5)
+  // ~ update_heat(IronWolf, -5)
+  // ~ update_power(Atlas, 10)
+  // ~ update_heat(Atlas, -10)
   * [Exit Battle]
   * [Atlas Status]
-    Atlas: {power(Atlas)} POWER, {heat(Atlas)} HEAT
+    // Atlas: {power(Atlas)} POWER, {heat(Atlas)} HEAT
   * [IronWolf Status]
-    IronWolf: {power(IronWolf)} POWER, {heat(IronWolf)} HEAT
+    // IronWolf: {power(IronWolf)} POWER, {heat(IronWolf)} HEAT
 
 
   Tammy came with moving truck to pick up the broken and managed IronWolf. Outside the cockpit Rex sat down and held his head in his hands.
@@ -108,87 +108,4 @@
   [Writer's note: This is the "Final Boss", or the player is supposed to think it is, (or assume it is not because of te trope). The player will win the battle, but the bad guys are going to win.]
   ->->
 
-VAR attacker_power = 10
-VAR attacker_heat = 0
-VAR defender_power = 11
-VAR defender_heat = 0
-LIST MECHS = Atlas, IronWolf
-LIST WEAPONS = Missile, Laser, GuassRifle, PPC, Autocannon, Dodge, Run, Recharge
-== function power_cost(weapon, count)
-{
-- weapon == Missile:
-  ~ return 2 * count
-- weapon == Autocannon:
-  ~ return 2 * count
-- weapon == GuassRifle:
-  ~ return 4 * count
-- weapon == PPC:
-  ~ return 7 * count
-- weapon == Laser:
-  ~ return 4 * count
-- weapon == Dodge:
-  ~ return 2 * count
-- weapon == Run:
-  ~ return 5 * count
-- else:
-  ~ return 1 * count
-}
-== function heat_cost(weapon, count)
-{
-- weapon == Missile:
-  ~ return 0 * count
-- weapon == Autocannon:
-  ~ return 1 * count
-- weapon == GuassRifle:
-  ~ return 8 * count
-- weapon == PPC:
-  ~ return 4 * count
-- weapon == Laser:
-  ~ return 2 * count
-- weapon == Dodge:
-  ~ return 2
-- else:
-  ~ return 1 * count
-}
-
-== function power(who)
-{
-- who == IronWolf:
-  ~ return attacker_power
-- who == Atlas:
-  ~ return defender_power
-}
-== function update_power(who, delta)
-{
-- who == IronWolf:
-  ~ attacker_power += delta
-  ~ return attacker_power
-- who == Atlas:
-  ~ defender_power += delta
-  ~ return defender_power
-}
-== function heat(who)
-{
-- who == IronWolf:
-  ~ return attacker_heat
-- who == Atlas:
-  ~ return defender_heat
-}
-== function update_heat(who, delta)
-{
-- who == IronWolf:
-  ~ attacker_heat = min_zero(delta + attacker_heat)
-  ~ return attacker_heat
-- who == Atlas:
-  ~ defender_heat = min_zero(delta + defender_heat)
-  ~ return defender_heat
-}
-== function perform(who, action, count)
-  ~ update_power(who, -power_cost(action, count))
-  ~ update_heat(who, heat_cost(action, count))
-
-== function min_zero(value)
-  {value < 0:
-    ~ return 0
-  }
-  ~ return value
+// Code moved to junk because it was in conflict with newer code.

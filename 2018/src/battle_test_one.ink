@@ -96,7 +96,7 @@ VAR defender_heat_dissipate = 3
   <- display_turn_draft_three
 
   <- charge_back(defender)
-  
+
   <- fire_medium_laser(attacker, defender)
   {attacker} POWER: {get_power(attacker)}
 
@@ -444,12 +444,6 @@ VAR defender_heat_dissipate = 3
   ~ defender_heat_dissipate = min_zero(delta + defender_heat_dissipate)
   ~ return defender_heat_dissipate
 }
-
-== function min_zero(value)
-{value < 0:
-  ~ return 0
-}
-~ return value
 
 == function max(value, ref max_value)
 {value > max_value:

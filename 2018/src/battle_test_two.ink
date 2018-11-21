@@ -27,9 +27,9 @@ Add more content
 == player_turn
   ~ temp name = attacker
   ~ temp power = prop_power(name, 0)
-  
+
   {name} has {power} power left. ({prop_power(name, 0)})
-  
+
   + {power >= 5} Run foward, closing the range.
     -> mech_attempt_charge(name, 5) ->
     -> player_turn
@@ -43,11 +43,11 @@ Add more content
   + [End Turn]
     ->->
 
-  
+
 == mech_attempt_to_launch_missiles(from, to, racks)
   ~ temp racks_launched = missile_launch_start(from, racks)
   {from} launches <>
-  {racks > 1: 
+  {racks > 1:
     {racks} racks of missiles <>
   - else:
     a missle rack <>
@@ -56,7 +56,7 @@ Add more content
   -> DONE
 == mech_land_missiles(from, to, racks)
   {racks * 5} missiles rain down on {to}.
-  
+
   + {move_dodge_possible(to)} [{move_dodge_cost()} POWER: Attempt to dodge]
     -> mech_attempt_dodge(to, racks) ->
     ->->
@@ -88,12 +88,12 @@ Add more content
     {from} attempted to charge, but lacks the power.
     ->->
   }
-  
+
   ~ prop_power(from, -5)
   ~ temp old_range = range
   ~ move_range(delta)
   {from} {delta >= 5: quickly} charges {delta > 0: forward | away} <>
-  
+
   {old_range != range:
    moving into {range} range.
   }
@@ -117,7 +117,7 @@ Add more content
   ~ temp heat = prop_heat(who, 0)
   ~ prop_power(who, regen)
   ~ prop_heat(who, -heatsinks)
-  {who}'s reactor generated {regen} POWER, and  heatsinks removed {heatsinks} HEAT. Giving {who} a total POWER: {prop_power(who, 0)}, HEAT: {prop_heat(who, 0)} 
+  {who}'s reactor generated {regen} POWER, and  heatsinks removed {heatsinks} HEAT. Giving {who} a total POWER: {prop_power(who, 0)}, HEAT: {prop_heat(who, 0)}
 //   {who} has {heatsinks} heatsinks; and regenerates {regen} power per turn.
   -> DONE
 
@@ -153,7 +153,7 @@ VAR defender_missiles_in_air = 0
 
 == function missile_launch_cost(racks)
   ~ return -racks * 2
-  
+
 == function prop_missiles_in_air(name, delta)
 {
 - name == attacker:
@@ -201,15 +201,6 @@ VAR range_turn_delta = 0
   ~ return prop_power(name, 0) >= move_dodge_cost()
 == function move_dodge_cost()
   ~ return 2
-
-//
-// Math Functions
-== function min_zero(value)
-{value < 0:
-  ~ return 0
-}
-~ return value
-
 
 //
 // Mech Data

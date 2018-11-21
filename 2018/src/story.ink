@@ -15,6 +15,7 @@ INCLUDE finale.ink
 INCLUDE final_image.ink
 
 
+== nanowrimo_story_draft_one
 A Boy and his Mech
 by Chris Richards
 Written for NaNoWriMo 2018 and GitHub Game Off 2018

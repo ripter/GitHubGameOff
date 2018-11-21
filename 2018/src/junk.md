@@ -268,3 +268,101 @@
 // upkeep_speed ({self}) raw range {get_range_raw()}
 // Update range change first because of running start (because I say so)
 // finished upkeep_speed ({self}) raw range {get_range_raw()}
+== function min_zero(value)
+  {value < 0:
+    ~ return 0
+  }
+  ~ return value
+
+//
+// Math Functions
+== function min_zero(value)
+{value < 0:
+  ~ return 0
+}
+~ return value
+
+== function min_zero(value)
+{value < 0:
+  ~ return 0
+}
+~ return value
+
+VAR attacker_power = 10
+VAR attacker_heat = 0
+VAR defender_power = 11
+VAR defender_heat = 0
+LIST MECHS = Atlas, IronWolf
+LIST WEAPONS = Missile, Laser, GuassRifle, PPC, Autocannon, Dodge, Run, Recharge
+== function power_cost(weapon, count)
+{
+- weapon == Missile:
+  ~ return 2 * count
+- weapon == Autocannon:
+  ~ return 2 * count
+- weapon == GuassRifle:
+  ~ return 4 * count
+- weapon == PPC:
+  ~ return 7 * count
+- weapon == Laser:
+  ~ return 4 * count
+- weapon == Dodge:
+  ~ return 2 * count
+- weapon == Run:
+  ~ return 5 * count
+- else:
+  ~ return 1 * count
+}
+== function heat_cost(weapon, count)
+{
+- weapon == Missile:
+  ~ return 0 * count
+- weapon == Autocannon:
+  ~ return 1 * count
+- weapon == GuassRifle:
+  ~ return 8 * count
+- weapon == PPC:
+  ~ return 4 * count
+- weapon == Laser:
+  ~ return 2 * count
+- weapon == Dodge:
+  ~ return 2
+- else:
+  ~ return 1 * count
+}
+
+== function power(who)
+{
+- who == IronWolf:
+  ~ return attacker_power
+- who == Atlas:
+  ~ return defender_power
+}
+== function update_power(who, delta)
+{
+- who == IronWolf:
+  ~ attacker_power += delta
+  ~ return attacker_power
+- who == Atlas:
+  ~ defender_power += delta
+  ~ return defender_power
+}
+== function heat(who)
+{
+- who == IronWolf:
+  ~ return attacker_heat
+- who == Atlas:
+  ~ return defender_heat
+}
+== function update_heat(who, delta)
+{
+- who == IronWolf:
+  ~ attacker_heat = min_zero(delta + attacker_heat)
+  ~ return attacker_heat
+- who == Atlas:
+  ~ defender_heat = min_zero(delta + defender_heat)
+  ~ return defender_heat
+}
+== function perform(who, action, count)
+  ~ update_power(who, -power_cost(action, count))
+  ~ update_heat(who, heat_cost(action, count))
