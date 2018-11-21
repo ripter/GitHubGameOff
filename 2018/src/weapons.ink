@@ -20,7 +20,6 @@
 
   // Finally, deal damage to defender based on range
   ~ temp damage = heat_damage(Laser, level)
-//  ^^Raw Damage: {damage}
   {
   - get_range() == Long:
     <> The {~laser|blast|engery beam} degraded significantly over the long distance.
@@ -31,14 +30,26 @@
   - else:
     <> The full power of the {~blast|discharge|beam|laser} hits {defender}.
   }
-  
+
   {damage == 0:
     <> There was not enough power in the {~laser|blast|engery beam} to affect {defender}.
   - else:
     <> Sensors indicate {damage} HEAT was delt to {defender}
   }
-//  ^^Total Damage to deal {damage}
   ~ update_heat(defender, damage)
+  -> DONE
 
-// {attacker} deals {damage} HEAT to {defender}.
+
+
+== reactor
+= move_forward (self)
+//  So all the logic to move forwarD
+  // Make sure we have the power to spend.
+  {get_value (self, POWER) <= 0:
+    {self} attempted to increase speed, but did not have enough POWER.
+    -> DONE
+  }
+  ~ update_value (self, POWER, power_cost (Move, 1))
+  
+  {self} Increases reactor power, increasing speed by 1kpp
   -> DONE

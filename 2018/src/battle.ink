@@ -121,9 +121,10 @@ VAR turn_count = 0
   <- status
 
   + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
-    <- laser.fire(IronWolf, mech_defender)
+    <- laser.fire (IronWolf, mech_defender)
   + {currentPower >= 1} [Increase Speed - {power_cost (Move, 1)} POWER]
     Forward!
+    <- reactor.move_forward (IronWolf)
   + [Wait]
     ~ set_turn_state (IronWolf, PASS)
   -

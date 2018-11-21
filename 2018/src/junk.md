@@ -253,3 +253,6 @@
 //   ~ return false
 // ~ return "{~miss|hit|hit|hit|hit}" == "miss"
 // ~ return "{~miss|miss|hit|hit|hit}" == "miss"
+//  ^^Raw Damage: {damage}
+//  ^^Total Damage to deal {damage}
+// {attacker} deals {damage} HEAT to {defender}.
