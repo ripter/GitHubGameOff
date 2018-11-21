@@ -21,10 +21,13 @@ VAR turn_count = 0
 - (main_loop)
 {battle_state == PLAYING:
   ~ turn_count += 1
-  Loop Numner {turn_count}
+// Loop Numner {turn_count}
+  Round {turn_count}:
 
   -> arena.turn_start ->
 
+  // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
+  // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
   -> arena.turn_volley ->
 
   {turn_count >= 30:
@@ -63,6 +66,9 @@ VAR turn_count = 0
   // Turn State tells us if the players still want to perform actions or if they are done and ready for the next turn.
   ~ set_turn_state (mech_attacker, VOLLEY)
   ~ set_turn_state (mech_defender, VOLLEY)
+  // Let each mech perform optional upkeep
+  -> ironwolf.upkeep ->
+  -> axman.upkeep ->
   ->->
 = turn_volley
   ~ temp stateAttacker = get_turn_state (mech_attacker)
@@ -147,7 +153,8 @@ VAR turn_count = 0
   + [Yes, Keep up speed]
     ~ mech_upkeep_speed(IronWolf, 1)
   + [No, cut speed]
-    ~ mech_clear_speed(IronWolf)
+    <- reactor.reset_speed (IronWolf)
+    // ~ mech_clear_speed(IronWolf)
   -
   ->->
 
@@ -177,6 +184,8 @@ VAR turn_count = 0
   <- status
   <- laser.fire(Axman, IronWolf)
   ~ set_turn_state(Axman, PASS)
+  ->->
+= upkeep
   ->->
 
 

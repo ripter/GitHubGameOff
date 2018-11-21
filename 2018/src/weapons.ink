@@ -43,8 +43,8 @@
 
 == reactor
 = move_forward (self)
-//  So all the logic to move forwarD
-{self} is moving forward
+  //  So all the logic to move forwarD
+  {self} is moving forward
   // Make sure we have the power to spend.
   {get_value (self, POWER) <= 0:
     {self} attempted to increase speed, but did not have enough POWER.
@@ -52,9 +52,28 @@
   }
   ~ update_value (self, POWER, -power_cost (Move, 1))
   
+  // Apply the benifits of speed!
   ~ update_value (self, SPEED, 1)
   ~ update_value (self, DODGE, 2)
   ~ update_value (self, RANGE, -1)
   
   {self} Increases reactor power, increasing speed by 1kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}. Range is now {get_value (self, RANGE)} ({get_range_raw()})
+  -> DONE
+= reset_speed (self)
+  ~ temp speed = get_value (self, SPEED)
+// Resetting speed for {self} and SPEED of {speed}
+  // Stop when speed reaches 0
+  {speed == 0:
+    -> DONE
+  }
+  
+  // Unapply the affects of speed.
+  ~ update_value (self, SPEED, -1)
+  ~ update_value (self, DODGE, -2)
+  ~ update_value (self, RANGE, 1)
+  // Loop until DONE
+  <- reset_speed (self)
+  -> DONE
+= upkeep_speed (self)
+
   -> DONE
