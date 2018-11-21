@@ -34,10 +34,10 @@ Post game stuff I think.
   // Turn Start, Recharge everyone
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
-  
+
   // Perform upkeep costs
   -> ironwolf.upkeep ->
-  
+
   <- axman.status
   <- ironwolf.status
 
@@ -45,8 +45,10 @@ Post game stuff I think.
   - (turn_loop)
   ~ temp state_attacker = get_turn_state(mech_attacker)
   ~ temp state_defender = get_turn_state(mech_defender)
-//   Turn Loop: Player: {state_attacker}; AI: {state_defender}
+  Turn Loop: Player: {state_attacker}; AI: {state_defender}
   {
+//  - state_attacker == PLAY_TURN && state_defender == PLAY_TURN:
+ //   Alternate turns.
   - state_attacker == PLAY_TURN:
     // Player Attack!
     -> ironwolf.pick_action -> turn_loop
@@ -74,7 +76,7 @@ Post game stuff I think.
 = how_battle_works
   This is a one on one arena match between challender {mech_attacker} and the defending {mech_defender}.
   <> Each mech is powered by a reactor that genrates POWER each turn; and HEATSINKS that reduce HEAT each turn.
-  <> The first mech to reach 20 HEAT loses the battle.
+  <> The first mech to reach {mech_overheat} HEAT loses the battle.
   <> Firing weapons, moving, dodging, all cost POWER and generate some HEAT.
   ->->
 
@@ -91,8 +93,8 @@ Post game stuff I think.
   -> DONE
 = status
 //   IronWolf: {get_heat(IronWolf)} HEAT, {get_power(IronWolf)} POWER
-  {IronWolf} {get_power(IronWolf)} POWER 
-  <>; {get_heat(IronWolf)} HEAT 
+  {IronWolf} {get_power(IronWolf)} POWER
+  <>; {get_heat(IronWolf)} HEAT
   <>; {get_heatsinks(IronWolf)} HEATSINKS
   <>; {get_speed(IronWolf)} Kilometer per POWER
   -> DONE
@@ -153,7 +155,7 @@ Post game stuff I think.
   { speed <= 0:
     ->->
   }
-  
+
   Continue current speed of {speed}kpp?
   + [Yes, Keep up speed]
     ~ mech_upkeep_speed(IronWolf, 1)
