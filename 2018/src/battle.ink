@@ -5,7 +5,8 @@ INCLUDE function_attributes.ink
 
 
 LIST MECHS = IronWolf, Axman
-LIST turn_states = Volley, Wait, GAMEOVER
+LIST turn_states = Volley, Wait, GAMEOVER, PLAYING
+VAR battle_state = PLAYING
 VAR mech_attacker = IronWolf
 VAR mech_attacker_turn_state = Volley
 VAR mech_defender = Axman
@@ -16,10 +17,24 @@ VAR mech_overheat = 20
 <- ironwolf.start
 <- axman.start
 
--> arena.how_battle_works ->
+// -> arena.how_battle_works ->
+// // -> arena.battle_hub ->
+// <- arena.battle_hub
 
-// -> arena.battle_hub ->
-<- arena.battle_hub
+VAR tmp = 0
+- (main_loop)
+{battle_state == PLAYING:
+  ~ tmp += 1
+  Loop Numner {tmp}
+  
+  {tmp >= 2:
+    battle_state = GAMEOVER
+  }
+  
+  {battle_state == PLAYING:
+    // -> main_loop
+  }
+}
 
 -
 // Post game stuff I think.
