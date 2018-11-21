@@ -2,6 +2,8 @@ INCLUDE weapons.ink
 INCLUDE function_weapons.ink
 INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
+INCLUDE function_core.ink
+
 
 
 LIST MECHS = IronWolf, Axman
