@@ -73,13 +73,14 @@ Post Battle stuff goes here.
     ->->
   }
   
-  {get_turn_state(mech_defender) == GAMEOVER:
-    AI is DONE
+  {get_turn_state (mech_defender) == GAMEOVER and get_turn_state (mech_attacker) == GAMEOVER:
+    Both are done
   }
-  {get_turn_state(mech_attacker) == GAMEOVER:
-    Player is DONE
-  }
-  Ending Volley
+//   {get_turn_state (mech_attacker) == GAMEOVER:
+//     Player is DONE
+//   }
+//   Ending Volley
+  Repeat for another volley
   -> turn_volley
   
 = battle_hub
