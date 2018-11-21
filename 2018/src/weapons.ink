@@ -53,7 +53,8 @@
   ~ update_value (self, POWER, -power_cost (Move, 1))
   
   ~ update_value (self, SPEED, 1)
-  ~ update_value (self, DODGE, 10)
+  ~ update_value (self, DODGE, 2)
+  ~ update_value (self, RANGE, -1)
   
-  {self} Increases reactor power, increasing speed by 1kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}.
+  {self} Increases reactor power, increasing speed by 1kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}. Range is now {get_value (self, RANGE)} ({get_range_raw()})
   -> DONE

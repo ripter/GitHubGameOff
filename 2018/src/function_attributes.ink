@@ -11,6 +11,8 @@ VAR mech_range = 15
 - else:
   ~ return Long
 }
+== function get_range_raw()
+  ~ return mech_range
 == function set_range(value)
 {
 - value >= 15:
