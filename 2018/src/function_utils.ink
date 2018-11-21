@@ -8,7 +8,7 @@
   ~ return "{~10|20|30|40|50|60|70|80|90|100}"
 
 == function bonus_small()
-  ~ temp rnd = "{~win|lose|win|lose}"
+  ~ temp rnd = "{~win|lose|lose|lose}"
   {rnd == "win":
     ~ return 1
   }
