@@ -50,20 +50,18 @@ Post Battle stuff goes here.
   // Recharge
   ~ mech_recharge (mech_attacker)
   ~ mech_recharge (mech_defender)
-// Reset turn mode
-  // Turn State tells us if the plaeyers still want to perform actions or if they are done and ready for the next turn.
+  // Reset turn mode
+  // Turn State tells us if the players still want to perform actions or if they are done and ready for the next turn.
   ~ set_turn_state (mech_attacker, VOLLEY)
   ~ set_turn_state (mech_defender, VOLLEY)
   ->->
 = turn_volley
   Starting Volley
   {get_fastest() == mech_attacker:
-// {IronWolf} is faster and gets to make the first move.
     {mech_attacker} is the first to make a move.
     -> ironwolf.pick_action ->
     -> axman.random_action ->
   - else:
-// {Axman} is quick and gets the first move.
     {mech_defender} is the first to make a move.
     -> axman.random_action ->
     -> ironwolf.pick_action ->
@@ -80,13 +78,6 @@ Post Battle stuff goes here.
   }
   Repeat for another volley
   -> turn_volley
-
-= how_battle_works
-  This is a one on one arena match between challenger {mech_attacker} and the defending {mech_defender}.
-  <> Each mech is powered by a reactor that generates POWER each turn; and HEATSINKS that reduce HEAT each turn.
-  <> The first mech to reach {mech_overheat} HEAT loses the battle.
-  <> Firing weapons, moving, dodging, all cost POWER and generate some HEAT.
-  ->->
 
 
 == ironwolf
@@ -108,17 +99,13 @@ Post Battle stuff goes here.
 = pick_action
   ~ temp currentPower = get_power(IronWolf)
   <- status
-  
+
   + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
     <- laser.fire(IronWolf, mech_defender)
   + [Wait]
     ~ set_turn_state (IronWolf, PASS)
 
   -
-//   ~ set_turn_state(IronWolf, Wait)
-  ->->
-= post_turn
-//   ~ set_turn_state(IronWolf, Wait)
   ->->
 = upkeep
   ~ temp speed = get_speed(IronWolf)
@@ -148,7 +135,6 @@ Post Battle stuff goes here.
   ~ set_speed(Axman, 0)
   -> DONE
 = status
-//   Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER
   {Axman} {get_power(Axman)} POWER
   <>; {get_heat(Axman)} HEAT
   <>; {get_heatsinks(Axman)} HEATSINKS
@@ -169,11 +155,6 @@ Post Battle stuff goes here.
 
 == function is_gameover()
   ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
-== function can_continue_volley()
-{
--  get_turn_state(mech_attacker) == GAMEOVER and get_turn_state(mech_defender) == GAMEOVER:
-  ~ return false
-}
 
 == function get_fastest()
   {

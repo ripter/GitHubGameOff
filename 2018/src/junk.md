@@ -203,3 +203,21 @@
   ->->
 
 //   Ending Player Turn {get_turn_state(IronWolf)}
+// {IronWolf} is faster and gets to make the first move.
+// {Axman} is quick and gets the first move.
+= how_battle_works
+  This is a one on one arena match between challenger {mech_attacker} and the defending {mech_defender}.
+  <> Each mech is powered by a reactor that generates POWER each turn; and HEATSINKS that reduce HEAT each turn.
+  <> The first mech to reach {mech_overheat} HEAT loses the battle.
+  <> Firing weapons, moving, dodging, all cost POWER and generate some HEAT.
+  ->->
+//   ~ set_turn_state(IronWolf, Wait)
+= post_turn
+//   ~ set_turn_state(IronWolf, Wait)
+  ->->
+//   Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER
+== function can_continue_volley()
+{
+-  get_turn_state(mech_attacker) == GAMEOVER and get_turn_state(mech_defender) == GAMEOVER:
+  ~ return false
+}
