@@ -60,24 +60,34 @@ Post game stuff I think.
   
   {
   - state_attacker == state_defender && state_attacker == Volley:
+    ~ temp first_volley = "{~attacker|defender}"
+    {first_volley == "attacker":
+      Player is the first to act.
+       -> ironwolf.pick_action -> axman.random_action
+    - else:
+      AI is the first to respond.
+    }
     We all equal playing dudes.
   - state_attacker == state_defender && state_attacker == Wait:
     We are all done taking turns dude.
   }
+  
+  // Repeat!
+  -> turn_loop
 
 
-  {
-//  - state_attacker == Volley && state_defender == Volley:
- //   Alternate turns.
-  - state_attacker == Volley:
-    // Player Attack!
-    -> ironwolf.pick_action -> turn_loop
-  - state_defender == Volley:
-    // Defender Attack!
-    -> axman.random_action -> turn_loop
-  - else:
-    No one can attack
-  }
+//   {
+// //  - state_attacker == Volley && state_defender == Volley:
+//  //   Alternate turns.
+//   - state_attacker == Volley:
+//     // Player Attack!
+//     -> ironwolf.pick_action -> turn_loop
+//   - state_defender == Volley:
+//     // Defender Attack!
+//     -> axman.random_action -> turn_loop
+//   - else:
+//     No one can attack
+//   }
 
   -
   // Check for losing condition
