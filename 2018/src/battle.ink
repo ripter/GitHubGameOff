@@ -26,6 +26,11 @@ VAR turn_count = 0
   
   <- arena.turn_start
   
+  {get_fastest() == mech_attacker:
+    Player, then AI
+  - else:
+    AI, then Player
+  }
 
   {is_gameover():
     ~ battle_state = GAMEOVER
@@ -226,10 +231,10 @@ Post Battle stuff goes here.
   ->->
 
 
-== function is_gameover
+== function is_gameover()
   ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
   
-== function get_fastest
+== function get_fastest()
   {
   - get_power(mech_defender) <= 0:
     ~ return mech_attacker
