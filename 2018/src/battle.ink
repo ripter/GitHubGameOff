@@ -63,7 +63,8 @@ Post game stuff I think.
     ~ temp first_volley = "{~attacker|defender}"
     {first_volley == "attacker":
       Player is the first to act.
-       -> ironwolf.pick_action -> axman.random_action
+       -> ironwolf.pick_action -> 
+       -> axman.random_action
     - else:
       AI is the first to respond.
     }
@@ -73,6 +74,7 @@ Post game stuff I think.
   }
   
   // Repeat!
+  ^^^^Calling turn_loop^^^^
   -> turn_loop
 
 
