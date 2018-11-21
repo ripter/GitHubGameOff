@@ -72,8 +72,15 @@ Post Battle stuff goes here.
     ~ battle_state = GAMEOVER
     ->->
   }
-  Ending Volley
   
+  {get_turn_state(mech_defender) == GAMEOVER:
+    AI is DONE
+  }
+  {get_turn_state(mech_attacker) == GAMEOVER:
+    Player is DONE
+  }
+  Ending Volley
+  -> turn_volley
   
 = battle_hub
   ~ set_turn_state(mech_attacker, Volley)
@@ -249,6 +256,11 @@ Post Battle stuff goes here.
 
 == function is_gameover()
   ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
+== function can_continue_volley()
+{
+-  get_turn_state(mech_attacker) == GAMEOVER and get_turn_state(mech_defender) == GAMEOVER:
+  ~ return false
+}
   
 == function get_fastest()
   {
