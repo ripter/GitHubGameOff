@@ -57,10 +57,12 @@ Post Battle stuff goes here.
 = turn_volley
   {get_fastest() == mech_attacker:
     // {IronWolf} is faster and gets to make the first move.
+    {mech_attacker} is the first to make a move.
     -> ironwolf.pick_action ->
     -> axman.random_action ->
   - else:
     // {Axman} is quick and gets the first move.
+    {mech_defender} is the first to make a move.
     -> axman.random_action ->
     -> ironwolf.pick_action ->
   }
@@ -158,15 +160,17 @@ Post Battle stuff goes here.
   ~ temp currentHeat = get_heat(IronWolf)
   ~ temp currentHeatsinks = get_heatsinks(IronWolf)
   ~ temp currentSpeed = get_speed(IronWolf)
-
-  + {currentPower >= 4} [Fire Laser!]
+  
+  IronWolf Status: {currentPower} POWER; {currentHeat} HEAT; {currentSpeed} Speed kpp.
+  What would you like to do?
+  + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
     <- laser.fire(IronWolf, Axman)
     // -> pick_action
   + {currentPower >= 1} [Move]
     -> menu_move ->
     // -> pick_action
-  + [End Turn]
-    -> post_turn ->
+  + [Wait for now]
+    // -> post_turn ->
     ->->
   -
   // If we have enough power for more actions.
