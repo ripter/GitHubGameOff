@@ -1,6 +1,6 @@
 //
 // Range Functions
-LIST RANGE = Long, Medium, Melee
+LIST ZONE_RANGES = Long, Medium, Melee
 VAR mech_range = 15
 == function get_range()
 {
