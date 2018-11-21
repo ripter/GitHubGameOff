@@ -104,11 +104,14 @@ Post Battle stuff goes here.
   <>; {get_speed(IronWolf)} Kilometer per POWER
   -> DONE
 = pick_action
-  + Pick
-  + An
-  + Action
+  ~ temp currentPower = get_power(IronWolf)
+  
+  + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
+    <- laser.fire(IronWolf, mech_defender)
+  + [Wait]
 
   -
+  ~ set_turn_state(IronWolf, Wait)
   ->->
 = post_turn
   ~ set_turn_state(IronWolf, Wait)
