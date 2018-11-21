@@ -19,8 +19,10 @@ VAR mech_overheat = 20
 -> arena.how_battle_works ->
 
 -> arena.battle_hub ->
+
 -
-Post game stuff I think.
+// Post game stuff I think.
+Post Battle stuff goes here.
 
 
 
@@ -58,6 +60,7 @@ Post game stuff I think.
     ->->
   }
   
+  ^^^^Start Volley^^^^
   {
   - state_attacker == state_defender && state_attacker == Volley:
     ~ temp first_volley = "{~attacker|defender}"
