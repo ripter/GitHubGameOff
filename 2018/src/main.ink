@@ -5,8 +5,8 @@ NaNoWriMo 2018 and GitHub GameOff 2018 entry.
 Genre: Hybrid.
 By Chris #link: https://github.com/ripter
 
-* Full Experience (NaNoWriMo Version)
-  TODO: Add this
+// * Full Experience (NaNoWriMo Version)
+//   TODO: Add this
 * NaNoWriMo Entry Only (Warning, unedited)
   -> nanowrimo_story_draft_one ->
 * Battle Only
