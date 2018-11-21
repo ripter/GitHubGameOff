@@ -24,21 +24,10 @@ VAR turn_count = 0
   ~ turn_count += 1
   Loop Numner {turn_count}
   
-  <- arena.turn_start
+  -> arena.turn_start ->
   
-  {get_fastest() == mech_attacker:
-    // {IronWolf} is faster and gets to make the first move.
-    -> ironwolf.pick_action ->
-    -> axman.random_action ->
-  - else:
-    // {Axman} is quick and gets the first move.
-    -> axman.random_action ->
-    -> ironwolf.pick_action ->
-  }
-
-  {is_gameover():
-    ~ battle_state = GAMEOVER
-  }
+  -> arena.turn_volley ->
+  
   {turn_count >= 5:
     ~ battle_state = GAMEOVER
   }
@@ -64,8 +53,22 @@ Post Battle stuff goes here.
   // Reset turn mode
   ~ set_turn_state(mech_attacker, PLAYING)
   ~ set_turn_state(mech_defender, PLAYING)
-  -> DONE
-  
+  ->->
+= turn_volley
+  {get_fastest() == mech_attacker:
+    // {IronWolf} is faster and gets to make the first move.
+    -> ironwolf.pick_action ->
+    -> axman.random_action ->
+  - else:
+    // {Axman} is quick and gets the first move.
+    -> axman.random_action ->
+    -> ironwolf.pick_action ->
+  }
+
+  {is_gameover():
+    ~ battle_state = GAMEOVER
+  }
+  ->->
   
 = battle_hub
   ~ set_turn_state(mech_attacker, Volley)
