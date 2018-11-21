@@ -5,12 +5,12 @@ INCLUDE function_attributes.ink
 
 
 LIST MECHS = IronWolf, Axman
-LIST turn_states = Volley, Wait, GAMEOVER, PLAYING
+LIST turn_states = VOLLEY, PASS, GAMEOVER, PLAYING
 VAR battle_state = PLAYING
 VAR mech_attacker = IronWolf
-VAR mech_attacker_turn_state = Volley
+VAR mech_attacker_turn_state = VOLLEY
 VAR mech_defender = Axman
-VAR mech_defender_turn_state = Volley
+VAR mech_defender_turn_state = VOLLEY
 VAR mech_overheat = 20
 
 // Setup the mechs for battle
@@ -48,21 +48,22 @@ Post Battle stuff goes here.
 == arena
 = turn_start
   // Recharge
-  ~ mech_recharge(mech_attacker)
-  ~ mech_recharge(mech_defender)
-  // Reset turn mode
-  ~ set_turn_state(mech_attacker, PLAYING)
-  ~ set_turn_state(mech_defender, PLAYING)
+  ~ mech_recharge (mech_attacker)
+  ~ mech_recharge (mech_defender)
+// Reset turn mode
+  // Turn State tells us if the plaeyers still want to perform actions or if they are done and ready for the next turn.
+  ~ set_turn_state (mech_attacker, VOLLEY)
+  ~ set_turn_state (mech_defender, VOLLEY)
   ->->
 = turn_volley
   Starting Volley
   {get_fastest() == mech_attacker:
-    // {IronWolf} is faster and gets to make the first move.
+// {IronWolf} is faster and gets to make the first move.
     {mech_attacker} is the first to make a move.
     -> ironwolf.pick_action ->
     -> axman.random_action ->
   - else:
-    // {Axman} is quick and gets the first move.
+// {Axman} is quick and gets the first move.
     {mech_defender} is the first to make a move.
     -> axman.random_action ->
     -> ironwolf.pick_action ->
@@ -73,8 +74,9 @@ Post Battle stuff goes here.
     ->->
   }
 
-  {get_turn_state (mech_defender) == GAMEOVER and get_turn_state (mech_attacker) == GAMEOVER:
+  {get_turn_state (mech_defender) == PASS and get_turn_state (mech_attacker) == PASS:
     Both are done
+    ->->
   }
   Repeat for another volley
   -> turn_volley
@@ -110,12 +112,13 @@ Post Battle stuff goes here.
   + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
     <- laser.fire(IronWolf, mech_defender)
   + [Wait]
+    ~ set_turn_state (IronWolf, PASS)
 
   -
-  ~ set_turn_state(IronWolf, Wait)
+//   ~ set_turn_state(IronWolf, Wait)
   ->->
 = post_turn
-  ~ set_turn_state(IronWolf, Wait)
+//   ~ set_turn_state(IronWolf, Wait)
   ->->
 = upkeep
   ~ temp speed = get_speed(IronWolf)
@@ -160,7 +163,7 @@ Post Battle stuff goes here.
   -> post_turn ->
   ->->
 = post_turn
-  ~ set_turn_state(Axman, Wait)
+  ~ set_turn_state(Axman, PASS)
   ->->
 
 
