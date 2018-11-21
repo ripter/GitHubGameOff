@@ -5,11 +5,11 @@ INCLUDE function_attributes.ink
 
 
 LIST MECHS = IronWolf, Axman
-LIST turn_states = PLAY_TURN, END_TURN, GAMEOVER
+LIST turn_states = Volley, Wait, GAMEOVER
 VAR mech_attacker = IronWolf
-VAR mech_attacker_turn_state = PLAY_TURN
+VAR mech_attacker_turn_state = Volley
 VAR mech_defender = Axman
-VAR mech_defender_turn_state = PLAY_TURN
+VAR mech_defender_turn_state = Volley
 VAR mech_overheat = 20
 
 // Setup the mechs for battle
@@ -28,8 +28,8 @@ Post game stuff I think.
 
 == arena
 = battle_hub
-  ~ set_turn_state(mech_attacker, PLAY_TURN)
-  ~ set_turn_state(mech_defender, PLAY_TURN)
+  ~ set_turn_state(mech_attacker, Volley)
+  ~ set_turn_state(mech_defender, Volley)
 
   // Turn Start, Recharge everyone
   ~ mech_recharge(mech_attacker)
@@ -47,12 +47,20 @@ Post game stuff I think.
   ~ temp state_defender = get_turn_state(mech_defender)
   Turn Loop: Player: {state_attacker}; AI: {state_defender}
   {
-//  - state_attacker == PLAY_TURN && state_defender == PLAY_TURN:
+  - state_attacker == state_defender && state_attacker == Volley:
+    We all equal playing dudes.
+  - state_attacker == state_defender && state_attacker == Wait:
+    We are all done taking turns dude.
+  }
+
+
+  {
+//  - state_attacker == Volley && state_defender == Volley:
  //   Alternate turns.
-  - state_attacker == PLAY_TURN:
+  - state_attacker == Volley:
     // Player Attack!
     -> ironwolf.pick_action -> turn_loop
-  - state_defender == PLAY_TURN:
+  - state_defender == Volley:
     // Defender Attack!
     -> axman.random_action -> turn_loop
   - else:
@@ -86,7 +94,7 @@ Post game stuff I think.
   ~ mech_attacker = IronWolf
   ~ set_heat(IronWolf, 0)
   ~ set_power(IronWolf, 0)
-  ~ set_heatsinks(IronWolf, 5)
+  ~ set_heatsinks(IronWolf, 3)
   ~ set_power_regen(IronWolf, 5)
   ~ set_dodge(IronWolf, 10)
   ~ set_speed(IronWolf, 0)
@@ -147,7 +155,7 @@ Post game stuff I think.
   }
   ->->
 = post_turn
-  ~ set_turn_state(IronWolf, END_TURN)
+  ~ set_turn_state(IronWolf, Wait)
 //   Ending Player Turn {get_turn_state(IronWolf)}
   ->->
 = upkeep
@@ -172,7 +180,7 @@ Post game stuff I think.
   ~ mech_defender = Axman
   ~ set_heat(Axman, 0)
   ~ set_power(Axman, 0)
-  ~ set_heatsinks(Axman, 5)
+  ~ set_heatsinks(Axman, 3)
   ~ set_power_regen(Axman, 5)
   ~ set_dodge(Axman, 10)
   ~ set_speed(Axman, 0)
@@ -188,7 +196,7 @@ Post game stuff I think.
   -> post_turn ->
   ->->
 = post_turn
-  ~ set_turn_state(Axman, END_TURN)
+  ~ set_turn_state(Axman, Wait)
   ->->
 
 
