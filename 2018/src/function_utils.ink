@@ -4,5 +4,13 @@
 }
 ~ return value
 
-== function random_numner()
+== function random_number_string()
   ~ return "{~10|20|30|40|50|60|70|80|90|100}"
+
+== function bonus_small()
+  ~ temp rnd = "{~win|lose|win|lose}"
+  {rnd == "win":
+    ~ return 1
+  }
+  ~ return 0
+  

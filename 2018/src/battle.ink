@@ -46,6 +46,18 @@ Post game stuff I think.
   ~ temp state_attacker = get_turn_state(mech_attacker)
   ~ temp state_defender = get_turn_state(mech_defender)
   Turn Loop: Player: {state_attacker}; AI: {state_defender}
+  
+  // First step, check for gameover
+  {get_heat(mech_defender) >= mech_overheat:
+    // Attacker wins!
+    Player Wins! 
+    ->->
+  }
+  {get_heat(mech_attacker) >= mech_overheat:
+    Player Loses!
+    ->->
+  }
+  
   {
   - state_attacker == state_defender && state_attacker == Volley:
     We all equal playing dudes.
@@ -69,16 +81,16 @@ Post game stuff I think.
 
   -
   // Check for losing condition
-  {
-  - get_heat(mech_defender) >= mech_overheat:
-    Defender loses!
-    ->->
-  - get_heat(mech_attacker) >= mech_overheat:
-    Attacker Loses!
-    ->->
-  - else:
-    -> battle_hub
-  }
+//   {
+//   - get_heat(mech_defender) >= mech_overheat:
+//     Defender loses!
+//     ->->
+//   - get_heat(mech_attacker) >= mech_overheat:
+//     Attacker Loses!
+//     ->->
+//   - else:
+//     -> battle_hub
+//   }
   Post play turn loop
   ->->
 = how_battle_works

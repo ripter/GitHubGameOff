@@ -20,12 +20,12 @@ LIST WEAPONS = Laser, Missile, Dodge, Move
   ~ return 0
 }
 
-== function heat_damage(weapon, level)
+== function heat_damage(weapon, base)
 {
 - weapon == Laser:
-  ~ return 3 * level
+  ~ return (base * power_cost(Laser, base)) + bonus_small()
 - weapon == Missile:
-  ~ return 1 * level
+  ~ return (base * power_cost(Missile, base))
 - else:
   ~ return 0
 }
