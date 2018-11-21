@@ -10,6 +10,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return get_heat (who)
   - type == HEATSINKS:
     ~ return get_heatsinks (who)
+  - type == TURN_STATE:
+    ~ return get_turn_state (who)
   }
   ~ return 0
   
@@ -21,6 +23,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return set_heat (who, value)
   - type == HEATSINKS:
     ~ return set_heatsinks (who, value)
+  - type == TURN_STATE:
+    ~ return set_turn_state (who, value)
   }
   ~ return false
   
@@ -32,6 +36,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return update_heat (who, delta)
   - type == HEATSINKS:
     ~ return update_heatsinks (who, delta)
+  - type == TURN_STATE:
+    ~ return update_turn_state (who, delta)
   }
   ~ return false
   

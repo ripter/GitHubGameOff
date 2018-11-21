@@ -185,3 +185,5 @@ VAR mech_defender_turn_state = VOLLEY
   ~ mech_defender_turn_state = value
   ~ return mech_defender_turn_state
 }
+== function update_turn_state(who, delta)
+  ~ return set_turn_state (who, delta + get_turn_state (who))
