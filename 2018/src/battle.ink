@@ -230,9 +230,22 @@ Post Battle stuff goes here.
   ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
   
 == function get_fastest
-  ~ temp speedAttacker = get_speed(mech_attacker)
-  ~ temp speedDefender = get_speed(mech_defender)
-  
+  {
+  - get_power(mech_defender) <= 0:
+    ~ return mech_attacker
+  - get_power(mech_attacker) <= 0:
+    ~ return mech_defender
+  - get_speed(mech_attacker) <= 0:
+    ~ return mech_attacker
+  - get_speed(mech_defender) <= 0:
+    ~ return mech_defender
+  - else:
+    ~ temp toss = "{~head|tail}"
+    {toss == "head":
+      ~ return mech_attacker
+    }
+    ~ return mech_defender
+  }
 
 == function mech_recharge(who)
   ~ update_power(who, get_power_regen(who))
