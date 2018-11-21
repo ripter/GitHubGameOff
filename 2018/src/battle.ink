@@ -23,6 +23,9 @@ VAR turn_count = 0
 {battle_state == PLAYING:
   ~ turn_count += 1
   Loop Numner {turn_count}
+  
+  <- arena.turn_start
+  
 
   {is_gameover():
     ~ battle_state = GAMEOVER
@@ -45,6 +48,14 @@ Post Battle stuff goes here.
 
 
 == arena
+= turn_start
+  // Recharge
+  ~ mech_recharge(mech_attacker)
+  ~ mech_recharge(mech_defender)
+  // Reset turn mode
+  ~ set_turn_state(mech_attacker, PLAYING)
+  ~ set_turn_state(mech_defender, PLAYING)
+  -> DONE
 = battle_hub
   ~ set_turn_state(mech_attacker, Volley)
   ~ set_turn_state(mech_defender, Volley)
@@ -217,6 +228,11 @@ Post Battle stuff goes here.
 
 == function is_gameover
   ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
+  
+== function get_fastest
+  ~ temp speedAttacker = get_speed(mech_attacker)
+  ~ temp speedDefender = get_speed(mech_defender)
+  
 
 == function mech_recharge(who)
   ~ update_power(who, get_power_regen(who))
