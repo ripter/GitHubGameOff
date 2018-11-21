@@ -23,11 +23,11 @@ VAR turn_count = 0
 {battle_state == PLAYING:
   ~ turn_count += 1
   Loop Numner {turn_count}
-  
+
   -> arena.turn_start ->
-  
+
   -> arena.turn_volley ->
-  
+
   {turn_count >= 5:
     ~ battle_state = GAMEOVER
   }
@@ -72,7 +72,7 @@ Post Battle stuff goes here.
     ~ battle_state = GAMEOVER
     ->->
   }
-  
+
   {get_turn_state (mech_defender) == GAMEOVER and get_turn_state (mech_attacker) == GAMEOVER:
     Both are done
   }
@@ -82,7 +82,7 @@ Post Battle stuff goes here.
 //   Ending Volley
   Repeat for another volley
   -> turn_volley
-  
+
 = battle_hub
   ~ set_turn_state(mech_attacker, Volley)
   ~ set_turn_state(mech_defender, Volley)
@@ -120,7 +120,7 @@ Post Battle stuff goes here.
     ~ temp first_volley = "{~attacker|defender}"
     {first_volley == "attacker":
       Player is the first to act.
-       -> ironwolf.pick_action ->
+       -> ironwolf.pick_action_draft_one ->
        -> axman.random_action
     - else:
       AI is the first to respond.
@@ -166,27 +166,34 @@ Post Battle stuff goes here.
   <>; {get_speed(IronWolf)} Kilometer per POWER
   -> DONE
 = pick_action
+  + Pick
+  + An
+  + Action
+  
+  -
+  ->->
+= pick_action_draft_one
 //   Pick an action.
   ~ temp currentPower = get_power(IronWolf)
   ~ temp currentHeat = get_heat(IronWolf)
   ~ temp currentHeatsinks = get_heatsinks(IronWolf)
   ~ temp currentSpeed = get_speed(IronWolf)
-  
+
   IronWolf Status: {currentPower} POWER; {currentHeat} HEAT; {currentSpeed} Speed kpp.
   What would you like to do?
   + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
     <- laser.fire(IronWolf, Axman)
-    // -> pick_action
+    // -> pick_action_draft_one
   + {currentPower >= 1} [Move]
     -> menu_move ->
-    // -> pick_action
+    // -> pick_action_draft_one
   + [Wait for now]
     // -> post_turn ->
     ->->
   -
   // If we have enough power for more actions.
   {currentPower > 0:
-    -> pick_action
+    -> pick_action_draft_one
   - else:
     -> post_turn ->
   }
@@ -262,7 +269,7 @@ Post Battle stuff goes here.
 -  get_turn_state(mech_attacker) == GAMEOVER and get_turn_state(mech_defender) == GAMEOVER:
   ~ return false
 }
-  
+
 == function get_fastest()
   {
   - get_power(mech_defender) <= 0:
