@@ -1,4 +1,4 @@
-LIST TYPES = POWER, HEAT, HEATSINKS, TURN_STATE, SPEED
+LIST TYPES = POWER, HEAT, HEATSINKS, TURN_STATE, SPEED, DODGE
 LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
 
 
@@ -13,7 +13,10 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
   - type == TURN_STATE:
     ~ return get_turn_state (who)
   - type == SPEED:
-    ~ get_speed (who)
+    ~ return get_speed (who)
+  - type == DODGE:
+// ^^get_value({who}, {type}) = "{get_dodge (who)}"^^
+    ~ return get_dodge (who)
   }
   ~ return 0
   
@@ -29,6 +32,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return set_turn_state (who, value)
   - type == SPEED:
     ~ return set_speed (who, value)
+  - type == DODGE:
+    ~ return set_dodge (who, value)
   }
   ~ return false
   
@@ -44,6 +49,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING
     ~ return update_turn_state (who, delta)
   - type == SPEED:
     ~ return update_speed (who, delta)
+  - type == DODGE:
+    ~ return update_dodge (who, delta)
   }
   ~ return false
   

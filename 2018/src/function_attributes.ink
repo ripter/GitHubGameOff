@@ -121,13 +121,18 @@ VAR power_regen_defender = 0
 VAR dodge_attacker = 0
 VAR dodge_defender = 0
 == function get_dodge(who)
+// ^^{who} is getting Dodge <>
+// ^^ get_dodge({who}) == <>
 {
   - who == mech_attacker:
+^^A: "{dodge_attacker}"^^
     ~ return dodge_attacker
   - who == mech_defender:
+// D: "{dodge_defender}"^^
     ~ return dodge_defender
 }
 == function set_dodge(who, value)
+^^{who} is setting Dodge to {value}
 {
   - who == mech_attacker:
     ~ dodge_attacker = value

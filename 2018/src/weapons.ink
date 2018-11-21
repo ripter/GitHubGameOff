@@ -44,12 +44,16 @@
 == reactor
 = move_forward (self)
 //  So all the logic to move forwarD
+{self} is moving forward
   // Make sure we have the power to spend.
   {get_value (self, POWER) <= 0:
     {self} attempted to increase speed, but did not have enough POWER.
     -> DONE
   }
-  ~ update_value (self, POWER, power_cost (Move, 1))
+  ~ update_value (self, POWER, -power_cost (Move, 1))
   
-  {self} Increases reactor power, increasing speed by 1kpp
+  ~ update_value (self, SPEED, 1)
+  ~ update_value (self, DODGE, 10)
+  
+  {self} Increases reactor power, increasing speed by 1kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}.
   -> DONE

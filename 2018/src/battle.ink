@@ -110,10 +110,13 @@ VAR turn_count = 0
   ~ set_speed(IronWolf, 0)
   -> DONE
 = status
-  {IronWolf} {get_power(IronWolf)} POWER
+  {IronWolf} Status:
+  {get_power(IronWolf)} POWER
   <>; {get_heat(IronWolf)} HEAT
   <>; {get_heatsinks(IronWolf)} HEATSINKS
-  <>; {get_speed(IronWolf)} Kilometer per POWER
+//  <>; {get_speed(IronWolf)} Kilometer per POWER
+  Speed: {get_value (IronWolf, SPEED)}kpp; Dodge Chance: {get_value (IronWolf, DODGE)}%
+  Weird: {get_value (IronWolf, DODGE)}
   -> DONE
 
 = pick_action
