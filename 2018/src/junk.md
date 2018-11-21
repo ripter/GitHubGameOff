@@ -262,3 +262,5 @@
 // ^^A: "{dodge_attacker}"^^
 // D: "{dodge_defender}"^^
 // ^^{who} is setting Dodge to {value}
+// Weird: {get_value (IronWolf, DODGE)}
+//  <>; {get_speed(IronWolf)} Kilometer per POWER

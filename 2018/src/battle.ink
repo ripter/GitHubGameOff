@@ -71,18 +71,24 @@ VAR turn_count = 0
   {get_fastest() == mech_attacker:
 
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
+      {mech_attacker} is the first to act.
       -> ironwolf.pick_action ->
     }
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
       -> axman.random_action ->
+    - else:
+      {mech_defender} is unable to respond.
     }
 
   - else:
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
+      {mech_defender} is the first to act.
       -> axman.random_action ->
     }
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
       -> ironwolf.pick_action ->
+    - else:
+      {mech_attacker} is unable to respond.
     }
   }
 
@@ -114,9 +120,7 @@ VAR turn_count = 0
   {get_power(IronWolf)} POWER
   <>; {get_heat(IronWolf)} HEAT
   <>; {get_heatsinks(IronWolf)} HEATSINKS
-//  <>; {get_speed(IronWolf)} Kilometer per POWER
   Speed: {get_value (IronWolf, SPEED)}kpp; Dodge Chance: {get_value (IronWolf, DODGE)}%
-  Weird: {get_value (IronWolf, DODGE)}
   -> DONE
 
 = pick_action
