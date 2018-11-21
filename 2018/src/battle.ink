@@ -105,6 +105,7 @@ Post Battle stuff goes here.
   -> DONE
 = pick_action
   ~ temp currentPower = get_power(IronWolf)
+  <- status
   
   + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
     <- laser.fire(IronWolf, mech_defender)
@@ -144,12 +145,17 @@ Post Battle stuff goes here.
   ~ set_speed(Axman, 0)
   -> DONE
 = status
-  Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER
+//   Axman: {get_heat(Axman)} HEAT, {get_power(Axman)} POWER
+  {Axman} {get_power(Axman)} POWER
+  <>; {get_heat(Axman)} HEAT
+  <>; {get_heatsinks(Axman)} HEATSINKS
+  <>; {get_speed(Axman)} Kilometer per POWER
   -> DONE
 = fire_laser
   <- laser.fire(Axman, IronWolf)
   ->->
 = random_action
+  <- status
   <- laser.fire(Axman, IronWolf)
   -> post_turn ->
   ->->
