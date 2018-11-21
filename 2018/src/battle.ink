@@ -31,8 +31,12 @@ Post game stuff I think.
   ~ set_turn_state(mech_attacker, PLAY_TURN)
   ~ set_turn_state(mech_defender, PLAY_TURN)
 
+  // Turn Start, Recharge everyone
   ~ mech_recharge(mech_attacker)
   ~ mech_recharge(mech_defender)
+  // Perform upkeep costs
+  -> ironwolf.upkeep ->
+  
   <- axman.status
   <- ironwolf.status
 
@@ -40,7 +44,7 @@ Post game stuff I think.
   - (turn_loop)
   ~ temp state_attacker = get_turn_state(mech_attacker)
   ~ temp state_defender = get_turn_state(mech_defender)
-  Turn Loop: Player: {state_attacker}; AI: {state_defender}
+//   Turn Loop: Player: {state_attacker}; AI: {state_defender}
   {
   - state_attacker == PLAY_TURN:
     Player Attack!
@@ -96,9 +100,9 @@ Post game stuff I think.
   ~ temp currentSpeed = get_speed(IronWolf)
 
   POWER: {currentPower}
-  HEAT: {currentHeat}
-  HEATSINKS: {currentHeatsinks}
-  Speed: {currentSpeed} KPP
+  <>; HEAT: {currentHeat}
+  <>; HEATSINKS: {currentHeatsinks}
+  <>; Speed: {currentSpeed} KPP
 
   + {currentPower >= 4} [Fire Laser!]
     <- laser.fire(IronWolf, Axman)
@@ -139,6 +143,22 @@ Post game stuff I think.
   ~ set_turn_state(IronWolf, END_TURN)
   Ending Player Turn {get_turn_state(IronWolf)}
   ->->
+= upkeep
+  ~ temp speed = get_speed(IronWolf)
+  { speed <= 0:
+    ->->
+  }
+  
+  Continue current speed of {speed}kpp?
+  + [Yes, Keep up speed]
+    ~ mech_upkeep_speed(IronWolf, 1)
+  + [No, cut speed]
+    ~ mech_clear_speed(IronWolf)
+  -
+  ->->
+
+
+
 
 == axman
 = start
@@ -178,6 +198,11 @@ Post game stuff I think.
     ~ delta = -1 * delta
   }
   ~ update_power(who, -delta * power_cost(Move, level))
+== function mech_upkeep_speed(who, level)
+  ~ temp delta = get_speed(who)
+  ~ update_power(who, -delta * power_cost(Move, level))
+== function mech_clear_speed(who)
+  ~ set_speed(who, 0)
 
 == function get_turn_state(who)
 {
