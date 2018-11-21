@@ -96,6 +96,7 @@ Post Battle stuff goes here.
   <>; {get_heatsinks(IronWolf)} HEATSINKS
   <>; {get_speed(IronWolf)} Kilometer per POWER
   -> DONE
+
 = pick_action
   ~ temp currentPower = get_power(IronWolf)
   <- status
@@ -104,9 +105,9 @@ Post Battle stuff goes here.
     <- laser.fire(IronWolf, mech_defender)
   + [Wait]
     ~ set_turn_state (IronWolf, PASS)
-
   -
   ->->
+
 = upkeep
   ~ temp speed = get_speed(IronWolf)
   { speed <= 0:
@@ -146,9 +147,6 @@ Post Battle stuff goes here.
 = random_action
   <- status
   <- laser.fire(Axman, IronWolf)
-  -> post_turn ->
-  ->->
-= post_turn
   ~ set_turn_state(Axman, PASS)
   ->->
 

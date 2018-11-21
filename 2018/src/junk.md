@@ -221,3 +221,8 @@
 -  get_turn_state(mech_attacker) == GAMEOVER and get_turn_state(mech_defender) == GAMEOVER:
   ~ return false
 }
+
+-> post_turn ->
+= post_turn
+  ~ set_turn_state(Axman, PASS)
+  ->->
