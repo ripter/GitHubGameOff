@@ -264,3 +264,7 @@
 // ^^{who} is setting Dodge to {value}
 // Weird: {get_value (IronWolf, DODGE)}
 //  <>; {get_speed(IronWolf)} Kilometer per POWER
+// Resetting speed for {self} and SPEED of {speed}
+// upkeep_speed ({self}) raw range {get_range_raw()}
+// Update range change first because of running start (because I say so)
+// finished upkeep_speed ({self}) raw range {get_range_raw()}

@@ -27,7 +27,7 @@ VAR turn_count = 0
   // Recharge, Upkeep, Dissipate Heat
   -> arena.turn_start ->
   
-  As the round begins. {mech_attacker} and {mech_defender} are within {get_value (mech_attacker, RANGE)} range. 
+  As the round begins. {mech_attacker} and {mech_defender} are within {get_value (NULL, RANGE)} range. 
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
