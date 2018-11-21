@@ -56,6 +56,8 @@ Post Battle stuff goes here.
   ~ set_turn_state (mech_defender, VOLLEY)
   ->->
 = turn_volley
+  ~ temp stateAttacker = get_turn_state (mech_attacker)
+  ~ temp stateDefender = get_turn_state (mech_defender)
   Starting Volley
   {get_fastest() == mech_attacker:
     {mech_attacker} is the first to make a move.
