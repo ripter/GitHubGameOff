@@ -236,3 +236,9 @@
 //    -> ironwolf.pick_action ->
 //    Both are done
 //   Repeat for another volley
+// == function bonus_small()
+//   ~ temp rnd = "{~win|lose|lose|lose}"
+//   {rnd == "win":
+//     ~ return 1
+//   }
+//   ~ return 0

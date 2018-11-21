@@ -21,22 +21,26 @@ LIST WEAPONS = Laser, Missile, Dodge, Move
 }
 
 == function heat_damage(weapon, base)
+~ temp bonus = 0
+~ temp damage = 0
 {
 - weapon == Laser:
-  ~ return (base * power_cost(Laser, base)) + bonus_small()
+  ~ bonus = bonus_small()
+  ~ damage = (base * (power_cost (Laser, base) - heat_cost (Laser, base)))
 - weapon == Missile:
-  ~ return (base * power_cost(Missile, base))
-- else:
-  ~ return 0
+  ~ damage = base * 1
 }
+~ return damage
 
 
 == function did_dodge(chance)
 {
 - chance <= 10:
-    ~ return "{~miss|hit|hit|hit|hit}" == "miss"
+    // ~ return "{~miss|hit|hit|hit|hit}" == "miss"
+    ~ return chance_10()
 - chance <= 20:
-  ~ return "{~miss|miss|hit|hit|hit}" == "miss"
+  // ~ return "{~miss|miss|hit|hit|hit}" == "miss"
+  ~ return chance_20()
 - chance <= 30:
   ~ return "{~miss|miss|miss|hit|hit}" == "miss"
 - chance <= 40:

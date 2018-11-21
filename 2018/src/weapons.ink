@@ -1,6 +1,6 @@
 == laser
 = fire(attacker, defender)
-  {attacker} attempts to  {~fires|blasts} a laser at {defender}.
+  {attacker} attempts to  {~fires|blast} a laser at {defender}.
   ~ temp level = 1
   // First, make sure we can afford this shot.
   ~ temp power = get_power(attacker)
@@ -20,6 +20,7 @@
 
   // Finally, deal damage to defender based on range
   ~ temp damage = heat_damage(Laser, level)
+//  ^^Raw Damage: {damage}
   {
   - get_range() == Long:
     <> The {~laser|blast|engery beam} degraded significantly over the long distance.
@@ -30,7 +31,14 @@
   - else:
     <> The full power of the {~blast|discharge|beam|laser} hits {defender}.
   }
+  
+  {damage == 0:
+    <> There was not enough power in the {~laser|blast|engery beam} to affect {defender}.
+  - else:
+    <> Sensors indicate {damage} HEAT was delt to {defender}
+  }
+//  ^^Total Damage to deal {damage}
   ~ update_heat(defender, damage)
 
- {attacker} deals {damage} HEAT to {defender}.
+// {attacker} deals {damage} HEAT to {defender}.
   -> DONE

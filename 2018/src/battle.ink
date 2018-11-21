@@ -42,8 +42,10 @@ VAR turn_count = 0
 {
 - get_value (mech_defender, HEAT) >= mech_overheat:
   You win!
+  {mech_defender} overheats and shuts down. {mech_attacker} is the winner!
 - get_value (mech_attacker, HEAT) >= mech_overheat:
   You Lost!
+  {mech_attacker} overheated and was forced to shut down. {mech_defender} is the winner!
 - else:
   Game Tied!
 }
