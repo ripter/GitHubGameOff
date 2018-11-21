@@ -17,22 +17,21 @@ VAR mech_overheat = 20
 <- ironwolf.start
 <- axman.start
 
-// -> arena.how_battle_works ->
-// // -> arena.battle_hub ->
-// <- arena.battle_hub
 
-VAR tmp = 0
+VAR turn_count = 0
 - (main_loop)
 {battle_state == PLAYING:
-  ~ tmp += 1
-  Loop Numner {tmp}
-  
-  {tmp >= 2:
-    battle_state = GAMEOVER
+  ~ turn_count += 1
+  Loop Numner {turn_count}
+
+  {turn_count >= 5:
+    ~ battle_state = GAMEOVER
   }
-  
+
+  // Check if we should loop again.
   {battle_state == PLAYING:
-    // -> main_loop
+    // Loop Again.
+    -> main_loop
   }
 }
 

@@ -90,3 +90,6 @@
 //   <>; HEAT: {currentHeat}
 //   <>; HEATSINKS: {currentHeatsinks}
 //   <>; Speed: {currentSpeed} KPP
+// -> arena.how_battle_works ->
+// // -> arena.battle_hub ->
+// <- arena.battle_hub
