@@ -30,13 +30,11 @@ VAR turn_count = 0
 
   // Check if we should loop again.
   {battle_state == PLAYING:
-    // Loop Again.
     -> main_loop
   }
 }
 
 -
-// Post game stuff I think.
 Post Battle stuff goes here.
 
 
