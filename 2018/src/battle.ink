@@ -7,12 +7,9 @@ INCLUDE function_core.ink
 
 
 LIST MECHS = IronWolf, Axman
-LIST turn_states = VOLLEY, PASS, GAMEOVER, PLAYING
 VAR battle_state = PLAYING
 VAR mech_attacker = IronWolf
-VAR mech_attacker_turn_state = VOLLEY
 VAR mech_defender = Axman
-VAR mech_defender_turn_state = VOLLEY
 VAR mech_overheat = 20
 
 // Setup the mechs for battle
@@ -196,19 +193,4 @@ Post Battle stuff goes here.
 == function mech_clear_speed(who)
   ~ set_speed(who, 0)
 
-== function get_turn_state(who)
-{
--  who == mech_attacker:
-  ~ return mech_attacker_turn_state
-- who == mech_defender:
-  ~ return mech_defender_turn_state
-}
-== function set_turn_state(who, value)
-{
--  who == mech_attacker:
-  ~ mech_attacker_turn_state = value
-  ~ return mech_attacker_turn_state
-- who == mech_defender:
-  ~ mech_defender_turn_state = value
-  ~ return mech_defender_turn_state
-}
+

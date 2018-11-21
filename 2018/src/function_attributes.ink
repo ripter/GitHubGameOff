@@ -163,3 +163,25 @@ VAR speed_defender = 0
 }
 == function update_speed(who, delta)
   ~ return set_speed(who, delta + get_speed(who))
+  
+  
+//
+// Turn State Functions
+VAR mech_attacker_turn_state = VOLLEY
+VAR mech_defender_turn_state = VOLLEY
+== function get_turn_state(who)
+{
+-  who == mech_attacker:
+  ~ return mech_attacker_turn_state
+- who == mech_defender:
+  ~ return mech_defender_turn_state
+}
+== function set_turn_state(who, value)
+{
+-  who == mech_attacker:
+  ~ mech_attacker_turn_state = value
+  ~ return mech_attacker_turn_state
+- who == mech_defender:
+  ~ mech_defender_turn_state = value
+  ~ return mech_defender_turn_state
+}
