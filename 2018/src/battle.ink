@@ -27,9 +27,13 @@ VAR turn_count = 0
   <- arena.turn_start
   
   {get_fastest() == mech_attacker:
-    Player, then AI
+    // {IronWolf} is faster and gets to make the first move.
+    -> ironwolf.pick_action ->
+    -> axman.random_action ->
   - else:
-    AI, then Player
+    // {Axman} is quick and gets the first move.
+    -> axman.random_action ->
+    -> ironwolf.pick_action ->
   }
 
   {is_gameover():
@@ -61,6 +65,8 @@ Post Battle stuff goes here.
   ~ set_turn_state(mech_attacker, PLAYING)
   ~ set_turn_state(mech_defender, PLAYING)
   -> DONE
+  
+  
 = battle_hub
   ~ set_turn_state(mech_attacker, Volley)
   ~ set_turn_state(mech_defender, Volley)
@@ -225,7 +231,7 @@ Post Battle stuff goes here.
 = random_action
   <- laser.fire(Axman, IronWolf)
   -> post_turn ->
-  -> DONE
+  ->->
 = post_turn
   ~ set_turn_state(Axman, Wait)
   ->->

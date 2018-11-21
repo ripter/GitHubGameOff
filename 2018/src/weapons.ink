@@ -1,6 +1,6 @@
 == laser
 = fire(attacker, defender)
-  {attacker} attepts to  {~fires|blasts} a laser at {defender}.
+  {attacker} attempts to  {~fires|blasts} a laser at {defender}.
   ~ temp level = 1
   // First, make sure we can afford this shot.
   ~ temp power = get_power(attacker)
@@ -11,13 +11,13 @@
   // Then charge the attacker for the shot.
   ~ update_power(attacker, -power_cost(Laser, level))
   ~ update_heat(attacker, heat_cost(Laser, level))
-  
+
   // Next, let the defender attempt a dodge.
   {did_dodge(get_dodge(defender)):
     <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
     -> DONE
   }
-  
+
   // Finally, deal damage to defender based on range
   ~ temp damage = heat_damage(Laser, level)
   {
@@ -31,6 +31,6 @@
     <> The full power of the {~blast|discharge|beam|laser} hits {defender}.
   }
   ~ update_heat(defender, damage)
-  
+
  {attacker} deals {damage} HEAT to {defender}.
   -> DONE
