@@ -10,7 +10,7 @@ LIST MECHS = IronWolf, Axman
 VAR battle_state = PLAYING
 VAR mech_attacker = IronWolf
 VAR mech_defender = Axman
-VAR mech_overheat = 20
+VAR mech_overheat = 10
 
 // Setup the mechs for battle
 <- ironwolf.start
@@ -27,7 +27,8 @@ VAR turn_count = 0
 
   -> arena.turn_volley ->
 
-  {turn_count >= 5:
+  {turn_count >= 30:
+    The battle is a Tie! No one was able to win within 30 turns.
     ~ battle_state = GAMEOVER
   }
 
@@ -38,10 +39,13 @@ VAR turn_count = 0
 }
 
 -
-{get_value (mech_defender, HEAT) >= mech_overheat:
+{
+- get_value (mech_defender, HEAT) >= mech_overheat:
   You win!
+- get_value (mech_attacker, HEAT) >= mech_overheat:
+  You Lost!
 - else:
-  You lost!
+  Game Tied!
 }
 
 
