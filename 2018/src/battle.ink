@@ -55,6 +55,7 @@ Post Battle stuff goes here.
   ~ set_turn_state(mech_defender, PLAYING)
   ->->
 = turn_volley
+  Starting Volley
   {get_fastest() == mech_attacker:
     // {IronWolf} is faster and gets to make the first move.
     {mech_attacker} is the first to make a move.
@@ -69,8 +70,10 @@ Post Battle stuff goes here.
 
   {is_gameover():
     ~ battle_state = GAMEOVER
+    ->->
   }
-  ->->
+  Ending Volley
+  
   
 = battle_hub
   ~ set_turn_state(mech_attacker, Volley)
