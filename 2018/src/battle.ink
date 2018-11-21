@@ -57,27 +57,45 @@ Post Battle stuff goes here.
 = turn_volley
   ~ temp stateAttacker = get_turn_state (mech_attacker)
   ~ temp stateDefender = get_turn_state (mech_defender)
-  Starting Volley
+//   Starting Volley
+  
   {get_fastest() == mech_attacker:
-    {mech_attacker} is the first to make a move.
-    -> ironwolf.pick_action ->
-    -> axman.random_action ->
+//    {mech_attacker} is the first to make a move.
+//    -> ironwolf.pick_action ->
+//    -> axman.random_action ->
+    
+    {get_value (mech_attacker, TURN_STATE) == VOLLEY:
+//       {mech_attacker} is ready.
+      -> ironwolf.pick_action ->
+    }
+    {get_value (mech_defender, TURN_STATE) == VOLLEY:
+      -> axman.random_action ->
+    }
+    
   - else:
-    {mech_defender} is the first to make a move.
-    -> axman.random_action ->
-    -> ironwolf.pick_action ->
+//    {mech_defender} is the first to make a move.
+//    -> axman.random_action ->
+//    -> ironwolf.pick_action ->
+    {get_value (mech_defender, TURN_STATE) == VOLLEY:
+      -> axman.random_action ->
+    }
+    {get_value (mech_attacker, TURN_STATE) == VOLLEY:
+      -> ironwolf.pick_action ->
+    }
   }
 
+  // Check if the game ended, which should abort the rest of the volleys
   {is_gameover():
     ~ battle_state = GAMEOVER
     ->->
   }
 
   {get_turn_state (mech_defender) == PASS and get_turn_state (mech_attacker) == PASS:
-    Both are done
+//    Both are done
+    Both sides have passed or run out of energy.
     ->->
   }
-  Repeat for another volley
+//   Repeat for another volley
   -> turn_volley
 
 
