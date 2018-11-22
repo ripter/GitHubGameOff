@@ -28,6 +28,9 @@
   "Oh, how can I help you?" Rex stupidly asked because the writer couldn't think of anything better.
   "There is a huge universe out there," IronWolf said as he laid back down. "And I am trapped here. Show me the universe and I'll help you reach your dream. Together we would be unstoppable.
   
+  * [Next] 
+  -
+  
   "I'm the pilot" Rex said to himself. "So you have to do what I say."
   The wolf snorted.
   "You are my Mech now, you said I am your pilot." Rex said.
@@ -63,8 +66,9 @@
   Rex sat down, his body weak and his emotions wrong hum dry. "How much longer do I need this?" he said waving the cables and tubes.
   "At least until the morning." IronWolf said.
   
-  
+  * [Next] 
   -
+  
   Tammy kicked her broken armor suit. After the failed hunt of the Atlas, the team moved on to let the others hunt their Mechs. Rose managed to find and capture an Axman, and a Blackjack. Neither was good as an Atlas. Tammy kicked the broken armor again.
   "Calm down" said Phil, the officer in charge of the hunt. "You'll get another chance to get a Mech."
   Tammy sneared at him, "The Atlas?"
@@ -93,6 +97,9 @@
   "I think my Tora can handle one lone Wolfhound" Phil said. "This is a stealth mission, so I want the rest of you to stay back. Watch the scanners and let us know if anything unexpected shows up."
   "Yes Sir" Willson said.
   
+  * [Next] 
+  -
+  
   Soon Tammy was moving along the river, making her way behind the Mech. She did not need to be that careful. The Machine was the size of the three story building. 
   The Mech had a humon like shape. Instead of a right hand, the Wolfhound had a large laser cannon. And instead of a round head, it looked more like someone landed a very small plane on the Mechs shoulders and cut off the wings, but left the tail. 
   That stupid boxy cockpit was all the way at the top of the Mech, on it's shoulders like a head. Tammy thought to herself as she apprached from behind. She was sure it would detect her before she reached the release latch.
@@ -100,6 +107,9 @@
   The Mech Wolfhound was sitting in the river. It's legs bend up into it's chest, arms wrapped around it's knees.
   Trying to move with the sounds of nature, Tammy slipped into the river and made her way up behind the Wolfhound. The river had a swft flow towards the machine. Tammy found a good size branch and floated down the river to the robot. She positioned herself so when the tree branch hit the Mech, she jumped/reached just high enough to catch a ladder rung on the back of the Mech.
   The Wolfhound moved his right arm and reached behind him. The massive laser, large enough that Tammy could walk inside of it, scrapped along the Mechs back as it smashed the treebranch into peices small enough that they flowed around the Mech and further down the river.
+  
+  * [Next] 
+  -
   
   "Do you think she'll do it?" Willson asked Phil over their private channel.
   "She's almost there, she can do it." Phil responded.
@@ -115,4 +125,7 @@
   "Alright" Tammy said into the team channel. "I'll keep her."
   Willson laughed for a moment before he cut his mike.
   "Great, let's pack it up" Phil said in the channel. "Time to go home and get paid."
+  
+  * [Next] 
+  -
   ->->
