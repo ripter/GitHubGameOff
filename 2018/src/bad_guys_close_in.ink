@@ -4,6 +4,9 @@
   Rex was still hung over from the long night. It took his delayed brain a moment to piece together what was different about the place. The 9 meter tall 10 ton mech was missing. That's such a big thing to be missing that Rex's mind rejected the idea at first, trying to find another reason. Maybe the Mech is in the bathroom? But he wouldn't fit thought the door, maybe he went out for a walk, except he's never done that before. Playing a game? hiding? maybe an appointment Rex had forgotten?
   Tammy was the first to speak. "Where is IronWolf?" was all she said.
 
+  * [Next] 
+  -
+  
   Rex quickly navigated the screens displayed only in his vision, finding the channel between him and IronWolf.
 
   Rex: Hey were did you go?
@@ -14,6 +17,9 @@
 
   After contacting security, they looked over the security footage for the area around Rex's garage apartment. IronWolf never came back after the losing battle in the arena. A flew calls later Rex found himself in the office of head of security for the Aurigan clan. Samson was a gruff and grizzled looking war veteran. Rex felt intimidated.
 
+  * [Next] 
+  -
+  
   "Your mech was confiscated." Samson said without emotion or tone.
   "Confiscated? by who? that does not make any sense" Rex stuttered.
   "It is all in the contract you signed." The old man pulled out a file from this core and transferred it to Rex. Soon he had the signed document in front of him. The old man made a gesture and the document scrolled to show the clause. "Right here, if you miss a payment on your apartment, we get to confiscate your Mech for 30 days."
@@ -27,6 +33,10 @@
 
   "Why?" is all rex could manage to say.
   Tammy and Rex rode in silence on their way back to the small building Clan MRB was using.
+  
+  * [Next] 
+  -
+  
   "Welcome back" Phil said when they walked in the doors.
   Rex looked up at him. "You are helping me? Why?"
   Phil shook his head. "No no, I am hiring a pilot that is having a bit of bad luck."
@@ -38,7 +48,10 @@
   Tammy playfully punched Rex in the shoulder. "Of course, like you would let someone just take IronWolf from you."
   "Well" Rex said, "I have been thinking of a way to locate him." Rex said.
 
-  -> writers_notes ->
+  * [Writer's notes] -> writers_notes ->
+  * [Next]
+  -
+  
 
   Before Rex and locate IronWolf, he needs to earn some money and gather information. So he must fight the urge to run out int he streets screaming IronWolf's name.
 
@@ -49,15 +62,25 @@
   "I think this was made for people with two arms" he said while pointing to his stump.
 
   "Oh" Phil said. "Yeah I had been wondering how you pilot IronWolf so well with only one arm."
+  
+  * [Next]
+  -
+  
   Rex was not sure what he should answer. He could guess from everyone's reaction that the virtual reality interface he was used to did not exist in the ancestor mechs. "I uh, am lucky that I got a mech that only needs one arm" he suggested.
   "It might be easier to get you a new arm" Tammy suggested.
   Rex never really considered a replacement for his arm before. Inside of IronWolf he had both arms, and outside. Rex noticed for the first time that he had a hard time remembering much form outside IronWolf. Sure he went to some parties and danced a little. But over the last X time units, almost all of his time had been with IronWolf, inside IronWolf.
   The sudden realization of his lost arm hit him with the gravity of realizing he lost his entire body. He was IronWolfs frontal cortex. He was the brain, and his body, like his arm, was lost to him.
 
+  * [Next]
+  -
+  
   "I need some time to think" Rex said and ran out of the building. Rex ran down the street and into the city. He was not thinking about were he was going, so his feet followed the easiest path. He found himself outside the parts shop in town. The one he had visited so many times when getting the materials IronWolf needed to upgrade. In a sense, it was a second home to Rex. He knew every part on the shelves and all the possibilities he had, when he had IronWolf. Tears filling his eyes, Rex pressed on, forcing himself to walk down streets he had never visited. He didn't want to see anything that reminded him of his life, of IronWolf. His mind was whirling with anger and regret and fear. Rex stumbled into a park and found a bench. He sat there and cried. All of his pent up frustrations and anger. It all came pouring out of him in big wet drops. Everything had happened so fast that he never really had a chance to process everything. He had no home to go back to, he couldn't even pilot a real mech. And as he realized he was unconsciously rubbing at the stub were his arm used to be. he wasn't even a full person anymore he thought to himself.
 
   Hours later, drained both physically and emotionally, Rex walked back to clan MRB, found the cot that was laied out for him, and laied down. His eyes open and staring at the wall. When morning came, he got out of bed and joined the rest of the team for breakfast.
 
+  * [Next]
+  -
+  
   "Good Morning" Phil said. "First thing we need to take care of is getting you up to speed piloting the Blackjack".
   Rex was not in the mood, but he had grown up enough to not respond with a sarcastic or mean retort; which was his first thought.
   "Tammy" Phil said. "Help rex get a new arm."
@@ -68,6 +91,8 @@
   Rex shook his head.
   "Neither do I, but when I get a job from the head office, I take it." Willson said.
 
+  * [Next]
+  -
   ->->
 = writers_notes
   I'm not sure what to do here. So the bad guys are supposed to defeat the player, and I guess that happened with the loss of IronWolf and the match. But it's not enough yet.

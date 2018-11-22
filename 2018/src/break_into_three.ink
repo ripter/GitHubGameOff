@@ -36,6 +36,10 @@
   Wilson had big tears in his eyes. "Poor boy can not. He was born wihtout his arm. We spend so much money trying to regrow it, but it just wont take."
   "How amazing" Sally said.
   "My family's entire fourtane was spent retrofitting IronWolf specificly for me." Rex lied.
+  
+  * [Next]
+  -
+  
   "As you can see from recent battle" Wilson said. "We are losing a fortune and I bet so are a lot of you. Rex lost IronWolf in a rigged fight. And he is not the only one."
   Sally's gasp seemd real this time. "Rigged fights? That is very serious."
   "It is" Wilson said. "The arena fights not only create a large health economy, but they also keep us out of the purpetral war our ancestors grew up with."
@@ -51,12 +55,16 @@
   "I am not a kid" Rex blurted.
   "I do not care if you are 100 years old, for this story to work you are kid." Sally snapped. She was no longer looking at him, but had glazed over her eyes as she looked at screens only visible to her.
 
+  * [Next]
+  -
   Over the next day, more interviews appeared online from pilots like Rex. People who had been lured in, then their mechs all broke down in the final battle. When the video of several overalyed  battles from the other clan, it was quite convincing. The people started a petition and got the votes needed to investigate the issue. People where boycotting the arenas, and government officals would be appointed and sent to every arena on the planet.
 
   Rex only had to lose two more battles, not that he was trying to lose. But he just could not make his artifical limb work properly and ended up only really being able to do one thing at a time, MOVE, AIM, FIRE. let alone something as complicated as DODGE, AIM, FIRE. With the AI helping, Rex could manage one of the the three, moving or dodgeing the mech (aka moving in a zig zag pattern), aiming the weapons on a target, and managing the weapons fire so he didn't overlaod the mech. In more than one fight he lost because he was to excited about getting a possible shot after a dodge that he did not know how much heat had built up plus the amount of heat firing the lasers could add.
 
   Finnaly, the time had arrived. Phil and Wilson dressed up in inspector outfits. Tammy had tapped into the security and found out the date and time the real inspectors would show up. The timing was perfect. Phil and Wilson designed as the inspectors showed up right on time. The clan's own head of house came to greet them and show them around the compound and arena.
 
+  * [Next]
+  -
   Tammy and Rex slipped unnoticed though one of the delivery entrences. Everyone was focuced on the inspection and did not bother with the van that drove them. When Tammy and Rex stepped out of the van in the compound garage, they were dressed in proper employee outfits. They walked though the halls without anyone noticing them. Right past armed guards who were wearing their presentation uniforms and worried a lot more about looking right than about stopping the two unknown people from walking into a secure area. Augmented vision showed helpful arrows and hallway information as the pair made their way to the research lab holding IronWolf. When they got there they found the area was secured with encrypted locked doors. Way beyond Tammy's ability to hack.
 
   "Now What?" Tammy asked.
@@ -88,6 +96,9 @@
 
   "Are you thinking what I am thinking?" Rex asked IronWolf.
   Cables snalked their way from IronWolf's body and found the interface built into the cap over Rex's missing arm. They connected and suddenly IronWolf opened up and pulled Rex inside. In one voice that sounded a little like each of them said. "It is payback time."
+  
+  * [Next]
+  -
   ->->
 
 = alternate_one

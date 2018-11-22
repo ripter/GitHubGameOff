@@ -4,6 +4,9 @@
 
   Rex climbed into the Blackjack. The controls and displays sournding him. Ad he climbed in, he found his new arm kept getting in the way. after only a year without the limb, he was surprised to find how bad he had gotten at moving it. It did not help that the limb was slow to respond and felt stiff.
 
+  * [Next]
+  -
+  
   The Mech reacted to his presence and the screens and display turned on. He could see the full status of the mech along with views from several cameras mounted around the mech.
 
   "Good" said Tammy. "Lets start simple and just take a walk around the compound."
@@ -11,6 +14,9 @@
   Rex looked around the controls, trying to find the way to stire the mech. A joysitck between his legs, but his arms were wrong. Hesitantly he placed his new fake hand on the throttle while his right hand held the joysitck. He turned the mech and made a small loop around the building.
   As rex tried to slow down the mech to park it, he pulled to hard on the throttle and the mech shuttered to a stop. Trying to correct he pushed too hard and the mech ran into the garage, crashing into the wall on the end. Teh crash caused Rex to let go of the controlls, triggering the deadman switch. --- The Mechs AI automatically slowed the mech down and prevented it from doing any serious damage.
 
+  * [Next]
+  -
+  
   "How was it?" Tammy asked. A look of concern flashed on her face.
   "This is very different that IronWolf, and my new arm is slow to respond." Rex said. His head hanging like a weight around his neck.
   "What was it like to pilot IronWolf?" Tammy asked. "He doens't use a standard cockpit design?"
@@ -38,6 +44,9 @@
   An escape, that is what Rex wanted at the moment. His life had fallen apart after he came so close. He risked everything, and he had won. Or he thought he was winning. Instead it was blind luck, and his luck had run out.
   Following his craving Rex walked into a dark den filled with strange smelling vapers. Everything in this place was much cheaper than Rex had expected. His meger little money could last him quite a while.
   
+  * [Next]
+  -
+  
   Over a week later, when Rex was trying to figure out how much money he could pawn his arm for, in order to buy more drugs, that he had a sudden moment of clarity. Or maybe a little voice had been yelling all this time and he only now noticed it. He could not continue like this. Eventually he would run out of money, and while he was not sad, he also was unfulled. Rex still wanted to be a champon, but his gref and guilt had overwhelmed him, leading him down this dark path. Rex thoguht that he should call Tammy or Phil. He should work or something, he thought and drifted off to sleep again.
   
   Rex woke up being half dragged in the open streets. The cold air stung his nose and mouth. His very very dry nose and mouth. Rex tried to look around to see what was happening. Someone was dragging him out. "What is going on?" He slired out.
@@ -52,6 +61,10 @@
   Rex was unable to sleep as the drugs and chemical levels in his body tried to normalize for the first time in almost two weeks. His mind was racing, leaving the world to move at a snales pace. Rex could see the time displayed over his vision from his core. Each second took forever to pass. Rex would try to think of something to distract himself, and when he would look back at the clock, not even a second would have passed.
   This thoughts and memories played and replied looping together and back again as he laied on the cold floor. His body feeling like it was spinning at hight speeds, celentrical force pulling at his extremities, causing his feelings to build there. He remembered IronWolf and wondered what was actually keeping him from getting IronWolf back. Did the mech even want to come back? He probably felt like Rex had abandonded him. Rex should have broke in to save IronWolf the night it happened. Now, now it had been so long that IronWolf would surely hate Rex. As he should. Rex really had abanonded his best and only friend in the world. Which was sadder Rex wondered. The boy who's only friend is an AI warmachine, or the boy who abandoned who friend to kidnappers.
   He did not want to say it outloud. He did not know why, but the words fought him when he tried to speak them. "IronWolf ws kidnapped" he managed to sqeak and such a low volume that only the ghosts could have heard it. Then he said it a little louder "IronWolf was kidnapped". Then again louder, "IronWolf was kidnapped!"
+  
+  * [Next]
+  -
+  
   The light turned on. "Good morning Rex" Phil said. He was holding two cups of coffee, standing in his evening clothes. He walked over to Rex, handed him a coffee, and then walked to the far wall and opened the garage shutters. Early morning light flooded the garage. Rex held up his real arm to cover his eyes. After making his mornign round, Phil came over to Rex; who was sipping the coffee; and sat down on the concrete next to him.
   "IronWolf was kidnapped" Rex said in a normal voice while looking at Phil.
   "Yeah" Phil said.
@@ -68,6 +81,8 @@
   Phil smiled, nodded, and sipped his coffee. 
   Together, sitting side by side, they watched the morning street though the window and drank coffee together.
   
+  * [Next]
+  -
   ->->
 
 = start_draft_one

@@ -7,6 +7,10 @@
   Rex cought a glimps of Dr Jones's open colored shirt. His hear started racing. He could see it in the holigaphic display in front of him. His own heart beating faster. He could see blood start to rush to his cheeks. Watching this happened caused his heart to race even more. He could see lights start to fire rapidly in the projected image of his brain.
   The image cut off. Dr Jones smiled. "Even with all this amazing technology, humans are still suspeptible to a feedback loop." She rested her hand on Rex's shoulder and guided him back into a seated position on the exam table.
   Rex could still feel his heart pounding. He was starting to think all sorts of terrable thoughts that he knew were not true, but the thoughts felt heavy, like they had more weight, or were more real, than his intelcetual knowledge.
+  
+  * [Next]
+  -
+  
   "Take a deep breath for me and hold it ok?" Dr Jone asked. 
   Rex thought he saw a smile in the corner of her eyes. Something so comfortable about that look. He did as she asked. He took the deepest breath he could, and held it as long as he could.
   "Good job" she said. "I need you to do that as slow as possible a few more times for me. Can you handle that?" she asked.
@@ -16,6 +20,9 @@
   "You have a few options to replace your missing arm. Normally we would just regrow the missing limb naturaly. It does mean another year before the arm is full size, and it would be a lot weaker unless you spent time exercising it back up. But you have that interface cap where your arm should go. We can't regrow your new one with that in place. We would have to remove it."
   Rex instinctavly touched the cap. It was his interface with IronWolf. In a way it felt like it was part of IronWolf as much as it was a part of himself.
   "A year? I can not afford to wait a year. I have to go back to work tomorrow." Rex protested.
+  
+  * [Next]
+  -
   
   "Hmm, well" The doctor said. "You could get someone to print you a new arm. I am assuming here that you know how to interface to that port you had installed."
   Rex's face revealed his shock at the thought.
@@ -27,6 +34,9 @@
   
   Back at the clan MRB, Rex sat on his cot, looking over his bitcoins. He was broke. He felt like an idoit. He had almost all of his bitcoins in a wallet provided by Aurigan clan. Everything was tied up with IronWolf, and he was gone. Everything was gone.
   
+  * [Next]
+  -
+  
   Tammy sat down next to him on the couch. "When can you pilot again?" She asked.
   Rex couldn't look up at her. "Re-growning the arm is a long process." he said.
   "Oh" Tammy said. "You have money from all your winnings right?"
@@ -34,5 +44,6 @@
   Tammy put a hand on Rex's back. He didn't shrug her off. "We will get IronWolf back. You can do it, you just need to hang in there a little bit longer. Yeah you've hit a rough patch, but you got a job here with us, and we care about you."
   Rex shrugged off Tammy's hand. "You do not get it. You have both of your arms. You have your family and your mech. You are a whole person." Rex was crying now. "I am just some freak. Without IronWolf I am nothing. I was not a good pilot because of him, he was a good mech dispite of me."
   
-  
+  * [Next]
+  -
   ->->

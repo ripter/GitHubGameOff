@@ -30,6 +30,9 @@
   
   The Catapults launched another wave of forty missiles at IronWolf.
   
+  * [Next]
+  -
+  
   Rage filled Rex and IronWolf. The emotion flooding their minds and bodies. The blue line along IronWolfs body morphed into a menicing red.  IronWolfs eyes became pinpoints of red focused dots.
   IronWolf rushed forward, leaving an after image of red light as he quickly reached the first Catapult, Jumping up and landing on it's head. The weath caused the two mechs to topple over, crushing in the catapult. It's pilot barely manging to eject. IronWolf's paw cought the pilot in mid-air. He threw the pilot back at his own missiles about to rain down on IronWolf. Dozens of missiles flying to closesly in the air exploded, causing a casading ripple of explosiongs.
   IronWolf was already aproaching the next Catapult.
@@ -60,4 +63,7 @@
   Rex and IronWolf scoffed at him. "Your cockpit collapsed because you used a thiner weaker metal instead of the regulation carbon steel. Looks like it was really good at dissipating heat as well. Shame you cut back on silly things like life support and structural integraty."
   The man spit blood at Rex and IronWolf. "No one ever got a hit on me. It did not need to be strong."
   "I happen to agree" Rex and IronWolf said as they turned and walked away.
+  
+  * [Next]
+  -
   ->->

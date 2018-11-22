@@ -42,6 +42,9 @@
   
   IronWolf responded. "In the fifith dimention."
   
+  * [Next]
+  -
+  
   "Amazing, how are you controling your projection into our four dimentions?" Wilson asked.
   
   The blue line that tattoed across IronWolf glowed faintly. "You see this line?" IronWolf asked. "It is a straight line, It is actualy my main power conduate. It is over 7.5 million kelometers long."
@@ -76,6 +79,9 @@
   "The weather could clear?" Wilson suggested half hartly. "Or if they survive the drop we could drop some fuel. or maybe they could buy some fuel down there."
   "Too risky." Phil said.
   
+  * [Next]
+  -
+  
   Rex and Tammy entered the room. "What is a drop?" Rex asked.
   "basically, " Tammy said, "you and your mech stand on top of a rocket, and try not to hit the ground so hard you die."
   "Sounds fun" said Rex.
@@ -87,6 +93,9 @@
   Everyone else just looked at Phil.
   "Alright, Rex, you and Tammy will drop together in an egg with IronWolf. When you find her mech, we will drop the other egg with enough fuel to bring you both back. Is that understood?" Phil said.
   "Yes sir." Rex said surpressing a smile. He turned and quickly left the room.
+  
+  * [Next]
+  -
   
   Once they were alone, Phil turned the star back to another set of planets. He pointed at a small moon. "There."
   Wilson looked worried. "Are you sure they will be fine without us?"
@@ -111,13 +120,22 @@
   "I could not do it before. Our experense has lead to a number of improvements of my systems."
   "You two can flirt later" Tammy Yelled, "Brace for impact.
   
+  * [Next]
+  -
+  
   The rockets fired, causing everything inside to jerk as the ship suddenly slowed. It continued to slow mroe and more until it landed softly on the ground.
   
   The egg opened up, Tammy and Rex walked out into a green medow. It was filled with short shin high grass as far as they could see. A cool wind swept over the medow, forming patterns of light and darkeness as the wind moved the grass.
   
   IronWolf walked out in his normal wolf size. He sniffed the air. "Good, we are close" he said as he walked off.
   "Close to what?" Rex asked as he followed after.
+  
+  * [Next]
+  -
+  
   Tammy looked around. The sky was filled with birds of all sizes. She did not see any of those on the scanners. Tammy could smell salt in the air. She followed the smell, away from Rex and IronWolf. Soon she found herself standing on the ledge of a tall cliff. She could not see to the bottom, fog or mist or maybe even a cloud blocked the view. She could see for miles on the horizon. huge never ending cliff walls. Bright whie with spots of vegitation. 
   A large flying bird flew up from the cliff in front of her. A single wing spanning larger than the entire egg ship. "Whoa" is all Tammy could say.
   
+  * [Thanks for reading!]
+  -
   ->->
