@@ -31,7 +31,7 @@ VAR turn_count = 0
   // Recharge, Upkeep, Dissipate Heat
   -> arena.turn_start ->
 
-  As the round begins. {mech_attacker} and {mech_defender} are within {get_value (NULL, RANGE)} range.
+//   As the round begins. {mech_attacker} and {mech_defender} are within {get_value (NULL, RANGE)} range.
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
@@ -143,7 +143,9 @@ VAR turn_count = 0
 = pick_action
   ~ temp currentPower = get_power(IronWolf)
 
+  Your opponent has {get_value (mech_defender, POWER)} POWER and {get_value (mech_defender, HEAT)} HEAT
   You have {currentPower} POWER and {get_value (IronWolf, HEAT)} HEAT.
+  You are in {get_value (NULL, RANGE)} range.
   + [Pick Action]
     Your current status:
     <- status

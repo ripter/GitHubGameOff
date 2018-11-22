@@ -189,3 +189,27 @@ VAR mech_defender_turn_state = VOLLEY
 }
 == function update_turn_state(who, delta)
   ~ return set_turn_state (who, delta + get_turn_state (who))
+
+
+//
+// Evasive Maneuvers
+VAR evasive_maneuvers_attacker = false
+VAR evasive_maneuvers_defender = false
+== function get_evasive_maneuvers(who)
+{
+  - who == mech_attacker:
+    ~ return evasive_maneuvers_attacker
+  - who == mech_defender:
+    ~ return evasive_maneuvers_defender
+}
+== function set_evasive_maneuvers(who, value)
+{
+  - who == mech_attacker:
+    ~ evasive_maneuvers_attacker = value
+    ~ return evasive_maneuvers_attacker
+  - who == mech_defender:
+    ~ evasive_maneuvers_defender = value
+    ~ return evasive_maneuvers_defender
+}
+== function update_evasive_maneuvers(who, delta)
+  ~ return set_evasive_maneuvers(who, delta + get_evasive_maneuvers(who))

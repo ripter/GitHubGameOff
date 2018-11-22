@@ -1,4 +1,4 @@
-LIST TYPES = POWER, HEAT, HEATSINKS, TURN_STATE, SPEED, DODGE, RANGE
+LIST TYPES = POWER, HEAT, HEATSINKS, TURN_STATE, SPEED, DODGE, RANGE, EVASIVE_MANEUVERS
 LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
 
 == function get_value(who, type)
@@ -17,6 +17,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
     ~ return get_dodge (who)
   - type == RANGE:
     ~ return get_range()
+  - type == EVASIVE_MANEUVERS:
+    ~ return get_evasive_maneuvers (who)
   }
   ~ return 0
 
@@ -36,6 +38,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
     ~ return set_dodge (who, value)
   - type == RANGE:
     ~ return set_range (value)
+  - type == EVASIVE_MANEUVERS:
+    ~ return set_evasive_maneuvers (who, value)
   }
   ~ return false
 
@@ -55,5 +59,7 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
     ~ return update_dodge (who, delta)
   - type == RANGE:
     ~ return update_range (delta)
+  - type == EVASIVE_MANEUVERS:
+    ~ return update_evasive_maneuvers (who, delta)
   }
   ~ return false
