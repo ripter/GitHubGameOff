@@ -14,12 +14,16 @@
   "You already have a clan." Wilson said as he sat next to her. "You are acting jealous because he is getting a chance at something you already have."
   "Whatever" Tammy said. "This way I'll get to fight him again, and prove I am the better fighter."
   
+  * [Next] 
   -
+  
   Rex and IronWolf followed the directions and arrived at their new home in Clan Aurigan's compound. It was located in the west side of the city. A wall sournded the compund with large reenforced doors large enough for even the tallest Mech  to walk though. When he reached the gate, a guide was there waiting for him. He showed Rex to his new room while he was part of the Clan. Along a road, large boxy garage house units stood side by side. Almost like a brownstone, but with rolling garage doors several stories tall.
   Rex's new place was fully furnished and featured everything Rex could think of. Workbenches, tools, equipment, showers. There was even a hottub in the back. Rex felt like a king. All of his hard work was finnaly starting to pay off.
   With the garage door closed, IronWolf had privacy to decompress back into his normal size.
   
+  * [Next] 
   -
+  
   Rex did not get long to rest, his first match working for Clan Aurigan was that night.
   
   The arena was far outside the city. Although it was hard to tell since the remains of older cities still stood like ancent reminders of past battles.
@@ -53,6 +57,9 @@
   Rex could see the Red Shift several kelometers in front of him. There was no hiding this time.
   
   The buzzer rang out over the battle field.
+  
+  * [Next] 
+  -
   
   # Range: Long
   IronWolf rushed forward, firing a wide spread of long range missiles at Red Shift. - IronWolf rushes forward. A sixty second count down in Rex's vision. IronWolf calculated some probably future locations based on the speed the last Red Shift showed. Ad soon as the sixty second time finished, the missile fired, streaking across the battle field. 
@@ -103,6 +110,9 @@
   
   The buzzer rang, starting the battle.
   
+  * [Next] 
+  -
+  
   IronWolf darts forward, running right at Gurkha. - As soon as the buzzer finishes IronWolf is running forward at full speed, Gurkha in his sights.
   Gurkha fires four extended range lasers at IronWolf. - Undetered, Gurkha stood his ground, reaching out with his laser hand and firing. Four small lasers blasing from the stubby arm.
   IronWolf dodges out of the way, but loses some momentum as he reaches Gurkha. IronWolf leaps, claws egnighting into blue flame.
@@ -115,6 +125,10 @@
   Gurkha thrashed wildly, the four lasers taking wild shots. Then the mech powered down. IronWolfs claws reached the reactor and the mech's safety system shut it down.
   
   The buzzer rang over the arena.
+  
+  * [Next] 
+  -
+  
   "Winner Rex!" said the announcer. "What an amazing day! I will see you all next week. Will Rex continue his winning streak or is it all beginners luck. Find out next time!"
   
   - (battle_two_post)
@@ -163,4 +177,7 @@
     Strong tension lines in the back legs will allow IronWolf to charge up a bit of energy and the release it as a power jump.
   -
   Rex rubbed his only hand along IronWolf's giant metal nose. "Don't worry, with my winnings tonight I'll get all the parts you need."
+  
+  * [Next] 
+  -
   ->->

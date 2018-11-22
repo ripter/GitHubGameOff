@@ -2,6 +2,10 @@
 = start
   After a lot of long and hard fought battles, Rex had made it. He was going up against the champion.
   Rex sat on a small bed next to IronWolf, the two of them plugged in together though Rex's port on his missing arm.
+  
+  * [Next] 
+  -
+  
   "I thought you wanted to be the galaxy champion" IronWolf asked.
   "Well yeah, of course." Rex said.
   "So why are you so excited about the fight this weekend?" IronWolf asked. "This is just some underground fighting arena. We haven't even left this planet since we arrived." IronWolf snorted "Seems like an awfully small galaxy to me."
@@ -71,6 +75,9 @@
   "I can't take another hit like that" IronWolf said over the channel.
   "Good thing we updated your heatsinks" Rex responded "or we would be out of the battle all ready."
 
+  * [Next] 
+  -
+  
   IronWolf dodged again, activating short range teleport to move faster than the Atlas's targeting computer could calculate. IronWolf dropped out of teleport right in front of the Atlas. He jumped, claws covered in a bright blue flames.
   The Atlas managed to rase an arm in defense. IronWolfs claws sliced though the limb, severing the Guass Rifle arm from the Atlas.
   In retaliation the Atlas's Autocannons opened fired, each round slamming into the armor of close range opponent. heatsinks chipping or cracking under the impacts before IronWolf could move out of range again.
@@ -98,6 +105,7 @@
   "You stupid jerk" Tammy said after he left. "I was trying to help you." she muttered to herself. She opened the video of the fight and ran it though her analyzer. Sure enough it picked up the same energy spike she had seen in the other quote unquote wins from this champion Atlas.
   She know for sure, Clan Aurigan was cheating, and they got Rex.
 
+  * [Next] 
   -
   ->->
 

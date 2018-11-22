@@ -14,12 +14,16 @@
     -> catapult_stats -> top
   * [Axman Stats]
     -> axman_stats -> top
+  * ->->
+  -
   ->->
 
 = battle_one
   Axman vs Catapult in a one on one battle. These are two evenly matched mechs, both weighting 65 tons and featuring the same fusion engine.
 
+  * [Next] 
   -
+  
   The Axman and Catapult are in long range.
   The Catapult has 0 Power and generates 10 power; giving it 10 power this turn. It has 0 Head and dispenses 0 heat.
   The Axman has 0 Power and generates 10 power; giving it 10 power this turn. It have 0 heat and dispenses 0 heat.
@@ -29,7 +33,9 @@
   At the end of the turn, the Catapult has used 6 power (4 on missiles, 2 on movement) and generated 3 heat (2 on missiles, 1 on movement).
   At the end of the turn, the Axman has used 10 power (on movement) and 5 heat (on movement).
 
+  * [Next] 
   -
+  
   The Axman and the Catapult are in medium range.
   At the start, the Catapult generates 10 power, giving it 14 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
   At the start, the Axman generates 10 power, giving it 10 power. It dispenses 6 heat leaving it with 0 heat to deal with.
@@ -40,7 +46,9 @@
   At the end of the turn, Catapult has used 13 power and generated 6 heat.
   At the end of the turn, Axman has used 10 power and generated 7 heat.
 
+  * [Next] 
   -
+  
   The Axman and the Catapult are now in close range.
   At the start, the Axman generates 10 power, giving it 10 power. It dispenses 6 heat, leaving it with 1 heat to deal with.
   At the start, the Catapult generates 10 power, giving it 11 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
@@ -50,7 +58,9 @@
   At the end of the turn, Catapult used 11 power and generated 6 heat.
   At the end of the turn, Axman used 3 power and has 11 heat. (1+1+8)
 
+  * [Next] 
   -
+  
   The Axman and the Catapult are still in close range.
   Axman is overheated (11 heat > 10 before powerdown), the mech's movement system has shut down. The Mech can not move this turn.
   Catapult generates 10 power, it now has 10 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
@@ -61,12 +71,15 @@
   At the end of the turn, The Catapult: used 7 power, leaving 3 power. generated 16 heat, leaving it with 21 heat.
   At the end of the turn, the Axman: used 12 power, leaving it with 5 power. It has generated 6 heat, leaving it wiht 11 heat.
 
+  * [Next] 
   -
   The Axman and Catapult as in medium range.
   Axman has overheated, it has 11 heat and shutdown happens at 10 heat. It's lasers shut down for the turn.
   Catapult has overheated, it has 21 heat, it attempted shutdown at 10 heat, but has suffered major damage at 15 heat and then signifant damage at 20 heat. The missiles stored inside of the the Catapult start to explode randomly in the mech legs.
   Catapult has lots it's legs when stored missiles exploded due to over heating.
   Axman wins!
+  * [Next] 
+  -
   ->->
 
 = battle_one_draft_two

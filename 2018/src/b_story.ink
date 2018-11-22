@@ -11,6 +11,9 @@
 
   Tammy got a seat near the back of the arena. She could make out the giant mechs below, but it was small and they moved fast. Screens around the arena showed close action shots and highlights. She focused more on those screens than on the fight below. But there was something lacking from watching a screen.
 
+  * [Next] 
+  -
+  
   Before Rex's fight, there is a preview of the Grand Champion, a pilot for Clan Aurigan. An open challenge for anyone that wanted to take him on in his Atlas. There where a few takers, their Mechs comming out of the visitor entrance. Tammy wondered if they were regulars, and brought their Mech for the fight, or if they were stoodges placed by Clan Aurigan to warm up the crowd. Whatever they where, they barely managed to last a few minutes against the massive Atlas.
 
   Rex was announced a new new young challenger. The announcer claimed he worked his way up from the deep penitentiary mines. Brought up for his chance to win his freedom. Tammy rolled her eyes at this, she suspected much of the "backgrounds" for the condentors are made up. After his wins, the announcer said Rex won his right to fight in the next round, beating out all the competiers and sending them back into the mines.
@@ -45,6 +48,8 @@
 
   After the match, the crowed started filing out. Some people grumbling and others excited and talking about how they are going to spend their winnings.
 
+  * [Next] 
+  -
   Tammy replayed the last attack on her internal screens. The Camalot has anti-missile countermeasures, so why did he fall for the missile diversion?
 
   By the time she got up to leave, most of the crowd was gone, leaving only the people that worked for the arena to clean up and wrap up the last bits of business. Tammy made her way down to the arena floor, lingering just at the edges, enough that everyone that was there didn't pay her any attention. She listened to the people working. She was not from this sort of area, but she knew people who worked in garages and she really knew people. She blended in and listened, she followed and watched people talk. She made her way to a bar in the old ruins outside arena.
@@ -52,6 +57,8 @@
 	-
 	It was  poorly lit, a live band played on a stage, but nobody was there for the band. They sounded terrible and Tammy was pretty sure they were not even playing the same song. A group of gear heads, or whatever you call these people, had taken up a long table and two booths. It was clear everyone knew each other. Their jackets piled up in a corner without care; either because they knew and trusted everyone around, or because they didn't have anything worth stealing, everyone worked at the garage and had the same shit. Tammy sat at the bar and nerced a drink. A couple of guys were talking loud and drunk near her. Something drunk guys often did, some dumb idea that she would overhear how important they were and fall in love with them.
 
+  * [Next] 
+  -
 	"Yeah, we got something special with this new Mech" one drunk guy said. "Real advanced stuff."
 	"That kid is piloting it right?" another drunk said.
 	"Ha, for now. Once the kid finishes his run we get the Mech." the drunk said.
@@ -74,4 +81,7 @@
   "Alright, I have an improved scanner that might help you." Phil said.
 
   Tammy was forming a plan. First she needed to figure out how they were cheating, she would also need to figure out when they where planning on taking Rex down. She guessed they would let his fan base build up for the next month at least. Then he would face the best of and Atlas. The existing champion proving why the dumb rookie still needs to improve. Like a battle between at 10 ton Mech and a 100 ton mech is even remotely fair.
+  
+  * [Next] 
+  -
   ->->
