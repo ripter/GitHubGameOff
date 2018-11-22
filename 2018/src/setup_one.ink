@@ -44,12 +44,20 @@
   Rex got within a few meters of the Atlas before a barrage of missile struck ton the far side, away from Rex. He signed a breath of releif that he was not closer.
   The Atlas imediatlly responded by turning to face the attacker and unleashing an astonishimg payload of twenty long range missiles, a Gauss rifle, and four laser blasts.
   The flash of light as the hulk of a machine fired made Rex shield his eyes. When he could see again he had spots in his vision and the air around him was signifiantly hotter. 
+  
+  * [Next] 
+  -
+  
   The attacking Mech unleashed another volly of missiles, this time the Atlas's missile defence took down the missiles before they hit. Two laser blasts his the Atlas along the side while it was distracted with the missiles.
   Rex saw the top of the Mech start to move, he had seen that attack before. Rex quickly pressed himself to the ground, trying to dig into the dirt as much as he could.
   The top of the Atlas started to spin, while it's feet started talking towards the attackers. As the spinning top of the Mech reached speed, it unleashed continus blasts of all four lasers. Creating a beam of death that cut though everything in it's path. As the Atlas walked, the ground was uneven, causing the beams to slice in arcs, sometimes cutting the ground and others firing into the sky.
   As Rex watches the carnage, he spots the three kids in armor jumping their way to the Atlas. Rex knew it was now or never, he was much closer to the Mech, but he didn't have armor or personal jump jets.
   Rex abandoned all sense of steath and made a bold run towards the Atlas. It's laser barrage finnaly over, it's guns red hot from over heating and the spinning slowing to a stop. The Mech glowed red hot at the head sinks in it's body. That was a powerful but stupid attack. Now that the Atlas had overheated, it was a sitting duck.
   Rex reached the foot of the Atlas. A latter went up the left leg and to the torso, where the cockpit was located. Rex started climbing up the leg.
+  
+  * [Next] 
+  -
+  
   A bullet shot rang next to Rex's ear causing him to lose grip on the ladder for a moment. We quickly hugged to it for dear life. Rex looked back and could see one the armored kids just reaching the foot of the Mech.
   "Who the hell are you?" A voice boomed out. "This is my Mech" said a female voice as the kid activated her personal jump jets and passed Rex on the ladder. She was jumping straight for the cockpit.
   Without thinking, Rex grabbed the boot as she flew by. The suddent shift in momention caused her to lose control and crash against the side of the leg.
@@ -58,11 +66,21 @@
   The armored kid, jumped for the cockpit, her hand touching the latch when the Atlas started to spin again. It's right cannon slammed into her armored body and sent her flying away from the machine. Sparks and metal sprayed into the air as the armor did it's job.
   Rex slowly opened his eyes, his head pounding, in fact, his whole body was pounding, and the ground. His eyes snapped open as he realized where he was. He was looking up between the legs of the giant Atlas as it stomped and fired constant laser blasts randomly.
   Rex couldn't move, his body unwilling or unable to respond. The Atlas's foot slammed down next to him. At first he heard nothing, the boom next to his ears drowned out the world. Then everything came flooding in as vivid colors. Rex screemed in pain as his left arm was crushed under the weight. His eyes filling with black spots as the leg rose again, ready to finish the job.
+  
+  * [Next] 
+  -
+  
   A black form moved over Rex. It pulled at him, at his body. He could see the remains of his arm as blackness took him.
+  
+  * [Next] 
+  -
   
   Tammy crashed into the dirt. She took off her helmit and started to curse the medaler that cost her *her* mech. She grinned for a moment when the Atlas's foot came down next to the boy. Then she heard him screem and she instantly felt guilty for that smile.
   A giant creature thing ran past her, according to her implants it was traveling over 90 kph. The creature jumped between the Atlas's foot and the boy, pulling him away and.
   Tammy wasn't sure what she saw. The creature's body opened up along it's belly, the leggs grew in size as the boy was pulled inside as the creature turned into a four legged Mech. Tammy had be studying and training at the best schools to become a champon. She has never even heard of such a Mech. Sure there was fictional stories of transforming robots, but the physics did not work.
   Tammy made sure to save a recording of the transformation. But she didn't tell her teammates when they cought up to her. She told them all about the annoying boy that crashed her suit and cost her a chanch at the Atlas.
   The Atlas, being more than Tammy could capture, was left alone and the team pulled back to find an easier target. Tammy protested but the leader said it was just too big of a risk for their small crew. 
+  
+  * [Next] 
+  -
   ->->
