@@ -34,7 +34,8 @@
   {damage == 0:
     <> There was not enough power in the {~laser|blast|energy beam} to affect {defender}.
   - else:
-    <> Sensors indicate {damage} HEAT was dealt to {defender}
+// <> Sensors indicate {damage} HEAT was dealt to {defender}
+  <> {damage} HEAT was dealt to {defender}.
   }
   ~ update_heat(defender, damage)
   -> DONE
@@ -50,7 +51,7 @@
   ~ update_value (self, RANGE, -speed)
   ~ update_value (self, DODGE, 2 * speed)
   -> DONE
-  
+
 = reset_speed (self)
   ~ temp speed = get_value (self, SPEED)
   // Stop when speed reaches 0
@@ -80,27 +81,21 @@
   ~ update_value (self, RANGE, -1)
 
   {self} increases power to the rector. The giant mech is moving at {get_value (self, SPEED)} kpp and has a Dodge of {get_value (self, DODGE)}%
-//   {self} Increases reactor power, increasing speed by 1 kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}. 
-//   Range is now {get_value (self, RANGE)} ({get_range_raw()})
   -> DONE
-  
-== move_run (self)
+
+= move_run (self)
   ~ temp level = 5
   // Check and Charge to run
-  {get_value (self, POWER) <= level:
+  {get_value (self, POWER) < level:
     {self} attempted to run, but did not have enough POWER.
     -> DONE
   }
   ~ update_value (self, POWER, -power_cost (Move, level))
-  
+
   // apply effects
   ~ update_value (self, SPEED, 1 * level)
   ~ update_value (self, DODGE, 2 * level)
   ~ update_value (self, RANGE, -1 * level)
-  
+
   {self} breaks out into a full run. The mech is now running at  {get_value (self, SPEED)} kpp with a Dodge of {get_value (self, DODGE)}%
   -> DONE
-  
-
-  
-

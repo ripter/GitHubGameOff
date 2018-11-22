@@ -20,15 +20,12 @@ Two giant war machines piloted by humans, also known as Mechs are battling again
 
 Each turn, the Mechs recharge POWER and dissipate HEAT. The first Mech to reach {mech_overheat} HEAT loses the game.
 Each turn is made up of two steps, a recharge of your POWER, and a volley of attacks. You and your opponent take turns moving or firing weapons at each other during the volley.
-// You can attack or move 
+// You can attack or move
 
 VAR turn_count = 0
 - (main_loop)
 {battle_state == PLAYING:
   ~ turn_count += 1
-// Loop Number {turn_count}
-//   Round {turn_count}:
-//   Start 
   Turn {turn_count}
 
   // Recharge, Upkeep, Dissipate Heat
@@ -74,17 +71,17 @@ VAR turn_count = 0
   ~ mech_recharge (mech_attacker)
   ~ mech_recharge (mech_defender)
   Both Mechs recharge POWER and dissipate HEAT.
-  
+
   // Reset turn mode
   // Turn State tells us if the players still want to perform actions or if they are done and ready for the next turn.
   ~ set_turn_state (mech_attacker, VOLLEY)
   ~ set_turn_state (mech_defender, VOLLEY)
-  
+
   // Let each mech perform optional upkeep
   -> ironwolf.upkeep ->
   -> axman.upkeep ->
   ->->
-  
+
 = turn_volley
   ~ temp stateAttacker = get_turn_state (mech_attacker)
   ~ temp stateDefender = get_turn_state (mech_defender)
@@ -99,7 +96,6 @@ VAR turn_count = 0
       -> axman.random_action ->
     - else:
       {mech_defender} takes no action.
-//   {mech_defender} is unable to respond.
     }
 
   - else:
@@ -121,7 +117,7 @@ VAR turn_count = 0
   }
 
   {get_turn_state (mech_defender) == PASS and get_turn_state (mech_attacker) == PASS:
-    Both sides have passed or run out of energy.
+    // Both sides have passed or run out of energy.
     ->->
   }
   -> turn_volley
@@ -138,7 +134,6 @@ VAR turn_count = 0
   ~ set_speed(IronWolf, 0)
   -> DONE
 = status
-//   {IronWolf} Status:
   {get_power(IronWolf)} POWER
   <>; {get_heat(IronWolf)} HEAT
   <>; {get_heatsinks(IronWolf)} HEATSINKS
@@ -147,7 +142,8 @@ VAR turn_count = 0
 
 = pick_action
   ~ temp currentPower = get_power(IronWolf)
-  
+
+  You have {currentPower} POWER and {get_value (IronWolf, HEAT)} HEAT.
   + [Pick Action]
     Your current status:
     <- status
@@ -159,9 +155,10 @@ VAR turn_count = 0
   + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
     <- laser.fire (IronWolf, mech_defender)
   + {currentPower >= 1} [Increase Speed - {power_cost (Move, 1)} POWER]
-    Forward!
     <- reactor.move_forward (IronWolf)
-  + [Wait]
+  + {currentPower >= 5} [Sharp speed increase. {power_cost (Move, 5)} POWER]
+    <- reactor.move_run (IronWolf)
+  + [Wait until next turn to generate more POWER]
     <- pass_turn
   -
   ->->
@@ -175,10 +172,8 @@ VAR turn_count = 0
   Continue current speed of {speed}kpp? It will cost {power_cost (Move, speed)} POWER.
   + [Yes, Keep up speed]
     <- reactor.upkeep_speed (IronWolf)
-// ~ mech_upkeep_speed(IronWolf, 1)
   + [No, cut speed]
     <- reactor.reset_speed (IronWolf)
-// ~ mech_clear_speed(IronWolf)
   -
   ->->
 
@@ -208,7 +203,6 @@ VAR turn_count = 0
   <- laser.fire(Axman, IronWolf)
   ->->
 = random_action
-//   <- status
   <- laser.fire(Axman, IronWolf)
   ~ set_turn_state(Axman, PASS)
   ->->

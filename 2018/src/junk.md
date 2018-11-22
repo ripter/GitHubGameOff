@@ -366,3 +366,14 @@ LIST WEAPONS = Missile, Laser, GuassRifle, PPC, Autocannon, Dodge, Run, Recharge
 == function perform(who, action, count)
   ~ update_power(who, -power_cost(action, count))
   ~ update_heat(who, heat_cost(action, count))
+// Loop Number {turn_count}
+//   Round {turn_count}:
+//   Start
+//   {mech_defender} is unable to respond.
+//   {IronWolf} Status:
+// Forward!
+// ~ mech_upkeep_speed(IronWolf, 1)
+// ~ mech_clear_speed(IronWolf)
+//   <- status
+//   {self} Increases reactor power, increasing speed by 1 kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}. 
+//   Range is now {get_value (self, RANGE)} ({get_range_raw()})
