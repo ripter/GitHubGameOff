@@ -1,7 +1,8 @@
 == setup_one
 = start
-  Rex layed in the grass on a hill overlooking the remains of an ancent factory. His cybernetic eye displaying layout information. He had been watching a known exit point for over a week. Whenever or however the factory worked, it occionally still produced a new Mech. The type and kind of Mech seemed random to Rex. (If he was a better student, he could have found loot tables on the internet, which are stistic charts breaking down the chance of any particualr type of Mech being manufactured and how often they appear.)
-  There was large deep footprints from the exit shaft and leading away from the factory. Signs that either a very heavy Mech was released recently, or there was a heavy rain when the last Mech was released. Rex was hoping it was the former. He dreamed of capturing an Annihilator or an Atlas. Both Mechs were perfect assalt mechs for any battle team. The Star fighter in every team. Rex wanted that. He wanted to be the star, the assalt mech. The one winning champaionships and getting sponsors and fans.
+  The next morning Rex checked his camp to make sure everything was still  ready. After weeks of searching he finnaly found what he had been looking for. The planet was once a thriving manufaturing hub. Centered around factories that producted the giant Mechs. That was kiloyears ago. The wild planet had reclaimed the entire planet and the factory ran automically from deep underground. The only thing that remained was old ruins and exit ports. Places where mechs will occionally appear from deep underground.
+  Rex laid in the grass, on a hill overlooking the remains of an ancent factory. His cybernetic eye displaying layout information. He had been watching a known exit point for over a week. Whenever or however the factory worked, it occionally still produced a new Mech. The type and kind of Mech seemed random to Rex. (If he was a better student, he could have found loot tables on the internet, which are stistic charts breaking down the chance of any particualr type of Mech being manufactured and how often they appear.)
+  There was large deep footprints from the exit shaft and leading away from the factory. Signs that either a very heavy Mech was released recently, or there was a heavy rain when the last Mech was released. Rex was hoping it was the former. He dreamed of capturing an Annihilator or an Atlas. Both Mechs were perfect assalt mechs for any battle team. The Star fighter in every team. Rex wanted that. He wanted to be the star, the assalt mech. The one winning champaionships and getting sponsors and fans. Having more than enough to buy himself compelte freedom. Whatever he might what whenever he wanted it. That was the dream.
   Rex grew up watching the Mech fights. Everyone watched them, and every bussiness tried to cash in on them. Even as a child Rex could see that it was power; abit at the cost of freedom. He was going to get the next big Mech that came out of this port. A large flat metal surface on the ground. Rex figured it must open up or something, like an elivator shaft.
   Over the next week, Rex scouted the area looking for his goal. A wild Mech. These giant machines where manufactured by humans long ago, but sometime during one of the great wars, the factories became automated. The Mechs known in Rex's time start out as wild. Their AI brain acting randomly and without commands.
   If Rex was going to reach his dream of being a Mech Warrior champaion, then first he needed a Mech.
@@ -9,13 +10,16 @@
   Rex apporached from a cliff several miles away. He pulled out a small cicrlal object and placed it to his eye. The teliscope controled by his implant allowed him to zoom in on the remains of the old factory.
   
   * [Scan the building remains]
+    The factory must have been massive back in the day. Back when people lived on this planet. Giant foundation stones still laied, leaving marks that gave an outline of the once great structure. With Mechs weighting up to 100 tons and stating 12 meters tall. Rex's imaginatin came up with all sorts of possibilities.
   * [Scan the peremter]
+    The ground around the exit was large and dense. Thousands or more of the giant war machines have walked out from that exit port over the years. It was impossible from scans alone to tell how often the mechs came out of the exit.
   
   -
   After scanning around, Rex grinned broadly. Just on the edge of the peremeter, stood a massive 100 ton Atlas. 
   With a Mech like that, he would be unstoppable. Rex thought to himself. He could see himself now, stepping on the compition and making it all the way to the final rounds. Then Clan Lyran would offer him a fat contract to be on their team.
   Rex was mid daydream when a sonic boom overhead shook him out of it. He scanned the sky and quickly saw a drop ship landing near the factory.
   "Damn it" Rex muttered. He quickly grabbed his gear and started sliding down the cliff face, moving as fast as he could without falling. "I have to get to the Atals first."
+  Galaxtic laws allow anyone to claim any wild mech as their own. But once claimed, taking the mech would become stealing. Rex's only chance was to get the Mech to reconize him as it's pilot before the introducters could do the same.
   Once Rex reached the vally floor, he stopped a moment to catch his breath and scan the drop ship.
   The Ship was old, but not the ancent egg shaped ships used in the old wars. This looked more like a large cargo plane. The back opened up to let Mechs walk in and out of the craft.
   
@@ -34,10 +38,11 @@
   The Wolf turned back and started a light jog in the directon of the Drop Ship.
   
   * [Scan the people exiting the dropship]
-    Rex scans the ship and it's crew as they exit the Drop Ship. Five total, two in Mechs and three walking in light armor and personal jump jets. It was a pretty standard crew for a Mech hunt. A few soon to be pilots and a couple of seniors to make sure they don't get in over their head.
-    Rex's mind clouded with anger as he thought about those kids, able to buy there way here. He would show them, he thought. He would get that Atlas.
+    // Rex scaned the ship and it's crew as they exited the Drop Ship. Five total, two in Mechs and three walking in light armor and personal jump jets. It was a pretty standard crew for a Mech hunt. A few soon to be pilots and a couple of seniors to make sure they don't get in over their head.
+    With his agumented eyes and core computer, Rex's vision zoomed into the drop ship, his personal scanner overlying information. It was a small crew, only three people. Two adults and a girl around Rex's age. Rex knew what ths was. He had seen many of the richer kids go off with a hired crew to help them catch their first mech.
+    Rex's mind clouded with anger as he thought about those kids, able to buy their way here. He would show them, he thought. He would get that Atlas. He would prove to everyone that hard work and careful planning was superer to rich parents and a well connected family.
   * [Move quickly towards the Atlas]
-    Rex wasted no time in moving to the Atlas. He would just have to hope that metal wolf creature understood him. Or at least the for the creature to not intrupt him again. After this was over, Rex told himself he was going to figure out how the wolf kept sneaking up on him.
+    Rex wasted no time in moving to the Atlas. He would just have to hope that metal wolf creature understood him. Or at least the for the creature to not intrupt him again. After this was over, Rex told himself he was going to figure out how the wolf kept sneaking up on him. Right now he needed to stay focused on his goal or else he would lose it.
   
   -
   The giant 100 ton mech stood over 12 meters tall. Rex tried to keep anything he could between him and the Atlas directly. Trees, rocks, bits of grass, anything, no matter how impractical it would be in defence of a laser beam that was thicker than him. Or even a single missile for that matter. Most people wore armor when attempting to capture a Mech, and personal jump jets. The personal jump jets don't exactly allow you to fly; more like they allow you to jump very very good. Someone skilled with them can appear to fly or hover by jumping off small air currents. Rex thought that was non-sense.
@@ -48,7 +53,7 @@
   * [Next] 
   -
   
-  The attacking Mech unleashed another volly of missiles, this time the Atlas's missile defence took down the missiles before they hit. Two laser blasts his the Atlas along the side while it was distracted with the missiles.
+  The attacking Mech unleashed another volley of missiles, this time the Atlas's missile defence took down the missiles before they hit. Two laser blasts his the Atlas along the side while it was distracted with the missiles.
   Rex saw the top of the Mech start to move, he had seen that attack before. Rex quickly pressed himself to the ground, trying to dig into the dirt as much as he could.
   The top of the Atlas started to spin, while it's feet started talking towards the attackers. As the spinning top of the Mech reached speed, it unleashed continus blasts of all four lasers. Creating a beam of death that cut though everything in it's path. As the Atlas walked, the ground was uneven, causing the beams to slice in arcs, sometimes cutting the ground and others firing into the sky.
   As Rex watches the carnage, he spots the three kids in armor jumping their way to the Atlas. Rex knew it was now or never, he was much closer to the Mech, but he didn't have armor or personal jump jets.

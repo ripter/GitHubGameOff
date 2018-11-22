@@ -10,27 +10,35 @@
   Rex followed the tubes and wires from his shoulder stump, along the ground, and out of the tent. Slowly Rex stood up, careful not to pull on the tubes and wires. He followed them out of the tent. The wires lead around the campfire and into the body of the black wolf.
   
   * "What did you do to me?"
-    The wolf creature rases it's head a little and snears at Rex.
+    The wolf creature rased it's head a little and sneared at Rex.
   * "Did you save me?"
     The wolf huffs into the dirt, it's glowing blue eyes not looking at Rex.
   
   -
-  "I am IronWolf" a voice said on his implated headset. 
-  Instinctavly he scanned for the source of the transmission. It was the creature. Rex thought back at the his memmory and could not rememeber the Mech over him, the foot over him. Everything as a jumbled mix in his head.
+//   "I am IronWolf" a voice said on his implated headset. 
+  A new voice channel appeared in Rex's augmented vision. He accepted and a gruff voice spoke over the audio implants. "I am IronWolf." he said.
+  Rex did not want to believe it, everything was happening all at once. A talking mech? A transforming mech that appears at the size of a wolf? Rex was not sure what was more crazy. He wnted to close his eyes and pretend the whole thing was a dream. But when he opened his eyes, the Wolf was still sitting there and his arm was still missing.
+//   Instinctavly he scanned for the source of the transmission. It was the creature. Rex thought back at the his memmory and could not rememeber the Mech over him, the foot over him. Everything as a jumbled mix in his head.
   "What are you?" Rex managed to ask.
   "I am IronWolf, and you are, my pilot." The wolfs eyes moved to watch him.
-  "You are a Mech? I've never seen anything like you before, or this" he pointed to the tubes running though the stump that was his arm.
+//   "You are a Mech? I've never seen anything like you before, or this" he pointed to the tubes running though the stump that was his arm.
+  Rex couldn't help but laugh. He came out here to get a Mech. "I have never seen a mech like you before. Can you really change sizes? Are you really a wild Mech? Can all mechs talk? What is with this intregrate tattto around your body?"
   "There are many things you have never seen" The wold responded without lifting it's massive head.
   Rex chuckled, "yeah that's true. Why did you save me?"
   "You are my pilot"  IronWolf said.
   "Sure, that's awesome and I don't want to dimish how awesome and excited I am to be your pilot. I'm just wondering why you saved me before I was your pilot. It didn't exactly tame you."
   The wold stood up, it's massive form hulking over Rex. "No," IronWolf said, "you did not *tame* me." The wolf stepped forward, forcing Rex to take a step back. "I saved you, because I think we can help each other."
   "Oh, how can I help you?" Rex stupidly asked because the writer couldn't think of anything better.
-  "There is a huge universe out there," IronWolf said as he laid back down. "And I am trapped here. Show me the universe and I'll help you reach your dream. Together we would be unstoppable.
+//   "There is a huge universe out there," IronWolf said as he laid back down. "And I am trapped here. Show me the universe and I'll help you reach your dream. Together we would be unstoppable.
+  IronWolf seemed to think on this for a moment. "Do you now what it is like to be trapped? Stuck in a world you can not control, unable to do anything other than scream into the wind? I am trapped on this planet, and I need you to get me off."
   
   * [Next] 
   -
   
+  "Me? I do not have a ship. I had to stoaway just to get here." Rex said. "Even if I could, were do you want to go?"
+  IronWolf's large head looked up into the night sky. He looked for a moment as if he would howl. "Everywhere" he said at long last.
+  "I hope you can do that while we conquire the mech warrior battle circuit." Rex said. "The entire reason I wanted a mech is to fight."
+  "I am not a slave" IronWolf said.
   "I'm the pilot" Rex said to himself. "So you have to do what I say."
   The wolf snorted.
   "You are my Mech now, you said I am your pilot." Rex said.
