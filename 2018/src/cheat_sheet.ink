@@ -8,7 +8,7 @@
 
 
 * [Mechs]
-  + IronWolf - NextGen Mech, bonded to Rex
+  + IronWolf - Next Generation Mech, bonded to Rex
     IronWolf, Level 1 Scout Class.
     Weight: 10 tons
     Aspects: Heal Pilot, Transform
@@ -20,7 +20,7 @@
     Aspects:
     Approaches: Careful +1; Clever +2; Flashy +2; Forceful +3; Quick +1; Sneaky 0;
     Weapons: 4 Medium Range Lasers, 1 extended range large laser.
-  + CopperBanshee - NextGen Mech, belongs to Clan Kirby
+  + CopperBanshee - Next Generation Mech, belongs to Clan Kirby
   + Thunderbolt - belongs to Clan Lyran
   + Awesome - belongs to Clan Lyran
   + Axman - Clan MRB; Captured in setup_one

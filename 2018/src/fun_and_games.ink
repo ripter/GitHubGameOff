@@ -1,6 +1,6 @@
 == fun_and_games
 = start
-  The next weekend Rex was back to continue his climb up the ladder. With IronWolf fully repaired. Maybe some changes to the loadout and one or two upgrades picked.
+  The next weekend Rex was back to continue his climb up the ladder. With IronWolf fully repaired. Maybe some changes to the load out and one or two upgrades picked.
 
   (NOTE: I am still trying to figure out how these fights might work as a story/game. So I am going to try a bunch of different things and try and find
   the diamond in the rough.)
@@ -21,9 +21,9 @@
 = battle_one
   Axman vs Catapult in a one on one battle. These are two evenly matched mechs, both weighting 65 tons and featuring the same fusion engine.
 
-  * [Next] 
+  * [Next]
   -
-  
+
   The Axman and Catapult are in long range.
   The Catapult has 0 Power and generates 10 power; giving it 10 power this turn. It has 0 Head and dispenses 0 heat.
   The Axman has 0 Power and generates 10 power; giving it 10 power this turn. It have 0 heat and dispenses 0 heat.
@@ -33,9 +33,9 @@
   At the end of the turn, the Catapult has used 6 power (4 on missiles, 2 on movement) and generated 3 heat (2 on missiles, 1 on movement).
   At the end of the turn, the Axman has used 10 power (on movement) and 5 heat (on movement).
 
-  * [Next] 
+  * [Next]
   -
-  
+
   The Axman and the Catapult are in medium range.
   At the start, the Catapult generates 10 power, giving it 14 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
   At the start, the Axman generates 10 power, giving it 10 power. It dispenses 6 heat leaving it with 0 heat to deal with.
@@ -46,39 +46,39 @@
   At the end of the turn, Catapult has used 13 power and generated 6 heat.
   At the end of the turn, Axman has used 10 power and generated 7 heat.
 
-  * [Next] 
+  * [Next]
   -
-  
+
   The Axman and the Catapult are now in close range.
   At the start, the Axman generates 10 power, giving it 10 power. It dispenses 6 heat, leaving it with 1 heat to deal with.
   At the start, the Catapult generates 10 power, giving it 11 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
-  Axman attacks with Hatcet, costing 3 power and generating 1 heat. The attack cuts though the left shoudler of the catapult. Chopping off the missile rack.
+  Axman attacks with Hatchet, costing 3 power and generating 1 heat. The attack cuts though the left shoulder of the catapult. Chopping off the missile rack.
   The Catapult attempts to run past the Axman, ripping of the rest of the missile rack. Costing 3 power and generating 2 heat.
   The Catapult fires 2 medium lasers; costing 8 power and generating 4 heat. The lasers dealing 8 heat to Axman.
   At the end of the turn, Catapult used 11 power and generated 6 heat.
   At the end of the turn, Axman used 3 power and has 11 heat. (1+1+8)
 
-  * [Next] 
+  * [Next]
   -
-  
+
   The Axman and the Catapult are still in close range.
-  Axman is overheated (11 heat > 10 before powerdown), the mech's movement system has shut down. The Mech can not move this turn.
+  Axman is overheated (11 heat > 10 before power down), the mech's movement system has shut down. The Mech can not move this turn.
   Catapult generates 10 power, it now has 10 power. It dispenses 6 heat, leaving it with 0 heat to deal with.
-  Axman generates 10 power, it now has 17 power. It disipates 6 heat, leaving it 5 heat to deal with.
+  Axman generates 10 power, it now has 17 power. It dissipates 6 heat, leaving it 5 heat to deal with.
   The Catapult runs forward trying to put distance between it and the Axmen. It uses 3 power and generates 2 heat.
   Axman turns and fires 3 medium lasers. It uses 12 power and generates 6 heat.  The Catapult takes 12 heat.
   The Catapult fires 1 medium lasers; costing 4 power and generating 2 heat. The lasers dealing 4 heat to Axman.
   At the end of the turn, The Catapult: used 7 power, leaving 3 power. generated 16 heat, leaving it with 21 heat.
-  At the end of the turn, the Axman: used 12 power, leaving it with 5 power. It has generated 6 heat, leaving it wiht 11 heat.
+  At the end of the turn, the Axman: used 12 power, leaving it with 5 power. It has generated 6 heat, leaving it with 11 heat.
 
-  * [Next] 
+  * [Next]
   -
   The Axman and Catapult as in medium range.
-  Axman has overheated, it has 11 heat and shutdown happens at 10 heat. It's lasers shut down for the turn.
-  Catapult has overheated, it has 21 heat, it attempted shutdown at 10 heat, but has suffered major damage at 15 heat and then signifant damage at 20 heat. The missiles stored inside of the the Catapult start to explode randomly in the mech legs.
-  Catapult has lots it's legs when stored missiles exploded due to over heating.
+  Axman has overheated, it has 11 heat and shutdown happens at 10 heat. Its lasers shut down for the turn.
+  Catapult has overheated, it has 21 heat, it attempted shutdown at 10 heat, but has suffered major damage at 15 heat and then signifiant damage at 20 heat. The missiles stored inside of the the Catapult start to explode randomly in the mech legs.
+  Catapult has lots its legs when stored missiles exploded due to over heating.
   Axman wins!
-  * [Next] 
+  * [Next]
   -
   ->->
 
@@ -86,7 +86,7 @@
   Axman vs Catapult in a one on one battle. These are two evenly matched mechs, both weighting 65 tons and featuring the same fusion engine.
 
   - (turn1_b1_draft_two)
-  Catapult goes first. It fires both shoulder missiles; ten missiles fly off into the air, targing the ax man; costing 4 power and leaving 6 power left. He takes evasive manuevers by starting a walk to the left. Using 3 power and leaving 3 power left. The missiles generated 2 heat (1x per missile rack), Moving costs 1.5 Heat, and the heat sinks removed -6 heat; leaving the Mech at 0 heat overall.
+  Catapult goes first. It fires both shoulder missiles; ten missiles fly off into the air, targeting the ax man; costing 4 power and leaving 6 power left. He takes evasive maneuvers by starting a walk to the left. Using 3 power and leaving 3 power left. The missiles generated 2 heat (1x per missile rack), Moving costs 1.5 Heat, and the heat sinks removed -6 heat; leaving the Mech at 0 heat overall.
   Axman runs at the Catapult, using 10 power to move from long range to medium range. The movement generates 5 Heat, the heat sinks removed -6 heat; leaving the Mech with 0 heat overall.
   The Catapult has 3 remaining power and 2 Heat.
   Axman as 0 remaining power and 5 Heat.
@@ -97,7 +97,7 @@
   The Catapult had 3 Power; generated 10 power; It used 2 Power reloading; Leaving it with 10 remaining power (max 10 power). It had 2 Heat, it lost 6 heat from the heat sinks, then generated
 
   - (turn3)
-  The Axman reaches the Catapult in close range. The Mechs generator providing 10 power. It brings its ax down the Catapult's left shoulder. The damange is significant, destorying the missile rack on that shoulder.
+  The Axman reaches the Catapult in close range. The Mechs generator providing 10 power. It brings its ax down the Catapult's left shoulder. The damage is significant, destroying the missile rack on that shoulder.
   The Catapult manages to stay on it's feet while an entire missile rack, that holds five missiles, was chopped off it's body. The power reactor provides 10 power, and the mech already had 8 power; but without a battery system it is only able to keep a max of 10 power. It fires two medium lasers at close range on the Axman; using eight power, leaving the mech with only two power. The lasers generate four heat on the Catapult which then attempts to run past the axman using the last two power.
   The Axman takes 8 Heat from the Catapult's 2 Medium lasers.
   ->->
@@ -186,9 +186,9 @@
   Speed 43 kph - 64 kph. (5 power - 10 power)
   Fusion Engine: Generates 10 Power per turn.
   3x Medium Laser: Cost 4 Power; Generate 2 Heat; Targeting Average (+1);
-  1x Autocannon: Cost 1 Power; Generate 1 Heat; Targeting Average (+1);
-  1x Hathet: Cost 3 Power; Generate 1 Heat; Targeting Great (+4);
-  Ammo: 20 rounds of autocannon. (10x Left Leg, 10x Right Leg);
+  1x Auto cannon: Cost 1 Power; Generate 1 Heat; Targeting Average (+1);
+  1x Hatchet: Cost 3 Power; Generate 1 Heat; Targeting Great (+4);
+  Ammo: 20 rounds of auto cannon. (10x Left Leg, 10x Right Leg);
   3x Heat Sinks: Fair -2 Heat per turn. (Body, Left Leg, Right Leg);
   ->->
 

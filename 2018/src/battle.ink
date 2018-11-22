@@ -153,7 +153,7 @@ VAR turn_count = 0
     ->->
   }
 
-  Continue current speed of {speed}kpp?
+  Continue current speed of {speed}kpp? It will cost {power_cost (Move, speed)} POWER.
   + [Yes, Keep up speed]
     <- reactor.upkeep_speed (IronWolf)
 // ~ mech_upkeep_speed(IronWolf, 1)
