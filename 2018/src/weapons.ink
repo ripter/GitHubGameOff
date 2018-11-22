@@ -42,6 +42,28 @@
 
 
 == reactor
+= upkeep_speed (self)
+  // Pay for the speed again.
+  ~ temp speed = get_value (self, SPEED)
+  ~ update_value (self, POWER, -power_cost (Move, speed))
+  // Charge Bonus! Immediately apply the range change (heh, say that ten times fast, "range change")
+  ~ update_value (self, RANGE, -speed)
+  ~ update_value (self, DODGE, 2 * speed)
+  -> DONE
+  
+= reset_speed (self)
+  ~ temp speed = get_value (self, SPEED)
+  // Stop when speed reaches 0
+  {speed == 0:
+    -> DONE
+  }
+  // Unapply the affects of speed.
+  ~ update_value (self, SPEED, -1)
+  ~ update_value (self, DODGE, -2)
+  // Loop until DONE
+  <- reset_speed (self)
+  -> DONE
+
 = move_forward (self)
   //  So all the logic to move forwarD
   {self} is moving forward
@@ -57,25 +79,28 @@
   ~ update_value (self, DODGE, 2)
   ~ update_value (self, RANGE, -1)
 
-  {self} Increases reactor power, increasing speed by 1 kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}. Range is now {get_value (self, RANGE)} ({get_range_raw()})
+  {self} increases power to the rector. The giant mech is moving at {get_value (self, SPEED)} kpp and has a Dodge of {get_value (self, DODGE)}%
+//   {self} Increases reactor power, increasing speed by 1 kpp. Speed is now {get_value (self, SPEED)}; Dodge is now {get_value (self, DODGE)}. 
+//   Range is now {get_value (self, RANGE)} ({get_range_raw()})
   -> DONE
-= reset_speed (self)
-  ~ temp speed = get_value (self, SPEED)
-  // Stop when speed reaches 0
-  {speed == 0:
+  
+== move_run (self)
+  ~ temp level = 5
+  // Check and Charge to run
+  {get_value (self, POWER) <= level:
+    {self} attempted to run, but did not have enough POWER.
     -> DONE
   }
-  // Unapply the affects of speed.
-  ~ update_value (self, SPEED, -1)
-  ~ update_value (self, DODGE, -2)
-  // Loop until DONE
-  <- reset_speed (self)
+  ~ update_value (self, POWER, -power_cost (Move, level))
+  
+  // apply effects
+  ~ update_value (self, SPEED, 1 * level)
+  ~ update_value (self, DODGE, 2 * level)
+  ~ update_value (self, RANGE, -1 * level)
+  
+  {self} breaks out into a full run. The mech is now running at  {get_value (self, SPEED)} kpp with a Dodge of {get_value (self, DODGE)}%
   -> DONE
-= upkeep_speed (self)
-  // Pay for the speed again.
-  ~ temp speed = get_value (self, SPEED)
-  ~ update_value (self, POWER, -power_cost (Move, speed))
-  // Charge Bonus! Immediately apply the range change (heh, say that ten times fast, "range change")
-  ~ update_value (self, RANGE, -speed)
-  ~ update_value (self, DODGE, 2 * speed)
-  -> DONE
+  
+
+  
+
