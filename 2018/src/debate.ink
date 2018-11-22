@@ -17,7 +17,9 @@
 
   "Tammy and Rex," Phil finnaly said. "I want you to go out and get some replacement parts. See if you can find some weapons for IronWolf. I doubt he will win very many tournaments with just those claws."
 
+  * [Next] 
   -
+  
   Tammy lead Rex out and into the city of New Rock. The roads between buildings where wide and reenforced. The buildings often had armor on the lower levels.
   Tammy laughed at Rex's doumb look. "You've never been to a Mech city before?" she asked.
   "No, I grew up in a colony. We didn't have the room for Mechs." Rex responded as they walked down a busy road. Lots of people walking around, many chatting in groups, and many more with their eyes white glossed over as they focused on the virtual world. Their agumented eyes automatically incorprating the real world obsiticals. Back at the colony people spent most of their time in these virtual worlds. Rex had hoped that people in the Mech cities would spend a little less time in the virtual world. But this city feels a lot like his cramped childhood.

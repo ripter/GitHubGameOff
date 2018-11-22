@@ -25,6 +25,7 @@
   "Uh ok, yeah but how am I to, you know, pilot you from this?" Rex asked.
   "On just get in already, I don't want to sit here and play fifty questions with you." with that IronWolf rolled slightly, just enough so Rex was forced into the cockpit.
   
+  * [Next] 
   -
   Rex closed his eyes when he saw IronWolf start to roll. When he wasn't crushed he opened his eyes a little. On the floor was cable that ended in a glowing blue end. As his eyes adjusted, Rex could see a harness hanging from the room. He fell on his face and slid to the blue cable when IronWolf rolled back to normal.
   Rex picked up the cabel. He could see a matching blue glow the cap over his missing arm. He plugged himself in. A window appeared in Rex's vision show the status of IronWolf.
@@ -50,7 +51,9 @@
   "No way! They probably hate me. I don't even know if that pilot survived!" Rex protested.
   "Only one way to find out." IronWolf said. 
   
+  * [Next] 
   -
+
   "We are being haled" Wilson said. "Small four legged Mech identified as IronWolf."
   "Never heard of that desgnination before" Phil remarked. "Put him on the screen."
   
@@ -66,6 +69,9 @@
   
     The full sized IronWolf laied down with his left side away from the the dropship, hiding Rex's less than graceful exit from the Mech.
     
+  * [Next] 
+  -
+  
     Phil, Willson, and Tammy walked out to meet Rex and his Mech. Phil was the frist to speak once Rex walked around his Mech to face them. "Nice machine you have here." Phil said. "Did you capture it here?"
     Rex smilled. "IronWolf is home grown from this factory here. I clamed him in the hunt which gives me legal athority over him."
     "Uh, what?" Willson mumbled.
@@ -91,6 +97,7 @@
     Phil turned to Tammy, hand still out, "and you?"
     Tammy shook his hand quickly, "You better beleave it."
     
+    * [Next]
     -
     The two mechs stood facing each other from each end of the makeshift arena. The scared and burnt earth where they both lost the Atlas. The trenches meant the smaller IronWolf could find cover, even without lots of trees for large boulders.
     
@@ -131,7 +138,9 @@
       
       Rex and Tammy started their walk back to the drop ship. Both refusing to talk to the other. About half way there, Willson drove past on his way to pick up Tammy's mech Wolfhound. By the time the pair made it to the ship, both Mechs had been loaded into the ship and all flights checks complete.
      
+    * [Next] 
     -
+    
     That night after everyone retured to their rooms, Rex went down to the cargo bay to IronWolf.
     "How are you doing?" Rex asked the Mech.
     #The full size Mech slowly stood up. "Much better. The repairs should be complete by morning."
@@ -157,6 +166,6 @@
     "Can we do both upgrades?" Rex asked, knowing the answer.
     "Maybe, you get me the materals I need, and who knows what we could make." IronWolf said.
     
-    
-    
+  * [Next] 
+  -
   ->->
