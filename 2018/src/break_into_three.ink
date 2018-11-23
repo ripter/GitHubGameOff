@@ -72,29 +72,45 @@
 
   The evidence started to get serious when someone released a video that overlaid the last twenty champion fights in Clan Aurigan's arena. All of the fights started as the blurred mess, as each pilot acted differently, but they all ended the same way. It was almost like there was an invisible barrier just in front of the Atlas. Every mech that tried to approach close range would suddenly shut down and lose all power. Then they would quickly overheat and lose from the Atlas's attack.
 
+  The planetary congress called in a special investigator team to check all the arenas on the planet for signs of cheating. They wanted to get rid of this problem quickly and on their own. They felt that too many eyes were already looking at their little planet.
+
 // Over the next few days, more interviews appeared online from pilots like Rex. People who had been lured in, and then their mechs all broke down in the final battle. When the video of several overlaid  battles from the other clan, it was quite convincing. The people started a petition and got the votes needed to investigate the issue. People where boycotting the arenas, and government officials would be appointed and sent to every arena on the planet.
 
   Rex only had to lose two more battles, not that he was trying to lose. But he just could not make his artificial limb work properly and ended up only really being able to do one thing at a time, MOVE, AIM, FIRE. let alone something as complicated as DODGE, AIM, FIRE. With the AI helping, Rex could manage one of the the three, moving or dodging the mech (aka moving in a zig zag pattern), aiming the weapons on a target, and managing the weapons fire so he didn't overload the mech. In more than one fight he lost because he was too excited about getting a possible shot after a dodge that he did not know how much heat had built up plus the amount of heat firing the lasers could add.
 
-  Finally, the time had arrived. Phil and Wilson dressed up in inspector outfits. Tammy had tapped into the security and found out the date and time the real inspectors would show up. The timing was perfect. Phil and Wilson designed as the inspectors showed up right on time. The clan's own head of house came to greet them and show them around the compound and arena.
+//  Finally, the time had arrived. Phil and Wilson dressed up in inspector outfits. Tammy had tapped into the security and found out the date and time the real inspectors would show up. The timing was perfect. Phil and Wilson designed as the inspectors showed up right on time. The clan's own head of house came to greet them and show them around the compound and arena.
+  Phil and Wilson got the time of the "surprise" inspection on Clan Aurigan's compound. They would would the distraction from the inspection to cover them as they broke into the secure factuality/compound/base.
 
   * [Next]
   -
-  Tammy and Rex slipped unnoticed though one of the delivery entrances. Everyone was focused on the inspection and did not bother with the van that drove them. When Tammy and Rex stepped out of the van in the compound garage, they were dressed in proper employee outfits. They walked though the halls without anyone noticing them. Right past armed guards who were wearing their presentation uniforms and worried a lot more about looking right than about stopping the two unknown people from walking into a secure area. Augmented vision showed helpful arrows and hallway information as the pair made their way to the research lab holding IronWolf. When they got there they found the area was secured with encrypted locked doors. Way beyond Tammy's ability to hack.
 
-  "Now What?" Tammy asked.
-  "We either find anther way in, or we wait for someone to come in or out of that room." Rex said. "We could split up."
-  "You didn't plan for the lab to be locked?" Tammy asked suspiciously.
-  "Its not like I had blueprints or anything. I have never been to these labs before." Rex said defensively.
-  "Locked doors. The idea that a door might be locked did not come up in your planning?" Tammy asked.
+  When another baking truck pulled up to the delivery entrance, the men did not even think about it as they instructed the van to pull up and park. Tammy and Rex stepped out, wearing delivery uniforms and their cores shows them as employees of "Eazy Bake Cakes". The two of them unloaded boxes from the van. Rex holding onto a growing stack of boxes as Tammy piled them on.  Once Rex could no longer see, she closed the door and told Rex to follow her.
 
-  "Wait here a moment." Rex said, then he quick stepped back down the hallway. A moment later he returned with a badge in his hand.
-  "Where did you get that?" Tammy asked.
-  "I borrowed it." Rex said as he scanned the badge at the door.
+  The security guard gave Rex an "I have been there brother" look before letting them pass into the main hallway. Tammy was already half way down the hallway, tapping her foot impatiently. After fumbling with the stack of boxes in his hands, he managed to keep up and follow her though the maze of hallways.
 
-  * [4th Wall]
-    "Why would they use badges and not cores? Is this not a constancy issue?" The reader asked. In that case Rex would not be able to steal a key so easily. Plus the building would see their cores right? and alert security about this idiotic plan?
-    They could probably hide in the chaos of the inspection. But the locked door is still a problem and stealing a key is not going to work here.
+  "You know, I have actually been here before" Rex said. "I should be the one leading us." Rex tried to look around the stack of boxes to make sure Tammy was still in front of him.
+
+  She stopped abruptly and looked at him.
+  "I was not trying to start anything." Rex said with a deflating voice.
+  "We are here" Tammy pointed at the door. "Scans show IronWolf is being held in there."
+
+//  Tammy and Rex slipped unnoticed though one of the delivery entrances. Everyone was focused on the inspection and did not bother with the van that drove them. When Tammy and Rex stepped out of the van in the compound garage, they were dressed in proper employee outfits. They walked though the halls without anyone noticing them. Right past armed guards who were wearing their presentation uniforms and worried a lot more about looking right than about stopping the two unknown people from walking into a secure area. Augmented vision showed helpful arrows and hallway information as the pair made their way to the research lab holding IronWolf. When they got there they found the area was secured with encrypted locked doors. Way beyond Tammy's ability to hack.
+
+"Now What?" Tammy asked.
+"We either find anther way in, or we wait for someone to come in or out of that room." Rex said. "We could split up."
+"You didn't plan for the lab to be locked?" Tammy asked suspiciously.
+"Its not like I had blueprints or anything. I have never been to these labs before." Rex said defensively.
+"Locked doors. The idea that a door might be locked did not come up in your planning?" Tammy asked.
+
+//  "Wait here a moment." Rex said, then he quick stepped back down the hallway. A moment later he returned with a badge in his hand.
+//  "Where did you get that?" Tammy asked.
+//  "I borrowed it." Rex said as he scanned the badge at the door.
+
+//  * [4th Wall]
+//    "Why would they use badges and not cores? Is this not a constancy issue?" The reader asked. In that case Rex would not be able to steal a key so easily. Plus the building would see their cores right? and alert security about this idiotic plan?
+//    They could probably hide in the chaos of the inspection. But the locked door is still a problem and stealing a key is not going to work here.
+
+  * [Next]
   -
 
   Tammy pulled the fire alarm. All doors in the building unlocked as the sprinklers rained down a special chemical that puts out fires without getting anything wet. Great for places full of sensitive parts that don't mix well with water.
