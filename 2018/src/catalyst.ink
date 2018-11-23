@@ -38,8 +38,8 @@
     Aspects: Heal Pilot, Transform
     Approaches: Careful +1; Clever +2; Flashy +1; Forceful 0; Quick +2; Sneaky +3
     Weapons: 1 large particle projector cannon; Wolf claws;
-  -
 
+  -
   "You only have one lousy gun and it's a PPC (particle projector cannon)? I thought you said we could win the championship?"
   "Ha, you have never seen my blast, it is anything but lousy." IronWolf retorted. "besides, it's the pilot's job to outfit me with weapons. I just have the gun I was born with."
   "Did you say born?" Rex asked.
@@ -87,158 +87,177 @@
   * [Next]
   -
 
-    Phil, Willson, and Tammy walked out to meet Rex and his Mech. Phil was the first to speak once Rex walked around his Mech to face them. "Nice machine you have here." Phil said. "Did you capture it here?"
-    Rex smiled. "IronWolf is home grown from this factory here. I claimed him in the hunt which gives me legal authority over him."
-    "Uh, what?" Willson mumbled.
-    Tammy stamped up to Rex. She was slightly taller than him. "You interrupted *my* hunt and cost my personal armor suit and an Atlas."
-    "Oh, that was you?" Rex said. "I seem to remember it differently."
-    "Surprised you even survived." Tammy poked at the end cap over his missing arm, "so glad most of you managed to survive anyway."
-    Rex jerked his stump away from Tammys pointy finger. "I am just looking for transport for me and my Mech IronWolf."
-    Tammy stepped aside as Phil approached. "Why do you think you didn't get the Atlas?"
-    "Excuse me?" Rex said, taken by surprise by the older mans question.
-    // Phil looked at Rex's ears, "It seems the Atlas did not take your ears. It has been almost two days since you attempted to capture the Atlas. I'm sure you remember." Phil pointed at Rex's arm stub. "If you could do it again, what would you change so you would win?"
-    "You do not have money to pay for transport right?" Phil asked. Rex nodded so Phil continued. "If you want a ride, then you will need to earn enough money to pay me back. So, if you could try again, what would you have done diffrently to capture the Atlas?"
-    Rex racked his brain, the only reason he failed was because of Tammy. But she was obviously part of the crew, so he shouldn't insult her. But what else could he say? He had been perfect, it was her fault he lost the arm, it was her fault he didn't have the atlas, it was her fault he was now begging for a ride. He didn't care if it was the right answer or not, he said it. "Her, if she was not there, I would have captured the Atlas."
+  Phil, Willson, and Tammy walked out to meet Rex and his Mech. Phil was the first to speak once Rex walked around his Mech to face them. "Nice machine you have here." Phil said. "Did you capture it here?"
+  Rex smiled. "IronWolf is home grown from this factory here. I claimed him in the hunt which gives me legal authority over him."
+  "Uh, what?" Willson mumbled.
+  Tammy stamped up to Rex. She was slightly taller than him. "You interrupted *my* hunt and cost my personal armor suit and an Atlas."
+  "Oh, that was you?" Rex said. "I seem to remember it differently."
+  "Surprised you even survived." Tammy poked at the end cap over his missing arm, "so glad most of you managed to survive anyway."
+  Rex jerked his stump away from Tammys pointy finger. "I am just looking for transport for me and my Mech IronWolf."
+  Tammy stepped aside as Phil approached. "Why do you think you didn't get the Atlas?"
+  "Excuse me?" Rex said, taken by surprise by the older mans question.
+  // Phil looked at Rex's ears, "It seems the Atlas did not take your ears. It has been almost two days since you attempted to capture the Atlas. I'm sure you remember." Phil pointed at Rex's arm stub. "If you could do it again, what would you change so you would win?"
+  "You do not have money to pay for transport right?" Phil asked. Rex nodded so Phil continued. "If you want a ride, then you will need to earn enough money to pay me back. So, if you could try again, what would you have done diffrently to capture the Atlas?"
+  Rex racked his brain, the only reason he failed was because of Tammy. But she was obviously part of the crew, so he shouldn't insult her. But what else could he say? He had been perfect, it was her fault he lost the arm, it was her fault he didn't have the atlas, it was her fault he was now begging for a ride. He didn't care if it was the right answer or not, he said it. "Her, if she was not there, I would have captured the Atlas."
 
-    Phil and Wilson both shook their heads. After a moment of disappointing looks, Phil responded, "You blame others for your mistakes. Tammy, also blames you for her mistakes. So, I will give you transport with us, on one condition."
+  Phil and Wilson both shook their heads. After a moment of disappointing looks, Phil responded, "You blame others for your mistakes. Tammy, also blames you for her mistakes. So, I will give you transport with us, on one condition."
 
-    * "What condition?
+  * "What condition?
 
-    -
-    "Easy" Phil said. "I know Tammy can work and carry herself. But you are a complete unknown to me. So you battle. If you can beat Tammy, then you should be able to earn enough money to pay me back. If not, we will take what is left of your mech and you can beg the next crew for a ride."
-    Rex looked from Phil and then back to Tammy. "Here?"
-    "No" Tammy said. "Were we fought the Atlas. The area is clear and we can settle our unfinished business."
-    // "Yes. We can make some space
-    // Phil smiled "You and Tammy will have a Mech battle, in your new Mechs. Whoever wins, gets to go home with us, whoever loses stays here for a year."
-    // Whilson's eyes grew into saucers. "Captain Sir, We .."
-    // Phil shot Willson a look and he quickly closed his mouth.
-    Phil held out a hand towards Rex. "Deal?"
-    Rex shook his hand firmly "Deal."
-    // Phil turned to Tammy, hand still out, "and you?"
-    // Tammy shook his hand quickly, "You better believe it."
-    Tammys' face grew into a giant smile. "This will be fun."
+  -
+  "Easy" Phil said. "I know Tammy can work and carry herself. But you are a complete unknown to me. So you battle. If you can beat Tammy, then you should be able to earn enough money to pay me back. If not, we will take what is left of your mech and you can beg the next crew for a ride."
+  Rex looked from Phil and then back to Tammy. "Here?"
+  "No" Tammy said. "Were we fought the Atlas. The area is clear and we can settle our unfinished business."
+  // "Yes. We can make some space
+  // Phil smiled "You and Tammy will have a Mech battle, in your new Mechs. Whoever wins, gets to go home with us, whoever loses stays here for a year."
+  // Whilson's eyes grew into saucers. "Captain Sir, We .."
+  // Phil shot Willson a look and he quickly closed his mouth.
+  Phil held out a hand towards Rex. "Deal?"
+  Rex shook his hand firmly "Deal."
+  // Phil turned to Tammy, hand still out, "and you?"
+  // Tammy shook his hand quickly, "You better believe it."
+  Tammys' face grew into a giant smile. "This will be fun."
 
-    * [Next]
-    -
-    The two mechs stood facing each other from each end of the makeshift arena. The scared and burnt earth where they both lost the Atlas. The trenches meant the smaller IronWolf could find cover, even without lots of trees for large boulders.
+  * [Next]
+  -
+  The two mechs stood facing each other from each end of the makeshift arena. The scared and burnt earth where they both lost the Atlas. The trenches meant the smaller IronWolf could find cover, even without lots of trees for large boulders.
 
-    Tammy's Wolfhound appears to have the advantage. A humanoid bipedal filled with lasers. Rex's IronWolf on the other hand had only a single PPC cannon mounted on the top.
-    With both pilots ready and in position, Phil counted down the match."
+  Tammy's Wolfhound appears to have the advantage. A humanoid bipedal filled with lasers. Rex's IronWolf on the other hand had only a single PPC cannon mounted on the top.
+  With both pilots ready and in position, Phil counted down the match."
 
-    As soon as the timer reaches zero, Tammy blasts with her long range heavy arm laser and started moving forward. The laser focused on the large particle projector cannon on IronWolf's back. The laser stuck with precision on the connecting join, causing it to heat up rapidly. IronWolf yelped in mechanical exhaust and tried to move out of the way. The weak joint no longer able to properly support the gun warped and bent under the pressure and heat.
+  As soon as the timer reaches zero, Tammy blasts with her long range heavy arm laser and started moving forward. The laser focused on the large particle projector cannon on IronWolf's back. The laser stuck with precision on the connecting join, causing it to heat up rapidly. IronWolf yelped in mechanical exhaust and tried to move out of the way. The weak joint no longer able to properly support the gun warped and bent under the pressure and heat.
 
-    Rex could feel a slight burning sensation along his back. He was in his virtual augmented reality cockpit inside of IronWolf. He saw as the Mech saw, and to a limited extent felt what the Mech felt. Including the searing pain on his back.
-    IronWolf dodged to the left and ran towards a large rut cut into the dirt. IronWolf jumped down into the ditch as another laser beam blasted overhead. A radar display floated in Rex's vision, showing the trench and Tammy as she slowed her mech down to a walk. Rex herd a ping sound.
-    "She is doing an active scan" IronWolf said in responsive to the half question.
+  Rex could feel a slight burning sensation along his back. He was in his virtual augmented reality cockpit inside of IronWolf. He saw as the Mech saw, and to a limited extent felt what the Mech felt. Including the searing pain on his back.
+  IronWolf dodged to the left and ran towards a large rut cut into the dirt. IronWolf jumped down into the ditch as another laser beam blasted overhead. A radar display floated in Rex's vision, showing the trench and Tammy as she slowed her mech down to a walk. Rex herd a ping sound.
+  "She is doing an active scan" IronWolf said in responsive to the half question.
 
-    * [Hide from the sensor scan] # sneak
-      "Stop" Rex pulled his own limbs back, causing the Mech to slow and stop. "Lets use her sensors against her." Rex said.
-      Rex waited for the ping, then moved quickly down the trench. When the ping came again he moved back to his original position. Tammy's Mech changing directions to match the new ping.
-      When the next ping came, Rex and IronWolf was out of the trench directly behind Tammy's WolfHound, just too far away. When Tammy's ping hit, her Mech swung around in panic as all five lasers fired on the spot.
-    * [Run faster down the trench] # speed
-      Rex tried to move his own limbs faster as they ran down the trench. Speed is the key here, she will back away from the trenches, so this is IronWolfs best chance to get in close enough to use his claws.
-      Lasers blasted overhead, Tammy's Mech walking slowly in the direction of Rex. The Radar showed this trench intersects another one that is right next to Tammy and her mech. Lasers fired again as he reached the intersection. Instead of staying in the trench, IronWolf jumped out and up on the plane. He quickly dashed across and into the other trench before Tammy could fire again.
+  * [Hide from the sensor scan] # sneak
+    "Stop" Rex pulled his own limbs back, causing the Mech to slow and stop. "Lets use her sensors against her." Rex said.
+    Rex waited for the ping, then moved quickly down the trench. When the ping came again he moved back to his original position. Tammy's Mech changing directions to match the new ping.
+    When the next ping came, Rex and IronWolf was out of the trench directly behind Tammy's WolfHound, just too far away. When Tammy's ping hit, her Mech swung around in panic as all five lasers fired on the spot.
+  * [Run faster down the trench] # speed
+    Rex tried to move his own limbs faster as they ran down the trench. Speed is the key here, she will back away from the trenches, so this is IronWolfs best chance to get in close enough to use his claws.
+    Lasers blasted overhead, Tammy's Mech walking slowly in the direction of Rex. The Radar showed this trench intersects another one that is right next to Tammy and her mech. Lasers fired again as he reached the intersection. Instead of staying in the trench, IronWolf jumped out and up on the plane. He quickly dashed across and into the other trench before Tammy could fire again.
 
-    -
-    IronWolf leaped, long black claws extending from it's feet, a large cannon bent at an odd angle on it's back. IronWolf landed directly into the side of WolfHoud, knocking the bipedal Mech to the ground. Claws raked the Mech. WolfHoud held up its cannon arm to protect the cockpit from the claws. IronWolfs claws tour into the metal of the arm, destroying the laser projector and causing a short in the older Mech.
+  -
+  IronWolf leaped, long black claws extending from it's feet, a large cannon bent at an odd angle on it's back. IronWolf landed directly into the side of WolfHoud, knocking the bipedal Mech to the ground. Claws raked the Mech. WolfHoud held up its cannon arm to protect the cockpit from the claws. IronWolfs claws tour into the metal of the arm, destroying the laser projector and causing a short in the older Mech.
 
-    "I won't lose to a scrub like you" Tammy's voice resonated out of her Mech's external speakers.
-    Rex could feel a sudden heat under him, and saw the one laser arm starting the glow red. Tammy was trying to fire the gun.
+  "I won't lose to a scrub like you" Tammy's voice resonated out of her Mech's external speakers.
+  Rex could feel a sudden heat under him, and saw the one laser arm starting the glow red. Tammy was trying to fire the gun.
 
-    * [Next]
-    -
+  * [Next]
+  -
 
-    The arm exploded, throwing IronWolf off of it. The Mech rolled on its side, the damaged particle projector cannon tearing off the top of the Mech. IronWolf and Rex howled in pain. He tried to stand up but his back legs would not obey him. "Move! Get Up!" Rex yelled. He looked back and could see his two back legs damaged and flenching as he tried to use them. "Nooooo" He screamed.
+  The arm exploded, throwing IronWolf off of it. The Mech rolled on its side, the damaged particle projector cannon tearing off the top of the Mech. IronWolf and Rex howled in pain. He tried to stand up but his back legs would not obey him. "Move! Get Up!" Rex yelled. He looked back and could see his two back legs damaged and flenching as he tried to use them. "Nooooo" He screamed.
 
-    A voice echoed in everyone's ears. "Match is over." Phil said. "It is a tie. Both Mechs have been knocked out of the fight."
+  A voice echoed in everyone's ears. "Match is over." Phil said. "It is a tie. Both Mechs have been knocked out of the fight."
 
-    Rex and Tammy got out of their Mech and walked over to each other. Tammy's once long hair was burned on one side to the scalp. Rex pointed at the bald spot. "Is that from your dumbass firing a laser without a focusing crystal?"
-    "Fuck you" Tammy said. She pushed Rex on the cap that covered his missing arm. "Did you lose that because you took a nap under an Atlas?"
+  Rex and Tammy got out of their Mech and walked over to each other. Tammy's once long hair was burned on one side to the scalp. Rex pointed at the bald spot. "Is that from your dumbass firing a laser without a focusing crystal?"
+  "Fuck you" Tammy said. She pushed Rex on the cap that covered his missing arm. "Did you lose that because you took a nap under an Atlas?"
 
-    * [Next]
-    -
+  * [Next]
+  -
 
-    //   Willson in a bright yellow construction vehicle showed up before the two could fight any more. "Who needs a lift back to the ship?" They both sneered at him.
-    Wilson rolled up in a yellow and black transportation truck. While he moved the truck to load the disabled mechs, Phil walked over to Rex and Tammy.
+  //   Willson in a bright yellow construction vehicle showed up before the two could fight any more. "Who needs a lift back to the ship?" They both sneered at him.
+  Wilson rolled up in a yellow and black transportation truck. While he moved the truck to load the disabled mechs, Phil walked over to Rex and Tammy.
 
-    Tammy pointed at Rex. "He did not win, so he does not get to ride with us."
-    //   "If I remember correctly" Tammy said, "Only the winner gets to go back, and this gimpy boy did not win." She poked Rex in the chest.
-    "You didn't win either" Rex retorted.
+  Tammy pointed at Rex. "He did not win, so he does not get to ride with us."
+  //   "If I remember correctly" Tammy said, "Only the winner gets to go back, and this gimpy boy did not win." She poked Rex in the chest.
+  "You didn't win either" Rex retorted.
 
 
-    //   Willson moved the truck under IronWolf, lifting the Mech off the ground. "Captain says he'll make enough money from all the repairs you both are going to owe him that he can bring you both along." Willson drove off with the truck and IronWolf.
-    Wilson maneuvered the truck under IronWolf. The automated lift scooping up the machine and loading and secured it in the back. Then he drove over to the broken WolfHound.
+  //   Willson moved the truck under IronWolf, lifting the Mech off the ground. "Captain says he'll make enough money from all the repairs you both are going to owe him that he can bring you both along." Willson drove off with the truck and IronWolf.
+  Wilson maneuvered the truck under IronWolf. The automated lift scooping up the machine and loading and secured it in the back. Then he drove over to the broken WolfHound.
 
-    "Please" Rex looked at Phil. "I can fight, I can carry things, I can do whatever you need."
-    Phil looked him up and down. "You will pay me back for all your expenses?"
-    "Yes of course" Rex said quickly.
-    "Alright, come on." Phil said. Wilson and the truck pulled up to them. Phil got in. "We will see you back at the ship." The truck drove off leaving Rex and Tammy alone together.
+  "Please" Rex looked at Phil. "I can fight, I can carry things, I can do whatever you need."
+  Phil looked him up and down. "You will pay me back for all your expenses?"
+  "Yes of course" Rex said quickly.
+  "Alright, come on." Phil said. Wilson and the truck pulled up to them. Phil got in. "We will see you back at the ship." The truck drove off leaving Rex and Tammy alone together.
 
-    "I swear if you lay one hand on me" Tammy said.
-    Rex was already walking. Neither of them said anything during the eleven kilometers walk back to the drop ship. By the time they arrived, the mechs were loaded and hot meals were waiting in the kitchen.
-    Phil and Wilson were sitting at the only table. Phil reading a report and Wilson watching something in his augmented vision.
-    //   Rex and Tammy started their walk back to the drop ship. Both refusing to talk to the other. About half way there, Willson drove past on his way to pick up Tammy's mech Wolfhound. By the time the pair made it to the ship, both Mechs had been loaded into the ship and all flights checks complete.
+  "I swear if you lay one hand on me" Tammy said.
+  Rex was already walking. Neither of them said anything during the eleven kilometers walk back to the drop ship. By the time they arrived, the mechs were loaded and hot meals were waiting in the kitchen.
+  Phil and Wilson were sitting at the only table. Phil reading a report and Wilson watching something in his augmented vision.
+  //   Rex and Tammy started their walk back to the drop ship. Both refusing to talk to the other. About half way there, Willson drove past on his way to pick up Tammy's mech Wolfhound. By the time the pair made it to the ship, both Mechs had been loaded into the ship and all flights checks complete.
 
-    * [Next]
-    -
+  * [Next]
+  -
 
-    That night after everyone returned to their rooms, Rex went down to the cargo bay to IronWolf.
-    "How are you doing?" Rex asked the Mech.
-    #The full size Mech slowly stood up. "Much better. The repairs should be complete by morning."
-    // "Both my knees are destroyed and we lost the cannon." said IronWolf, "nothing serious. I just need to return to my normal size."
-    "Complete failure in two knee joints, and the loss of the particle projector cannon. With rest I can repair the knee joins, but I do not have the materials needed to repair the particle projector cannon." IronWolf reported.
-    Rex held up a hand and looked around the cargo bay. Then he walked back over to IronWolf. "Ok, the coast is clear, you can transform back."
-    "You know I have scanners right?" IronWolf said. "I can tell you that Phil's heart rate is 73 beats per minute from here."
-    "Alright alright" Rex said and held up his hands.
-    // Rex looked around, "alright."
-    // Blue lights traced around the armor panels that make up IronWolfs body. The plates moving and collapsing on top of each other. Within a moment IronWolf shrunk to half of his previous size.
-    The thin line of a tattoo around IronWolfs body glowed a faint blue. Plants and pieces of IronWolf rotated this way and that way. Within seconds IronWolf managed to rotate most of his size and transform back into a Wolf. He was large for a wolf, but still believable. If you saw IronWolf walking down the street you would not think to yourself "Holy hell that thing is a monster!" no you would more think "Holy hell I did not know wolves got that large!".
-    Once he was transformed back into this normal size, IronWolf's face and eyes because more expressive, even life like. The red glow of his eyes had faded into a faint blue ring. He yawned and stretched, showcasing where yoga move downward dog. "That feels better" he said. He tried to take a step but his two back legs could not hold his weight. He could move the limbs, but the joins were shattered.
-    // IronsWolf's face and eyes became more expressive and alive. "That is much better." he said. His back legs still stretched and broken. The wolf curled and started to lick his wounds.
-    "Uh is that going to help?" Rex asked.
-    "Sort of, It's like how I healed you." IronWolf said without lifting his head.
-    "Yeah, I've never heard of a healing Mech before either." Rex said.
-    "I am surprised you have heard of anything" IronWolf said. "Plug into me and we can talk about upgrades."
+  That night after everyone returned to their rooms, Rex went down to the cargo bay to IronWolf.
+  "How are you doing?" Rex asked the Mech.
+  #The full size Mech slowly stood up. "Much better. The repairs should be complete by morning."
+  // "Both my knees are destroyed and we lost the cannon." said IronWolf, "nothing serious. I just need to return to my normal size."
+  "Complete failure in two knee joints, and the loss of the particle projector cannon. With rest I can repair the knee joins, but I do not have the materials needed to repair the particle projector cannon." IronWolf reported.
+  Rex held up a hand and looked around the cargo bay. Then he walked back over to IronWolf. "Ok, the coast is clear, you can transform back."
+  "You know I have scanners right?" IronWolf said. "I can tell you that Phil's heart rate is 73 beats per minute from here."
+  "Alright alright" Rex said and held up his hands.
+  // Rex looked around, "alright."
+  // Blue lights traced around the armor panels that make up IronWolfs body. The plates moving and collapsing on top of each other. Within a moment IronWolf shrunk to half of his previous size.
+  The thin line of a tattoo around IronWolfs body glowed a faint blue. Plants and pieces of IronWolf rotated this way and that way. Within seconds IronWolf managed to rotate most of his size and transform back into a Wolf. He was large for a wolf, but still believable. If you saw IronWolf walking down the street you would not think to yourself "Holy hell that thing is a monster!" no you would more think "Holy hell I did not know wolves got that large!".
+  Once he was transformed back into this normal size, IronWolf's face and eyes because more expressive, even life like. The red glow of his eyes had faded into a faint blue ring. He yawned and stretched, showcasing where yoga move downward dog. "That feels better" he said. He tried to take a step but his two back legs could not hold his weight. He could move the limbs, but the joins were shattered.
+  // IronsWolf's face and eyes became more expressive and alive. "That is much better." he said. His back legs still stretched and broken. The wolf curled and started to lick his wounds.
+  "Uh is that going to help?" Rex asked.
+  "Sort of, It's like how I healed you." IronWolf said without lifting his head.
+  "Yeah, I've never heard of a healing Mech before either." Rex said.
+  "I am surprised you have heard of anything" IronWolf said. "Plug into me and we can talk about upgrades."
 
-    * [Next]
-    -
+  * [Next]
+  -
 
-    "Upgrades" Rex said louder than he expected. "What do you mean upgrades?"
-    "After fighting a battle with you, I think I have learned a few new useful things. Since I am replacing parts we could apply that knowledge." IronWolf said.
-    "Yes please!" Rex said. "We should get some cloaking tech, and a bunch of missiles and lasers, maybe we can add another 25 tons of weight to really get the power punch we need to be galaxy wide champions."
+  "Upgrades" Rex said louder than he expected. "What do you mean upgrades?"
+  "After fighting a battle with you, I think I have learned a few new useful things. Since I am replacing parts we could apply that knowledge." IronWolf said.
+  "Yes please!" Rex said. "We should get some cloaking tech, and a bunch of missiles and lasers, maybe we can add another 25 tons of weight to really get the power punch we need to be galaxy wide champions."
 
-    // "While I'm repairing anyway, I think I learned a few things from that battle that we could use to upgrade my parts."
-    Rex sat down next to IronWolf and plugged into the blue tipped cable. In his mind he could see a window of stats and other information.
+  // "While I'm repairing anyway, I think I learned a few things from that battle that we could use to upgrade my parts."
+  Rex sat down next to IronWolf and plugged into the blue tipped cable. In his mind he could see a window of stats and other information.
 
-    * Speed Upgrade
-      Schematics appear before Rex along with IronWolf's voice. "If we adjust the leg structure we can get a nice increase to sprinting speed.
-    * Stealth Upgrade
-      A protection of a device appeared before Rex.
-      "Watching Wolfhounds active sensor ping gave me an idea. This is a radar decoy. I can carry one, and you can drop it in battle. It should fool the ancestors sensors into thinking we are a scanning error while the box is deployed.
-    * Short Range Teleport
-      "Haha, not really" IronWolf said. "Even I think that would be cool."
+  - (upgrade_menu)
+  * Speed Upgrade
+    Schematics appear before Rex along with IronWolf's voice. "If we adjust the leg structure we can get a nice increase to sprinting speed.
+    -> upgrade_menu
+  * Stealth Upgrade
+    A protection of a device appeared before Rex.
+    "Watching Wolfhounds active sensor ping gave me an idea. This is a radar decoy. I can carry one, and you can drop it in battle. It should fool the ancestors sensors into thinking we are a scanning error while the box is deployed.
+    -> upgrade_menu
+  * Short Range Teleport
+    "Haha, not really" IronWolf said. "Even I think that would be cool."
+    "Is such a thing possible?" Rex asked.
+    "Well, technically no" IronWolf responded.
+    "Technically no, but practically yes?" Rex asked hopefully.
+    "Hmmm, how do I dumb this down so you can understand it." IronWolf said.
+    "I am not an idiot" Rex stated.
+    "I could fold us into another position a short distance away." IronWolf said. challenging Rex's statement.
+    "So it would have the effect of teleporting?" Rex said, not wanting to step to close on the unknown.
+    "Yes. So hmmm" IronWolf thought for a moment. "I am not sure if you would survive the process."
+    "What? Why?" Rex asked.
+    "How fragile is your mind?" asked IronWolf.
+    "Ok now you are just messing with me" Rex said.
+    -> upgrade_menu
 
-    -
-    "Fine, let us go with the speed upgrade. We will need to avoid getting hit." Rex said.
-    "You can upgrade anything else?" Rex asked. // in shock.
-    "I have a full fabrication and repair capability. If you can get me the materials and the knowledge, we can upgrade just about anything." IronWolf said.
-    // "Well yeah, assuming we have the materials." IronWolf responded. "It's just like repairing up with inienatal changes right?"
-    // "Can we do both upgrades?" Rex asked, knowing the answer.
-    // "Maybe, you get me the materials I need, and who knows what we could make." IronWolf said.
+  -
+  "Fine, let us go with the speed upgrade. We will need to avoid getting hit." Rex said.
+  "You can upgrade anything else?" Rex asked. // in shock.
+  "I have a full fabrication and repair capability. If you can get me the materials and the knowledge, we can upgrade just about anything." IronWolf said.
+  // "Well yeah, assuming we have the materials." IronWolf responded. "It's just like repairing up with inienatal changes right?"
+  // "Can we do both upgrades?" Rex asked, knowing the answer.
+  // "Maybe, you get me the materials I need, and who knows what we could make." IronWolf said.
 
-    "There is one problem" Rex said. "We can not let the others know about your special abilities."
-    "Agreed." said IronWolf. "I will stay in the battle form while other people are around."
-    "Great, but there is another thing." Rex said. "Your repairs. It would look very suspicious if tomorrow morning you were completely fixed and no one had to do anything."
-    "You could lie and say you fixed me." IronWolf suggested.
+  "There is one problem" Rex said. "We can not let the others know about your special abilities."
+  "Agreed." said IronWolf. "I will stay in the battle form while other people are around."
+
+  * [Next]
+  -
+
+  "Great, but there is another thing." Rex said. "Your repairs. It would look very suspicious if tomorrow morning you were completely fixed and no one had to do anything."
+  "You could lie and say you fixed me." IronWolf suggested.
 //  "Maybe, maybe" Rex considered. "Do you think anyone will think it was"
-    "Maybe, maybe" Rex considered. "They might find it hard to believe that a one armed boy managed to work heavy machinery in the middle of the night and did not wake anyone up."
-    "Lying is harder than I thought." IronWold said. "What do you purpose we do then? Let you open me up and mess around inside there?"
-    "Well, yeah" Rex said. "It is the best way to divert suspicion. Plus I will get to know you a lot better. Think of it as bonding time." Rex hugged IronWolf.
-    IronWolf smiled back at him. "Alright. We will do this the slow way for now."
-    "Thanks. You know something, I think meeting you was the best thing that ever happened to me." Rex said as he hugged IronWolf for the last time.
-    "You know what this means right?" IronWolf asked. "If you repair me the slow way, you do not get your upgrades."
-    Rex's face furrowed at this for a moment. Then he looked up. "Yeah I suppose it does. I will need to figure out a better solution once we land on the planet. We really need a private garage."
-    "Or just something that looks like one." IronWolf added, trying to be helpful.
+  "Maybe, maybe" Rex considered. "They might find it hard to believe that a one armed boy managed to work heavy machinery in the middle of the night and did not wake anyone up."
+  "Lying is harder than I thought." IronWold said. "What do you purpose we do then? Let you open me up and mess around inside there?"
+  "Well, yeah" Rex said. "It is the best way to divert suspicion. Plus I will get to know you a lot better. Think of it as bonding time." Rex hugged IronWolf.
+  IronWolf smiled back at him. "Alright. We will do this the slow way for now."
+  "Thanks. You know something, I think meeting you was the best thing that ever happened to me." Rex said as he hugged IronWolf for the last time.
+  "You know what this means right?" IronWolf asked. "If you repair me the slow way, you do not get your upgrades."
+  Rex's face furrowed at this for a moment. Then he looked up. "Yeah I suppose it does. I will need to figure out a better solution once we land on the planet. We really need a private garage."
+  "Or just something that looks like one." IronWolf added, trying to be helpful.
 
   * [Next]
   -

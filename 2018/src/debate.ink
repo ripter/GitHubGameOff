@@ -1,23 +1,27 @@
 == debate
 = start
-  It took a few days of traveling from hyper jump point jump to hyper jump point before Phil annouced they were approaching the planet Engadin. Interplantary travel can only happen the slow method. It would take another two weeks of travel to reach the planet from the exit jump point.
+  It took a few days of traveling from hyper jump point jump to hyper jump point before Phil announced they were approaching the planet Engadin. Interplanetary travel can only happen the slow method. It would take another two weeks of travel to reach the planet from the exit jump point.
+
+  Most of the time, Rex and Tammy spend with Wilson working on repairing the Mechs. Wilson focusing most of his attention on Tammy, allowed IronWolf to help in small ways. Small ways that made the seeming impossible task of repairing a ten ton machine with only one arm, possible. Rex did not have as much to fix on his mech IronWolf.
 //   After a few hyper space jumps and a long slow ride to the planet. Rex and the team from Clan MRB make it to the planet Engadin.
 
 //   Everyone was sitting around the only table eating when Tammy
-  Everyone was in the kitchen, sitting around the only table eating.
+//  Everyone was in the kitchen, sitting around the only table eating.
+//  One morning before going back to work
+  One morning after the mechs had been repaired, but they were still slowly traveling to the planet. Tammy suddenly stopped eating and looked at Rex, as if she had just remembered something she once thought was very important.
   "Where are you from?" Tammy asked. "I mean really."
   "Astroid orphan" Rex said between bites.
-  "Which astroid? What were your parents names? When did they die?" Tammy proded with barely a breath between each question.
+  "Which astroid? What were your parents names? When did they die?" Tammy prodded with barely a breath between each question.
   "I do not know, before I was born." Rex responded.
   Wilson laughed, a little food escaping his lips. "Your parents died before you were born?"
-  
+
   * [Next]
   -
-  
+
   Rex's face turned bright red. "No, I mean, they ... Uh I mean I ..."
   "No place you need to run back too?" Phil asked. Saving Rex from the awkward moment.
 //   "Nowhere" Rex responded, keeping his eyes on this Mech IronWolf, who was expended to full Mech size. Keeping IronWolfs transformation a secret.
-//   "No family for clan to go back to?" Wilson asked. 
+//   "No family for clan to go back to?" Wilson asked.
   "Nope, just me. But now I have IronWolf." he said.
   "Good" Phil said as walking in, "You can stick around and help us out for a bit."
   "I don't need your help" Rex protested.
@@ -26,8 +30,8 @@
   Wilson gave Rex a look, "An astroid boy that thinks power and air are free?"
   "Anyway" Phil gave Wilson the stink eye. Then he turned to face Rex directly. "I'm sure by the time you pay me off, you'll have found your own place and figured out your next steps." Phil said.
 //   "Oh I know what I am going to do." Rex said. "IronWolf and I are going to enter the tournament. We are going to win a place in the grand tournament and prove to the galaxy that I am the best Mech Warrior."
-  "I am going to be the best Mech Warrior the galaxy has ever seen." Rex said briming with confidence. "I will find a tournament, work my way to the top and then get invited to fight in the Galaxitc Champaionship."
-  IronWolf, in his large Mech size, picked that moment to exaust steam. Almost as if it had been listening to the conversation and was scoffing at Rex's comment.
+  "I am going to be the best Mech Warrior the galaxy has ever seen." Rex said brimming with confidence. "I will find a tournament, work my way to the top and then get invited to fight in the Galactic Championship."
+  IronWolf, in his large Mech size, picked that moment to exhaust steam. Almost as if it had been listening to the conversation and was scoffing at Rex's comment.
 //   IronWolf let out a huff of exhaust at Rex's comment.
   "And after you are declared the best fighter in the galaxy?" Wilson asked.
   Rex didn't have an answer to that question.
@@ -53,7 +57,7 @@
 
   * [Next]
   -
-  
+
   A man came up to the pair. "How might I help you today?" he asked.
   Tammy pulled out an augmented file from her core and displayed it in front of her for the salesman. He started scanning the list, making little check marks next to some items and crosses on others.
   "We have most of this ready, things like an extended range focusing crystal are ... a bit more challenging."
@@ -96,7 +100,7 @@
     "Keep the opponent from targeting you. Screws up missile guidance systems and decreases the accuracy of all computer based targeting."
 
   -
-   After placing their orders, they entered the city reginal battle tournament with IronWolf and Wolfhound. It was an easy way to pick up money. The city hostest daily battles. The pay was not great, and their was a waiting list to get in, but it was decent work. And it didn't require any paperwork or creditional to get. You just needed to show up in a working mech.
+   After placing their orders, they entered the city regional battle tournament with IronWolf and Wolfhound. It was an easy way to pick up money. The city hosts daily battles. The pay was not great, and their was a waiting list to get in, but it was decent work. And it didn't require any paperwork or credentials to get. You just needed to show up in a working mech.
 
   It was not long until Rex was called up for his first battle. A regional battle, two verses two. Rex and Tammy were selected to represent the group.
 
@@ -113,7 +117,7 @@
   "Looks like we are evenly matched." Tammy said to Rex over their private channel. "Red Shift is a speed Mech like you, do you think you can keep him from getting close?"
   Rex smiled, "Sure, just keep those missiles off me."
   "I thought you were fast?" Tammy joked.
-  
+
   * [Next]
   -
 
@@ -149,7 +153,7 @@
 
   * [Next]
   -
-  
+
   Rex was in tight pursuit of Red Shift. The other Mech running between large trees, and firing off a laser shot behind it when able. Rex and IronWolf were running, easily dodging the half aimed shots taken at it. He should couldn't quite catch up. Every time Rex got close to Red Shift, the mech would change directions, causing IronWolf to lose momentum. With trees breaking all around him, Rex continued to follow Red Shift right out of the forest and heading towards Tammy in her Wolfhound. Rex tried to push the already fully extended throttle. His mind felt like it was becoming one with IronWolf's, he could feel his hands tingling.
 
   Blue flames erupt from IronWolfs from claws. The Mech leaped into the area, blue flames streaking behind it. The claws just reaching Red Shift's back. The claws tear into the mech severing both of it's arms.
@@ -169,10 +173,10 @@
   "Uh, no I guess not." Rex said.
   "You were teamed up with a member of Clan MRB tonight, are you joining them?" The man slide over closer to Rex. So close that Rex could smell the cheap cologne and stale beer. "Because, if you are up for a real challenge, I mean you would have to be able to hold your own here, I have a client that could make you some serious coin."
   "How much are we talking?" Rex asked.
-  
+
   * [Next]
   -
-  
+
   "You could lose, and walk away with four times what you made tonight. If you win, well, lets just say the V.I.P. treatment won't be good enough for you."
   "What do I have to do?" Rex asked.
   "Fight for my client and win. Easy peasy." Leroy said with a big smile.
