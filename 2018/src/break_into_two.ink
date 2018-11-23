@@ -1,15 +1,24 @@
 == break_into_two
 = start
-  "Thank you for everything" Rex said to the clan MRB team. (I really need to figure out a better way to refrence this group.)
+  That evening, over dinner Rex blerted out his news. He told the group about being approached for a trial position at Clan Aurigan. "Thank you for everything" Rex said. "I can pay you with the winnings from tonight, and move into my new place tomorrow."
+//   "Thank you for everything" Rex said to the clan MRB team. (I really need to figure out a better way to refrence this group.)
+  "You might owe a little more than that" Phil said. "Are you sure you want to go?"
+  "Absolutely, this is the opportunity I have been waiting for." Rex looked back tword IronWolf. "This is what we planned for, we will will our way to the top." He smiled.
+  
+  The next morning a transport tuck arrived for IronWolf. Everone except for Tammy gathered around to watch Rex leave.
+  
   Phil shook Rex's hand. "Its been a pleasure working with you."
   Wilson shook his hand, "Good luck to you."
 
   Rex looked over to Tammy who was sitting in the kitchen ignoring everyone. "Maybe I'll see you around." He said.
   Tammy ignored him.
 
-  Rex got into IronWolf and walked out of the crews garage.
+//   Rex got into IronWolf and walked out of the crews garage.
+  Rex got into the truck, and ti drove him and IronWolf away.
 
+  * [Next]
   -
+  
   Tammy slammed a hand down on the table. "I was in that fight too" she said, mostly to herself.
   "You already have a clan." Wilson said as he sat next to her. "You are acting jealous because he is getting a chance at something you already have."
   "Whatever" Tammy said. "This way I'll get to fight him again, and prove I am the better fighter."
@@ -65,14 +74,23 @@
   IronWolf rushed forward, firing a wide spread of long range missiles at Red Shift. - IronWolf rushes forward. A sixty second count down in Rex's vision. IronWolf calculated some probably future locations based on the speed the last Red Shift showed. Ad soon as the sixty second time finished, the missile fired, streaking across the battle field.
   The bipedal Red Shift ran forward on thin looking legs with extra large feet. This one was not as fast as the other one Rex fought. - Red Shift runs forward. The Mech's feet larger, like it was wearing big boots cause it to take longer to get up to running speed.
 
+  * [Next]
+  -
+  
   # Range: Medium
   Missiles rain down around Red Shift. The nimble mech dodging left and right. A missile landed directly in front of the Mech, vaporized the ground Red Shift was running on. In a panic Red Shift's pilot activated Jump Jets and soared into the air.
   IronWolf tracked the jump mid air. It was too high for IronWolf to jump. Rex hoped that the Mech's jump jets were only short range.
 
+  * [Next]
+  -
+  
   # Range: Medium
   IronWolf kept running towards the flying Mech, but it easily kept back. He was too close for his missile to hit that flying target. He was too faraway for his heavy laser or claws.
   Red Shift fired his medium range laser at IronWolf. He was flying backwards and getting closer to the edge of the arena. He fired several more shots at IronWolf, but the Mech was to nimble and dodged each time. His jump jet fuel finally ran out a few meters from the arena wall. Red Shift landed hard.
 
+  * [Next]
+  -
+  
   # Range: Close
   IronWolf was there the moment Red Shift crashed. He leaped into the air, claws glowing with blue flame.
   Red Shift fired his heavy laser at the exposed underbelly of the leaping IronWolf. The shot hit dead center. The Mech twisted in the air.
@@ -93,7 +111,7 @@
     Approaches: Careful +1; Clever +2; Flashy +1; Forceful 0; Quick +2; Sneaky +3
     Weapons: 2 Claws, 2 Long Range Missiles, 1 Short Range Heavy laser.
     Skills: 1 Decoy Drone, Jump
-    -> battle_one
+    -> battle_two
 
   * Gurkha
     35 Tons
@@ -102,7 +120,7 @@
     Skills: Jump jets
 
     This bipedal Mech has a sword for a right hand, and four small lasers for a left hand. It's chest holds a partial projector cannon.
-    ->battle_one
+    -> battle_two
   * [Wait for match] -> battle_two_ready
 
   - (battle_two_ready)

@@ -188,15 +188,26 @@
     // "Both my knees are destroyed and we lost the cannon." said IronWolf, "nothing serious. I just need to return to my normal size."
     "Complete failure in two knee joints, and the loss of the particle projector cannon. With rest I can repair the knee joins, but I do not have the materials needed to repair the particle projector cannon." IronWolf reported.
     Rex held up a hand and looked around the cargobay. Then he walked back over to IronWolf. "Ok, the coast is clear, you can transform back."
-    "You know I have sanners right?" IronWolf said. "I can tell you that Phil's heart rate is 73bbp from here."
+    "You know I have sanners right?" IronWolf said. "I can tell you that Phil's heart rate is 73 beats per minute from here."
     "Alright alright" Rex said and held up his hands.
     // Rex looked around, "alright."
-    Blue lights traced around the armor panels that make up IronWolfs body. The plates moving and collapsing on top of each other. Within a moment IronWolf shrunk to half of his previous size.
-    IronsWolf's face and eyes became more expressive and alive. "That is much better." he said. His back legs still stretched and broken. The wolf curled and started to lick his wounds.
+    // Blue lights traced around the armor panels that make up IronWolfs body. The plates moving and collapsing on top of each other. Within a moment IronWolf shrunk to half of his previous size.
+    The thin line of a tattoo around IronWolfs body glowed a faint blue. Plants and peices of IronWolf rotated this way and that way. Within seconds IronWolf managed to rotate most of his size and transform back into a Wolf. He was large for a wolf, but still beleavable. If you saw IronWolf walking down the street you would not think to yourself "Holy hell that thing is a monster!" no you would more think "Holy hell I did not know wolves got that large!".
+    Once he was transformed back into this normal size, IronWolf's face and eyes because more expressive, even lifefile. The red glow of his eyes had faded into a faint blue ring. He yawned and streched, showcasing wthe yoga move downward dog. "That feels better" he said. He tried to take a step but his two back legs could not hold his weight. He could move the limbs, but the joins were shattered.
+    // IronsWolf's face and eyes became more expressive and alive. "That is much better." he said. His back legs still stretched and broken. The wolf curled and started to lick his wounds.
     "Uh is that going to help?" Rex asked.
     "Sort of, It's like how I healed you." IronWolf said without lifting his head.
     "Yeah, I've never heard of a healing Mech before either." Rex said.
-    "While I'm repairing anyway, I think I learned a few things from that battle that we could use to upgrade my parts."
+    "I am surprised you have heard of anything" IronWolf said. "Plug into me and we can talk about upgrades."
+    
+    * [Next]
+    -
+    
+    "Upgrades" Rex said louder than he expected. "What do you mean upgrades?"
+    "After fighting a battle with you, I think I have learned a few new useful things. Since I am replacing parts we could apply that knowledge." IronWolf said.
+    "Yes please!" Rex said. "We should get some cloking tech, and a bunch of misiles and lasers, maybe we can add another 25 tons of weight to really get the power punch we need to be galaxy wide champaions."
+    
+    // "While I'm repairing anyway, I think I learned a few things from that battle that we could use to upgrade my parts."
     Rex sat down next to IronWolf and plugged into the blue tipped cable. In his mind he could see a window of stats and other information.
 
     * Speed Upgrade
@@ -204,12 +215,16 @@
     * Stealth Upgrade
       A protection of a device appeared before Rex.
       "Watching Wolfhounds active sensor ping gave me an idea. This is a radar decoy. I can carry one, and you can drop it in battle. It should fool the ancestors sensors into thinking we are a scanning error while the box is deployed.
+    * Short Range Teleport
+      "Haha, not really" IronWolf said. "Even I think that would be cool."
 
     -
-    "You can upgrade?" Rex asked in shock.
-    "Well yeah, assuming we have the materials." IronWolf responded. "It's just like repairing up with inienatal changes right?"
-    "Can we do both upgrades?" Rex asked, knowing the answer.
-    "Maybe, you get me the materials I need, and who knows what we could make." IronWolf said.
+    "Fine, let us go with the speed upgrade. We will need to avoid getting hit." Rex said.
+    "You can upgrade anything else?" Rex asked. // in shock.
+    "I have a full fabrication and repair capablity. If you can get me the materials and the knowledge, we can upgrade just about anything." IronWolf said.
+    // "Well yeah, assuming we have the materials." IronWolf responded. "It's just like repairing up with inienatal changes right?"
+    // "Can we do both upgrades?" Rex asked, knowing the answer.
+    // "Maybe, you get me the materials I need, and who knows what we could make." IronWolf said.
 
   * [Next]
   -
