@@ -1,3 +1,5 @@
+-> catalyst.start
+
 == catalyst
 = start
   The next day Rex woke up, the tubes and wires from his stump were now gone. There was a black metal cap over the hole that used to be Rex's shoulder joint. He could not see it directly so his fingers stumbled around the cap, feeling the ports and joints. He crawled out of his tent, after it taking him significantly longer than it used to for him to get ready. Once he was out of the tent he walked over to IronWolf, who was laying next to the burnt out campfire.
@@ -18,6 +20,10 @@
 //   Fully expanded the Mech was almost nine meters tall. IronWolf lowered down -- IronWolf walked over and took a seat ---
 //   Fully expanded the Mech was almost nine meters tall. It laid down as Rex approached him.
   "That is amazing." Rex said. "You stayed the same mass, how does everything work while its compressed? I mean, if you can run around and save my ass in your compact form, then why even have the expanded form?"
+
+  * [Next]
+  -
+
   "Why do you store fat instead of carrying around food bars all the time?" IronWolf asked.
   "What? didn't design or make my body." Rex said, missing the point. "You seem capable on your own, why do you even need me?"
 //   "Because you can not compact" IronWolf responded.
@@ -210,13 +216,34 @@
   // "While I'm repairing anyway, I think I learned a few things from that battle that we could use to upgrade my parts."
   Rex sat down next to IronWolf and plugged into the blue tipped cable. In his mind he could see a window of stats and other information.
 
+  VAR seen_stealth = false
+  VAR seen_teleport = false
   - (upgrade_menu)
   * Speed Upgrade
     Schematics appear before Rex along with IronWolf's voice. "If we adjust the leg structure we can get a nice increase to sprinting speed.
+    "What does that mean?" Rex asked.
+    "It means I can run faster." IronWolf said.
+    "Duh, I mean what does it mean tactically. What advantage does that give us?"
+    "I thought running faster was the advantage." IronWolf responded.
     -> upgrade_menu
   * Stealth Upgrade
     A protection of a device appeared before Rex.
-    "Watching Wolfhounds active sensor ping gave me an idea. This is a radar decoy. I can carry one, and you can drop it in battle. It should fool the ancestors sensors into thinking we are a scanning error while the box is deployed.
+    "Watching Wolfhounds active sensor ping gave me an idea. This is a radar decoy. I can carry one, and you can drop it in battle. It should fool the ancestors sensors into thinking we are a scanning error while the box is deployed. IronWolf said.
+    "That is one of the dumbest ideas I have heard of." Rex said. "We are fighting arena battles. The only way hide is to cloak."
+    ~ seen_stealth = true
+    -> upgrade_menu
+  * {seen_stealth or seen_teleport} Invisibility Cloak Upgrade
+    {seen_teleport:
+      "Could you just fold or flex or whatever to make us invisible?" Rex asked.
+      "It takes a lot of power, and in short no, no I can not." IronWolf said.
+      "Is there anything you can do? I know the technology exists. I have seen it used in battle." Rex protested.
+      "Bring me one and we can see what we learn." IronWolf said.
+    - else:
+      "How about this" Rex said. "You bend light around us, and then we will have stealth."
+      "Bend light around you?" IronWolf asked skeptically.
+      "Yeah, you know. So we can not be seen by the naked eye or non-active scanners" Rex said.
+      "I do not know how to do that. Maybe if you brought me one I could adapt it to myself." IronWolf suggested.
+    }
     -> upgrade_menu
   * Short Range Teleport
     "Haha, not really" IronWolf said. "Even I think that would be cool."
@@ -231,11 +258,26 @@
     "What? Why?" Rex asked.
     "How fragile is your mind?" asked IronWolf.
     "Ok now you are just messing with me" Rex said.
+    ~ seen_teleport = true
     -> upgrade_menu
+  * [Guass Rifle Weapon]
+    "Could you have a Guass Rifle, like come out of your mouth?" Rex asked hesitantly.
+//    "What is this weapon"
+    "The barrel needs to be straight in order to fire. Something mounted on the back would be better." IronWolf said.
+    The projected image changed to show the old particle projector cannon that was once mounted on IronWolfs back to be replaced with a Guass Rifle.
+    "Yes, but, Guass Rifles do not produce a bunch of heat, so mounting it outside is a waste." Rex countered.
+    "I see." IronWolf said. "We could leave the barrel flexible enough to move. And we would just have to be facing whatever we fired at."
 
-  -
-  "Fine, let us go with the speed upgrade. We will need to avoid getting hit." Rex said.
-  "You can upgrade anything else?" Rex asked. // in shock.
+    The projected image changed to show the long barrel of the Guass Rifle move inside of the body of IronWolf. The box that served as the cockpit was moved to the left side so the barrel to form a straight line.
+  * Fire Claws Upgrade
+    The imaged changed to show IronWolf with his front claws covered in blue flame.
+    "This is one of my personal favorites" IronWolf said. "The claws do physical damage of course, destroying the mech, but the flames also do heat damage. So Even if the mech manages to push us off, it will be hurting from the extra heat damage."
+    "Sold!" Rex said mimicking something he saw in a video once. When IronWolf did not laugh, he continued. "That sounds amazing, I absolutely want that upgrade."
+  * -> upgrade_menu_post
+
+  - (upgrade_menu_post)
+//  "Fine, let us go with the speed upgrade. We will need to avoid getting hit." Rex said.
+//  "You can upgrade anything else?" Rex asked. // in shock.
   "I have a full fabrication and repair capability. If you can get me the materials and the knowledge, we can upgrade just about anything." IronWolf said.
   // "Well yeah, assuming we have the materials." IronWolf responded. "It's just like repairing up with inienatal changes right?"
   // "Can we do both upgrades?" Rex asked, knowing the answer.
