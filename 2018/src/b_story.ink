@@ -37,6 +37,10 @@
 
   A bright light flashed for a moment; followed by a ear thundering boom. The Camelot fired its Gauss Rifle in the fog. There was no flash on the other end, so the shot must have missed. On the screen the announcer confirmed the miss.
   Four bright red beams swept the arena, burning away the lingering fog.
+  
+  * [Next]
+  -
+  
   The Camelot revealed as the the fog burned away. It was still at long range, but had moved quite far along the arena.
   The Atlas fired another rack of Missiles forcing the Camelot to move closer to the Atlas.
 
@@ -68,6 +72,10 @@
 	"Dumb kid should read the thing he sold the next ten years of his life too." The drunk said.
 
 	Tammy made her way out, just as invisibly as she made her way in.
+	
+	* [Next]
+	-
+	
 	"I can not let them get IronWolf" Tammy said to herself. "That Mech is something special. Those hacks would chop him up and never realize the destroyed opportunity." But how would she  do it. She called up Phil. "Clan Aurigan is planning on stealing IronWolf" she said.
 
 	"How so?" Phil asked. He was not looking at her, he was in the middle of doing something else, so his image only partially showed him.

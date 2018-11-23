@@ -1,9 +1,11 @@
 == fun_and_games
 = start
+  This is the core gameplay section of the game. The player gets to play as Rex and win battles and climb their way up the ladder. The player/reader should also be able to pick upgrades for IronWolf and weapons.
+  
   The next weekend Rex was back to continue his climb up the ladder. With IronWolf fully repaired. Maybe some changes to the load out and one or two upgrades picked.
 
-  (NOTE: I am still trying to figure out how these fights might work as a story/game. So I am going to try a bunch of different things and try and find
-  the diamond in the rough.)
+//   (NOTE: I am still trying to figure out how these fights might work as a story/game. So I am going to try a bunch of different things and try and find
+//   the diamond in the rough.)
 
   - (top)
   * [Battle FAQ]
@@ -14,6 +16,9 @@
     -> catapult_stats -> top
   * [Axman Stats]
     -> axman_stats -> top
+  * [Next Chapter] 
+    ->->
+//   * [Skip Section] ->->
   * ->->
   -
   ->->
@@ -111,12 +116,14 @@
 
 = how_battle_works
   + So how do you win a battle?
-    The opponent can no longer continue the fight.
+    // The opponent can no longer continue the fight.
+    Each mech fights until they overheat. Taking actions and getting hit by weapons will build of HEAT in the mech. If they overheat, the reactor will automatically shut down to avoid exploding. When that happens the battle is over.
     -> how_battle_works
   + How do you disable the opponent?
-    Physical damage, which is protected by armor.
-    Overheating, which is protected by heat sinks.
-    Weapons destroyed/out of ammo.
+    Laser and other energy weapons deal direct HEAT to the opponent. Physical weapons like missiles and claws destory HEAT SINKS. These Heat sinks are how the mech dissipates heat each turn of battle.
+    // Physical damage, which is protected by armor.
+    // Overheating, which is protected by heat sinks.
+    // Weapons destroyed/out of ammo.
     -> how_battle_works
   + How does Heat work?
     Heat builds up in both mechs when lasers are fired. Most of the heat concentrated on a single point on the defender.

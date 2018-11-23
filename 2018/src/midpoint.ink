@@ -21,6 +21,7 @@
 
   * [Final Battle]
   -
+  
   This was it, Rex and IronWolf made their way though the underground tunnels between the Aurigan compound and the arena. In the tunnels, people, fans, mechanics, lines the hallway and watched as he passed. When he arrived, he was in the starting position of the arena. A bright sun overheat, and a desert setting. A few cactuses and no water.
   Rex smiled. "Perfect, we should be able to overheat him in no time. a hot desert will hamper heatsink efficiency and no water means no easy way to cool down."
 

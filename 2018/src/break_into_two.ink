@@ -188,6 +188,7 @@
   - (upgrades)
   * [Faster]
     With some adjustments to the composition of IronWolf's legs and joins. He will be able to run faster.
+    If we can run fast enough, we will be next to impossible to hit before we reach claw range.
     -> upgrades
   * [Increased Storage Space]
     Some careful thinning of armor and placement, IronWolf can increase the number of storage slots. These can hold missiles, decoys, and other consumable items.
