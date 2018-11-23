@@ -62,6 +62,8 @@
     IronWolf smiled, you don't waste time, I like that.
   * "I was hoping for stronger Mech actually, like that Atlas."
     IronWolf snorts into the dirt. "That's clown? Big and dumb have their useses sure, but you won't win the grand turnimate with a relic like that."
+    "Oh sure" Rex said, "one hit and you would be a goner."
+    "He would have to hit me first" IronWolf said.
   * "What are all these tubes and wired you hooked into me?"
     "You where bleeding out. I needed to do something or else you would have died. So I've been running my self repair fluid though your system."
     Rex gasped and his hand went to pull out the tube.
@@ -76,14 +78,19 @@
   
   * [Next] 
   -
-  
-  Tammy kicked her broken armor suit. After the failed hunt of the Atlas, the team moved on to let the others hunt their Mechs. Rose managed to find and capture an Axman, and a Blackjack. Neither was good as an Atlas. Tammy kicked the broken armor again.
+  Tammy unloaded her broken power armor in the corner of the loading dock. She paused for a moment to kick the metal scrap. 
+//   Tammy kicked her broken armor suit. After the failed hunt of the Atlas, the team moved on to let the others hunt their Mechs. Rose managed to find and capture an Axman, and a Blackjack. Neither was good as an Atlas. Tammy kicked the broken armor again.
   "Calm down" said Phil, the officer in charge of the hunt. "You'll get another chance to get a Mech."
   Tammy sneared at him, "The Atlas?"
-  He frowned, "No, that Mech was more than you could handle. You are lucky it didn't crush you." He looked at the broken armor. "Or lucky owned you have such high end armor."
+//   He frowned, "No, that Mech was more than you could handle. You are lucky it didn't crush you." He looked at the broken armor. "Or lucky owned you have such high end armor."
+  "That mech was more than you could handle. The boy it crushed learned that lesson the hard way." Phil said.
+  Wilson poked his head into the room, "Lucky she can afford top of the line armor." he sniped.
   "I can take the Atlas" Tammy protested. "That boy got in the way."
-  "That boy was probably crushed to death for his stupidly. Imaging, trying to capture a Mech by yourself. Not even, he tried to capture an Atlas by himself."
-  Willson poked his head in, showing that he had been easedropping on the converstation. "I think that boy just wanted to die. Nothing else explains it."
+  "If he had not gotten in the way, I would be contacting your family about their crushed daughter." He walked over and loomed over the girl. His face moving to inches in front of hers. "You are lucky to be alive at all."
+//   "That boy was probably crushed to death for his stupidly. Imaging, trying to capture a Mech by yourself. Not even, he tried to capture an Atlas by himself."
+//   Willson poked his head in, showing that he had been easedropping on the converstation. "I think that boy just wanted to die. Nothing else explains it."
+//   Wilson poked his head in again, still easedroppong on their conversation. "There are a lot of mechs out there." he said. "if you get too hung up on your first one, you will miss all the others you could have experenced.
+  Wilson poked his head in again. He was in the ship's cockpit, which was attacked to the main cargo area. "Maybe you two should hug it out?" he suggested.
   "Did you find another Mech yet?" Phil called back.
   "Actually, yeah, but shes not going to like it." Willson responded.
   
