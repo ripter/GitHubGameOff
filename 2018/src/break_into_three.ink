@@ -26,6 +26,8 @@
   -
   The first step was for Rex and Tammy to do some team fights and lose. It would be easy because Rex really was terrible at piloting the Blackjack. A few battles and their ranking plummeted. The networks picked up on the loses. Interviewing the team.
 
+  (Writer's note: this would be a great place to let the player play as Tammy instead of Rex. Since they need to lose, the player can get slightly different objectives like destroy one mech before Rex loses, or stay alive for X turns. Al thought this would be a team battle and I barely have the single player battle working.)
+
   "Rex" Sally Xuo, a gaming reporter asked, "You were the rising star piloting IronWolf correct?"
   Rex leaned forward to answer, but Wilson was first. "Correct Sally. It is a very sad story, but one that is becoming quite common."
   "Oh" Sally acted surprised and gasped. "You poor child" She said. "You lost your arm in a battle?"
@@ -48,18 +50,31 @@
   After a moment and everyone was settled. Sally finished the program.
 
   In the greenroom Sally came up to Rex and Wilson. "Did they really cheat?" she asked. "Because I lost a lot of money when Rex lost. I was actually pretty mad at you Rex. I was prepared to tear into you."
-  Wilson brought up a holograph display. "Look at the average length of any contender in say, the other clans arena. Just an example, not picking on them. But look. The average length is about six months, just long enough to reach the champion, lose, and start the entire cycle all over again."
-  Sally read over the data carefully. Then she made a gesture that saved the information to her core. "Right or wrong, the other clan is going to come after you for this. You are prepared right?"
-  "The truth is what is important right?" Rex said.
+//  Wilson brought up a holograph display. "Look at the average length of any contender in say, the other clans arena. Just an example, not picking on them. But look. The average length of a rising star is about six months; just long enough to reach the Campion lose, and start the entire cycle all over again."
+  Wilson brought up a display with the data. He highlighted the average length of time every rising star spent getting to the top and then losing everything.
+  "That does not prove anything" Sally said. "It is a tournament, the matches happen at set intervals. The definition of rising start is someone who keeps winning, beating the odds and expectations. Your data just shows that the word is being applied correctly."
+
+//  Sally read over the data carefully. Then she made a gesture that saved the information to her core. "Right or wrong, the other clan is going to come after you for this. You are prepared right?"
+  Rex looked Sally in the eyes. "I really did lose my arm, my livelihood, and my only real best friend. And we know, just like everyone else, that the arena fights are rigged." Rex looked away and took a deep breath. "The truth is what is important right? The truth is that they are cheating."
+// Rex said.
   Sally looked a him, watching his expression. "sure kid."
   "I am not a kid" Rex blurted.
-  "I do not care if you are 100 years old, for this story to work you are kid." Sally snapped. She was no longer looking at him, but had glazed over her eyes as she looked at screens only visible to her.
+  "I do not care if you are 100 years old, for this story to work you are kid." Sally snapped. She was no longer looking at him, but had glazed over her eyes as she looked at screens only visible to her. "There are a lot of old fogies in my way that do not know when to retire."
 
   * [Next]
   -
-  Over the next day, more interviews appeared online from pilots like Rex. People who had been lured in, then their mechs all broke down in the final battle. When the video of several overlaid  battles from the other clan, it was quite convincing. The people started a petition and got the votes needed to investigate the issue. People where boycotting the arenas, and government officials would be appointed and sent to every arena on the planet.
 
-  Rex only had to lose two more battles, not that he was trying to lose. But he just could not make his artificial limb work properly and ended up only really being able to do one thing at a time, MOVE, AIM, FIRE. let alone something as complicated as DODGE, AIM, FIRE. With the AI helping, Rex could manage one of the the three, moving or dodging the mech (aka moving in a zig zag pattern), aiming the weapons on a target, and managing the weapons fire so he didn't overload the mech. In more than one fight he lost because he was to excited about getting a possible shot after a dodge that he did not know how much heat had built up plus the amount of heat firing the lasers could add.
+  Almost every news channel was flooded for the next week. Testimonies, interviews, expert opinions. Everyone had something to say about the alleged cheating by Clan Aurigan. Overnight they had gone from an obscure but locally successful clan, to being the center of the galactic news. Their clan crest on monitors and screens everywhere, and no one was saying good things about them.
+
+//  One interview with the planetary congress was especially embracing.
+  "Our peace and security rely on our ability to find and remove the bad actors." An expert was explaining in an interview.
+  "The human species was almost wiped out because of the Mechs; because we used them for war. The Mechs will happily let us destroy ourselves." said another expert.
+
+  The evidence started to get serious when someone released a video that overlaid the last twenty champion fights in Clan Aurigan's arena. All of the fights started as the blurred mess, as each pilot acted differently, but they all ended the same way. It was almost like there was an invisible barrier just in front of the Atlas. Every mech that tried to approach close range would suddenly shut down and lose all power. Then they would quickly overheat and lose from the Atlas's attack.
+
+// Over the next few days, more interviews appeared online from pilots like Rex. People who had been lured in, and then their mechs all broke down in the final battle. When the video of several overlaid  battles from the other clan, it was quite convincing. The people started a petition and got the votes needed to investigate the issue. People where boycotting the arenas, and government officials would be appointed and sent to every arena on the planet.
+
+  Rex only had to lose two more battles, not that he was trying to lose. But he just could not make his artificial limb work properly and ended up only really being able to do one thing at a time, MOVE, AIM, FIRE. let alone something as complicated as DODGE, AIM, FIRE. With the AI helping, Rex could manage one of the the three, moving or dodging the mech (aka moving in a zig zag pattern), aiming the weapons on a target, and managing the weapons fire so he didn't overload the mech. In more than one fight he lost because he was too excited about getting a possible shot after a dodge that he did not know how much heat had built up plus the amount of heat firing the lasers could add.
 
   Finally, the time had arrived. Phil and Wilson dressed up in inspector outfits. Tammy had tapped into the security and found out the date and time the real inspectors would show up. The timing was perfect. Phil and Wilson designed as the inspectors showed up right on time. The clan's own head of house came to greet them and show them around the compound and arena.
 

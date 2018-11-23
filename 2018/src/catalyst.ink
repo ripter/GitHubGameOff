@@ -260,6 +260,14 @@
     "Ok now you are just messing with me" Rex said.
     ~ seen_teleport = true
     -> upgrade_menu
+  * Electronic countermeasures
+    "This little upgrade" IronWolf said, "makes it easier for me to dodge missiles."
+    "Are missiles hard to dodge?" Rex asked.
+    "Just a little" IronWolf said sacristy, "Just running around will make us harder to hit. The faster we move the harder it will be for the missiles to effectively reach us. But not all pilots use missiles as just an attack. A careful placement of missiles can force a mech to dodge right into a trap."
+    "That would suck. What/How does this device work?" Rex asked.
+    "It scrambles the AI in the missiles so they can not target us. The well placed barrage only works if the missiles hit in the right locations." IronWolf said.
+    -> upgrade_menu
+
   * [Guass Rifle Weapon]
     "Could you have a Guass Rifle, like come out of your mouth?" Rex asked hesitantly.
 //    "What is this weapon"
@@ -273,6 +281,7 @@
     The imaged changed to show IronWolf with his front claws covered in blue flame.
     "This is one of my personal favorites" IronWolf said. "The claws do physical damage of course, destroying the mech, but the flames also do heat damage. So Even if the mech manages to push us off, it will be hurting from the extra heat damage."
     "Sold!" Rex said mimicking something he saw in a video once. When IronWolf did not laugh, he continued. "That sounds amazing, I absolutely want that upgrade."
+    -> upgrade_menu
   * -> upgrade_menu_post
 
   - (upgrade_menu_post)
