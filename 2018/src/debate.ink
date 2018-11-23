@@ -45,7 +45,7 @@
 //   "No, space was tight growing up, and there are few uses
 //   "No, I grew up in a colony. We didn't have the room for Mechs." Rex responded as they walked down a busy road. Lots of people walking around, many chatting in groups, and many more with their eyes white glossed over as they focused on the virtual world. Their augmented eyes automatically incorporating the real world obstacles. Back at the colony people spent most of their time in these virtual worlds. Rex had hoped that people in the Mech cities would spend a little less time in the virtual world. But this city feels a lot like his cramped childhood.
 //   "This city was built in the very old days. Some say it is hundreds of thousands of years old." Tammy continued. "I guess back then everyone had a Mech and just took them to got shopping or to work." Tammy gave an exaggerated shrug.
-  "This city has survived since the ancent wars. The giant walls with room for Mechs to partol. Armored buildings that are tall and wide apart. The space that used to be roads for mechs had been converted into green walkways for the humans.
+  "This city has survived since the ancient wars. The giant walls with room for Mechs to partol. Armored buildings that are tall and wide apart. The space that used to be roads for mechs had been converted into green walkways for the humans.
   They came to a tall building, it looked like all the other tall building as far as Rex could see. They passed massive 50 meter garage doors that went all the way to the top of building. They looked like they where build to let Mechs enter. or to open an entire side of the building.
   "Is this a garage?" Rex asked while pointing at the garage doors.
   "Something like that" Tammy said.
