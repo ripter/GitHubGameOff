@@ -1,5 +1,3 @@
--> catalyst.start
-
 == catalyst
 = start
   The next day Rex woke up, the tubes and wires from his stump were now gone. There was a black metal cap over the hole that used to be Rex's shoulder joint. He could not see it directly so his fingers stumbled around the cap, feeling the ports and joints. He crawled out of his tent, after it taking him significantly longer than it used to for him to get ready. Once he was out of the tent he walked over to IronWolf, who was laying next to the burnt out campfire.
