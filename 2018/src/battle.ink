@@ -1,4 +1,5 @@
 INCLUDE weapons.ink
+INCLUDE mech_base.ink
 INCLUDE function_weapons.ink
 INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
@@ -7,19 +8,19 @@ INCLUDE function_core.ink
 -> gameoff_battle_draft_two
 
 == gameoff_battle_draft_two
-LIST MECHS = IronWolf, Axman
 VAR battle_state = PLAYING
-VAR mech_attacker = IronWolf
+VAR mech_attacker = Catapult
 VAR mech_defender = Axman
-VAR mech_overheat = 10
 
 // Setup the mechs for battle
-<- ironwolf.start
-<- axman.start
+<- mech_base.start(mech_attacker)
+<- mech_base.start(mech_defender)
+// <- ironwolf.start
+// <- axman.start
 
 Two giant war machines piloted by humans, also known as Mechs are battling against each other. The challenger {mech_attacker} is controlled by you, while your opponent {mech_defender} is controlled by a dumb AI.
 
-Each turn, the Mechs recharge POWER and dissipate HEAT. The first Mech to reach {mech_overheat} HEAT loses the game.
+Each turn, the Mechs recharge POWER and dissipate HEAT. The first Mech to reach {get_value (mech_defender, OVERHEAT)} HEAT loses the game.
 Each turn is made up of two steps, a recharge of your POWER, and a volley of attacks. You and your opponent take turns moving or firing weapons at each other during the volley.
 // You can attack or move
 
@@ -27,10 +28,13 @@ VAR turn_count = 0
 - (main_loop)
 {battle_state == PLAYING:
   ~ turn_count += 1
-  Turn {turn_count}
+  
+  // Start the turn
+  <- turn_start(turn_count)
+//   Turn {turn_count}
 
   // Recharge, Upkeep, Dissipate Heat
-  -> arena.turn_start ->
+//   -> arena.turn_start ->
 
 //   As the round begins. {mech_attacker} and {mech_defender} are within {get_value (NULL, RANGE)} range.
 
@@ -51,10 +55,10 @@ VAR turn_count = 0
 
 -
 {
-- get_value (mech_defender, HEAT) >= mech_overheat:
+- get_value (mech_defender, HEAT) >= get_value (mech_defender, OVERHEAT):
   You win!
   {mech_defender} overheats and shuts down. {mech_attacker} is the winner!
-- get_value (mech_attacker, HEAT) >= mech_overheat:
+- get_value (mech_attacker, HEAT) >= get_value (mech_defender, OVERHEAT):
   You Lost!
   {mech_attacker} overheated and was forced to shut down. {mech_defender} is the winner!
 - else:
@@ -63,11 +67,13 @@ VAR turn_count = 0
 ->->
 
 
-
+== turn_start(count)
+  Turn {count}
+  -> DONE
 
 
 == arena
-= turn_start
+= turn_start_draft_one
   // Recharge
   ~ mech_recharge (mech_attacker)
   ~ mech_recharge (mech_defender)
@@ -133,12 +139,6 @@ VAR turn_count = 0
   ~ set_power_regen(IronWolf, 5)
   ~ set_dodge(IronWolf, 0)
   ~ set_speed(IronWolf, 0)
-  -> DONE
-= status_draft_one
-  {get_power(IronWolf)} POWER
-  <>; {get_heat(IronWolf)} HEAT
-  <>; {get_heatsinks(IronWolf)} HEATSINKS
-  Speed: {get_value (IronWolf, SPEED)}kpp; Dodge Chance: {get_value (IronWolf, DODGE)}%
   -> DONE
 = status
   # render: playerStatus
@@ -226,7 +226,7 @@ VAR turn_count = 0
 
 
 == function is_gameover()
-  ~ return get_heat(mech_defender) >= mech_overheat or get_heat(mech_attacker) >= mech_overheat
+  ~ return get_heat(mech_defender) >= get_value (mech_defender, OVERHEAT) or get_heat(mech_attacker) >= get_value (mech_defender, OVERHEAT)
 
 == function get_fastest()
   {

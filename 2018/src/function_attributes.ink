@@ -1,6 +1,5 @@
 //
 // Range Functions
-LIST ZONE_RANGES = Long, Medium, Melee
 VAR mech_range = 15
 == function get_range()
 {
@@ -32,6 +31,8 @@ VAR heat_attacker = 0
 VAR heat_defender = 0
 VAR heatsinks_attacker = 0
 VAR heatsinks_defender = 0
+VAR overheat_attacker = 10
+VAR overheat_defender = 10
 == function get_heat(who)
 {
   - who == mech_attacker:
@@ -70,6 +71,24 @@ VAR heatsinks_defender = 0
 == function update_heatsinks(who, delta)
   ~ return set_heatsinks(who, min_zero(delta + get_heatsinks(who)))
 
+== function get_overheat(who)
+  {
+    - who == mech_attacker:
+      ~ return overheat_attacker
+    - who == mech_defender:
+      ~ return overheat_defender
+  }
+  == function set_overheat(who, value)
+  {
+    - who == mech_attacker:
+      ~ overheat_attacker = value
+      ~ return overheat_attacker
+    - who == mech_defender:
+      ~ overheat_defender = value
+      ~ return overheat_defender
+  }
+  == function update_overheat(who, delta)
+    ~ return set_overheat(who, min_zero(delta + get_overheat(who)))
 
 //
 //

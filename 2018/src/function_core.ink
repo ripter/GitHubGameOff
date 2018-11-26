@@ -1,5 +1,7 @@
-LIST TYPES = POWER, REGEN, HEAT, HEATSINKS, TURN_STATE, SPEED, DODGE, RANGE, EVASIVE_MANEUVERS
+LIST TYPES = POWER, REGEN, HEAT, HEATSINKS, OVERHEAT, TURN_STATE, SPEED, DODGE, RANGE, EVASIVE_MANEUVERS
 LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
+LIST ZONE_RANGES = Long, Medium, Melee
+LIST MECHS = IronWolf, Axman, Catapult
 
 == function get_value(who, type)
   {
@@ -11,6 +13,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
     ~ return get_heat (who)
   - type == HEATSINKS:
     ~ return get_heatsinks (who)
+  - type == OVERHEAT:
+    ~ return get_overheat (who)
   - type == TURN_STATE:
     ~ return get_turn_state (who)
   - type == SPEED:
@@ -34,6 +38,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
     ~ return set_heat (who, value)
   - type == HEATSINKS:
     ~ return set_heatsinks (who, value)
+  - type == OVERHEAT:
+    ~ return set_overheat (who, value)
   - type == TURN_STATE:
     ~ return set_turn_state (who, value)
   - type == SPEED:
@@ -57,6 +63,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
     ~ return update_heat (who, delta)
   - type == HEATSINKS:
     ~ return update_heatsinks (who, delta)
+  - type == OVERHEAT:
+    ~ return update_overheat (who, delta)
   - type == TURN_STATE:
     ~ return update_turn_state (who, delta)
   - type == SPEED:
