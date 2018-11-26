@@ -1,0 +1,5 @@
+* [gigantic_battle_background_by_kyle_dove-d5nwldw.png](https://www.deviantart.com/kyle-dove/art/Gigantic-Battle-Background-342482756)
+* [mech_quad_by_XionLord.jpg](https://www.reddit.com/r/Battletechgame/comments/8nxvkd/mods_might_be_asleep_share_quad_mechs/)
+* [basilisk_quad.png](http://www.masterunitlist.info/Unit/Details/3796/basilisk-protomech-quad-standard)
+* [mech_axman_source.png](https://bg.battletech.com/forums/index.php?topic=51712.0)
+* [warhawk_by_punakettu.jpg](https://mwomercs.com/forums/topic/19568-what-mech-do-you-want-in-mwo/page__st__80)
