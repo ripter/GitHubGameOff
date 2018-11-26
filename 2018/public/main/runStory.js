@@ -1,6 +1,33 @@
+const elStory = document.querySelector('#story');
+const outerScrollContainer = document.querySelector('.outerContainer');
+
+/**
+ * Starts an Ink story by name
+ * @param  {String} name
+ */
+function runStoryByName(name) {
+  const storyJSON = window[`${name}Content`];
+
+  if (!storyJSON) {
+    throw new Error('Could not find story data');
+  }
+
+  // Clear the old story
+  elStory.innerHTML = '';
+  // Running The Story
+  runStory(storyJSON);
+}
+
+
+
+/**
+ * Runs the Ink Story loop.
+ */
 function runStory(storyJSON) {
   // Create ink story from the content using inkjs
   var story = new inkjs.Story(storyJSON);
+  // Great for quick prototyping to have a refrence on the debugger
+  window.story = story;
 
   // Global tags - those at the top of the ink file
   // We support:
@@ -25,9 +52,6 @@ function runStory(storyJSON) {
     }
   }
 
-  var storyContainer = document.querySelector('#story');
-  var outerScrollContainer = document.querySelector('.outerContainer');
-
   // Kick off the start of the story!
   continueStory(true);
 
@@ -48,54 +72,59 @@ function runStory(storyJSON) {
       var paragraphText = story.Continue();
       var tags = story.currentTags;
 
-      // Any special tags included with this line
-      var customClasses = [];
-      for(var i=0; i<tags.length; i++) {
-        var tag = tags[i];
-
-        // Detect tags of the form "X: Y". Currently used for IMAGE and CLASS but could be
-        // customised to be used for other things too.
-        var splitTag = splitPropertyTag(tag);
-
-        // IMAGE: src
-        if( splitTag && splitTag.property == "IMAGE" ) {
-          var imageElement = document.createElement('img');
-          imageElement.src = splitTag.val;
-          storyContainer.appendChild(imageElement);
-
-          showAfter(delay, imageElement);
-          delay += 200.0;
-        }
-
-        // CLASS: className
-        else if( splitTag && splitTag.property == "CLASS" ) {
-          customClasses.push(splitTag.val);
-        }
-
-        // CLEAR - removes all existing content.
-        // RESTART - clears everything and restarts the story from the beginning
-        else if( tag == "CLEAR" || tag == "RESTART" ) {
-          removeAll("p");
-          removeAll("img");
-
-          // Comment out this line if you want to leave the header visible when clearing
-          setVisible(".header", false);
-
-          if( tag == "RESTART" ) {
-            restart();
-            return;
-          }
-        }
+      // Tags are used to update the DOM.
+      if (tags.length > 0) {
+        processTags(elStory, tags);
       }
+      // Any special tags included with this line
+      // var customClasses = [];
+      // for(var i=0; i<tags.length; i++) {
+      //   var tag = tags[i];
+      //
+      //   // Detect tags of the form "X: Y". Currently used for IMAGE and CLASS but could be
+      //   // customised to be used for other things too.
+      //   var splitTag = splitPropertyTag(tag);
+      //   console.log('splitTag', splitTag);
+      //
+      //   // IMAGE: src
+      //   if( splitTag && splitTag.property == "IMAGE" ) {
+      //     var imageElement = document.createElement('img');
+      //     imageElement.src = splitTag.val;
+      //     elStory.appendChild(imageElement);
+      //
+      //     showAfter(delay, imageElement);
+      //     delay += 200.0;
+      //   }
+      //
+      //   // CLASS: className
+      //   else if( splitTag && splitTag.property == "CLASS" ) {
+      //     customClasses.push(splitTag.val);
+      //   }
+      //
+      //   // CLEAR - removes all existing content.
+      //   // RESTART - clears everything and restarts the story from the beginning
+      //   else if( tag == "CLEAR" || tag == "RESTART" ) {
+      //     removeAll("p");
+      //     removeAll("img");
+      //
+      //     // Comment out this line if you want to leave the header visible when clearing
+      //     setVisible(".header", false);
+      //
+      //     if( tag == "RESTART" ) {
+      //       restart();
+      //       return;
+      //     }
+      //   }
+      // }
 
       // Create paragraph element (initially hidden)
       var paragraphElement = document.createElement('p');
       paragraphElement.innerHTML = paragraphText;
-      storyContainer.appendChild(paragraphElement);
+      elStory.appendChild(paragraphElement);
 
       // Add any custom classes derived from ink tags
-      for(var i=0; i<customClasses.length; i++)
-      paragraphElement.classList.add(customClasses[i]);
+      // for(var i=0; i<customClasses.length; i++)
+      // paragraphElement.classList.add(customClasses[i]);
 
       // Fade in paragraph after a short delay
       showAfter(delay, paragraphElement);
@@ -109,7 +138,7 @@ function runStory(storyJSON) {
       var choiceParagraphElement = document.createElement('p');
       choiceParagraphElement.classList.add("choice");
       choiceParagraphElement.innerHTML = `<a href='#'>${choice.text}</a>`
-      storyContainer.appendChild(choiceParagraphElement);
+      elStory.appendChild(choiceParagraphElement);
 
       // Fade choice in after a short delay
       showAfter(delay, choiceParagraphElement);
@@ -136,7 +165,7 @@ function runStory(storyJSON) {
     // Extend height to fit
     // We do this manually so that removing elements and creating new ones doesn't
     // cause the height (and therefore scroll) to jump backwards temporarily.
-    storyContainer.style.height = contentBottomEdgeY()+"px";
+    elStory.style.height = contentBottomEdgeY()+"px";
 
     if( !firstTime )
     scrollDown(previousBottomEdge);
@@ -191,7 +220,7 @@ function runStory(storyJSON) {
   // The Y coordinate of the bottom end of all the story content, used
   // for growing the container, and deciding how far to scroll.
   function contentBottomEdgeY() {
-    var bottomElement = storyContainer.lastElementChild;
+    var bottomElement = elStory.lastElementChild;
     return bottomElement ? bottomElement.offsetTop + bottomElement.offsetHeight : 0;
   }
 
@@ -199,7 +228,7 @@ function runStory(storyJSON) {
   // you've picked one, as well as for the CLEAR and RESTART tags.
   function removeAll(selector)
   {
-    var allElements = storyContainer.querySelectorAll(selector);
+    var allElements = elStory.querySelectorAll(selector);
     for(var i=0; i<allElements.length; i++) {
       var el = allElements[i];
       el.parentNode.removeChild(el);
@@ -209,7 +238,7 @@ function runStory(storyJSON) {
   // Used for hiding and showing the header when you CLEAR or RESTART the story respectively.
   function setVisible(selector, visible)
   {
-    var allElements = storyContainer.querySelectorAll(selector);
+    var allElements = elStory.querySelectorAll(selector);
     for(var i=0; i<allElements.length; i++) {
       var el = allElements[i];
       if( !visible )

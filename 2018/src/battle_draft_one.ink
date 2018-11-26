@@ -4,9 +4,9 @@ INCLUDE function_utils.ink
 INCLUDE function_attributes.ink
 INCLUDE function_core.ink
 
--> gameoff_battle_draft_two
+-> gameoff_battle_draft_one
 
-== gameoff_battle_draft_two
+== gameoff_battle_draft_one
 LIST MECHS = IronWolf, Axman
 VAR battle_state = PLAYING
 VAR mech_attacker = IronWolf

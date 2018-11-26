@@ -7,8 +7,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- 3rd party libraries -->
     <script src="https://unpkg.com/wicked-elements@0.3.1/min.js"></script>
-
+    <script src="ink.js"></script>
 </head>
 
 <body>
@@ -33,23 +34,24 @@
     <div id="story" class="container">
     </div>
   </div>
-
-    <script src="ink.js"></script>
+    <!-- Load the ink JSON files -->
     <script src="story.js"></script>
     <script src="battle.js"></script>
+    <script src="intro.js"></script>
+    <!-- Start running the ink scripts -->
+    <script src="processTags.js"></script>
     <script src="runStory.js"></script>
     <script>
+    // Elements with the story attribute will be clickable and change the running story.
     wickedElements.define('[story]', {
       onclick(event) {
-        const elStory = document.getElementById('story');
         const storyName = this.el.getAttribute('story');
-        const storyJSON = window[`${storyName}Content`];
-        // clear out the old story
-        elStory.innerHTML = '';
-        // Run the story
-        runStory(storyJSON);
+        runStoryByName(storyName);
       }
     });
+
+    // Start with the story.
+    runStory(window.introContent);
     </script>
 </body>
 </html>
