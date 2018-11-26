@@ -30,6 +30,9 @@ h2 {
     font-weight: lighter;
     color: #BBB;
 }
+a {
+  cursor: pointer;
+}
 
 .dark h2 {
     color: #666;
@@ -62,7 +65,7 @@ h3.written-in-ink {
 
 /* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
 .outerContainer {
-    position: absolute;
+    /* position: absolute; */
     display: block;
     margin: 0;
     padding: 0;
@@ -152,7 +155,7 @@ p.choice {
 
 /* first choice */
 :not(.choice) + .choice {
-    padding-top: 1em; 
+    padding-top: 1em;
 }
 
 

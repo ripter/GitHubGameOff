@@ -14,6 +14,7 @@ INCLUDE break_into_three.ink
 INCLUDE finale.ink
 INCLUDE final_image.ink
 
+-> nanowrimo_story_draft_one
 
 == nanowrimo_story_draft_one
 A Boy and his Mech
