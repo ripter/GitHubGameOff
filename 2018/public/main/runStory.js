@@ -70,12 +70,25 @@ function runStory(storyJSON) {
 
       // Get ink to generate the next paragraph
       var paragraphText = story.Continue();
-      var tags = story.currentTags;
+      let tags = {};
 
       // Tags are used to update the DOM.
-      if (tags.length > 0) {
-        processTags(elStory, tags);
+      if (story.currentTags.length > 0) {
+        tags = getTags(story.currentTags);
+        console.log('tags object', tags);
       }
+
+      // Story tag loads a new Ink story file.
+      if (tags.story) {
+        if (tags.status === 'disabled') {
+          console.log(`Story (${tags.story}) is currently disabled`);
+          break;
+        }
+        runStoryByName(tags.story);
+        break;
+      }
+
+      
       // Any special tags included with this line
       // var customClasses = [];
       // for(var i=0; i<tags.length; i++) {
