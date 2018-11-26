@@ -1,4 +1,3 @@
-LIST WEAPONS = Laser, Missile, Dodge, Move
 
 == function power_cost(weapon, level)
 {

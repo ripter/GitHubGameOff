@@ -69,6 +69,7 @@ VAR turn_count = 0
 
 == turn_start(count)
   Turn {count}
+  <- mech_base.status (mech_attacker)
   -> DONE
 
 
