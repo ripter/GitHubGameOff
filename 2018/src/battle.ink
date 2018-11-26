@@ -30,7 +30,7 @@ VAR turn_count = 0
   ~ turn_count += 1
   
   // Start the turn
-  <- turn_start(turn_count)
+  <- arena.turn_start(turn_count)
 //   Turn {turn_count}
 
   // Recharge, Upkeep, Dissipate Heat
@@ -67,13 +67,15 @@ VAR turn_count = 0
 ->->
 
 
-== turn_start(count)
-  Turn {count}
-  <- mech_base.status (mech_attacker)
-  -> DONE
+
 
 
 == arena
+= turn_start (count)
+  Turn {count}
+  <- mech_base.turn_start (mech_attacker)
+  <- mech_base.status (mech_attacker)
+  -> DONE
 = turn_start_draft_one
   // Recharge
   ~ mech_recharge (mech_attacker)

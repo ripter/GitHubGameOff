@@ -33,4 +33,7 @@ INCLUDE mech_catapult.ink
   -> DONE
 
 = turn_start (who)
+  Recharging {who}.
+  ~ update_value (who, POWER, get_value (who, REGEN))
+  ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
   -> DONE
