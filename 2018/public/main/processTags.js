@@ -9,7 +9,6 @@ function processTags(elStory, tags) {
     .map(t => t.slice(1)) // Remove the original string from the array.
     // Update the DOM based on the tags
     .forEach((tag) => {
-      console.log('tag', tag);
       // switch on the tag name
       const name = tag[0].toLocaleUpperCase();
       const value = tag[1];
@@ -20,6 +19,7 @@ function processTags(elStory, tags) {
           break;
         default:
           // do nothing
+          console.log('Unknown tags', name, value);
       }
     });
 }

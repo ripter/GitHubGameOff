@@ -134,11 +134,23 @@ VAR turn_count = 0
   ~ set_dodge(IronWolf, 0)
   ~ set_speed(IronWolf, 0)
   -> DONE
-= status
+= status_draft_one
   {get_power(IronWolf)} POWER
   <>; {get_heat(IronWolf)} HEAT
   <>; {get_heatsinks(IronWolf)} HEATSINKS
   Speed: {get_value (IronWolf, SPEED)}kpp; Dodge Chance: {get_value (IronWolf, DODGE)}%
+  -> DONE
+= status
+  # render: playerStatus
+  POWER: {get_value(IronWolf, POWER)}; <>
+  REGEN: {get_value(IronWolf, REGEN)}; <>
+  HEAT: {get_value(IronWolf, HEAT)}; <>
+  HEATSINKS: {get_value(IronWolf, HEATSINKS)}; <>
+  SPEED: {get_value(IronWolf, SPEED)}; <>
+  EVASIVE_MANEUVERS: {get_value(IronWolf, EVASIVE_MANEUVERS)}; <>
+  DODGE: {get_value(IronWolf, DODGE)}; <>
+  RANGE: {get_value(IronWolf, RANGE)}; <>
+  STATE: {get_value(IronWolf, TURN_STATE)};
   -> DONE
 
 = pick_action

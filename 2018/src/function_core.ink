@@ -1,10 +1,12 @@
-LIST TYPES = POWER, HEAT, HEATSINKS, TURN_STATE, SPEED, DODGE, RANGE, EVASIVE_MANEUVERS
+LIST TYPES = POWER, REGEN, HEAT, HEATSINKS, TURN_STATE, SPEED, DODGE, RANGE, EVASIVE_MANEUVERS
 LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
 
 == function get_value(who, type)
   {
   - type == POWER:
     ~ return get_power (who)
+  - type == REGEN:
+    ~ return get_power_regen (who)
   - type == HEAT:
     ~ return get_heat (who)
   - type == HEATSINKS:
@@ -26,6 +28,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
   {
   - type == POWER:
     ~ return set_power (who, value)
+  - type == REGEN:
+    ~ return set_power_regen (who, value)
   - type == HEAT:
     ~ return set_heat (who, value)
   - type == HEATSINKS:
@@ -47,6 +51,8 @@ LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
   {
   - type == POWER:
     ~ return update_power (who, delta)
+  - type == REGEN:
+    ~ return update_power_regen (who, delta)
   - type == HEAT:
     ~ return update_heat (who, delta)
   - type == HEATSINKS:
