@@ -3,3 +3,4 @@
 * [basilisk_quad.png](http://www.masterunitlist.info/Unit/Details/3796/basilisk-protomech-quad-standard)
 * [mech_axman_source.png](https://bg.battletech.com/forums/index.php?topic=51712.0)
 * [warhawk_by_punakettu.jpg](https://mwomercs.com/forums/topic/19568-what-mech-do-you-want-in-mwo/page__st__80)
+* [gauge-svgrepo-com.svg](https://www.svgrepo.com/svg/9428/gauge)
