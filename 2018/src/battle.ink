@@ -128,27 +128,6 @@ VAR turn_count = 0
 
 
 == ironwolf
-= start
-  ~ mech_attacker = IronWolf
-  ~ set_heat(IronWolf, 0)
-  ~ set_power(IronWolf, 0)
-  ~ set_heatsinks(IronWolf, 0)
-  ~ set_power_regen(IronWolf, 5)
-  ~ set_dodge(IronWolf, 0)
-  ~ set_speed(IronWolf, 0)
-  -> DONE
-= status
-  # render: playerStatus
-  POWER: {get_value(IronWolf, POWER)}; <>
-  REGEN: {get_value(IronWolf, REGEN)}; <>
-  HEAT: {get_value(IronWolf, HEAT)}; <>
-  HEATSINKS: {get_value(IronWolf, HEATSINKS)}; <>
-  SPEED: {get_value(IronWolf, SPEED)}; <>
-  EVASIVE_MANEUVERS: {get_value(IronWolf, EVASIVE_MANEUVERS)}; <>
-  DODGE: {get_value(IronWolf, DODGE)}; <>
-  RANGE: {get_value(IronWolf, RANGE)}; <>
-  STATE: {get_value(IronWolf, TURN_STATE)};
-  -> DONE
 
 = pick_action
   ~ temp currentPower = get_power(IronWolf)
@@ -158,7 +137,7 @@ VAR turn_count = 0
   You are in {get_value (NULL, RANGE)} range.
   + [Pick Action]
     Your current status:
-    <- status
+    <- mech_base.status (IronWolf)
   + [Pass until next turn]
     <- pass_turn
     ->->
