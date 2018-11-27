@@ -15,14 +15,7 @@ VAR mech_defender = Axman
 // Setup the mechs for battle
 <- mech_base.start(mech_attacker)
 <- mech_base.start(mech_defender)
-// <- ironwolf.start
-// <- axman.start
 
-// Two giant war machines piloted by humans, also known as Mechs are battling against each other. The challenger {mech_attacker} is controlled by you, while your opponent {mech_defender} is controlled by a dumb AI.
-
-// Each turn, the Mechs recharge POWER and dissipate HEAT. The first Mech to reach {get_value (mech_defender, OVERHEAT)} HEAT loses the game.
-// Each turn is made up of two steps, a recharge of your POWER, and a volley of attacks. You and your opponent take turns moving or firing weapons at each other during the volley.
-// You can attack or move
 
 VAR turn_count = 0
 - (main_loop)
@@ -30,13 +23,8 @@ VAR turn_count = 0
   ~ turn_count += 1
 
   // Start the turn
+  // Recharge, Upkeep, Dissipate Heat, etc
   <- arena.turn_start(turn_count)
-//   Turn {turn_count}
-
-  // Recharge, Upkeep, Dissipate Heat
-//   -> arena.turn_start ->
-
-//   As the round begins. {mech_attacker} and {mech_defender} are within {get_value (NULL, RANGE)} range.
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
@@ -97,7 +85,8 @@ VAR turn_count = 0
         -> mech_base.player_volley (mech_attacker) ->
     }
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
-      -> axman.random_action ->
+    //   -> axman.random_action ->
+      -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} takes no action.
     }
@@ -105,7 +94,8 @@ VAR turn_count = 0
   - else:
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
       {mech_defender} is the first to act.
-      -> axman.random_action ->
+    //   -> axman.random_action ->
+      -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     }
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
         -> mech_base.player_volley (mech_attacker) ->
