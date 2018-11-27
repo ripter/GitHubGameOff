@@ -56,7 +56,7 @@ INCLUDE mech_axman.ink
   {who == Axman:
     -> mech_axman.ai_simple (target) ->
   }
-  
+
   ->->
 
 
@@ -97,4 +97,21 @@ INCLUDE mech_axman.ink
   <> {damage} HEAT was dealt to {defender}.
   }
   ~ update_heat(defender, damage)
+  -> DONE
+
+= charge_forward (who)
+  ~ temp level = 5
+  // Check and Charge to run
+  {get_value (who, POWER) < power_cost (CHARGE_FORWARD, 1):
+    {who} attempted to run, but did not have enough POWER.
+    -> DONE
+  }
+  ~ update_value (who, POWER, -power_cost (CHARGE_FORWARD, 1))
+
+  // apply effects
+  ~ update_value (who, SPEED, 5)
+  ~ update_value (who, DODGE, 10)
+  ~ update_value (who, RANGE, -5)
+
+  {who} breaks out into a full run. The mech is now running at  {get_value (who, SPEED)} kpp with a Dodge of {get_value (who, DODGE)}%
   -> DONE
