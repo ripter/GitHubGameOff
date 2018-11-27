@@ -33,9 +33,12 @@ INCLUDE mech_catapult.ink
   -> DONE
 
 = turn_start (who)
-  Recharging {who}.
+  // Recharge
   ~ update_value (who, POWER, get_value (who, REGEN))
   ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
+
+  // Setup state to start with a volley
+  ~ set_turn_state (mech_attacker, VOLLEY)
   -> DONE
 
 = player_volley (who)

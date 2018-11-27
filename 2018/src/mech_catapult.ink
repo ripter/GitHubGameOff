@@ -6,6 +6,7 @@
   // Load the catapult specific weapons
   ~ temp weapons = Missile
   ~ weapons += Laser
+  ~ set_value (Catapult, WEAPON, weapons)
   -> DONE
 
 
@@ -28,5 +29,6 @@
     Retreat!
   + Save remaining power
     Charging Battery
+    ~ set_turn_state (Catapult, PASS)
   -
-  -> DONE
+  ->->
