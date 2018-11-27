@@ -9,6 +9,12 @@
   ~ return 1 * level
 - weapon == Dodge:
   ~ return 2 * level
+- weapon == EVASIVE_MANEUVERS:
+  ~ return 2 * level
+- weapon == CHARGE_FORWARD:
+  ~ return 5 * level
+- weapon == CHARGE_BACKWARD:
+  ~ return 5 * level
 }
 
 == function heat_cost(weapon, level)

@@ -91,19 +91,20 @@ VAR turn_count = 0
 = turn_volley
   ~ temp stateAttacker = get_turn_state (mech_attacker)
   ~ temp stateDefender = get_turn_state (mech_defender)
-  ~ temp player_action = -> ironwolf.pick_action
+//  ~ temp player_action = -> ironwolf.pick_action
   ~ temp ai_action = -> axman.random_action
 
   {get_fastest() == mech_attacker:
 
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
       {mech_attacker} is the first to act.
-        -> player_action ->
+        -> mech_base.player_volley (mech_attacker)
+//        -> player_action ->
 //      -> ironwolf.pick_action ->
     }
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
-//      -> axman.random_action ->
-      -> ai_action ->
+      -> axman.random_action ->
+//      -> ai_action ->
     - else:
       {mech_defender} takes no action.
     }
@@ -111,12 +112,13 @@ VAR turn_count = 0
   - else:
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
       {mech_defender} is the first to act.
-//      -> axman.random_action ->
-      -> ai_action ->
+      -> axman.random_action ->
+//      -> ai_action ->
     }
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
 //      -> ironwolf.pick_action ->
-      -> player_action ->
+//      -> player_action ->
+        -> mech_base.player_volley (mech_attacker)
     - else:
       {mech_attacker} is unable to respond.
     }
