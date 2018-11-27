@@ -18,17 +18,17 @@ VAR mech_defender = Axman
 // <- ironwolf.start
 // <- axman.start
 
-Two giant war machines piloted by humans, also known as Mechs are battling against each other. The challenger {mech_attacker} is controlled by you, while your opponent {mech_defender} is controlled by a dumb AI.
+// Two giant war machines piloted by humans, also known as Mechs are battling against each other. The challenger {mech_attacker} is controlled by you, while your opponent {mech_defender} is controlled by a dumb AI.
 
-Each turn, the Mechs recharge POWER and dissipate HEAT. The first Mech to reach {get_value (mech_defender, OVERHEAT)} HEAT loses the game.
-Each turn is made up of two steps, a recharge of your POWER, and a volley of attacks. You and your opponent take turns moving or firing weapons at each other during the volley.
+// Each turn, the Mechs recharge POWER and dissipate HEAT. The first Mech to reach {get_value (mech_defender, OVERHEAT)} HEAT loses the game.
+// Each turn is made up of two steps, a recharge of your POWER, and a volley of attacks. You and your opponent take turns moving or firing weapons at each other during the volley.
 // You can attack or move
 
 VAR turn_count = 0
 - (main_loop)
 {battle_state == PLAYING:
   ~ turn_count += 1
-  
+
   // Start the turn
   <- arena.turn_start(turn_count)
 //   Turn {turn_count}
@@ -72,21 +72,17 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
+  // Recharge
   Turn {count}
   <- mech_base.turn_start (mech_attacker)
-  <- mech_base.status (mech_attacker)
-  -> DONE
-= turn_start_draft_one
-  // Recharge
-  ~ mech_recharge (mech_attacker)
-  ~ mech_recharge (mech_defender)
-  Both Mechs recharge POWER and dissipate HEAT.
+  <- mech_base.turn_start (mech_defender)
 
   // Reset turn mode
   // Turn State tells us if the players still want to perform actions or if they are done and ready for the next turn.
   ~ set_turn_state (mech_attacker, VOLLEY)
   ~ set_turn_state (mech_defender, VOLLEY)
-
+  -> DONE
+= turn_start_draft_one
   // Let each mech perform optional upkeep
   -> ironwolf.upkeep ->
   -> axman.upkeep ->
@@ -95,15 +91,19 @@ VAR turn_count = 0
 = turn_volley
   ~ temp stateAttacker = get_turn_state (mech_attacker)
   ~ temp stateDefender = get_turn_state (mech_defender)
+  ~ temp player_action = -> ironwolf.pick_action
+  ~ temp ai_action = -> axman.random_action
 
   {get_fastest() == mech_attacker:
 
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
       {mech_attacker} is the first to act.
-      -> ironwolf.pick_action ->
+        -> player_action ->
+//      -> ironwolf.pick_action ->
     }
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
-      -> axman.random_action ->
+//      -> axman.random_action ->
+      -> ai_action ->
     - else:
       {mech_defender} takes no action.
     }
@@ -111,10 +111,12 @@ VAR turn_count = 0
   - else:
     {get_value (mech_defender, TURN_STATE) == VOLLEY:
       {mech_defender} is the first to act.
-      -> axman.random_action ->
+//      -> axman.random_action ->
+      -> ai_action ->
     }
     {get_value (mech_attacker, TURN_STATE) == VOLLEY:
-      -> ironwolf.pick_action ->
+//      -> ironwolf.pick_action ->
+      -> player_action ->
     - else:
       {mech_attacker} is unable to respond.
     }

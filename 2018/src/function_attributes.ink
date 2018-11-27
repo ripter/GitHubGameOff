@@ -232,3 +232,27 @@ VAR evasive_maneuvers_defender = false
 }
 == function update_evasive_maneuvers(who, delta)
   ~ return set_evasive_maneuvers(who, delta + get_evasive_maneuvers(who))
+
+//
+//
+// Weapons Functions
+VAR weapon_attacker = 0
+VAR weapon_defender = 0
+== function get_weapon(who)
+  {
+    - who == mech_attacker:
+      ~ return weapon_attacker
+    - who == mech_defender:
+      ~ return weapon_defender
+  }
+== function set_weapon(who, value)
+  {
+    - who == mech_attacker:
+      ~ weapon_attacker = value
+      ~ return weapon_attacker
+    - who == mech_defender:
+      ~ weapon_defender = value
+      ~ return weapon_defender
+  }
+== function update_weapon(who, delta)
+  ~ return set_weapon(who, delta + get_weapon(who))

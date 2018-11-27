@@ -1,4 +1,4 @@
-LIST TYPES = POWER, REGEN, HEAT, HEATSINKS, OVERHEAT, SPEED, DODGE, EVASIVE_MANEUVERS, TURN_STATE, RANGE 
+LIST TYPES = POWER, REGEN, HEAT, HEATSINKS, OVERHEAT, SPEED, DODGE, EVASIVE_MANEUVERS, TURN_STATE, RANGE, WEAPON
 LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
 LIST ZONE_RANGES = Long, Medium, Melee
 LIST WEAPONS = Laser, Missile, Dodge, Move
@@ -26,6 +26,8 @@ LIST MECHS = IronWolf, Axman, Catapult
     ~ return get_range()
   - type == EVASIVE_MANEUVERS:
     ~ return get_evasive_maneuvers (who)
+  - type == WEAPON:
+    ~ return get_weapon (who)
   }
   ~ return 0
 
@@ -51,6 +53,8 @@ LIST MECHS = IronWolf, Axman, Catapult
     ~ return set_range (value)
   - type == EVASIVE_MANEUVERS:
     ~ return set_evasive_maneuvers (who, value)
+  - type == WEAPON:
+    ~ return set_weapon (who, value)
   }
   ~ return false
 
@@ -76,5 +80,7 @@ LIST MECHS = IronWolf, Axman, Catapult
     ~ return update_range (delta)
   - type == EVASIVE_MANEUVERS:
     ~ return update_evasive_maneuvers (who, delta)
+  - type == WEAPON:
+    ~ return update_weapon (who, delta)
   }
   ~ return false

@@ -37,3 +37,10 @@ INCLUDE mech_catapult.ink
   ~ update_value (who, POWER, get_value (who, REGEN))
   ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
   -> DONE
+
+= player_volley (who)
+  // Apply custom per mech overrides
+  {who == Catapult:
+    <- mech_catapult.player_volley
+  }
+  -> DONE
