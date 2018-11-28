@@ -200,10 +200,6 @@ VAR turn_count = 0
     ~ return mech_attacker
   - get_power(mech_attacker) <= 0:
     ~ return mech_defender
-//   - get_speed(mech_attacker) <= 0:
-//     ~ return mech_attacker
-//   - get_speed(mech_defender) <= 0:
-//     ~ return mech_defender
   - else:
     ~ temp toss = "{~head|tail}"
     // Random Toss {toss}

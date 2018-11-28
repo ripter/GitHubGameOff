@@ -1,28 +1,13 @@
 //
 // Range Functions
-VAR mech_range = 15
+VAR mech_range = Long
 == function get_range()
-{
-- mech_range <= 5:
-  ~ return Melee
-- mech_range <= 10:
-  ~ return Medium
-- else:
-  ~ return Long
-}
-== function get_range_raw()
   ~ return mech_range
 == function set_range(value)
-{
-- value >= 15:
-  ~ mech_range = 15
-- value <= 0:
-  ~ mech_range = 0
-- else:
   ~ mech_range = value
-}
 == function update_range(delta)
   ~ mech_range += delta
+  ~ return mech_range
 
 //
 //

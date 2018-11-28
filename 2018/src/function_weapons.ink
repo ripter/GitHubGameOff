@@ -1,4 +1,7 @@
 
+== function can_afford (who, weapon, level)
+~ return get_value (who, POWER) >= power_cost(weapon, level)
+
 == function power_cost(weapon, level)
 {
 - weapon == Laser:
@@ -14,6 +17,8 @@
 - weapon == CHARGE_FORWARD:
   ~ return 5 * level
 - weapon == CHARGE_BACKWARD:
+  ~ return 5 * level
+- weapon == Punch:
   ~ return 5 * level
 }
 

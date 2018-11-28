@@ -8,13 +8,20 @@
 
 = ai_simple (target)
   ~ temp power = get_value (Axman, POWER)
+  ~ temp range = get_value (Axman, RANGE)
 
-  {power < power_cost(Laser, 1):
+  // Should we continue the volley or pass so we can recharge?
+  // Pass if we can not fire a laser
+  {not can_afford (Axman, Laser, 1):
     ~ set_turn_state(Axman, PASS)
   }
 
   // Simple AI, move into Medium/Melee Range and fire lasers
-  {get_value (Axman, RANGE) <= Medium:
+  {
+  - get_value (Axman, RANGE) == Melee:
+    Attack with Hatchet!
+    ~ set_turn_state(Axman, PASS)
+  - get_value (Axman, RANGE) >= Medium:
     {power >= power_cost(CHARGE_FORWARD, 1):
       Charge Forward!
       <- mech_base.charge_forward (Axman)
@@ -26,7 +33,6 @@
       <- mech_base.fire_laser (Axman, target)
     }
   }
-
   ->->
 
 

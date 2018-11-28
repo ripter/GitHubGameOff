@@ -32,8 +32,7 @@ INCLUDE mech_axman.ink
   SPEED: {get_value(who, SPEED)}; <>
   EVASIVE_MANEUVERS: {get_value(who, EVASIVE_MANEUVERS)}; <>
   DODGE: {get_value(who, DODGE)}; <>
-  RANGE: {get_value(who, RANGE)}; <>
-  STATE: {get_value(who, TURN_STATE)};
+  RANGE: {get_value(who, RANGE)};
   -> DONE
 
 = turn_start (who)
@@ -97,6 +96,15 @@ INCLUDE mech_axman.ink
   <> {damage} HEAT was dealt to {defender}.
   }
   ~ update_heat(defender, damage)
+  -> DONE
+
+= punch (attacker, defender)
+  ~ temp level = 1
+  {not can_afford (attacker, Punch, level):
+    Could not afford.
+    -> DONE
+  }
+  Punch Punch!
   -> DONE
 
 = charge_forward (who)
