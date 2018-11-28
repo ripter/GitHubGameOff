@@ -1,5 +1,5 @@
-INCLUDE mech_catapult.ink
-INCLUDE mech_axman.ink
+INCLUDE battle_mech_catapult.ink
+INCLUDE battle_mech_axman.ink
 
 == mech_base
   -> DONE

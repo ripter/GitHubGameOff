@@ -46,7 +46,7 @@
 
 == function heatsink_damage(weapon, base)
 {weapon == Punch:
-  ~ return bonus_small()
+  ~ return 2 + bonus_small()
 }
 ~ return 0
 

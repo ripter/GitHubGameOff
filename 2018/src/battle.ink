@@ -1,9 +1,7 @@
-INCLUDE weapons.ink
-INCLUDE mech_base.ink
-INCLUDE function_weapons.ink
-INCLUDE function_utils.ink
-INCLUDE function_attributes.ink
-INCLUDE function_core.ink
+INCLUDE battle_core.ink
+INCLUDE battle_tables.ink
+INCLUDE battle_utils.ink
+INCLUDE battle_mech_base.ink
 
 -> gameoff_battle_draft_two
 
@@ -70,11 +68,6 @@ VAR turn_count = 0
   ~ set_turn_state (mech_attacker, VOLLEY)
   ~ set_turn_state (mech_defender, VOLLEY)
   -> DONE
-= turn_start_draft_one
-  // Let each mech perform optional upkeep
-  -> ironwolf.upkeep ->
-  -> axman.upkeep ->
-  ->->
 
 = turn_volley
   ~ temp stateAttacker = get_turn_state (mech_attacker)
@@ -107,7 +100,11 @@ VAR turn_count = 0
   }
 
   // Check if the game ended, which should abort the rest of the volleys
-  {is_gameover():
+  {
+  - get_value (mech_defender, HEAT) >= get_value (mech_defender, OVERHEAT):
+    ~ battle_state = GAMEOVER
+    ->->
+  - get_value (mech_attacker, HEAT) >= get_value (mech_attacker, OVERHEAT):
     ~ battle_state = GAMEOVER
     ->->
   }
@@ -119,82 +116,11 @@ VAR turn_count = 0
   -> turn_volley
 
 
-== ironwolf
-
-= pick_action
-  ~ temp currentPower = get_power(IronWolf)
-
-  Your opponent has {get_value (mech_defender, POWER)} POWER and {get_value (mech_defender, HEAT)} HEAT
-  You have {currentPower} POWER and {get_value (IronWolf, HEAT)} HEAT.
-  You are in {get_value (NULL, RANGE)} range.
-  + [Pick Action]
-    Your current status:
-    <- mech_base.status (IronWolf)
-  + [Pass until next turn]
-    <- pass_turn
-    ->->
-  -
-
-  + {currentPower >= 4} [Fire Laser - {power_cost(Laser, 1)} POWER; {heat_cost(Laser, 1)} HEAT; 3-4 Damage]
-    <- laser.fire (IronWolf, mech_defender)
-  + {currentPower >= 1} [Increase Speed - {power_cost (Move, 1)} POWER]
-    <- reactor.move_forward (IronWolf)
-  + {currentPower >= 5} [Sharp speed increase. {power_cost (Move, 5)} POWER]
-    <- reactor.move_run (IronWolf)
-  + [Wait until next turn to generate more POWER]
-    <- pass_turn
-  -
-  ->->
-
-= upkeep
-  ~ temp speed = get_speed(IronWolf)
-  { speed <= 0:
-    ->->
-  }
-
-  Continue current speed of {speed}kpp? It will cost {power_cost (Move, speed)} POWER.
-  + [Yes, Keep up speed]
-    <- reactor.upkeep_speed (IronWolf)
-  + [No, cut speed]
-    <- reactor.reset_speed (IronWolf)
-  -
-  ->->
-
-== pass_turn
-  ~ set_turn_state (IronWolf, PASS)
-  -> DONE
 
 
 
-== axman
-= start
-  ~ mech_defender = Axman
-  ~ set_heat(Axman, 0)
-  ~ set_power(Axman, 0)
-  ~ set_heatsinks(Axman, 0)
-  ~ set_power_regen(Axman, 5)
-  ~ set_dodge(Axman, 0)
-  ~ set_speed(Axman, 0)
-  -> DONE
-= status
-  {Axman} {get_power(Axman)} POWER
-  <>; {get_heat(Axman)} HEAT
-  <>; {get_heatsinks(Axman)} HEATSINKS
-  <>; {get_speed(Axman)} Kilometer per POWER
-  -> DONE
-= fire_laser
-  <- laser.fire(Axman, IronWolf)
-  ->->
-= random_action
-  <- laser.fire(Axman, IronWolf)
-  ~ set_turn_state(Axman, PASS)
-  ->->
-= upkeep
-  ->->
 
 
-== function is_gameover()
-  ~ return get_heat(mech_defender) >= get_value (mech_defender, OVERHEAT) or get_heat(mech_attacker) >= get_value (mech_defender, OVERHEAT)
 
 == function get_fastest()
   {
