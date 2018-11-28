@@ -76,6 +76,35 @@
   }
   ~ return false
 
+// Energy weapons always deal damage as HEAT
+== function deal_energy_damage (who, damage)
+  ~ update_value (who, HEAT, -damage)
+
+// Physical weapons destroy parts of the opponent in a cascading order
+== function deal_physical_damage (who, damage)
+  ~ temp heatsinks = get_value (who, HEATSINKS)
+  ~ temp regen = get_value (who, REGEN)
+  ~ temp damage_to_deal = damage
+
+  {damage_to_deal <= heatsinks:
+    ~ update_value (who, HEATSINKS, -damage_to_deal)
+    ~ return
+  - else:
+    ~ damage_to_deal -= heatsinks
+    ~ set_value (who, HEATSINKS, 0)
+  }
+
+  {damage_to_deal <= regen:
+    ~ update_value (who, REGEN, -damage_to_deal)
+    ~ return
+  - else:
+    ~ damage_to_deal -= regen
+    ~ set_value (who, REGEN, 0)
+  }
+
+  {damage_to_deal > 0:
+    ~ update_value (who, HEAT, damage_to_deal)
+  }
 
 == function random_number_string()
   ~ return "{~10|20|30|40|50|60|70|80|90|100}"

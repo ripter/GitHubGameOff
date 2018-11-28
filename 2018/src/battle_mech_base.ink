@@ -109,7 +109,7 @@ INCLUDE battle_mech_axman.ink
   - else:
   <> {damage} HEAT was dealt to {defender}.
   }
-  ~ update_heat(defender, damage)
+  ~ deal_energy_damage (defender, damage)
   -> DONE
 
 = fire_missile (attacker, defender)
@@ -117,7 +117,16 @@ INCLUDE battle_mech_axman.ink
   {not able_to_activate (attacker, Missile, level):
     {attacker} did not have enough power.
   }
-  TODO: Add real missile fire here.
+
+  // Next, let the defender attempt a dodge.
+  {did_dodge(get_dodge(defender)):
+    <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
+    -> DONE
+  }
+
+  {attacker} fired missiles at {defender}
+  // Attack hits
+  ~ deal_physical_damage (defender, heat_damage(Missile, level))
   -> DONE
 
 = punch (attacker, defender)
@@ -135,13 +144,9 @@ INCLUDE battle_mech_axman.ink
     -> DONE
   }
 
-  // Deal damage from the attack.
-  ~ temp dmg_heatsink = heatsink_damage (Punch, level)
-  ~ temp dmg_heat = heat_damage(Punch, level)
-  ~ update_value (defender, HEATSINKS, -dmg_heatsink)
-  ~ update_value (defender, HEAT, dmg_heat)
-
-  {attacker} sliced into {defender} destroying {dmg_heatsink} HEATSINKS and {dmg_heat} HEAT.
+  // Attack hits
+  ~ deal_physical_damage (defender, heatsink_damage (Punch, level))
+  {attacker} sliced into {defender}.
   -> DONE
 
 

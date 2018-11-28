@@ -75,23 +75,23 @@ VAR turn_count = 0
 
   {get_fastest() == mech_attacker:
     {is_in_volley (mech_attacker):
-      {mech_attacker} is the first to act.
+//      {mech_attacker} is the first to act.
         -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
     {is_in_volley (mech_defender):
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
-    - else:
-      {mech_defender} takes no action.
+//    - else:
+//     {mech_defender} takes no action.
     }
   - else:
     {is_in_volley (mech_defender):
-      {mech_defender} is the first to act.
+//      {mech_defender} is the first to act.
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     }
     {is_in_volley (mech_attacker):
         -> mech_base.player_volley (mech_attacker, mech_defender) ->
-    - else:
-      {mech_attacker} is unable to respond.
+//    - else:
+//     {mech_attacker} is unable to respond.
     }
   }
 

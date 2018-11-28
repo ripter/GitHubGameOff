@@ -14,17 +14,16 @@
   // Pass if we can not fire a laser
   {not can_afford (Axman, Laser, 1):
     ~ set_turn_state(Axman, PASS)
+    ->->
   }
 
   // Simple AI, move into Medium/Melee Range and fire lasers
   {
   - get_value (Axman, RANGE) == Melee:
     <- mech_base.punch (Axman, target)
-//    ~ set_turn_state(Axman, PASS)
   - get_value (Axman, RANGE) >= Medium:
     {power >= power_cost(CHARGE_FORWARD, 1):
       <- mech_base.charge_forward (Axman)
-//      ~ set_turn_state(Axman, PASS)
     }
   - else:
     {power > power_cost(Laser, 1):
