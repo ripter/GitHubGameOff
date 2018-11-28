@@ -11,7 +11,6 @@ INCLUDE battle_mech_axman.ink
   ~ set_value (who, HEAT, 0)
   ~ set_value (who, HEATSINKS, 5)
   ~ set_value (who, OVERHEAT, 10)
-  ~ set_value (who, SPEED, 0)
   ~ set_value (who, DODGE, 0)
   ~ set_value (who, EVASIVE_MANEUVERS, false)
 
@@ -29,7 +28,6 @@ INCLUDE battle_mech_axman.ink
   REGEN: {get_value(who, REGEN)}; <>
   HEAT: {get_value(who, HEAT)}; <>
   HEATSINKS: {get_value(who, HEATSINKS)}; <>
-  SPEED: {get_value(who, SPEED)}; <>
   EVASIVE_MANEUVERS: {get_value(who, EVASIVE_MANEUVERS)}; <>
   DODGE: {get_value(who, DODGE)}; <>
   RANGE: {get_value(who, RANGE)};

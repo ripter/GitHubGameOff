@@ -1,10 +1,10 @@
 INCLUDE battle_function_getset.ink
 
-LIST TYPES = POWER, REGEN, HEAT, HEATSINKS, OVERHEAT, SPEED, DODGE, EVASIVE_MANEUVERS, CHARGE_FORWARD, CHARGE_BACKWARD, TURN_STATE, RANGE, WEAPON
-LIST STATES = VOLLEY, PASS, GAMEOVER, PLAYING, NULL
+LIST TYPES = CHARGE_BACKWARD, CHARGE_FORWARD, DODGE, EVASIVE_MANEUVERS, HEAT, HEATSINKS, OVERHEAT, POWER, RANGE, REGEN, TURN_STATE, WEAPON
+LIST STATES = GAMEOVER, NULL, PASS, PLAYING, VOLLEY
 LIST BATTLE_RANGE = Melee, Medium, (Long)
 LIST WEAPONS = Laser, Missile, Dodge, Move, Punch
-LIST MECHS = IronWolf, Axman, Catapult
+LIST MECHS = Axman, Catapult
 
 //
 // Core API
@@ -24,8 +24,6 @@ LIST MECHS = IronWolf, Axman, Catapult
     ~ return get_overheat (who)
   - type == TURN_STATE:
     ~ return get_turn_state (who)
-  - type == SPEED:
-    ~ return get_speed (who)
   - type == DODGE:
     ~ return get_dodge (who)
   - type == RANGE:
@@ -51,8 +49,6 @@ LIST MECHS = IronWolf, Axman, Catapult
     ~ return set_overheat (who, value)
   - type == TURN_STATE:
     ~ return set_turn_state (who, value)
-  - type == SPEED:
-    ~ return set_speed (who, value)
   - type == DODGE:
     ~ return set_dodge (who, value)
   - type == RANGE:
@@ -78,8 +74,6 @@ LIST MECHS = IronWolf, Axman, Catapult
     ~ return update_overheat (who, delta)
   - type == TURN_STATE:
     ~ return update_turn_state (who, delta)
-  - type == SPEED:
-    ~ return update_speed (who, delta)
   - type == DODGE:
     ~ return update_dodge (who, delta)
   - type == RANGE:

@@ -150,29 +150,6 @@ VAR dodge_defender = 0
   ~ return set_dodge(who, delta + get_dodge(who))
 
 
-//
-//
-// Speed Functions
-VAR speed_attacker = 0
-VAR speed_defender = 0
-== function get_speed(who)
-{
-  - who == mech_attacker:
-    ~ return speed_attacker
-  - who == mech_defender:
-    ~ return speed_defender
-}
-== function set_speed(who, value)
-{
-  - who == mech_attacker:
-    ~ speed_attacker = value
-    ~ return speed_attacker
-  - who == mech_defender:
-    ~ speed_defender = value
-    ~ return speed_defender
-}
-== function update_speed(who, delta)
-  ~ return set_speed(who, delta + get_speed(who))
 
 
 //
