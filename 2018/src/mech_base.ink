@@ -117,9 +117,8 @@ INCLUDE mech_axman.ink
   ~ update_value (who, POWER, -power_cost (CHARGE_FORWARD, 1))
 
   // apply effects
-  ~ update_value (who, SPEED, 5)
   ~ update_value (who, DODGE, 10)
-  ~ update_value (who, RANGE, -5)
+  ~ update_value (who, RANGE, -1)
 
-  {who} breaks out into a full run. The mech is now running at  {get_value (who, SPEED)} kpp with a Dodge of {get_value (who, DODGE)}%
+  {who} charges forward in a burst of speed. Increasing Dodge to {get_value (who, DODGE)}% and changing the range to {get_value (who, RANGE)}
   -> DONE

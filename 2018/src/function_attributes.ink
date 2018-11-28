@@ -1,13 +1,12 @@
 //
 // Range Functions
-VAR mech_range = Long
 == function get_range()
-  ~ return mech_range
+  ~ return BATTLE_RANGE
 == function set_range(value)
-  ~ mech_range = value
+  ~ BATTLE_RANGE = value
 == function update_range(delta)
-  ~ mech_range += delta
-  ~ return mech_range
+  ~ BATTLE_RANGE += delta
+  ~ return BATTLE_RANGE
 
 //
 //

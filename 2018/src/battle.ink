@@ -15,6 +15,8 @@ VAR mech_defender = Axman
 // Setup the mechs for battle
 <- mech_base.start(mech_attacker)
 <- mech_base.start(mech_defender)
+// Setup the arena for battle
+~ set_value (mech_attacker, RANGE, Long)
 
 
 VAR turn_count = 0
