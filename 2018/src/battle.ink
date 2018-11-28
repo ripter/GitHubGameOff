@@ -1,6 +1,6 @@
-INCLUDE battle_core.ink
-INCLUDE battle_tables.ink
-INCLUDE battle_utils.ink
+INCLUDE battle_function_core.ink
+INCLUDE battle_function_tables.ink
+INCLUDE battle_function_utils.ink
 INCLUDE battle_mech_base.ink
 
 -> gameoff_battle_draft_two -> END
