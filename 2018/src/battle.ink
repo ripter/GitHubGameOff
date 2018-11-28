@@ -73,25 +73,20 @@ VAR turn_count = 0
   ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
   ~ temp stateDefender = get_value (mech_attacker, TURN_STATE)
 
+  // Fastest mech gets to perform an action first in the Volley
   {get_fastest() == mech_attacker:
     {is_in_volley (mech_attacker):
-//      {mech_attacker} is the first to act.
         -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
     {is_in_volley (mech_defender):
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
-//    - else:
-//     {mech_defender} takes no action.
     }
   - else:
     {is_in_volley (mech_defender):
-//      {mech_defender} is the first to act.
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     }
     {is_in_volley (mech_attacker):
         -> mech_base.player_volley (mech_attacker, mech_defender) ->
-//    - else:
-//     {mech_attacker} is unable to respond.
     }
   }
 
