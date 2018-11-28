@@ -62,37 +62,34 @@ VAR turn_count = 0
 = turn_start (count)
   // Recharge
   Turn {count}
+  // Tell each fighter to perform start of turn functions.
+  // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
-  // Turn State tells us if the players still want to perform actions or if they are done and ready for the next turn.
-  ~ set_turn_state (mech_attacker, VOLLEY)
-  ~ set_turn_state (mech_defender, VOLLEY)
   -> DONE
 
 = turn_volley
-  ~ temp stateAttacker = get_turn_state (mech_attacker)
-  ~ temp stateDefender = get_turn_state (mech_defender)
+  // In a Volley, Each fighter can perform 1 action, or pass until the next turn.
+  // Volleys repeat until both fighters pass
+  ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
+  ~ temp stateDefender = get_value (mech_attacker, TURN_STATE)
 
   {get_fastest() == mech_attacker:
-
-    {get_value (mech_attacker, TURN_STATE) == VOLLEY:
+    {is_in_volley (mech_attacker):
       {mech_attacker} is the first to act.
         -> mech_base.player_volley (mech_attacker) ->
     }
-    {get_value (mech_defender, TURN_STATE) == VOLLEY:
-    //   -> axman.random_action ->
+    {is_in_volley (mech_defender):
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} takes no action.
     }
-
   - else:
-    {get_value (mech_defender, TURN_STATE) == VOLLEY:
+    {is_in_volley (mech_defender):
       {mech_defender} is the first to act.
-    //   -> axman.random_action ->
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     }
-    {get_value (mech_attacker, TURN_STATE) == VOLLEY:
+    {is_in_volley (mech_attacker):
         -> mech_base.player_volley (mech_attacker) ->
     - else:
       {mech_attacker} is unable to respond.
@@ -108,50 +105,10 @@ VAR turn_count = 0
     ~ battle_state = GAMEOVER
     ->->
   }
-
-  {get_turn_state (mech_defender) == PASS and get_turn_state (mech_attacker) == PASS:
+  // Check if both fighters passed
+  {did_pass (mech_attacker) and did_pass (mech_defender):
     // Both sides have passed or run out of energy.
     ->->
   }
+  // Loop for the next Volley, someone wants to perform more actions.
   -> turn_volley
-
-
-
-
-
-
-
-
-== function get_fastest()
-  {
-  - get_power(mech_defender) <= 0:
-    ~ return mech_attacker
-  - get_power(mech_attacker) <= 0:
-    ~ return mech_defender
-  - else:
-    ~ temp toss = "{~head|tail}"
-    // Random Toss {toss}
-    {toss == "head":
-      ~ return mech_attacker
-    }
-    ~ return mech_defender
-  }
-
-== function mech_recharge(who)
-  ~ update_power(who, get_power_regen(who))
-  ~ update_heat(who, -get_heatsinks(who))
-
-== function mech_change_speed(who, delta, level)
-  ~ update_speed(who, delta)
-  // range counts down to move forward, so flip the sign on delta
-  ~ update_range(-1 * delta)
-  // use a positive delta for cost calculations.
-  {delta < 0:
-    ~ delta = -1 * delta
-  }
-  ~ update_power(who, -delta * power_cost(Move, level))
-== function mech_upkeep_speed(who, level)
-  ~ temp delta = get_speed(who)
-  ~ update_power(who, -delta * power_cost(Move, level))
-== function mech_clear_speed(who)
-  ~ set_speed(who, 0)

@@ -41,7 +41,7 @@ INCLUDE battle_mech_axman.ink
   ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
 
   // Setup state to start with a volley
-  ~ set_turn_state (mech_attacker, VOLLEY)
+  ~ set_value (who, TURN_STATE, VOLLEY)
   -> DONE
 
 = player_volley (who)
