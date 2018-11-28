@@ -12,10 +12,10 @@
 
 = player_volley (target)
   ~ temp power = get_value (Catapult, POWER)
+  ~ temp heat = get_value (Catapult, HEAT)
   ~ temp weapons = get_value (Catapult, WEAPONS)
-  <- mech_base.status (Catapult)
-  You have {power} POWER left.
-  You have {weapons} weapons available.
+
+  You have {power} POWER left and {heat} HEAT buildup.
 
   + {can_afford (Catapult, Laser, 1)} Fire Laser! ({power_cost(Laser, 1)} PWR)
     <- mech_base.fire_laser (Catapult, target)

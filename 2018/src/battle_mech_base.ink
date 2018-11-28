@@ -9,7 +9,7 @@ INCLUDE battle_mech_axman.ink
   ~ set_value (who, POWER, 0)
   ~ set_value (who, REGEN, 5)
   ~ set_value (who, HEAT, 0)
-  ~ set_value (who, HEATSINKS, 5)
+  ~ set_value (who, HEATSINKS, 3)
   ~ set_value (who, OVERHEAT, 10)
   ~ set_value (who, DODGE, 0)
   ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
@@ -24,13 +24,14 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = status (who)
+  {who} Status:
   POWER: {get_value(who, POWER)}; <>
-  REGEN: {get_value(who, REGEN)}; <>
   HEAT: {get_value(who, HEAT)}; <>
-  HEATSINKS: {get_value(who, HEATSINKS)}; <>
-  IS_USING_EVASIVE_MANEUVERS: {get_value(who, IS_USING_EVASIVE_MANEUVERS)}; <>
-  DODGE: {get_value(who, DODGE)}; <>
-  RANGE: {get_value(who, RANGE)};
+  REGEN: {get_value(who, REGEN)}; <>
+  HEATSINKS: {get_value(who, HEATSINKS)};
+  RANGE: {get_value(who, RANGE)}; <>
+  Dodge: {get_value(who, DODGE)}%; <>
+  Evading: {get_value(who, IS_USING_EVASIVE_MANEUVERS)};
   -> DONE
 
 
@@ -41,6 +42,7 @@ INCLUDE battle_mech_axman.ink
 
   // Setup state to start with a volley
   ~ set_value (who, TURN_STATE, VOLLEY)
+  <- status (who)
   -> DONE
 
 
