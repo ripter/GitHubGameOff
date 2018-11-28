@@ -19,7 +19,7 @@
   // Simple AI, move into Medium/Melee Range and fire lasers
   {
   - get_value (Axman, RANGE) == Melee:
-    Attack with Hatchet!
+    <- mech_base.punch (Axman, target)
     ~ set_turn_state(Axman, PASS)
   - get_value (Axman, RANGE) >= Medium:
     {power >= power_cost(CHARGE_FORWARD, 1):

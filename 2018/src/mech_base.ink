@@ -104,7 +104,21 @@ INCLUDE mech_axman.ink
     Could not afford.
     -> DONE
   }
-  Punch Punch!
+  ~ update_value (attacker, POWER, -power_cost(Punch, level))
+
+  // Next, let the defender attempt a dodge.
+  {did_dodge(get_dodge(defender)):
+    <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
+    -> DONE
+  }
+
+  // Deal damage from the attack.
+  ~ temp dmg_heatsink = heatsink_damage (Punch, level)
+  ~ temp dmg_heat = heat_damage(Punch, level)
+  ~ update_value (defender, HEATSINKS, -dmg_heatsink)
+  ~ update_value (defender, HEAT, dmg_heat)
+
+  {attacker} sliced into {defender} destroying {dmg_heatsink} HEATSINKS and {dmg_heat} HEAT.
   -> DONE
 
 = charge_forward (who)

@@ -39,8 +39,16 @@
   ~ damage = (base * (power_cost (Laser, base) - heat_cost (Laser, base)))
 - weapon == Missile:
   ~ damage = base * 1
+- weapon == Punch:
+  ~ damage = bonus_small()
 }
 ~ return damage
+
+== function heatsink_damage(weapon, base)
+{weapon == Punch:
+  ~ return bonus_small()
+}
+~ return 0
 
 
 == function did_dodge(chance)
