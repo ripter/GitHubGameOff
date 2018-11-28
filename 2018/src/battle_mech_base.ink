@@ -76,6 +76,8 @@ INCLUDE battle_mech_axman.ink
 = fire_laser (attacker, defender)
   ~ temp level = 1
   ~ temp range = get_value (attacker, RANGE)
+
+  {attacker} fires a laser at {defender}
   {not able_to_activate (attacker, Laser, level):
     <> but could not {~muster|find|gather} the required power.
     -> DONE
@@ -108,6 +110,7 @@ INCLUDE battle_mech_axman.ink
   <> {damage} HEAT was dealt to {defender}.
   }
   ~ deal_energy_damage (defender, damage)
+  <- status (defender)
   -> DONE
 
 = fire_missile (attacker, defender)
