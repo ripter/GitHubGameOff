@@ -6,8 +6,6 @@
   ~ return 4 * level
 - weapon == Missile:
   ~ return 1 * level
-- weapon == Move:
-  ~ return 1 * level
 - weapon == Dodge:
   ~ return 2 * level
 - weapon == EVASIVE_MANEUVERS:
