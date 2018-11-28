@@ -1,7 +1,7 @@
 INCLUDE battle_function_getset.ink
 
-LIST TYPES = CHARGE_BACKWARD, CHARGE_FORWARD, DODGE, EVASIVE_MANEUVERS, HEAT, HEATSINKS, OVERHEAT, POWER, RANGE, REGEN, TURN_STATE, WEAPON
-LIST ACTIONS = Laser, Missile, Dodge, Punch
+LIST TYPES = DODGE, IS_USING_EVASIVE_MANEUVERS, HEAT, HEATSINKS, OVERHEAT, POWER, RANGE, REGEN, TURN_STATE, WEAPONS
+LIST ACTIONS = Laser, Missile, Punch, Move_Back, Move_Forward, Evasive_Maneuvers
 LIST STATES = GAMEOVER, NULL, PASS, PLAYING, VOLLEY
 LIST BATTLE_RANGE = Melee, Medium, (Long)
 LIST MECHS = Axman, Catapult
@@ -28,9 +28,9 @@ LIST MECHS = Axman, Catapult
     ~ return get_dodge (who)
   - type == RANGE:
     ~ return get_range()
-  - type == EVASIVE_MANEUVERS:
+  - type == IS_USING_EVASIVE_MANEUVERS:
     ~ return get_evasive_maneuvers (who)
-  - type == WEAPON:
+  - type == WEAPONS:
     ~ return get_weapon (who)
   }
   ~ return 0
@@ -53,9 +53,9 @@ LIST MECHS = Axman, Catapult
     ~ return set_dodge (who, value)
   - type == RANGE:
     ~ return set_range (value)
-  - type == EVASIVE_MANEUVERS:
+  - type == IS_USING_EVASIVE_MANEUVERS:
     ~ return set_evasive_maneuvers (who, value)
-  - type == WEAPON:
+  - type == WEAPONS:
     ~ return set_weapon (who, value)
   }
   ~ return false
@@ -78,9 +78,9 @@ LIST MECHS = Axman, Catapult
     ~ return update_dodge (who, delta)
   - type == RANGE:
     ~ return update_range (delta)
-  - type == EVASIVE_MANEUVERS:
+  - type == IS_USING_EVASIVE_MANEUVERS:
     ~ return update_evasive_maneuvers (who, delta)
-  - type == WEAPON:
+  - type == WEAPONS:
     ~ return update_weapon (who, delta)
   }
   ~ return false

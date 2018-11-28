@@ -15,12 +15,12 @@
   // If we can not use our Ax
   {
   - range == Long:
-    ~ next_action = CHARGE_FORWARD
+    ~ next_action = Move_Forward
   - range == Medium:
     {coin_flip():
       ~ next_action = Laser
     - else:
-      ~ next_action = CHARGE_FORWARD
+      ~ next_action = Move_Forward
     }
   }
 
@@ -36,7 +36,7 @@
     <- mech_base.punch (Axman, target)
   - next_action == Laser:
     <- mech_base.fire_laser (Axman, target)
-  - next_action == CHARGE_FORWARD:
+  - next_action == Move_Forward:
     <- mech_base.charge_forward (Axman)
   }
   ->->

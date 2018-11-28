@@ -12,7 +12,7 @@ INCLUDE battle_mech_axman.ink
   ~ set_value (who, HEATSINKS, 5)
   ~ set_value (who, OVERHEAT, 10)
   ~ set_value (who, DODGE, 0)
-  ~ set_value (who, EVASIVE_MANEUVERS, false)
+  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
 
   // Apply custom per mech overrides
   {
@@ -28,7 +28,7 @@ INCLUDE battle_mech_axman.ink
   REGEN: {get_value(who, REGEN)}; <>
   HEAT: {get_value(who, HEAT)}; <>
   HEATSINKS: {get_value(who, HEATSINKS)}; <>
-  EVASIVE_MANEUVERS: {get_value(who, EVASIVE_MANEUVERS)}; <>
+  IS_USING_EVASIVE_MANEUVERS: {get_value(who, IS_USING_EVASIVE_MANEUVERS)}; <>
   DODGE: {get_value(who, DODGE)}; <>
   RANGE: {get_value(who, RANGE)};
   -> DONE
@@ -154,7 +154,7 @@ INCLUDE battle_mech_axman.ink
 
 = charge_forward (who)
   ~ temp level = 1
-  {not able_to_activate (who, CHARGE_FORWARD, level):
+  {not able_to_activate (who, Move_Forward, level):
     {who} attempted to run, but did not have enough POWER.
     -> DONE
   }
@@ -168,7 +168,7 @@ INCLUDE battle_mech_axman.ink
 
 = charge_backwards (who)
   ~ temp level = 1
-  {not able_to_activate (who, CHARGE_BACKWARD, level):
+  {not able_to_activate (who, Move_Back, level):
     {who} attempted to run, but did not have enough POWER.
     -> DONE
   }
@@ -182,13 +182,14 @@ INCLUDE battle_mech_axman.ink
 
 = evasive_maneuvers (who)
   ~ temp level = 1
-  {not able_to_activate (who, EVASIVE_MANEUVERS, level):
+  {not able_to_activate (who, Evasive_Maneuvers, level):
     {who} attempted to perform evasive maneuvers, but did not have enough POWER.
     -> DONE
   }
 
   // apply effects
   ~ update_value (who, DODGE, level * 25)
+  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, true)
 
   {who} randomly zip zags around. Increasing Dodge to {get_value (who, DODGE)}%
   -> DONE

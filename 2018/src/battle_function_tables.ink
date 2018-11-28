@@ -6,13 +6,11 @@
   ~ return 4 * level
 - weapon == Missile:
   ~ return 1 * level
-- weapon == Dodge:
+- weapon == Evasive_Maneuvers:
   ~ return 2 * level
-- weapon == EVASIVE_MANEUVERS:
-  ~ return 2 * level
-- weapon == CHARGE_FORWARD:
+- weapon == Move_Forward:
   ~ return 5 * level
-- weapon == CHARGE_BACKWARD:
+- weapon == Move_Back:
   ~ return 5 * level
 - weapon == Punch:
   ~ return 5 * level
