@@ -4,6 +4,13 @@
 }
 ~ return value
 
+== function coin_flip()
+  ~ temp toss = "{~head|tail}"
+  {toss == "head":
+    ~ return true
+  }
+  ~ return false
+
 
 == function is_in_volley (who)
   ~ return get_value (who, TURN_STATE) == VOLLEY
@@ -28,9 +35,7 @@
     ~ return mech_defender
   // Random 50/50 chance
   - else:
-    ~ temp toss = "{~head|tail}"
-    // Random Toss {toss}
-    {toss == "head":
+    {coin_flip():
       ~ return mech_attacker
     }
     ~ return mech_defender

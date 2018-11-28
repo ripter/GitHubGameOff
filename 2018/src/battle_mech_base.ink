@@ -73,14 +73,12 @@ INCLUDE battle_mech_axman.ink
 //
 = fire_laser (attacker, defender)
   ~ temp level = 1
-  // First, make sure we can afford this shot.
-  ~ temp power = get_power(attacker)
-  {power_cost(Laser, level) > power:
+  ~ temp range = get_value (attacker, RANGE)
+  {not able_to_activate (attacker, Laser, level):
     <> but could not {~muster|find|gather} the required power.
     -> DONE
   }
-  // Then charge the attacker for the shot.
-  ~ update_power(attacker, -power_cost(Laser, level))
+  //TODO: Lasers also cost heat, but the able_to_activate does not update heat.
   ~ update_heat(attacker, heat_cost(Laser, level))
 
   // Next, let the defender attempt a dodge.
@@ -92,10 +90,10 @@ INCLUDE battle_mech_axman.ink
   // Finally, deal damage to defender based on range
   ~ temp damage = heat_damage(Laser, level)
   {
-  - get_range() == Long:
+  - range == Long:
     <> The {~laser|blast|energy beam} degraded significantly over the long distance.
     ~ damage = damage / 4
-  - get_range() == Medium:
+  - range == Medium:
     <> Over the medium distance, the {~laser|blast|energy beam}'s power degraded.
     ~ damage = damage / 2
   - else:
