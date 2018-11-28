@@ -20,16 +20,14 @@
   {
   - get_value (Axman, RANGE) == Melee:
     <- mech_base.punch (Axman, target)
-    ~ set_turn_state(Axman, PASS)
+//    ~ set_turn_state(Axman, PASS)
   - get_value (Axman, RANGE) >= Medium:
     {power >= power_cost(CHARGE_FORWARD, 1):
-      Charge Forward!
       <- mech_base.charge_forward (Axman)
-      ~ set_turn_state(Axman, PASS)
+//      ~ set_turn_state(Axman, PASS)
     }
   - else:
     {power > power_cost(Laser, 1):
-      AI Simple: Fire Laser!!
       <- mech_base.fire_laser (Axman, target)
     }
   }

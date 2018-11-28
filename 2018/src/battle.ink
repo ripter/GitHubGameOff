@@ -3,7 +3,7 @@ INCLUDE battle_tables.ink
 INCLUDE battle_utils.ink
 INCLUDE battle_mech_base.ink
 
--> gameoff_battle_draft_two
+-> gameoff_battle_draft_two -> END
 
 == gameoff_battle_draft_two
 VAR battle_state = PLAYING
@@ -22,8 +22,7 @@ VAR turn_count = 0
 {battle_state == PLAYING:
   ~ turn_count += 1
 
-  // Start the turn
-  // Recharge, Upkeep, Dissipate Heat, etc
+  // Run the start of turn actions
   <- arena.turn_start(turn_count)
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
@@ -42,6 +41,7 @@ VAR turn_count = 0
 }
 
 -
+// Print the battle results
 {
 - get_value (mech_defender, HEAT) >= get_value (mech_defender, OVERHEAT):
   You win!
@@ -60,7 +60,6 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
-  // Recharge
   Turn {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
@@ -77,7 +76,7 @@ VAR turn_count = 0
   {get_fastest() == mech_attacker:
     {is_in_volley (mech_attacker):
       {mech_attacker} is the first to act.
-        -> mech_base.player_volley (mech_attacker) ->
+        -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
     {is_in_volley (mech_defender):
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
@@ -90,7 +89,7 @@ VAR turn_count = 0
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     }
     {is_in_volley (mech_attacker):
-        -> mech_base.player_volley (mech_attacker) ->
+        -> mech_base.player_volley (mech_attacker, mech_defender) ->
     - else:
       {mech_attacker} is unable to respond.
     }

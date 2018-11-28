@@ -1,6 +1,4 @@
 
-== function can_afford (who, weapon, level)
-~ return get_value (who, POWER) >= power_cost(weapon, level)
 
 == function power_cost(weapon, level)
 {
@@ -30,6 +28,8 @@
   ~ return 0
 }
 
+
+
 == function heat_damage(weapon, base)
 ~ temp bonus = 0
 ~ temp damage = 0
@@ -44,57 +44,10 @@
 }
 ~ return damage
 
+
+
 == function heatsink_damage(weapon, base)
 {weapon == Punch:
   ~ return 2 + bonus_small()
 }
 ~ return 0
-
-
-== function did_dodge(chance)
-{
-- chance <= 0:
-  ~ return false
-- chance <= 10:
-  ~ return chance_10()
-- chance <= 20:
-  ~ return chance_20()
-- chance <= 30:
-  ~ return "{~miss|miss|miss|hit|hit}" == "miss"
-- chance <= 40:
-  ~ return "{~miss|miss|miss|miss|hit}" == "miss"
-- chance <= 50:
-  ~ return "{~miss|miss|miss|miss|miss|hit|hit|hit|hit|hit}" == "miss"
-- chance <= 60:
-  ~ return "{~miss|miss|miss|miss|miss|miss|hit|hit|hit|hit}" == "miss"
-- chance <= 70:
-  ~ return "{~miss|miss|miss|miss|miss|miss|miss|hit|hit|hit}" == "miss"
-- chance <= 80:
-  ~ return "{~miss|miss|miss|miss|miss|miss|miss|miss|hit|hit}" == "miss"
-- chance <= 90:
-  ~ return "{~miss|miss|miss|miss|miss|miss|miss|miss|miss|hit}" == "miss"
-- else:
-  ~ return "miss" == "miss"
-}
-~ return false
-
-== function random_number_string()
-  ~ return "{~10|20|30|40|50|60|70|80|90|100}"
-
-== function bonus_small()
-  {chance_10():
-    Bonus damage +1
-    ~ return 1
-  }
-  ~ return 0
-
-== function did_chance_pass(result, win)
-  {result == win:
-    ~return true
-  }
-  ~ return false
-
-== function chance_10()
-  ~ return did_chance_pass ("{~win|lose|lose|lose|lose|lose|lose|lose|lose|lose}", "win")
-== function chance_20()
-  ~ return did_chance_pass("{~win|win||||||||}", "win")

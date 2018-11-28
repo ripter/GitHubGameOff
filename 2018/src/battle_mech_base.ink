@@ -35,6 +35,7 @@ INCLUDE battle_mech_axman.ink
   RANGE: {get_value(who, RANGE)};
   -> DONE
 
+
 = turn_start (who)
   // Recharge
   ~ update_value (who, POWER, get_value (who, REGEN))
@@ -44,21 +45,34 @@ INCLUDE battle_mech_axman.ink
   ~ set_value (who, TURN_STATE, VOLLEY)
   -> DONE
 
-= player_volley (who)
+
+//
+//
+// Volley
+//
+= player_volley (who, target)
   // Apply custom per mech overrides
   {who == Catapult:
-    <- mech_catapult.player_volley
+    -> mech_catapult.player_volley (target) ->
+  - else:
+    No player controls found for {who} 😢
   }
-  -> DONE
+  ->->
 
 = ai_simple (who, target)
   {who == Axman:
     -> mech_axman.ai_simple (target) ->
+  - else:
+    No ai_simple controls found for {who} 😢
   }
-
   ->->
 
 
+
+//
+//
+// Weapons
+//
 = fire_laser (attacker, defender)
   ~ temp level = 1
   // First, make sure we can afford this shot.
@@ -98,10 +112,19 @@ INCLUDE battle_mech_axman.ink
   ~ update_heat(defender, damage)
   -> DONE
 
+= fire_missile (attacker, defender)
+  ~ temp level = 1
+  {not able_to_activate (attacker, Missile, level):
+    {attacker} did not have enough power.
+  }
+  TODO: Add real missile fire here.
+  -> DONE
+
 = punch (attacker, defender)
   ~ temp level = 1
   {not can_afford (attacker, Punch, level):
-    Could not afford.
+    {attacker} attempted to slice {defender} with a hatchet, but the mech was out of power.
+    <> ({attacker} has {get_value (attacker, POWER)} POWER, and needs {power_cost(Punch, level)} POWER)
     -> DONE
   }
   ~ update_value (attacker, POWER, -power_cost(Punch, level))
@@ -121,18 +144,50 @@ INCLUDE battle_mech_axman.ink
   {attacker} sliced into {defender} destroying {dmg_heatsink} HEATSINKS and {dmg_heat} HEAT.
   -> DONE
 
+
+
+//
+//
+// Movement
+//
+
 = charge_forward (who)
-  ~ temp level = 5
-  // Check and Charge to run
-  {get_value (who, POWER) < power_cost (CHARGE_FORWARD, 1):
+  ~ temp level = 1
+  {not able_to_activate (who, CHARGE_FORWARD, level):
     {who} attempted to run, but did not have enough POWER.
     -> DONE
   }
-  ~ update_value (who, POWER, -power_cost (CHARGE_FORWARD, 1))
 
   // apply effects
-  ~ update_value (who, DODGE, 10)
-  ~ update_value (who, RANGE, -1)
+  ~ update_value (who, DODGE, level * 10)
+  ~ update_value (who, RANGE, -level)
 
   {who} charges forward in a burst of speed. Increasing Dodge to {get_value (who, DODGE)}% and changing the range to {get_value (who, RANGE)}
+  -> DONE
+
+= charge_backwards (who)
+  ~ temp level = 1
+  {not able_to_activate (who, CHARGE_BACKWARD, level):
+    {who} attempted to run, but did not have enough POWER.
+    -> DONE
+  }
+
+  // apply effects
+  ~ update_value (who, DODGE, level * 10)
+  ~ update_value (who, RANGE, level)
+
+  {who} retreats quickly. Increasing Dodge to {get_value (who, DODGE)}% and changing the range to {get_value (who, RANGE)}
+  -> DONE
+
+= evasive_maneuvers (who)
+  ~ temp level = 1
+  {not able_to_activate (who, EVASIVE_MANEUVERS, level):
+    {who} attempted to perform evasive maneuvers, but did not have enough POWER.
+    -> DONE
+  }
+
+  // apply effects
+  ~ update_value (who, DODGE, level * 25)
+
+  {who} randomly zip zags around. Increasing Dodge to {get_value (who, DODGE)}%
   -> DONE
