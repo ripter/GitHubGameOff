@@ -37,6 +37,7 @@ VAR turn_count = 0
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
   -> arena.turn_volley ->
 
+
   {turn_count >= 30:
     The battle is a Tie! No one was able to win within 30 turns.
     ~ battle_state = GAMEOVER
@@ -44,6 +45,8 @@ VAR turn_count = 0
 
   // Check if we should loop again.
   {battle_state == PLAYING:
+    // Pause for the player. Give them time to read everything that has happened so far.
+    -> arena.menu_turn_pause ->
     -> main_loop
   }
 }
@@ -125,5 +128,10 @@ VAR turn_count = 0
   Once you both either run out of power, or pass (to save power for the next turn). The turn ends, the mechs generate new power and dissipate heat. Then you and your opponent take turns attacking each other again.
 
   * [Ready to Play!]
+  -
+  ->->
+
+= menu_turn_pause
+  + [Next Turn]
   -
   ->->
