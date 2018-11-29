@@ -45,49 +45,58 @@
   ->->
 
 = player_menu_weapons (target)
-  {can_afford (Catapult, Laser, 1):
-    Lasers are Medium to Melee range weapons that deal direct HEAT damage to your opponent. They may also create some waste heat when fired.
-    <> Costs {power_cost(Laser, 1)} POWER and {heat_cost(Laser, 1)} HEAT to fire.
-    <> Deals {heat_damage(Laser, 1)} HEAT to opponent.
-    + [Fire Laser! ({power_cost(Laser, 1)} PWR)]
-      <- mech_base.fire_laser (Catapult, target)
-  }
-  {can_afford (Catapult, Missile, 1):
-    Missiles are a Long to Medium range weapon that deal physical damage, but have a low chance to hit.
-    <> Costs {power_cost(Missile, 1)} POWER to fire.
-    <> Destroys {heatsink_damage(Missile, 1)} HEATSINK
-    + [Fire Missiles! ({power_cost(Missile, 1)} PWR)]
-      <- mech_base.fire_missile (Catapult, target)
-  }
+  ~ temp level = 1
+
+  + {can_afford (Catapult, Laser, 1)} [Fire Laser! ({power_cost(Laser, 1)} PWR)]
+    # speaker: player
+    You fire a laser at {target} <>
+    <- mech_base.fire_laser (Catapult, target)
+  + {can_afford (Catapult, Missile, 1)} [Launch Missiles! ({power_cost(Missile, 1)} PWR)]
+    # speaker: player
+    You fire missiles at {target} <>
+    <- mech_base.fire_missile (Catapult, target)
   + [Back]
     -> player_menu (target) ->
+//   {can_afford (Catapult, Laser, 1):
+//     Lasers are Medium to Melee range weapons that deal direct HEAT damage to your opponent. They may also create some waste heat when fired.
+//     <> Costs {power_cost(Laser, 1)} POWER and {heat_cost(Laser, 1)} HEAT to fire.
+//     <> Deals {heat_damage(Laser, 1)} HEAT to opponent.
+//   }
+//   {can_afford (Catapult, Missile, 1):
+//     Missiles are a Long to Medium range weapon that deal physical damage, but have a low chance to hit.
+//     <> Costs {power_cost(Missile, 1)} POWER to fire.
+//     <> Destroys {heatsink_damage(Missile, 1)} HEATSINK
+//   }
   -
   ->->
 
 = player_menu_move (target)
-  {can_afford (Catapult, Evasive_Maneuvers, 1):
-    Evasive Maneuvers: Move in random patterns that make it harder for the opponent to target you.
-    <> Costs {power_cost(Evasive_Maneuvers, 1)} POWER.
-    <> Adds +25% Dodge until the next turn.
-    + [Evasive Maneuvers ({power_cost(Evasive_Maneuvers, 1)} PWR)]
-      <- mech_base.evasive_maneuvers (Catapult)
-  }
-  {can_afford (Catapult, Move_Forward, 1):
-    Run forward: Quickly charge at your opponent to reduce the range.
-    <> Costs {power_cost(Move_Forward, 1)} POWER
-    <> Reduces Range by 1, adds 10% dodge.
-    + [Run forward! ({power_cost(Move_Forward, 1)} PWR)]
-      <- mech_base.charge_forward (Catapult)
-  }
-  {can_afford (Catapult, Move_Back, 1):
-    Run backwards: Quickly back up to increase distance between you and your opponent.
-    <> Costs {power_cost(Move_Forward, 1)} POWER
-    <> Increase Range by 1, adds 10% dodge.
-    +  [Back away! ({power_cost(Move_Back, 1)} PWR)]
-      <- mech_base.charge_backwards (Catapult)
-  }
+  + [Evasive Maneuvers ({power_cost(Evasive_Maneuvers, 1)} PWR)]
+    # speaker: player
+    <- mech_base.evasive_maneuvers (Catapult)
+  + [Run forward! ({power_cost(Move_Forward, 1)} PWR)]
+    # speaker: player
+    <- mech_base.charge_forward (Catapult)
+  +  [Back away! ({power_cost(Move_Back, 1)} PWR)]
+    # speaker: player
+    <- mech_base.charge_backwards (Catapult)
   + [Back]
     -> player_menu (target) ->
+//   {can_afford (Catapult, Evasive_Maneuvers, 1):
+//     Evasive Maneuvers: Move in random patterns that make it harder for the opponent to target you.
+//     <> Costs {power_cost(Evasive_Maneuvers, 1)} POWER.
+//     <> Adds +25% Dodge until the next turn.
+//   }
+//   {can_afford (Catapult, Move_Forward, 1):
+//     Run forward: Quickly charge at your opponent to reduce the range.
+//     <> Costs {power_cost(Move_Forward, 1)} POWER
+//     <> Reduces Range by 1, adds 10% dodge.
+//   }
+//   {can_afford (Catapult, Move_Back, 1):
+//     Run backwards: Quickly back up to increase distance between you and your opponent.
+//     <> Costs {power_cost(Move_Forward, 1)} POWER
+//     <> Increase Range by 1, adds 10% dodge.
+//   }
   -
   ->->
 
