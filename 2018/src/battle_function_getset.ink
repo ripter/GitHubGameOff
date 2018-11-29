@@ -39,7 +39,6 @@ VAR overheat_defender = 10
     ~ return heat_defender
 }
 == function update_heat(who, delta)
-  DEBUG: update_heat({who}, {delta})
   ~ return set_heat(who, min_zero(delta + get_heat(who)))
 
 == function get_heatsinks(who)

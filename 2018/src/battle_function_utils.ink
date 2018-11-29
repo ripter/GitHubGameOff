@@ -83,8 +83,7 @@
 
 // Energy weapons always deal damage as HEAT
 == function deal_energy_damage (who, damage)
-  DEBUG: Dealing {damage} to {who} as HEAT
-  ~ update_value (who, HEAT, -damage)
+  ~ update_value (who, HEAT, damage)
 
 // Physical weapons destroy parts of the opponent in a cascading order
 == function deal_physical_damage (who, damage)

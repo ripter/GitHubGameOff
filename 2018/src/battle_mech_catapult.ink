@@ -17,6 +17,7 @@
 
   {power == 0:
     You have run out of power. You will regenerate POWER and dissipate HEAT next turn.
+    ~ set_value (Catapult, TURN_STATE, PASS)
     ->->
   }
 
@@ -33,6 +34,6 @@
   + {can_afford (Catapult, Move_Back, 1)} [Back away! ({power_cost(Move_Back, 1)} PWR)]
     <- mech_base.charge_backwards (Catapult)
   + [Save the remaining {power} POWER for the next turn.]
-    ~ set_turn_state (Catapult, PASS)
+    ~ set_value (Catapult, TURN_STATE, PASS)
   -
   ->->
