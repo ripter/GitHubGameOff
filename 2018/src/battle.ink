@@ -71,7 +71,7 @@ VAR turn_count = 0
 == arena
 = turn_start (count)
   # speaker: announcer
-  Turn {count}
+  Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
@@ -120,9 +120,9 @@ VAR turn_count = 0
 
 = how_to_play
   The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
-  
+
   You and your opponent take turns performing actions (Firing Weapons, Moving). You can perform as many actions as you can afford, but only one at a time.
-  
+
   Once you both either run out of power or pass the round ends. Both mechs will generate power and dissipate heat, then you can take turns performing actions again.
 
   * [Ready to Play!]
