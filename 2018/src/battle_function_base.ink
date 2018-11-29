@@ -1,4 +1,5 @@
 INCLUDE battle_function_getset.ink
+INCLUDE battle_function_tables.ink
 
 LIST TYPES = DODGE, IS_USING_EVASIVE_MANEUVERS, HEAT, HEATSINKS, OVERHEAT, POWER, RANGE, REGEN, TURN_STATE, WEAPONS
 LIST ACTIONS = Laser, Missile, Punch, Move_Back, Move_Forward, Evasive_Maneuvers

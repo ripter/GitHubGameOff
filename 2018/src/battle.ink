@@ -1,5 +1,4 @@
-INCLUDE battle_function_core.ink
-INCLUDE battle_function_tables.ink
+INCLUDE battle_function_base.ink
 INCLUDE battle_function_utils.ink
 INCLUDE battle_mech_base.ink
 
