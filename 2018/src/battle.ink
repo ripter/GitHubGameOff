@@ -14,7 +14,7 @@ This is a mech battle between you piloting the {mech_attacker} vs an {mech_defen
 
 Do you know how to play?
   * [How do I play?] How to play:
-    <- arena.how_to_play
+    -> arena.how_to_play ->
   * [I know how to play]
 
 -
@@ -123,4 +123,7 @@ VAR turn_count = 0
 = how_to_play
   The goal is to overheat your opponent, while not overheating yourself. You and your opponent take turns moving and firing at each other. Weapons either deal heat to your opponent, or hurt their ability to dissipate the heat.
   Once you both either run out of power, or pass (to save power for the next turn). The turn ends, the mechs generate new power and dissipate heat. Then you and your opponent take turns attacking each other again.
-  -> DONE
+
+  * [Ready to Play!]
+  -
+  ->->

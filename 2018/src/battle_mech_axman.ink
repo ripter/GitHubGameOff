@@ -22,6 +22,10 @@
     - else:
       ~ next_action = Move_Forward
     }
+  - range == Melee:
+    {get_value (target, HEATSINKS) == 0:
+      ~ next_action = Laser
+    }
   }
 
   // Pass if we can not afford the action.
