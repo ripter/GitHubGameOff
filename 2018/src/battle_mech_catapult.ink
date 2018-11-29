@@ -41,15 +41,15 @@
 = player_menu_weapons (target)
   {can_afford (Catapult, Laser, 1):
     Lasers are Medium to Melee range weapons that deal direct HEAT damage to your opponent. They may also create some waste heat when fired.
-    Costs {power_cost(Laser, 1)} POWER and {heat_cost(Laser, 1)} HEAT to fire.
-    Deals {heat_damage(Laser, 1)} HEAT to opponent.
+    <> Costs {power_cost(Laser, 1)} POWER and {heat_cost(Laser, 1)} HEAT to fire.
+    <> Deals {heat_damage(Laser, 1)} HEAT to opponent.
     + [Fire Laser! ({power_cost(Laser, 1)} PWR)]
       <- mech_base.fire_laser (Catapult, target)
   }
   {can_afford (Catapult, Missile, 1):
     Missiles are a Long to Medium range weapon that deal physical damage, but have a low chance to hit.
-    Costs {power_cost(Missile, 1)} POWER to fire.
-    Destroys {heatsink_damage(Missile, 1)} HEATSINK
+    <> Costs {power_cost(Missile, 1)} POWER to fire.
+    <> Destroys {heatsink_damage(Missile, 1)} HEATSINK
     + [Fire Missiles! ({power_cost(Missile, 1)} PWR)]
       <- mech_base.fire_missile (Catapult, target)
   }
