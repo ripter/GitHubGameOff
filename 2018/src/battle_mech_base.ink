@@ -31,15 +31,16 @@ INCLUDE battle_mech_axman.ink
   RANGE: {get_value(who, RANGE)};
   -> DONE
 = status_short (who)
-  {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge, and in {get_value(who, RANGE)} Range.
+  {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge, and are in {get_value(who, RANGE)} Range.
+  -> DONE
 
 = turn_start (who)
   // Recharge
   ~ update_value (who, POWER, get_value (who, REGEN))
   ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
   // Reset end of turn actions
-  <- evasive_maneuvers_reset (who)
-
+  ~ set_value (who, DODGE, 0)
+  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
   // Setup state to start with a volley
   ~ set_value (who, TURN_STATE, VOLLEY)
   -> DONE
@@ -197,12 +198,3 @@ INCLUDE battle_mech_axman.ink
 
   {who} randomly zip zags around. Increasing Dodge to {get_value (who, DODGE)}%
   -> DONE
-= evasive_maneuvers_reset (who)
-  ~ temp level = 1
-  {not get_value (who, IS_USING_EVASIVE_MANEUVERS):
-    -> DONE
-  }
-
-  // unapply effects
-  ~ update_value (who, DODGE, -level * 25)
-  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
