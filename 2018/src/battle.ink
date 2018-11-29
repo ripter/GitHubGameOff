@@ -119,8 +119,11 @@ VAR turn_count = 0
   -> turn_volley
 
 = how_to_play
-  The goal is to overheat your opponent, while not overheating yourself. You and your opponent take turns moving and firing at each other. Weapons either deal heat to your opponent, or hurt their ability to dissipate the heat.
-  Once you both either run out of power, or pass (to save power for the next turn). The turn ends, the mechs generate new power and dissipate heat. Then you and your opponent take turns attacking each other again.
+  The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
+  
+  You and your opponent take turns performing actions (Firing Weapons, Moving). You can perform as many actions as you can afford, but only one at a time.
+  
+  Once you both either run out of power or pass the round ends. Both mechs will generate power and dissipate heat, then you can take turns performing actions again.
 
   * [Ready to Play!]
   -

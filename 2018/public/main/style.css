@@ -11,12 +11,10 @@ body.dark {
     color: white;
 }
 
-h1, h2 {
-    text-align: center;
-    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-}
+/* h1, h2 {
+  text-align: center;
+  font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
+} */
 
 h1 {
     font-size: 30pt;
@@ -172,6 +170,22 @@ p.choice a {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
+/**
+ * Page Header
+ */
+header {
+  font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+header h4,
+header h3 {
+  font-size: 0.75em;
 }
 
 
