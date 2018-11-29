@@ -30,7 +30,8 @@ INCLUDE battle_mech_axman.ink
   Dodge: {get_value(who, DODGE)}%; <>
   RANGE: {get_value(who, RANGE)};
   -> DONE
-
+= status_short (who)
+  {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge, and in {get_value(who, RANGE)} Range.
 
 = turn_start (who)
   // Recharge
