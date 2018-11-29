@@ -23,9 +23,11 @@
     ->->
   }
 
-  What action should you take?
+  # speaker: player
   You have <>
   <- mech_base.status_short (Catapult)
+  # speaker: player
+  What action should you take?
 
   + [Fire Weapons]
     -> player_menu_weapons (target) ->

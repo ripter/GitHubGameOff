@@ -67,15 +67,12 @@ function runStory(storyJSON) {
 
     // Generate story text - loop through available content
     while(story.canContinue) {
-
-      // Get ink to generate the next paragraph
-      var paragraphText = story.Continue();
+      const paragraphText = story.Continue();
       let tags = {};
 
       // Tags are used to update the DOM.
       if (story.currentTags.length > 0) {
         tags = getTags(story.currentTags);
-        console.log('tags object', tags);
       }
 
       // Story tag loads a new Ink story file.
@@ -88,53 +85,15 @@ function runStory(storyJSON) {
         break;
       }
 
-      
-      // Any special tags included with this line
-      // var customClasses = [];
-      // for(var i=0; i<tags.length; i++) {
-      //   var tag = tags[i];
-      //
-      //   // Detect tags of the form "X: Y". Currently used for IMAGE and CLASS but could be
-      //   // customised to be used for other things too.
-      //   var splitTag = splitPropertyTag(tag);
-      //   console.log('splitTag', splitTag);
-      //
-      //   // IMAGE: src
-      //   if( splitTag && splitTag.property == "IMAGE" ) {
-      //     var imageElement = document.createElement('img');
-      //     imageElement.src = splitTag.val;
-      //     elStory.appendChild(imageElement);
-      //
-      //     showAfter(delay, imageElement);
-      //     delay += 200.0;
-      //   }
-      //
-      //   // CLASS: className
-      //   else if( splitTag && splitTag.property == "CLASS" ) {
-      //     customClasses.push(splitTag.val);
-      //   }
-      //
-      //   // CLEAR - removes all existing content.
-      //   // RESTART - clears everything and restarts the story from the beginning
-      //   else if( tag == "CLEAR" || tag == "RESTART" ) {
-      //     removeAll("p");
-      //     removeAll("img");
-      //
-      //     // Comment out this line if you want to leave the header visible when clearing
-      //     setVisible(".header", false);
-      //
-      //     if( tag == "RESTART" ) {
-      //       restart();
-      //       return;
-      //     }
-      //   }
-      // }
-
       // Create paragraph element (initially hidden)
       var paragraphElement = document.createElement('p');
       paragraphElement.innerHTML = paragraphText;
       elStory.appendChild(paragraphElement);
 
+      // Speaker tags add extra styles
+      if (tags.speaker) {
+        paragraphElement.classList.add(`speaker-${tags.speaker}`);
+      }
       // Add any custom classes derived from ink tags
       // for(var i=0; i<customClasses.length; i++)
       // paragraphElement.classList.add(customClasses[i]);

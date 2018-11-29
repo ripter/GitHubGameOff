@@ -70,16 +70,12 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
+  # speaker: announcer
   Turn {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
-
-//  Your status ({mech_attacker}):
-//  <- mech_base.status (mech_attacker)
-// Opponent Status ({mech_defender})
-//  <- mech_base.status (mech_defender)
   -> DONE
 
 = turn_volley
