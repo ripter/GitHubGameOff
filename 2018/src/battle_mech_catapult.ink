@@ -33,7 +33,11 @@
     <- mech_base.charge_forward (Catapult)
   + {can_afford (Catapult, Move_Back, 1)} [Back away! ({power_cost(Move_Back, 1)} PWR)]
     <- mech_base.charge_backwards (Catapult)
-  + [Save the remaining {power} POWER for the next turn.]
+  + My Status
+    <- mech_base.status (Catapult)
+  + Opponent Status
+    <- mech_base.status (target)
+  + [Pass until next turn]
     ~ set_value (Catapult, TURN_STATE, PASS)
   -
   ->->

@@ -5,7 +5,6 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = start (who)
-  Booting up Mech {who}
   ~ set_value (who, POWER, 0)
   ~ set_value (who, REGEN, 5)
   ~ set_value (who, HEAT, 0)
@@ -24,14 +23,12 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = status (who)
-  {who} Status:
   POWER: {get_value(who, POWER)}; <>
   HEAT: {get_value(who, HEAT)}; <>
   REGEN: {get_value(who, REGEN)}; <>
   HEATSINKS: {get_value(who, HEATSINKS)};
-  RANGE: {get_value(who, RANGE)}; <>
   Dodge: {get_value(who, DODGE)}%; <>
-  Evading: {get_value(who, IS_USING_EVASIVE_MANEUVERS)};
+  RANGE: {get_value(who, RANGE)};
   -> DONE
 
 
@@ -39,10 +36,11 @@ INCLUDE battle_mech_axman.ink
   // Recharge
   ~ update_value (who, POWER, get_value (who, REGEN))
   ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
+  // Reset end of turn actions
+  <- evasive_maneuvers_reset (who)
 
   // Setup state to start with a volley
   ~ set_value (who, TURN_STATE, VOLLEY)
-  <- status (who)
   -> DONE
 
 
@@ -98,7 +96,7 @@ INCLUDE battle_mech_axman.ink
     <> The {~laser|blast|energy beam} degraded significantly over the long distance.
     ~ damage = damage / 4
   - range == Medium:
-    <> Over the medium distance, the {~laser|blast|energy beam}'s power degraded.
+    <> over a medium distance, the {~laser|blast|energy beam}'s power degraded.
     ~ damage = damage / 2
   - else:
     <> The full power of the {~blast|discharge|beam|laser} hits {defender}.
@@ -110,7 +108,6 @@ INCLUDE battle_mech_axman.ink
   <> {damage} HEAT was dealt to {defender}.
   }
   ~ deal_energy_damage (defender, damage)
-  <- status (defender)
   -> DONE
 
 = fire_missile (attacker, defender)
@@ -125,9 +122,10 @@ INCLUDE battle_mech_axman.ink
     -> DONE
   }
 
-  {attacker} fired missiles at {defender}
+  ~ temp damage = heat_damage(Missile, level)
+  Missiles streak into the air and rain down on {defender}, dealing {damage} physical damage.
   // Attack hits
-  ~ deal_physical_damage (defender, heat_damage(Missile, level))
+  ~ deal_physical_damage (defender, damage)
   -> DONE
 
 = punch (attacker, defender)
@@ -198,3 +196,12 @@ INCLUDE battle_mech_axman.ink
 
   {who} randomly zip zags around. Increasing Dodge to {get_value (who, DODGE)}%
   -> DONE
+= evasive_maneuvers_reset (who)
+  ~ temp level = 1
+  {not get_value (who, IS_USING_EVASIVE_MANEUVERS):
+    -> DONE
+  }
+
+  // unapply effects
+  ~ update_value (who, DODGE, -level * 25)
+  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)

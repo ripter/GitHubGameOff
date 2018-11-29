@@ -10,6 +10,14 @@ VAR battle_state = PLAYING
 VAR mech_attacker = Catapult
 VAR mech_defender = Axman
 
+This is a mech battle between you piloting the {mech_attacker} vs an {mech_defender}
+
+Do you know how to play?
+  * [How do I play?] How to play:
+    <- arena.how_to_play
+  * [I know how to play]
+
+-
 // Setup the mechs for battle
 <- mech_base.start(mech_attacker)
 <- mech_base.start(mech_defender)
@@ -65,6 +73,11 @@ VAR turn_count = 0
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
+
+//  Your status ({mech_attacker}):
+//  <- mech_base.status (mech_attacker)
+// Opponent Status ({mech_defender})
+//  <- mech_base.status (mech_defender)
   -> DONE
 
 = turn_volley
@@ -106,3 +119,8 @@ VAR turn_count = 0
   }
   // Loop for the next Volley, someone wants to perform more actions.
   -> turn_volley
+
+= how_to_play
+  The goal is to overheat your opponent, while not overheating yourself. You and your opponent take turns moving and firing at each other. Weapons either deal heat to your opponent, or hurt their ability to dissipate the heat.
+  Once you both either run out of power, or pass (to save power for the next turn). The turn ends, the mechs generate new power and dissipate heat. Then you and your opponent take turns attacking each other again.
+  -> DONE
