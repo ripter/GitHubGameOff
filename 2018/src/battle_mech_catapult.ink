@@ -28,7 +28,11 @@
   <- mech_base.status_short (Catapult)
   # speaker: player
   What action should you take?
+  -> player_menu (target) ->
+  -
+  ->->
 
+= player_menu (target)
   + [Fire Weapons]
     -> player_menu_weapons (target) ->
   + [Move and Dodge]
@@ -55,6 +59,8 @@
     + [Fire Missiles! ({power_cost(Missile, 1)} PWR)]
       <- mech_base.fire_missile (Catapult, target)
   }
+  + [Back]
+    -> player_menu (target) ->
   -
   ->->
 
@@ -80,13 +86,17 @@
     +  [Back away! ({power_cost(Move_Back, 1)} PWR)]
       <- mech_base.charge_backwards (Catapult)
   }
+  + [Back]
+    -> player_menu (target) ->
   -
   ->->
 
-== player_menu_scanners (target)
+= player_menu_scanners (target)
   + My Status
     <- mech_base.status (Catapult)
   + Opponent Status
     <- mech_base.status (target)
+  + [Back]
   -
+  -> player_menu (target) ->
   ->->
