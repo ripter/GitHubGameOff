@@ -112,8 +112,8 @@ function continueStory(firstTime) {
   // story uses the while(bool) {} style syntax which is not ideal for us.
   // So convert to an object.
   let knot = {
-    paragraphs: [],
     tags: getTags(story.currentTags),
+    paragraphs: [],
   };
   while(story.canContinue) {
     const paragraph = {
@@ -127,6 +127,9 @@ function continueStory(firstTime) {
     // Keep a list of all tags in this knot
     knot.tags = Object.assign({}, knot.tags, paragraph.tags);
   }
+  knot.choices = story.currentChoices.map(({index, text}) => {
+    return {index, text};
+  });
   console.log('knot', knot);
 
   //
@@ -144,66 +147,10 @@ function continueStory(firstTime) {
     elStory.appendChild(elContainer);
   }
 
-  // Generate story text - loop through available content
-  /*
-  while(story.canContinue) {
-    const paragraphText = story.Continue();
-    let tags = {};
-
-    // Tags are used to update the DOM.
-    if (story.currentTags.length > 0) {
-      tags = getTags(story.currentTags);
-    }
-
-    // Story tag loads a new Ink story file.
-    if (tags.story) {
-      if (tags.status === 'disabled') {
-        console.log(`Story (${tags.story}) is currently disabled`);
-        break;
-      }
-      runStoryByName(tags.story);
-      return;
-    }
-
-    let paragraphElement;
-    if (false && tags.template) {
-      console.log('template', tags);
-      switch (tags.template) {
-        case 'section':
-          elParagraph = componentSection();
-          paragraphElement = elParagraph;
-          break;
-        default:
-          console.log('unknown template');
-      }
-    }
-    else {
-      // Create paragraph element (initially hidden)
-      paragraphElement = document.createElement('p');
-      paragraphElement.innerHTML = paragraphText;
-    }
-    // elStory.appendChild(paragraphElement);
-    elContainer.appendChild(paragraphElement);
-
-
-    // // Speaker tags add extra styles
-    // if (tags.speaker) {
-    //   [
-    //     `speaker-${tags.speaker}`,
-    //     'balloon',
-    //     'container',
-    //     'with-title',
-    //   ].forEach(name => paragraphElement.classList.add(name));
-    // }
-
-    // Fade in paragraph after a short delay
-    // showAfter(delay, paragraphElement);
-    delay += 200.0;
-  }
-  */
 
   // Create HTML choices from ink choices
   story.currentChoices.forEach(function(choice) {
+    console.log('currentChoices currentTags', story.currentTags);
     // Create paragraph with anchor element
     const elChoice = componentChoice(choice);
     elStory.appendChild(elChoice)
