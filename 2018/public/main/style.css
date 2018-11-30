@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
-
 body {
-    /* font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif; */
-    /* font-weight: lighter; */
-    /* color: #839496; */
+}
+a {
+  cursor: pointer;
 }
 
 /**
