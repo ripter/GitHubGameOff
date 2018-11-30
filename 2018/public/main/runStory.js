@@ -122,17 +122,6 @@ function continueStory(firstTime) {
     };
     knot.paragraphs.push(paragraph);
     knot.tags = Object.assign({}, knot.tags, paragraph.tags);
-    // console.log('getTags', getTags(story.currentTags));
-    // knot.paragraphs.push({
-    //   text: story.Continue(),
-    //   // tags: getTags(story.currentTags),
-    // });
-    // const paragraphText = story.Continue();
-    // knot.paragraphs.push({text: paragraphText});
-    // if (story.currentTags.length > 0) {
-    //   // knot.tags = Object.assign(knot.tags, getTags(story.currentTags));
-    //   // console.log('paragraph tags', getTags(story.currentTags));
-    // }
   }
   console.log('knot', knot);
 
