@@ -7,8 +7,7 @@
 
 
 = ai_simple (target)
-  # title: Axman (Opponent)
-  # template: message
+  #title: Axman (Opponent)
   ~ temp level = 1
   ~ temp power = get_value (Axman, POWER)
   ~ temp range = get_value (Axman, RANGE)
@@ -45,7 +44,7 @@
   - next_action == Move_Forward:
     <- mech_base.charge_forward (Axman)
   }
-  
+
   + [Continue]
   -
   ->->

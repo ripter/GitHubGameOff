@@ -11,8 +11,7 @@
 
 
 = player_volley (target)
-  # title: Catapult (You)
-  # template: message
+  #title: Catapult (You)
   ~ temp power = get_value (Catapult, POWER)
   ~ temp heat = get_value (Catapult, HEAT)
   ~ temp weapons = get_value (Catapult, WEAPONS)
@@ -37,7 +36,7 @@
     -> player_menu_weapons (target) ->
   + [Move and Dodge]
     -> player_menu_move (target) ->
-  + [Scanners]
+  + [Status]
     -> player_menu_scanners (target) ->
   + [Pass until next turn]
     ~ set_value (Catapult, TURN_STATE, PASS)
@@ -48,9 +47,11 @@
   ~ temp level = 1
 
   + {can_afford (Catapult, Laser, 1)} [Fire Laser! ({power_cost(Laser, 1)} PWR)]
+    #title: Catapult (You)
     You fire a laser at {target} <>
     <- mech_base.fire_laser (Catapult, target)
   + {can_afford (Catapult, Missile, 1)} [Launch Missiles! ({power_cost(Missile, 1)} PWR)]
+    #title: Catapult (You)
     You fire missiles at {target} <>
     <- mech_base.fire_missile (Catapult, target)
   + [Back]
@@ -72,8 +73,10 @@
 
 = player_menu_scanners (target)
   + My Status
+    #title: Your Status
     <- mech_base.status (Catapult)
   + Opponent Status
+    #title: Opponent Status
     <- mech_base.status (target)
   + [Back]
   -

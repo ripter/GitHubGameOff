@@ -30,7 +30,6 @@ VAR turn_count = 0
   ~ turn_count += 1
 
   // Run the start of turn actions
-//   <- arena.turn_start(turn_count)
   -> arena.turn_start (turn_count) ->
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
@@ -46,7 +45,6 @@ VAR turn_count = 0
   // Check if we should loop again.
   {battle_state == PLAYING:
     // Pause for the player. Give them time to read everything that has happened so far.
-    // -> arena.menu_turn_pause ->
     -> main_loop
   }
 }
@@ -71,7 +69,8 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
-  # title: System
+  #title: System
+  #style: messages
   Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
@@ -79,19 +78,20 @@ VAR turn_count = 0
   <- mech_base.turn_start (mech_defender)
 
   Mechs have recharged POWER and dissipated HEAT.
-  # template: status
+
+  #style: message
   Your ({mech_attacker}) Status: <>
   <- mech_base.status_short (mech_attacker)
-  # template: status
+
+  #style: message
   Opponent ({mech_defender}) Status: <>
   <- mech_base.status_short (mech_defender)
 
-  + [Continue]
   -
+  -> next_section ->
   ->->
 
 = turn_volley
-  # template: messages
   // In a Volley, Each fighter can perform 1 action, or pass until the next turn.
   // Volleys repeat until both fighters pass
   ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
@@ -104,10 +104,14 @@ VAR turn_count = 0
     }
     {is_in_volley (mech_defender):
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
+    - else:
+      {mech_defender} is waiting until the next Round.
     }
   - else:
     {is_in_volley (mech_defender):
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
+    - else:
+      {mech_defender} is waiting until the next Round.
     }
     {is_in_volley (mech_attacker):
         -> mech_base.player_volley (mech_attacker, mech_defender) ->
@@ -132,7 +136,7 @@ VAR turn_count = 0
   -> turn_volley
 
 = how_to_play
-  # title: How to play
+  #title: How to play
   The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
 
   The battle is made of up Rounds and Actions. At the start of each round, both mechs generate POWER and dissipate HEAT. Then, during the round, you and your opponent take turns performing actions.
@@ -143,7 +147,8 @@ VAR turn_count = 0
   -
   ->->
 
-= menu_turn_pause
-  + [Next Turn]
+
+== next_section
+  + [Continue]
   -
   ->->
