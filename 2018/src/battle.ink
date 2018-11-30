@@ -101,24 +101,28 @@ VAR turn_count = 0
   {get_fastest() == mech_attacker:
     {is_in_volley (mech_attacker):
       {mech_attacker} is the first to react.
-      -> mech_base.player_volley (mech_attacker, mech_defender) ->
+      -> player_turn ->
+    //   -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
     {is_in_volley (mech_defender):
       {mech_defender} responds.
-      -> mech_base.ai_simple (mech_defender, mech_attacker) ->
+      -> ai_turn ->
+    //   -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} is waiting until the next Round.
     }
   - else:
     {is_in_volley (mech_defender):
       {mech_defender} is the frist to react.
-      -> mech_base.ai_simple (mech_defender, mech_attacker) ->
+      -> ai_turn ->
+    //   -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} is waiting until the next Round.
     }
     {is_in_volley (mech_attacker):
       {mech_attacker} responds
-      -> mech_base.player_volley (mech_attacker, mech_defender) ->
+      -> player_turn ->
+    //   -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
   }
 
@@ -155,16 +159,30 @@ VAR turn_count = 0
   #title: Catapult (You)
   
   Do player Stuff Dude.
+  {is_in_volley (mech_attacker):
+    -> mech_base.player_volley (mech_attacker, mech_defender) ->
+  - else:
+    You are out of Power or Passed.
+  }
   
+  Post Player Volley stuff?
   -
   -> next_section ->
   ->->
   
 = ai_turn
-  #title: Axman
+  #title: Axman (Opponent)
   
   Do AI stuff computer.
   
+  {is_in_volley (mech_defender):
+    -> mech_base.ai_simple (mech_defender, mech_attacker) ->
+  - else:
+    {mech_defender} is waiting until the next Round.
+  }
+  
+  Post AI Volley Stuff
+  -
   -> next_section ->
   ->->
 

@@ -7,7 +7,6 @@
 
 
 = ai_simple (target)
-  #title: Axman (Opponent)
   ~ temp level = 1
   ~ temp power = get_value (Axman, POWER)
   ~ temp range = get_value (Axman, RANGE)

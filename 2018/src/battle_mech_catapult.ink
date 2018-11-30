@@ -11,7 +11,6 @@
 
 
 = player_volley (target)
-  #title: Catapult (You)
   ~ temp power = get_value (Catapult, POWER)
   ~ temp heat = get_value (Catapult, HEAT)
   ~ temp weapons = get_value (Catapult, WEAPONS)
