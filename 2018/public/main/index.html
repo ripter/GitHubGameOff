@@ -1,15 +1,28 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A boy and his mech.</title>
 
-    <title>main</title>
+  <!-- 3rd Party Styles -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- 1st Party Styles -->
+  <link rel="stylesheet" href="style.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- 3rd party libraries -->
-    <script src="https://unpkg.com/wicked-elements@0.3.1/min.js"></script>
-    <script src="ink.js"></script>
+  <!-- 3rd party libraries -->
+  <script src="https://unpkg.com/hyperhtml@latest/min.js"></script>
+  <script src="https://unpkg.com/wicked-elements@0.3.1/min.js"></script>
+  <script src="ink.js"></script>
+
+  <!-- 1st Party code -->
+  <!-- Load the ink JSON files -->
+  <script src="story.js"></script>
+  <script src="battle.js"></script>
+  <script src="intro.js"></script>
+  <!-- Load the game/story code -->
+  <script src="getTags.js"></script>
 </head>
 
 <body>
@@ -39,12 +52,7 @@
     <div id="story" class="container">
     </div>
   </div>
-    <!-- Load the ink JSON files -->
-    <script src="story.js"></script>
-    <script src="battle.js"></script>
-    <script src="intro.js"></script>
     <!-- Start running the ink scripts -->
-    <script src="getTags.js"></script>
     <script src="runStory.js"></script>
     <script>
     // Elements with the story attribute will be clickable and change the running story.

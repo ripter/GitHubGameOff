@@ -29,36 +29,12 @@ function runStory(storyJSON) {
   // Great for quick prototyping to have a refrence on the debugger
   window.story = story;
 
-  // Global tags - those at the top of the ink file
-  // We support:
-  //  # theme: dark
-  //  # author: Your Name
-  var globalTags = story.globalTags;
-  if( globalTags ) {
-    for(var i=0; i<story.globalTags.length; i++) {
-      var globalTag = story.globalTags[i];
-      var splitTag = splitPropertyTag(globalTag);
-
-      // THEME: dark
-      if( splitTag && splitTag.property == "theme" ) {
-        document.body.classList.add(splitTag.val);
-      }
-
-      // author: Your Name
-      else if( splitTag && splitTag.property == "author" ) {
-        var byline = document.querySelector('.byline');
-        byline.innerHTML = "by "+splitTag.val;
-      }
-    }
-  }
-
   // Kick off the start of the story!
   continueStory(true);
 
   // Main story processing function. Each time this is called it generates
   // all the next content up as far as the next set of choices.
   function continueStory(firstTime) {
-
     var paragraphIndex = 0;
     var delay = 0.0;
 
@@ -92,7 +68,12 @@ function runStory(storyJSON) {
 
       // Speaker tags add extra styles
       if (tags.speaker) {
-        paragraphElement.classList.add(`speaker-${tags.speaker}`);
+        [
+          `speaker-${tags.speaker}`,
+          'balloon',
+          'container',
+          'with-title',
+        ].forEach(name => paragraphElement.classList.add(name));
       }
       // Add any custom classes derived from ink tags
       // for(var i=0; i<customClasses.length; i++)
