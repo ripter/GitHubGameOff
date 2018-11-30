@@ -32,6 +32,7 @@
   // Pass if we can not afford the action.
   {not can_afford (Axman, next_action, level):
     ~ set_turn_state(Axman, PASS)
+    Axman is passing until the next round.
     ->->
   }
 

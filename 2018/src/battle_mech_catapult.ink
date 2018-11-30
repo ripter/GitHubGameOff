@@ -28,7 +28,9 @@
   <> Range is {get_value (Catapult, RANGE)}
   What action should you take?
   -> player_menu (target) ->
+  
   -
+  -> next_section ->
   ->->
 
 = player_menu (target)
@@ -38,7 +40,7 @@
     -> player_menu_move (target) ->
   + [Status]
     -> player_menu_scanners (target) ->
-  + [Pass until next turn]
+  + [Pass until next turn] You passed until the next turn.
     ~ set_value (Catapult, TURN_STATE, PASS)
   -
   ->->

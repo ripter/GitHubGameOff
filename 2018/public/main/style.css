@@ -23,6 +23,7 @@ header h3 {
   color: #839496;
   background-color: #fdf6e3;
   z-index: 0; /* Fix bug with background-color hiding the border */
+  margin: 0.5em 0;
 }
 .container p {
   /* font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif; */

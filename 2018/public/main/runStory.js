@@ -102,10 +102,10 @@ function continueStory(firstTime) {
   // Don't over-scroll past new content
   var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
 
-  if (story.currentTags.length > 0) {
-    tags = getTags(story.currentTags);
-    console.log('root tags', tags);
-  }
+  // if (story.currentTags.length > 0) {
+  //   tags = getTags(story.currentTags);
+  //   console.log('root tags', tags);
+  // }
 
 
   //
@@ -128,7 +128,7 @@ function continueStory(firstTime) {
     knot.tags = Object.assign({}, knot.tags, paragraph.tags);
   }
   knot.choices = story.currentChoices.map(({index, text}) => {
-    return {index, text};
+    return {index, text}; // Return only the bits we care about as a new refrence.
   });
   console.log('knot', knot);
 
@@ -147,10 +147,12 @@ function continueStory(firstTime) {
     elStory.appendChild(elContainer);
   }
 
+  if (knot.style) {
+    elContainer.classList.add(knot.style)
+  }
 
-  // Create HTML choices from ink choices
-  story.currentChoices.forEach(function(choice) {
-    console.log('currentChoices currentTags', story.currentTags);
+  // Create the Choice buttons
+  knot.choices.forEach(function(choice) {
     // Create paragraph with anchor element
     const elChoice = componentChoice(choice);
     elStory.appendChild(elChoice)

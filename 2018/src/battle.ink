@@ -100,21 +100,25 @@ VAR turn_count = 0
   // Fastest mech gets to perform an action first in the Volley
   {get_fastest() == mech_attacker:
     {is_in_volley (mech_attacker):
-        -> mech_base.player_volley (mech_attacker, mech_defender) ->
+      {mech_attacker} is the first to react.
+      -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
     {is_in_volley (mech_defender):
+      {mech_defender} responds.
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} is waiting until the next Round.
     }
   - else:
     {is_in_volley (mech_defender):
+      {mech_defender} is the frist to react.
       -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} is waiting until the next Round.
     }
     {is_in_volley (mech_attacker):
-        -> mech_base.player_volley (mech_attacker, mech_defender) ->
+      {mech_attacker} responds
+      -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
   }
 
@@ -147,6 +151,22 @@ VAR turn_count = 0
   -
   ->->
 
+= player_turn
+  #title: Catapult (You)
+  
+  Do player Stuff Dude.
+  
+  -
+  -> next_section ->
+  ->->
+  
+= ai_turn
+  #title: Axman
+  
+  Do AI stuff computer.
+  
+  -> next_section ->
+  ->->
 
 == next_section
   + [Continue]
