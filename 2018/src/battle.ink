@@ -70,8 +70,7 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
-  # speaker: announcer
-  Round {count}
+  Round {count} # speaker: announcer
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
@@ -79,6 +78,7 @@ VAR turn_count = 0
   -> DONE
 
 = turn_volley
+  # mode: volley
   // In a Volley, Each fighter can perform 1 action, or pass until the next turn.
   // Volleys repeat until both fighters pass
   ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
