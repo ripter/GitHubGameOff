@@ -75,7 +75,7 @@ h3.written-in-ink {
     left: 0;
 }
 
-.container {
+#story {
     display: block;
     max-width: 600px;
     margin: 0 auto;
@@ -84,7 +84,7 @@ h3.written-in-ink {
     background: white;
 }
 
-.dark .container {
+.dark #story {
     background: black;
 }
 
@@ -133,15 +133,15 @@ img {
     max-width: 100%;
 }
 
-.container .hide {
+#story .hide {
     opacity: 0.0;
 }
 
-.container .invisible {
+#story .invisible {
     display: none;
 }
 
-.container * {
+#story * {
     opacity: 1.0;
     transition: opacity 1.0s;
 }

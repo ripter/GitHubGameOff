@@ -7,5 +7,8 @@ function componentChoice({index, text}) {
 function componentSection({title}) {
   return hyperHTML.wire()`<section class="container with-title">
     <h2 class="title">${title}</h2>
+    <div>
+    <p>Content Goes here</p>
+    </div>
   </section>`;
 }
