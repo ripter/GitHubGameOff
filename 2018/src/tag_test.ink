@@ -1,5 +1,3 @@
-# debug: top level file.
-Tags and Knots Testing
 -> my_knot.start ->
 
 == my_knot
@@ -20,10 +18,9 @@ Tags and Knots Testing
   -> player_pick_action ->
   -> ai_pick_action ->
   
-  + [Next Loop]
-    -> main_loop ->
-  + [Quit]
+  // Loop until someone else triggers story end
   -
+  -> main_loop ->
   ->->
   
 = player_pick_action
@@ -32,11 +29,12 @@ Tags and Knots Testing
   Did you know is fun.
 
   + [Crazy Fact]
+    # title: Player Result
     <- crazy_facts
   + [Did you know?]
     <- did_you_know
   + End
-    -> DONE
+    -> END
     
   -
   -> next_section ->
@@ -45,7 +43,9 @@ Tags and Knots Testing
 = ai_pick_action
   # title: AI
   
-  The AI shoots a laser at you! He also brags to tell you that <>
+  The AI shoots a laser at you! 
+  
+  He also brags to tell you that <>
   <- did_you_know_no_title
   
 

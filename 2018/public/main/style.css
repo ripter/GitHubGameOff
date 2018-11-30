@@ -32,26 +32,9 @@ header h3 {
   background-color: #eee8d5;
 }
 
-/**
- * Style for the speakers
- */
-[class^="speaker-"] {
-  margin: 0;
-}
-.speaker-announcer {
-  /* border: thin solid #ddd; */
-  text-align: center;
-  margin: 1em 0;
-}
-.speaker-player {
-  /* background-color: #7FDBFF; */
-  text-align: right;
-  margin-left: 1em;
-  /* border-radius: 10px 0 0 10px; */
-}
-.speaker-opponent {
-  /* background-color: #FFDC00; */
-  text-align: left;
-  margin-right: 1em;
-  /* border-radius:  0 10px 10px 0; */
+
+/* Center Choice buttons */
+.choice {
+  display: flex;
+  justify-content: center;
 }
