@@ -12,7 +12,7 @@ VAR mech_defender = Axman
 This is a mech battle between you piloting the {mech_attacker} vs an {mech_defender}.
 
 Do you know how to play?
-  * [How do I play?] How to play:
+  * [How do I play?]
     -> arena.how_to_play ->
   * [I know how to play]
 
@@ -77,7 +77,7 @@ VAR turn_count = 0
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
-  
+
   Mechs have recharged POWER and dissipated HEAT.
   # template: status
   Your ({mech_attacker}) Status: <>
@@ -85,7 +85,7 @@ VAR turn_count = 0
   # template: status
   Opponent ({mech_defender}) Status: <>
   <- mech_base.status_short (mech_defender)
-  
+
   + [Continue]
   -
   ->->
