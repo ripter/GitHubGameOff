@@ -5,7 +5,6 @@ INCLUDE battle_mech_base.ink
 -> gameoff_battle_draft_two -> END
 
 == gameoff_battle_draft_two
-# template: section
 VAR battle_state = PLAYING
 VAR mech_attacker = Catapult
 VAR mech_defender = Axman
@@ -32,10 +31,13 @@ VAR turn_count = 0
 
   // Run the start of turn actions
   <- arena.turn_start(turn_count)
+  -> arena.turn_start_alt (turn_count) ->
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
+  # before: turn_volley
   -> arena.turn_volley ->
+  # after: turn_volley
 
 
   {turn_count >= 30:
@@ -71,16 +73,26 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
-  # template: section
-  Round {count} # speaker: announcer
+  # turn_start: arena
+  Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
+  # turn_end: arena
   -> DONE
+= turn_start_alt (count)
+  # turn_start_alt: arena
+  Alt Round {count}
+  // Tell each fighter to perform start of turn functions.
+  // ex: recharge POWER and dissipate HEAT
+  <- mech_base.turn_start (mech_attacker)
+  <- mech_base.turn_start (mech_defender)
+  # turn_end_alt: arena
+  ->->
 
 = turn_volley
-  # mode: volley
+  # template: messages
   // In a Volley, Each fighter can perform 1 action, or pass until the next turn.
   // Volleys repeat until both fighters pass
   ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
@@ -118,9 +130,11 @@ VAR turn_count = 0
     ->->
   }
   // Loop for the next Volley, someone wants to perform more actions.
+  # DEBUG: looping turn_volley
   -> turn_volley
 
 = how_to_play
+  # title: "How to play"
   The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
 
   You and your opponent take turns performing actions (Firing Weapons, Moving). You can perform as many actions as you can afford, but only one at a time.

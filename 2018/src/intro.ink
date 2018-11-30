@@ -2,7 +2,7 @@ GitHubGameOff 2018 is a month long jam to write a game that follows a theme. The
 National Novel Writing Month (NaNoWriMo) is a challenge to write a novel (50,000 words or about the length of The Great Gatsby) in the month of November.
 
 
-* Play the Game (Single Battle)
+* Play the Battle Game (Single Battle)
   -> battle_only
 * Read Novel NaNoWriMo (NaNoWriMo Draft)
   -> nanowrimo_only

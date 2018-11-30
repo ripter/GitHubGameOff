@@ -11,6 +11,7 @@
 
 
 = player_volley (target)
+  # title: Catapult (You)
   ~ temp power = get_value (Catapult, POWER)
   ~ temp heat = get_value (Catapult, HEAT)
   ~ temp weapons = get_value (Catapult, WEAPONS)
@@ -22,10 +23,8 @@
     ->->
   }
 
-  # speaker: player
   You have <>
   <- mech_base.status_short (Catapult)
-  # speaker: player
   What action should you take?
   -> player_menu (target) ->
   -
@@ -47,11 +46,9 @@
   ~ temp level = 1
 
   + {can_afford (Catapult, Laser, 1)} [Fire Laser! ({power_cost(Laser, 1)} PWR)]
-    # speaker: player
     You fire a laser at {target} <>
     <- mech_base.fire_laser (Catapult, target)
   + {can_afford (Catapult, Missile, 1)} [Launch Missiles! ({power_cost(Missile, 1)} PWR)]
-    # speaker: player
     You fire missiles at {target} <>
     <- mech_base.fire_missile (Catapult, target)
   + [Back]
@@ -61,13 +58,10 @@
 
 = player_menu_move (target)
   + [Evasive Maneuvers ({power_cost(Evasive_Maneuvers, 1)} PWR)]
-    # speaker: player
     <- mech_base.evasive_maneuvers (Catapult)
   + [Run forward! ({power_cost(Move_Forward, 1)} PWR)]
-    # speaker: player
     <- mech_base.charge_forward (Catapult)
   +  [Back away! ({power_cost(Move_Back, 1)} PWR)]
-    # speaker: player
     <- mech_base.charge_backwards (Catapult)
   + [Back]
     -> player_menu (target) ->

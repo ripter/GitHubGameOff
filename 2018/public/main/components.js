@@ -4,11 +4,11 @@ function componentChoice({index, text}) {
   </p>`;
 }
 
-function componentSection({title}) {
+function componentSection(paragraphs, title = '') {
   return hyperHTML.wire()`<section class="container with-title">
     <h2 class="title">${title}</h2>
-    <div>
-    <p>Content Goes here</p>
-    </div>
+    ${paragraphs.map(({text}) => {
+      return `<p>${text}</p>`;
+    })}
   </section>`;
 }

@@ -97,15 +97,60 @@ function runStory(storyJSON) {
 function continueStory(firstTime) {
   var paragraphIndex = 0;
   var delay = 0.0;
+  let tags = {};
 
   // Don't over-scroll past new content
   var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
 
+  if (story.currentTags.length > 0) {
+    tags = getTags(story.currentTags);
+    console.log('root tags', tags);
+  }
+
+
+  //
+  // story uses the while(bool) {} style syntax which is not ideal for us.
+  // So convert to an object.
+  let knot = {
+    paragraphs: [],
+    tags: getTags(story.currentTags),
+  };
+  while(story.canContinue) {
+    const paragraph = {
+      text: story.Continue(),
+      tags: getTags(story.currentTags),
+    };
+    knot.paragraphs.push(paragraph);
+    knot.tags = Object.assign({}, knot.tags, paragraph.tags);
+    // console.log('getTags', getTags(story.currentTags));
+    // knot.paragraphs.push({
+    //   text: story.Continue(),
+    //   // tags: getTags(story.currentTags),
+    // });
+    // const paragraphText = story.Continue();
+    // knot.paragraphs.push({text: paragraphText});
+    // if (story.currentTags.length > 0) {
+    //   // knot.tags = Object.assign(knot.tags, getTags(story.currentTags));
+    //   // console.log('paragraph tags', getTags(story.currentTags));
+    // }
+  }
+  console.log('knot', knot);
+
+  //
+  // use the knot object to generate the HTML and perform actions.
+  // Check for the story tag, it changes the active story.
+  if (knot.tags.story) {
+    runStoryByName(knot.tags.story);
+    return;
+  }
+
   // Create a root container for all the paragraphs
-  const elContainer = componentSection({title: 'Rose'});
+  let title = knot.tags.title || '';
+  const elContainer = componentSection(knot.paragraphs, title);
   elStory.appendChild(elContainer);
 
   // Generate story text - loop through available content
+  /*
   while(story.canContinue) {
     const paragraphText = story.Continue();
     let tags = {};
@@ -160,6 +205,7 @@ function continueStory(firstTime) {
     // showAfter(delay, paragraphElement);
     delay += 200.0;
   }
+  */
 
   // Create HTML choices from ink choices
   story.currentChoices.forEach(function(choice) {
