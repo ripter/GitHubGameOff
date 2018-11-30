@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- 3rd party libraries -->
+  <script src="https://unpkg.com/@ungap/create-content"></script>
   <script src="https://unpkg.com/hyperhtml@latest/min.js"></script>
   <script src="https://unpkg.com/wicked-elements@0.3.1/min.js"></script>
   <script src="ink.js"></script>
@@ -22,6 +23,8 @@
   <script src="battle.js"></script>
   <script src="intro.js"></script>
   <!-- Load the game/story code -->
+  <script src="components.js"></script>
+  <script src="wicked.js"></script>
   <script src="getTags.js"></script>
 </head>
 
@@ -55,16 +58,8 @@
     <!-- Start running the ink scripts -->
     <script src="runStory.js"></script>
     <script>
-    // Elements with the story attribute will be clickable and change the running story.
-    wickedElements.define('[story]', {
-      onclick(event) {
-        const storyName = this.el.getAttribute('story');
-        runStoryByName(storyName);
-      }
-    });
-
-    // Start with the story.
-    runStory(window.introContent);
+      // Start with the story.
+      runStory(window.introContent);
     </script>
 </body>
 </html>
