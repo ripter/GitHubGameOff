@@ -12,6 +12,7 @@
 
 = player_volley (target)
   # title: Catapult (You)
+  # template: message
   ~ temp power = get_value (Catapult, POWER)
   ~ temp heat = get_value (Catapult, HEAT)
   ~ temp weapons = get_value (Catapult, WEAPONS)
@@ -25,6 +26,7 @@
 
   You have <>
   <- mech_base.status_short (Catapult)
+  <> Range is {get_value (Catapult, RANGE)}
   What action should you take?
   -> player_menu (target) ->
   -

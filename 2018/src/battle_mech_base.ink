@@ -31,7 +31,7 @@ INCLUDE battle_mech_axman.ink
   RANGE: {get_value(who, RANGE)};
   -> DONE
 = status_short (who)
-  {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge, and are in {get_value(who, RANGE)} Range.
+  {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge.
   -> DONE
 
 = turn_start (who)
@@ -51,24 +51,20 @@ INCLUDE battle_mech_axman.ink
 // Volley
 //
 = player_volley (who, target)
-  # player_volley: start
   // Apply custom per mech overrides
   {who == Catapult:
     -> mech_catapult.player_volley (target) ->
   - else:
     No player controls found for {who} 😢
   }
-  # player_volley_end: end
   ->->
 
 = ai_simple (who, target)
-  # ai_simple_start: start
   {who == Axman:
     -> mech_axman.ai_simple (target) ->
   - else:
     No ai_simple controls found for {who} 😢
   }
-  # ai_simple_end: end
   ->->
 
 

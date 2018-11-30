@@ -120,7 +120,11 @@ function continueStory(firstTime) {
       text: story.Continue(),
       tags: getTags(story.currentTags),
     };
-    knot.paragraphs.push(paragraph);
+    // Ignore blank paragraphs
+    if (paragraph.text !== '') {
+      knot.paragraphs.push(paragraph);
+    }
+    // Keep a list of all tags in this knot
     knot.tags = Object.assign({}, knot.tags, paragraph.tags);
   }
   console.log('knot', knot);
@@ -134,9 +138,11 @@ function continueStory(firstTime) {
   }
 
   // Create a root container for all the paragraphs
-  let title = knot.tags.title || '';
-  const elContainer = componentSection(knot.paragraphs, title);
-  elStory.appendChild(elContainer);
+  if (knot.paragraphs.length > 0) {
+    let title = knot.tags.title || '';
+    const elContainer = componentSection(knot.paragraphs, title);
+    elStory.appendChild(elContainer);
+  }
 
   // Generate story text - loop through available content
   /*

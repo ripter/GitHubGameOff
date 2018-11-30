@@ -30,14 +30,12 @@ VAR turn_count = 0
   ~ turn_count += 1
 
   // Run the start of turn actions
-  <- arena.turn_start(turn_count)
-  -> arena.turn_start_alt (turn_count) ->
+//   <- arena.turn_start(turn_count)
+  -> arena.turn_start (turn_count) ->
 
   // Each Mech takes turns Moving/Firing until they both run out of POWER or PASS
   // This is the "real time" combat, they alternate performing actions to simulate if they were both performing those actions in real time.
-  # before: turn_volley
   -> arena.turn_volley ->
-  # after: turn_volley
 
 
   {turn_count >= 30:
@@ -48,7 +46,7 @@ VAR turn_count = 0
   // Check if we should loop again.
   {battle_state == PLAYING:
     // Pause for the player. Give them time to read everything that has happened so far.
-    -> arena.menu_turn_pause ->
+    // -> arena.menu_turn_pause ->
     -> main_loop
   }
 }
@@ -73,22 +71,23 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
-  # turn_start: arena
+  # title: System
   Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
-  # turn_end: arena
-  -> DONE
-= turn_start_alt (count)
-  # turn_start_alt: arena
-  Alt Round {count}
-  // Tell each fighter to perform start of turn functions.
-  // ex: recharge POWER and dissipate HEAT
-  <- mech_base.turn_start (mech_attacker)
-  <- mech_base.turn_start (mech_defender)
-  # turn_end_alt: arena
+  
+  Mechs have recharged POWER and dissipated HEAT.
+  # template: status
+  Your ({mech_attacker}) Status: <>
+  <- mech_base.status_short (mech_attacker)
+  # template: status
+  Opponent ({mech_defender}) Status: <>
+  <- mech_base.status_short (mech_defender)
+  
+  + [Continue]
+  -
   ->->
 
 = turn_volley
@@ -130,11 +129,10 @@ VAR turn_count = 0
     ->->
   }
   // Loop for the next Volley, someone wants to perform more actions.
-  # DEBUG: looping turn_volley
   -> turn_volley
 
 = how_to_play
-  # title: "How to play"
+  # title: How to play
   The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
 
   You and your opponent take turns performing actions (Firing Weapons, Moving). You can perform as many actions as you can afford, but only one at a time.
