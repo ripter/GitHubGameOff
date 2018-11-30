@@ -3,3 +3,9 @@ function componentChoice({index, text}) {
     <a class="btn" choice-index=${index}>${text}</a>
   </p>`;
 }
+
+function componentSection({title}) {
+  return hyperHTML.wire()`<section class="container with-title">
+    <h2 class="title">${title}</h2>
+  </section>`;
+}

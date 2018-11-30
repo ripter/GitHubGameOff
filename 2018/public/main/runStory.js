@@ -101,6 +101,10 @@ function continueStory(firstTime) {
   // Don't over-scroll past new content
   var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
 
+  // Create a root container for all the paragraphs
+  const elContainer = componentSection({title: 'Rose'});
+  elStory.appendChild(elContainer);
+
   // Generate story text - loop through available content
   while(story.canContinue) {
     const paragraphText = story.Continue();
@@ -121,23 +125,39 @@ function continueStory(firstTime) {
       return;
     }
 
-    // Create paragraph element (initially hidden)
-    var paragraphElement = document.createElement('p');
-    paragraphElement.innerHTML = paragraphText;
-    elStory.appendChild(paragraphElement);
-
-    // Speaker tags add extra styles
-    if (tags.speaker) {
-      [
-        `speaker-${tags.speaker}`,
-        'balloon',
-        'container',
-        'with-title',
-      ].forEach(name => paragraphElement.classList.add(name));
+    let paragraphElement;
+    if (false && tags.template) {
+      console.log('template', tags);
+      switch (tags.template) {
+        case 'section':
+          elParagraph = componentSection();
+          paragraphElement = elParagraph;
+          break;
+        default:
+          console.log('unknown template');
+      }
     }
+    else {
+      // Create paragraph element (initially hidden)
+      paragraphElement = document.createElement('p');
+      paragraphElement.innerHTML = paragraphText;
+    }
+    // elStory.appendChild(paragraphElement);
+    elContainer.appendChild(paragraphElement);
+
+
+    // // Speaker tags add extra styles
+    // if (tags.speaker) {
+    //   [
+    //     `speaker-${tags.speaker}`,
+    //     'balloon',
+    //     'container',
+    //     'with-title',
+    //   ].forEach(name => paragraphElement.classList.add(name));
+    // }
 
     // Fade in paragraph after a short delay
-    showAfter(delay, paragraphElement);
+    // showAfter(delay, paragraphElement);
     delay += 200.0;
   }
 

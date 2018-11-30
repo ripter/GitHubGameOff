@@ -5,6 +5,7 @@ INCLUDE battle_mech_base.ink
 -> gameoff_battle_draft_two -> END
 
 == gameoff_battle_draft_two
+# template: section
 VAR battle_state = PLAYING
 VAR mech_attacker = Catapult
 VAR mech_defender = Axman
@@ -70,6 +71,7 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
+  # template: section
   Round {count} # speaker: announcer
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
