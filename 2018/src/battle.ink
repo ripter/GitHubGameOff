@@ -9,7 +9,7 @@ VAR battle_state = PLAYING
 VAR mech_attacker = Catapult
 VAR mech_defender = Axman
 
-This is a mech battle between you piloting the {mech_attacker} vs an {mech_defender}
+This is a mech battle between you piloting the {mech_attacker} vs an {mech_defender}.
 
 Do you know how to play?
   * [How do I play?] How to play:
@@ -135,7 +135,7 @@ VAR turn_count = 0
   # title: How to play
   The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
 
-  You and your opponent take turns performing actions (Firing Weapons, Moving). You can perform as many actions as you can afford, but only one at a time.
+  The battle is made of up Rounds and Actions. At the start of each round, both mechs generate POWER and dissipate HEAT. Then, during the round, you and your opponent take turns performing actions.
 
   Once you both either run out of power or pass the round ends. Both mechs will generate power and dissipate heat, then you can take turns performing actions again.
 
