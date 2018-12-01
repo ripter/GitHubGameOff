@@ -6,12 +6,6 @@
 }
 ~ return value
 
-== function coin_flip()
-  ~ temp toss = "{~head|tail}"
-  {toss == "head":
-    ~ return true
-  }
-  ~ return false
 
 
 == function is_in_volley (who)
@@ -52,36 +46,40 @@
   {not can_afford (who, action, level):
     ~ return false
   }
+  // Pay the Costs
   ~ update_value (who, POWER, -power_cost (action, level))
+  ~ update_value (who, HEAT,  -heat_cost (action, level))
   ~ return true
 
 
-== function did_dodge(chance)
+== function did_dodge (who)
+  ~ temp chance = get_value (who, DODGE)
   {
   - chance <= 0:
     ~ return false
   - chance <= 10:
-    ~ return chance_10()
+    ~ return did_chance_pass("{~win|||||||||}", "win")
   - chance <= 20:
-    ~ return chance_20()
+    ~ return did_chance_pass("{~win|win||||||||}", "win")
   - chance <= 30:
-    ~ return "{~miss|miss|miss|hit|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|||||||}", "win")
   - chance <= 40:
-    ~ return "{~miss|miss|miss|miss|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|win||||||}", "win")
   - chance <= 50:
-    ~ return "{~miss|miss|miss|miss|miss|hit|hit|hit|hit|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|win|win|||||}", "win")
   - chance <= 60:
-    ~ return "{~miss|miss|miss|miss|miss|miss|hit|hit|hit|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|win|win|win||||}", "win")
   - chance <= 70:
-    ~ return "{~miss|miss|miss|miss|miss|miss|miss|hit|hit|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|win|win|win|win|||}", "win")
   - chance <= 80:
-    ~ return "{~miss|miss|miss|miss|miss|miss|miss|miss|hit|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|win|win|win|win|win||}", "win")
   - chance <= 90:
-    ~ return "{~miss|miss|miss|miss|miss|miss|miss|miss|miss|hit}" == "miss"
+    ~ return did_chance_pass("{~win|win|win|win|win|win|win|win|win|}", "win")
   - else:
-    ~ return "miss" == "miss"
+    ~ return true
   }
   ~ return false
+
 
 // Energy weapons always deal damage as HEAT
 == function deal_energy_damage (who, damage)
@@ -90,7 +88,6 @@
 // Physical weapons destroy parts of the opponent in a cascading order
 == function deal_physical_damage (who, damage)
   ~ temp heatsinks = get_value (who, HEATSINKS)
-  ~ temp regen = get_value (who, REGEN)
   ~ temp damage_to_deal = damage
 
   {damage_to_deal <= heatsinks:
@@ -101,14 +98,6 @@
     ~ set_value (who, HEATSINKS, 0)
   }
 
-  {damage_to_deal <= regen:
-    ~ update_value (who, REGEN, -damage_to_deal)
-    ~ return
-  - else:
-    ~ damage_to_deal -= regen
-    ~ set_value (who, REGEN, 0)
-  }
-
   {damage_to_deal > 0:
     ~ update_value (who, HEAT, damage_to_deal)
   }
@@ -116,16 +105,13 @@
 == function random_number_string()
   ~ return "{~10|20|30|40|50|60|70|80|90|100}"
 
-== function bonus_small()
-  {chance_10():
-    Bonus damage +1
-    ~ return 1
-  }
-  ~ return 0
 
-== function did_chance_pass(result, win)
-  {result == win:
-    ~return true
+
+
+== function coin_flip()
+  ~ temp toss = "{~head|tail}"
+  {toss == "head":
+    ~ return true
   }
   ~ return false
 
@@ -133,3 +119,13 @@
   ~ return did_chance_pass ("{~win|lose|lose|lose|lose|lose|lose|lose|lose|lose}", "win")
 == function chance_20()
   ~ return did_chance_pass("{~win|win||||||||}", "win")
+== function chance_30()
+  ~ return did_chance_pass("{~win|win|win|||||||}", "win")
+== function chance_40()
+  ~ return did_chance_pass("{~win|win|win|win||||||}", "win")
+
+== function did_chance_pass(result, win)
+  {result == win:
+    ~return true
+  }
+  ~ return false

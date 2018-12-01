@@ -3,9 +3,9 @@
 == function power_cost(weapon, level)
 {
 - weapon == Laser:
-  ~ return 4 * level
+  ~ return 4
 - weapon == Missile:
-  ~ return 1 * level
+  ~ return 2
 - weapon == Evasive_Maneuvers:
   ~ return 2 * level
 - weapon == Move_Forward:
@@ -19,7 +19,7 @@
 == function heat_cost(weapon, level)
 {
 - weapon == Laser:
-  ~ return 1 * level
+  ~ return 1
 - else:
   ~ return 0
 }
@@ -31,12 +31,11 @@
 ~ temp damage = 0
 {
 - weapon == Laser:
-  ~ bonus = bonus_small()
-  ~ damage = (base * (power_cost (Laser, base) - heat_cost (Laser, base)))
+  ~ return 4
 - weapon == Missile:
-  ~ damage = base * 1
+  ~ damage = 1
 - weapon == Punch:
-  ~ damage = bonus_small()
+  ~ damage = 1
 }
 ~ return damage
 
@@ -45,8 +44,8 @@
 == function heatsink_damage(weapon, base)
 {
 - weapon == Punch:
-  ~ return 2 + bonus_small()
+  ~ return 2
  - weapon == Missile:
-   ~ return 1 
+   ~ return 1
 }
 ~ return 0

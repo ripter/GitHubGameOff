@@ -36,14 +36,33 @@ INCLUDE battle_mech_axman.ink
 
 = turn_start (who)
   // Recharge
-  ~ update_value (who, POWER, get_value (who, REGEN))
-  ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
+  <- recharge (who)
   // Reset end of turn actions
   ~ set_value (who, DODGE, 0)
   ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
   // Setup state to start with a volley
   ~ set_value (who, TURN_STATE, VOLLEY)
   -> DONE
+
+= recharge (who)
+  ~ temp prevPower = get_value (who, POWER)
+  ~ temp prevHeat = get_value (who, HEAT)
+  // Recharge
+  ~ update_value (who, POWER, get_value (who, REGEN))
+  ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
+  // Get the delta
+  ~ temp deltaPower = get_value (who, POWER) - prevPower
+  ~ temp deltaHeat = prevHeat - get_value (who, HEAT)
+
+  {who} recharged {deltaPower} POWER
+  {deltaHeat > 0:
+    <> and dissipated {deltaHeat} HEAT.
+  - else:
+    <>.
+  }
+
+  -> DONE
+
 
 
 //
@@ -57,6 +76,7 @@ INCLUDE battle_mech_axman.ink
   - else:
     No player controls found for {who} 😢
   }
+  #title: Catapult (You)
   ->->
 
 = ai_simple (who, target)
@@ -76,46 +96,45 @@ INCLUDE battle_mech_axman.ink
 = fire_laser (attacker, defender)
   ~ temp level = 1
   ~ temp range = get_value (attacker, RANGE)
-
-  {attacker} fires a laser at {defender}
-  {not able_to_activate (attacker, Laser, level):
-    <> but could not {~muster|find|gather} the required power.
-    -> DONE
-  }
-  //TODO: Lasers also cost heat, but the able_to_activate does not update heat.
-  ~ update_heat(attacker, heat_cost(Laser, level))
-
-  // Next, let the defender attempt a dodge.
-  {did_dodge(get_dodge(defender)):
-    <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
-    -> DONE
-  }
-
-  // Finally, deal damage to defender based on range
   ~ temp damage = heat_damage(Laser, level)
-  {
-  - range == Long:
-    <> The {~laser|blast|energy beam} degraded significantly over the long distance.
-    ~ damage = damage / 4
-  - range == Medium:
-    <> over a medium distance, the {~laser|blast|energy beam}'s power degraded.
-    ~ damage = damage / 2
-  - else:
-    <> The full power of the {~blast|discharge|beam|laser} hits {defender}.
+  ~ temp bonus = 0
+
+  {attacker} {~fires|blasts|shoots} a laser at {defender}.
+
+  // Pay for the action
+  {not able_to_activate (attacker, Laser, level):
+    But {attacker} did not have enough power.
+    -> DONE
   }
 
-  {damage == 0:
-    <> There was not enough power in the {~laser|blast|energy beam} to affect {defender}.
-  - else:
-  <> {damage} HEAT was dealt to {defender}.
+  // let the defender attempt a dodge.
+  {did_dodge (defender):
+    But {defender} was too {~quick|fast|nimble} and dodged the attack.
+    -> DONE
   }
+
+  // Apply modifiers
+  {
+  - range == Melee:
+    {coin_flip():
+      ~ bonus = 1;
+      The close proximity of the {~laser|blast|energy beam} hits {attacker} for {bonus} HEAT.
+    }
+    ~ deal_energy_damage (defender, bonus)
+    ~ bonus = 0;
+  }
+
+  Dealing {damage} HEAT to {defender}.
   ~ deal_energy_damage (defender, damage)
   -> DONE
+
+
 
 = fire_missile (attacker, defender)
   ~ temp level = 1
   {not able_to_activate (attacker, Missile, level):
     {attacker} did not have enough power.
+    -> DONE
   }
 
   // Next, let the defender attempt a dodge.

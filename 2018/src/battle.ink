@@ -70,22 +70,11 @@ VAR turn_count = 0
 == arena
 = turn_start (count)
   #title: System
-  #style: messages
   Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
-
-  Mechs have recharged POWER and dissipated HEAT.
-
-  #style: message
-  Your ({mech_attacker}) Status: <>
-  <- mech_base.status_short (mech_attacker)
-
-  #style: message
-  Opponent ({mech_defender}) Status: <>
-  <- mech_base.status_short (mech_defender)
 
   -
   -> next_section ->
@@ -157,15 +146,16 @@ VAR turn_count = 0
 
 = player_turn
   #title: Catapult (You)
-  
-  Do player Stuff Dude.
   {is_in_volley (mech_attacker):
     -> mech_base.player_volley (mech_attacker, mech_defender) ->
   - else:
-    You are out of Power or Passed.
+    {get_value (mech_attacker, POWER) <= 0:
+      You are out of power. Wait until the next Round to generate {get_value (mech_attacker, REGEN)} POWER and dissipate {get_value (mech_attacker, HEATSINKS)} HEAT.
+    - else:
+      You are waiting for the next Round.
+    }
   }
   
-//   Post Player Volley stuff?
   -
   -> next_section ->
   ->->
@@ -173,15 +163,12 @@ VAR turn_count = 0
 = ai_turn
   #title: Axman (Opponent)
   
-  Do AI stuff computer.
-  
   {is_in_volley (mech_defender):
     -> mech_base.ai_simple (mech_defender, mech_attacker) ->
   - else:
     {mech_defender} is waiting until the next Round.
   }
   
-//   Post AI Volley Stuff
   -
   -> next_section ->
   ->->
