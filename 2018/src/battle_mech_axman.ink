@@ -41,7 +41,7 @@
     - isHurt and canAffordCharge:
       ~ next_action = Move_Back
     - else:
-      next_action = Punch
+      ~ next_action = Punch
     }
   }
 
