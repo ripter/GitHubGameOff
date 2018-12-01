@@ -60,7 +60,7 @@ function continueStory(firstTime) {
   knot.choices = story.currentChoices.map(({index, text}) => {
     return {index, text}; // Return only the bits we care about as a new refrence.
   });
-  console.log('knot', knot);
+  // console.log('knot', knot);
 
 
   //
