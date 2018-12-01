@@ -117,11 +117,11 @@ INCLUDE battle_mech_axman.ink
   {
   - range == Melee:
     {coin_flip():
-      ~ bonus = 1;
+      ~ bonus = 1
       The close proximity of the {~laser|blast|energy beam} hits {attacker} for {bonus} HEAT.
     }
     ~ deal_energy_damage (defender, bonus)
-    ~ bonus = 0;
+    ~ bonus = 0
   }
 
   Dealing {damage} HEAT to {defender}.
@@ -138,7 +138,7 @@ INCLUDE battle_mech_axman.ink
   }
 
   // Next, let the defender attempt a dodge.
-  {did_dodge(get_dodge(defender)):
+  {did_dodge (defender):
     <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
     -> DONE
   }
@@ -159,7 +159,7 @@ INCLUDE battle_mech_axman.ink
   ~ update_value (attacker, POWER, -power_cost(Punch, level))
 
   // Next, let the defender attempt a dodge.
-  {did_dodge(get_dodge(defender)):
+  {did_dodge(defender):
     <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
     -> DONE
   }

@@ -17,7 +17,8 @@
   ~ temp range = get_value (Catapult, RANGE)
   ~ temp dodge = get_value (Catapult, DODGE)
 
-  {power == 0:
+  {power <= 1:
+    You do not have enough power to continue. Passing until the next round.
     ~ set_value (Catapult, TURN_STATE, PASS)
     ->->
   }
