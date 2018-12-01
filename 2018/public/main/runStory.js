@@ -41,7 +41,7 @@ function continueStory(firstTime) {
   // story uses the while(bool) {} style syntax which is not ideal for us.
   // So convert to an object.
   let knot = {
-    tags: getTags(story.currentTags),
+    tags: {},
     paragraphs: [],
   };
   while(story.canContinue) {
@@ -56,6 +56,7 @@ function continueStory(firstTime) {
     // Keep a list of all tags in this knot
     knot.tags = Object.assign({}, knot.tags, paragraph.tags);
   }
+  // knot.tags = Object.assign({}, knot.tags, story.currentTags);
   knot.choices = story.currentChoices.map(({index, text}) => {
     return {index, text}; // Return only the bits we care about as a new refrence.
   });

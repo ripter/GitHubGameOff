@@ -69,10 +69,10 @@
   ->->
 
 = player_menu_scanners (target)
-  + My Status
+  + [My Status]
     #title: Your Status
     <- mech_base.status (Catapult)
-  + Opponent Status
+  + [Opponent Status]
     #title: Opponent Status
     <- mech_base.status (target)
   + [Back]

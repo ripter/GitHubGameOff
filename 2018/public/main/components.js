@@ -52,7 +52,7 @@ function componentMessageItem(message) {
 }
 
 function componentParagraph({ text }) {
-  return hyperHTML.wire()`<p>${text}</p>`;
+  return hyperHTML.wire()`<p>${{html: text}}</p>`;
 }
 
 
