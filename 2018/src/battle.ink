@@ -77,9 +77,7 @@ VAR volley_count = 0
   Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
-  #style: message
   <- mech_base.turn_start (mech_attacker)
-  #style: message
   <- mech_base.turn_start (mech_defender)
 
   ~ volley_count = 0
@@ -120,20 +118,16 @@ VAR volley_count = 0
   // Fastest mech gets to perform an action first in the Volley
   {firstMech == mech_attacker:
     {is_in_volley (mech_attacker):
-      #speaker: player
       -> player_turn ->
     }
     {is_in_volley (mech_defender):
-      #speaker: ai
       -> ai_turn ->
     }
   - else:
     {is_in_volley (mech_defender):
-      #speaker: ai
       -> ai_turn ->
     }
     {is_in_volley (mech_attacker):
-      #speaker: player
       -> player_turn ->
     }
   }

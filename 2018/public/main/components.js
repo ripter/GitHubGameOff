@@ -51,17 +51,8 @@ function componentMessageItem(message) {
   </div>`;
 }
 
-function componentParagraph(paragraph) {
-  const { tags } = paragraph;
-  const isMessageStyle = tags.style === 'message';
-  const rootClass = [
-   isMessageStyle ? 'message' : '',
-  ].join(' ');
-
-  return hyperHTML.wire(paragraph)`
-  <p class=${rootClass}>
-    ${paragraph.text}
-  </p>`
+function componentParagraph({ text }) {
+  return hyperHTML.wire()`<p>${text}</p>`;
 }
 
 
