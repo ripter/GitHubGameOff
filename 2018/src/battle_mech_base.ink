@@ -99,74 +99,100 @@ INCLUDE battle_mech_axman.ink
   ~ temp damage = heat_damage(Laser, level)
   ~ temp bonus = 0
 
-  {attacker} {~fires|blasts|shoots} a laser at {defender}.
+  {attacker} {~fires|blasts|shoots} a laser at {defender}
 
   // Pay for the action
   {not able_to_activate (attacker, Laser, level):
-    But {attacker} did not have enough power.
+    <> but {attacker} did not have enough power.
     -> DONE
   }
 
   // let the defender attempt a dodge.
   {did_dodge (defender):
-    But {defender} was too {~quick|fast|nimble} and dodged the attack.
+    <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
     -> DONE
   }
 
+  ~ deal_energy_damage (defender, damage)
+  <> dealing {damage} HEAT to {defender}, for a total of {get_value (defender, HEAT)} HEAT.
+  
+  
   // Apply modifiers
   {
   - range == Melee:
     {coin_flip():
       ~ bonus = 1
-      The close proximity of the {~laser|blast|energy beam} hits {attacker} for {bonus} HEAT.
+      The close proximity of the {~laser|blast|energy beam} also heats {attacker} for {bonus} HEAT, for a total of {get_value (attacker, HEAT)} HEAT.
     }
-    ~ deal_energy_damage (defender, bonus)
+    
     ~ bonus = 0
   }
 
-  Dealing {damage} HEAT to {defender}.
-  ~ deal_energy_damage (defender, damage)
+  
   -> DONE
 
 
 
 = fire_missile (attacker, defender)
   ~ temp level = 1
+  ~ temp damage = heatsink_damage(Missile, level)
+  ~ temp bonus = 0
+  
+  {attacker} launches a barrage of missiles.
+  
+  // Pay for the action
   {not able_to_activate (attacker, Missile, level):
-    {attacker} did not have enough power.
+    <> did not have enough power.
     -> DONE
   }
+  
+  <> The missiles attempted to lock on {defender}
 
   // Next, let the defender attempt a dodge.
   {did_dodge (defender):
-    <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
+    <> but was unable to get a lock. The Missiles land harmlessly around the battle field.
     -> DONE
   }
 
-  ~ temp damage = heat_damage(Missile, level)
-  Missiles streak into the air and rain down on {defender}, dealing {damage} physical damage.
+  <> and they rained down
+  
+  {get_value (defender, HEATSINKS) == 0:
+    {coin_flip():
+      bonus = 2
+    - else:
+      bonus = 4
+    }
+    <> caysing {damage} heat, with a {bonus} bonus because {defender} no longer has heatsinks.
+  - else :
+    <> destroying {damage} heatsinks.
+  }
+  
   // Attack hits
   ~ deal_physical_damage (defender, damage)
   -> DONE
 
 = punch (attacker, defender)
   ~ temp level = 1
-  {not can_afford (attacker, Punch, level):
-    {attacker} attempted to slice {defender} with a hatchet, but the mech was out of power.
-    <> ({attacker} has {get_value (attacker, POWER)} POWER, and needs {power_cost(Punch, level)} POWER)
+  ~ temp damage = heatsink_damage (Punch, level)
+  
+  {attacker} slices at {defender} with a hatchet
+  
+  // Pay for the action
+  {not able_to_activate (attacker, Punch, level):
+    <> did not have enough power.
     -> DONE
   }
-  ~ update_value (attacker, POWER, -power_cost(Punch, level))
+
 
   // Next, let the defender attempt a dodge.
   {did_dodge(defender):
-    <> but {defender} was too {~quick|fast|nimble} and dodged the attack.
+    <> but {defender} {~barely|} manages to dodge the attack.
     -> DONE
   }
 
+  <> destroying {damage} heatsinks.
   // Attack hits
-  ~ deal_physical_damage (defender, heatsink_damage (Punch, level))
-  {attacker} sliced into {defender}.
+  ~ deal_physical_damage (defender, damage)
   -> DONE
 
 
@@ -187,7 +213,7 @@ INCLUDE battle_mech_axman.ink
   ~ update_value (who, DODGE, level * 10)
   ~ update_value (who, RANGE, -level)
 
-  {who} charges forward in a burst of speed. Increasing Dodge to {get_value (who, DODGE)}% and changing the range to {get_value (who, RANGE)}
+  {who} charges forward decreasing the distance between the mechs. {who} is now in {get_value (who, RANGE)} range.
   -> DONE
 
 = charge_backwards (who)

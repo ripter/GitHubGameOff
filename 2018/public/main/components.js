@@ -8,7 +8,7 @@ function componentSection(paragraphs, title = '') {
   return hyperHTML.wire()`<section class="container with-title">
     <h2 class="title">${title}</h2>
     ${paragraphs.map(({text, tags}) => {
-      return `<p class=${tags.style}>${text}</p>`;
+      return `<p class=${tags.style|false}>${text}</p>`;
     })}
   </section>`;
 }
