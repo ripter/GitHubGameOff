@@ -70,15 +70,15 @@ function continueStory(firstTime) {
     return;
   }
 
+  //
+  // Render, appending the new knots to the dom.
+  // A knot is 0 or more paragraphs followed by 1 or more choices
+  //
+
   // Create a root container for all the paragraphs
   if (knot.paragraphs.length > 0) {
-    let title = knot.tags.title || '';
-    const elContainer = componentSection(knot.paragraphs, title);
+    const elContainer = componentKnot(knot);
     elStory.appendChild(elContainer);
-  }
-
-  if (knot.style) {
-    elContainer.classList.add(knot.style)
   }
 
   // Create the Choice buttons
