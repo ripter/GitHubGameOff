@@ -32,7 +32,6 @@ function componentKnot(knot) {
 function componentMessage(paragraphs) {
   // Combine the message paragraphs together so they look like one.
   const messages = collapseMessages(paragraphs);
-  console.log('messages', messages);
   return hyperHTML.wire()`
   <div class="messages">
     ${messages.map(componentMessageItem)}
