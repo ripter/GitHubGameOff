@@ -4,16 +4,6 @@ function componentChoice({index, text}) {
   </p>`;
 }
 
-function componentSection(paragraphs, title = '') {
-  return hyperHTML.wire()`<section class="container with-title">
-    <h2 class="title">${title}</h2>
-    ${paragraphs.map(({text, tags}) => {
-      return `<p>${text}</p>`;
-    })}
-  </section>`;
-}
-
-
 function componentKnot(knot) {
   const { paragraphs, tags } =  knot;
   const title = tags.title || '';
@@ -21,14 +11,44 @@ function componentKnot(knot) {
   const rootClass = [
      'container',
      'with-title',
-     isMessageStyle ? 'messages' : '',
   ].join(' ');
+  let children;
+
+  if (isMessageStyle) {
+    children = componentMessage(paragraphs);
+  }
+  else {
+    // Standard style
+    children = paragraphs.map(componentParagraph);
+  }
 
   return hyperHTML.wire(knot, ':container')`
   <section class=${rootClass}>
     <h2 class="title">${title}</h2>
-    ${paragraphs.map(componentParagraph)}
+    ${children}
   </section>`;
+}
+
+function componentMessage(paragraphs) {
+  // Combine the message paragraphs together so they look like one.
+  const messages = collapseMessages(paragraphs);
+  console.log('messages', messages);
+  return hyperHTML.wire()`
+  <div class="messages">
+    ${messages.map(componentMessageItem)}
+  </div>`;
+}
+
+function componentMessageItem(message) {
+  const { text, tags } = message;
+  const side = tags.from;
+
+  return hyperHTML.wire(message, ':message')`
+  <div class=${`message --${side}`}>
+    <div class=${`balloon from-${side}`}>
+      ${text.map(t => `<p>${t}</p>`)}
+    </div>
+  </div>`;
 }
 
 function componentParagraph(paragraph) {
@@ -37,8 +57,36 @@ function componentParagraph(paragraph) {
   const rootClass = [
    isMessageStyle ? 'message' : '',
   ].join(' ');
+
   return hyperHTML.wire(paragraph)`
   <p class=${rootClass}>
     ${paragraph.text}
   </p>`
+}
+
+
+function collapseMessages(rawBlocks) {
+  const MSG = {
+    text: [],
+    tags: {},
+  };
+  const messages = []
+
+  // Starting block
+  messages.push(JSON.parse(JSON.stringify(MSG)));
+  rawBlocks.forEach(({tags, text}) => {
+    let current = messages[messages.length-1];
+
+    // Switch blocks when we get the message tag
+    if (tags.style === 'message') {
+      current = JSON.parse(JSON.stringify(MSG));
+      messages.push(current);
+    }
+
+    // Update the block
+    current.text.push(text);
+    current.tags = Object.assign({}, current.tags, tags);
+  });
+
+  return messages;
 }

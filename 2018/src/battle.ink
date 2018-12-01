@@ -103,9 +103,7 @@ VAR volley_count = 0
   Volley {volley_count}
   {firstMech} gets first action, then {secondMech}
   
-  #style: message
   <- mech_base.status_volley (firstMech)
-  #style: message
   <- mech_base.status_volley (secondMech)
 
  

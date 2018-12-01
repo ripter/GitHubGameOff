@@ -23,6 +23,15 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = status (who)
+  #style: message
+  // Apply Player/AI tag
+  {
+  - who == Catapult:
+    #from: right
+  - who == Axman:
+    #from: left
+  }
+  
   {who} Status:
   Power generated each round: {get_value(who, REGEN)}
   <> <br> Heat dissipated each round: {get_value(who, HEATSINKS)}
@@ -34,6 +43,15 @@ INCLUDE battle_mech_axman.ink
   {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge.
   -> DONE
 = status_volley (who)
+  #style: message
+  // Apply Player/AI tag
+  {
+  - who == Catapult:
+    #from: right
+  - who == Axman:
+    #from: left
+  }
+  
   {who} as a buildup of {get_value (who, HEAT)} HEAT, and {get_value (who, POWER)} POWER.
   -> DONE
 
