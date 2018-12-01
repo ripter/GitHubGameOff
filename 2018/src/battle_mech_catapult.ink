@@ -27,9 +27,6 @@
   <> Range is {get_value (Catapult, RANGE)}
   What action should you take?
   -> player_menu (target) ->
-  
-  -
-  -> next_section ->
   ->->
 
 = player_menu (target)

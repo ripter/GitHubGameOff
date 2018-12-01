@@ -165,7 +165,7 @@ VAR turn_count = 0
     You are out of Power or Passed.
   }
   
-  Post Player Volley stuff?
+//   Post Player Volley stuff?
   -
   -> next_section ->
   ->->
@@ -181,7 +181,7 @@ VAR turn_count = 0
     {mech_defender} is waiting until the next Round.
   }
   
-  Post AI Volley Stuff
+//   Post AI Volley Stuff
   -
   -> next_section ->
   ->->

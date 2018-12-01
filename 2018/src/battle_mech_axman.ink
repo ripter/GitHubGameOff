@@ -44,9 +44,6 @@
   - next_action == Move_Forward:
     <- mech_base.charge_forward (Axman)
   }
-
-  + [Continue]
-  -
   ->->
 
 
