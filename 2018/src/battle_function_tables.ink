@@ -1,19 +1,22 @@
 
-
-== function power_cost(weapon, level)
+//
+// Cost Functions
+== function power_cost(weapon)
 {
 - weapon == Laser:
   ~ return 4
 - weapon == Missile:
   ~ return 2
 - weapon == Evasive_Maneuvers:
-  ~ return 2 * level
-- weapon == Move_Forward:
-  ~ return 5 * level
-- weapon == Move_Back:
-  ~ return 5 * level
+  ~ return 2
 - weapon == Punch:
-  ~ return 5 * level
+  ~ return 3
+- weapon == Move_Forward:
+  ~ return 4
+- weapon == Move_Back:
+  ~ return 4
+- else:
+  ~ return 5
 }
 
 == function heat_cost(weapon, level)
@@ -26,19 +29,17 @@
 
 
 
+//
+// Damage Functions
 == function heat_damage(weapon, base)
-~ temp bonus = 0
-~ temp damage = 0
 {
 - weapon == Laser:
   ~ return 4
 - weapon == Missile:
-  ~ damage = 1
+  ~ return 1
 - weapon == Punch:
-  ~ damage = 1
+  ~ return 1
 }
-~ return damage
-
 
 
 == function heatsink_damage(weapon, base)

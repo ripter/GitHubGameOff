@@ -38,32 +38,21 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = turn_start (who)
-  // Reset end of turn actions
-  ~ set_value (who, DODGE, 0)
-  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
   // Setup state to start with a volley
   ~ set_value (who, TURN_STATE, VOLLEY)
-  // Recharge
+  // Reset round vars
+  ~ set_value (who, DODGE, 0)
+  ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
+
+  // Recharge the mech and display status
   <- recharge (who)
+  <- status (who)
   -> DONE
 
 = recharge (who)
-  ~ temp prevPower = get_value (who, POWER)
-  ~ temp prevHeat = get_value (who, HEAT)
   // Recharge
   ~ update_value (who, POWER, get_value (who, REGEN))
   ~ update_value (who, HEAT, -get_value (who, HEATSINKS))
-  // Get the delta
-  ~ temp deltaPower = get_value (who, POWER) - prevPower
-  ~ temp deltaHeat = prevHeat - get_value (who, HEAT)
-
-  <- status (who)
-  {who} recharged {deltaPower} POWER
-  {deltaHeat > 0:
-    <> and dissipated {deltaHeat} HEAT.
-  - else:
-    <>.
-  }
   -> DONE
 
 

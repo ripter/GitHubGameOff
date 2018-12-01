@@ -46,9 +46,9 @@
   ~ temp level = 1
   ~ temp range = get_value (Catapult, RANGE)
 
-  + {range <= Medium and can_afford (Catapult, Laser, 1)} [Fire Laser! ({power_cost(Laser, 1)} PWR)]
+  + {range <= Medium and can_afford (Catapult, Laser, 1)} [Fire Laser! ({power_cost(Laser)} PWR)]
     <- mech_base.fire_laser (Catapult, target)
-  + {range >= Medium and can_afford (Catapult, Missile, 1)} [Launch Missiles! ({power_cost(Missile, 1)} PWR)]
+  + {range >= Medium and can_afford (Catapult, Missile, 1)} [Launch Missiles! ({power_cost(Missile)} PWR)]
     <- mech_base.fire_missile (Catapult, target)
   + [Back]
     -> player_menu (target) ->
@@ -57,11 +57,11 @@
 
 = player_menu_move (target)
   ~ temp range = get_value (Catapult, RANGE)
-  + [Evasive Maneuvers ({power_cost(Evasive_Maneuvers, 1)} PWR)]
+  + [Evasive Maneuvers ({power_cost(Evasive_Maneuvers)} PWR)]
     <- mech_base.evasive_maneuvers (Catapult)
-  + {range > Melee} [Run forward! ({power_cost(Move_Forward, 1)} PWR)]
+  + {range > Melee} [Run forward! ({power_cost(Move_Forward)} PWR)]
     <- mech_base.charge_forward (Catapult)
-  + {range < Long} [Back away! ({power_cost(Move_Back, 1)} PWR)]
+  + {range < Long} [Back away! ({power_cost(Move_Back)} PWR)]
     <- mech_base.charge_backwards (Catapult)
   + [Back]
     -> player_menu (target) ->

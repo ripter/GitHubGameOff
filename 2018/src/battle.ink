@@ -14,6 +14,8 @@ This is a mech battle between you piloting the {mech_attacker} vs an {mech_defen
 Do you know how to play?
   * [How do I play?]
     -> arena.how_to_play ->
+  * [About the mechs]
+    -> arena.about_the_mechs ->
   * [I know how to play]
 
 -
@@ -164,6 +166,18 @@ VAR volley_count = 0
 
   Once you both either run out of power or pass the round ends. Both mechs will generate power and dissipate heat, then you can take turns performing actions again.
 
+  * [About the mechs]
+    -> about_the_mechs ->
+  * [Ready to Play!]
+  -
+  ->->
+= about_the_mechs
+  #title: Mech Info
+  Your opponent is an Axman. A bipedal 9 meter tall mech with an Ax as one hand, and a laser as the other hand. His basic stratagy is to get in Melee range and attack with the Ax.
+  You are a Catapult. An armless bipedal 8.5 meter tall mech with Missile racks for shoulders and a laser on the nose. Missiles are an inexpensive way to deal physical damage from a distance, but can not be used in Melee range. 
+  
+  * [How do I play?]
+    -> arena.how_to_play ->
   * [Ready to Play!]
   -
   ->->
