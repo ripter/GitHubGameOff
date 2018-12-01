@@ -25,6 +25,7 @@ Do you know how to play?
 
 
 VAR turn_count = 0
+VAR volley_count = 0
 - (main_loop)
 {battle_state == PLAYING:
   ~ turn_count += 1
@@ -69,34 +70,59 @@ VAR turn_count = 0
 
 == arena
 = turn_start (count)
-  #title: System
+  #title: Round
   Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
   <- mech_base.turn_start (mech_attacker)
   <- mech_base.turn_start (mech_defender)
 
+  ~ volley_count = 0
   -
   -> next_section ->
   ->->
 
 = turn_volley
+  #title: Volley
+  ~ volley_count += 1
+  Volley {volley_count}
+  
   // In a Volley, Each fighter can perform 1 action, or pass until the next turn.
   // Volleys repeat until both fighters pass
+  ~ temp firstMech = mech_attacker
+  ~ temp secondMech = mech_defender
+
+  {get_fastest() == secondMech:
+    ~ firstMech = mech_defender
+    ~ secondMech = mech_attacker
+  }
+  
+  {is_in_volley (firstMech):
+    {volley_count == 1:
+      {firstMech} starts off t
+    - else:
+    
+    }
+    {mech_attacker} is the first to react.
+    -> player_turn ->
+  }
+
   ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
   ~ temp stateDefender = get_value (mech_attacker, TURN_STATE)
+
+
+  -
+  -> next_section ->
 
   // Fastest mech gets to perform an action first in the Volley
   {get_fastest() == mech_attacker:
     {is_in_volley (mech_attacker):
       {mech_attacker} is the first to react.
       -> player_turn ->
-    //   -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
     {is_in_volley (mech_defender):
       {mech_defender} responds.
       -> ai_turn ->
-    //   -> mech_base.ai_simple (mech_defender, mech_attacker) ->
     - else:
       {mech_defender} is waiting until the next Round.
     }
@@ -129,6 +155,7 @@ VAR turn_count = 0
     // Both sides have passed or run out of energy.
     ->->
   }
+
   // Loop for the next Volley, someone wants to perform more actions.
   -> turn_volley
 
