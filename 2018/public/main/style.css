@@ -39,3 +39,8 @@ header h3 {
   display: flex;
   justify-content: center;
 }
+
+/* Add padding to make scrolling easier on phone */
+.choice:last-child {
+  padding-bottom: 5em;
+}

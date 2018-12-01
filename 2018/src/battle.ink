@@ -136,7 +136,7 @@ VAR turn_count = 0
   #title: How to play
   The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons destroy heatsinks (which are how you dissipate heat each round).
 
-  The battle is made of up Rounds and Actions. At the start of each round, both mechs generate POWER and dissipate HEAT. Then, during the round, you and your opponent take turns performing actions.
+  The battle is made up of Rounds and Actions. At the start of each round, both mechs generate POWER and dissipate HEAT. Then, during the round, you and your opponent take turns performing actions.
 
   Once you both either run out of power or pass the round ends. Both mechs will generate power and dissipate heat, then you can take turns performing actions again.
 

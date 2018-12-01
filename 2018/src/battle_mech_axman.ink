@@ -10,7 +10,7 @@
   ~ temp level = 1
   ~ temp power = get_value (Axman, POWER)
   ~ temp range = get_value (Axman, RANGE)
-  ~ temp isHurt = get_value (Axman, OVERHEAT) / get_value (Axman, HEAT) <= 2
+  ~ temp isHurt = get_value (Axman, OVERHEAT) - 5 < 5
   ~ temp canAffordLaser = can_afford (Axman, Laser, level)
   ~ temp canAffordPunch = can_afford (Axman, Punch, level)
   ~ temp canAffordCharge = can_afford (Axman, Move_Forward, level)
