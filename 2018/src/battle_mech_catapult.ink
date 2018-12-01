@@ -25,8 +25,8 @@
 
   You have <>
   <- mech_base.status_short (Catapult)
-  <> Range is {get_value (Catapult, RANGE)}
-  What action should you take?
+  <> <br> {target} has {get_value (target, HEAT)} HEAT.
+  <> <br> Range is {get_value (Catapult, RANGE)}.
   -> player_menu (target) ->
   ->->
 

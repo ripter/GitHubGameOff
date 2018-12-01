@@ -19,6 +19,11 @@
 // Decide who is faster, favoring the attacker.
 == function get_fastest()
   {
+  // Passing is slow
+  - did_pass (mech_defender):
+    ~ return mech_attacker
+  - did_pass (mech_attacker):
+    ~ return mech_defender
   // Power downed mechs are slow
   - get_value (mech_defender, POWER) <= 0:
     ~ return mech_attacker

@@ -71,10 +71,13 @@ VAR volley_count = 0
 == arena
 = turn_start (count)
   #title: Round
+  
   Round {count}
   // Tell each fighter to perform start of turn functions.
   // ex: recharge POWER and dissipate HEAT
+  #style: message
   <- mech_base.turn_start (mech_attacker)
+  #style: message
   <- mech_base.turn_start (mech_defender)
 
   ~ volley_count = 0
@@ -85,8 +88,6 @@ VAR volley_count = 0
 = turn_volley
   #title: Volley
   ~ volley_count += 1
-  Volley {volley_count}
-  
   // In a Volley, Each fighter can perform 1 action, or pass until the next turn.
   // Volleys repeat until both fighters pass
   ~ temp firstMech = mech_attacker
@@ -97,47 +98,43 @@ VAR volley_count = 0
     ~ secondMech = mech_attacker
   }
   
-  {is_in_volley (firstMech):
-    {volley_count == 1:
-      {firstMech} starts off t
-    - else:
-    
-    }
-    {mech_attacker} is the first to react.
-    -> player_turn ->
-  }
+  Volley {volley_count}
+  {firstMech} gets first action, then {secondMech}
+  
+  #style: message
+  <- mech_base.status_volley (firstMech)
+  #style: message
+  <- mech_base.status_volley (secondMech)
 
-  ~ temp stateAttacker = get_value (mech_attacker, TURN_STATE)
-  ~ temp stateDefender = get_value (mech_attacker, TURN_STATE)
+ 
+ // Check if both fighters passed
+  {did_pass (mech_attacker) and did_pass (mech_defender):
+    // Both sides have passed or run out of energy.
+    ->->
+  }
 
 
   -
   -> next_section ->
 
   // Fastest mech gets to perform an action first in the Volley
-  {get_fastest() == mech_attacker:
+  {firstMech == mech_attacker:
     {is_in_volley (mech_attacker):
-      {mech_attacker} is the first to react.
+      #speaker: player
       -> player_turn ->
     }
     {is_in_volley (mech_defender):
-      {mech_defender} responds.
+      #speaker: ai
       -> ai_turn ->
-    - else:
-      {mech_defender} is waiting until the next Round.
     }
   - else:
     {is_in_volley (mech_defender):
-      {mech_defender} is the frist to react.
+      #speaker: ai
       -> ai_turn ->
-    //   -> mech_base.ai_simple (mech_defender, mech_attacker) ->
-    - else:
-      {mech_defender} is waiting until the next Round.
     }
     {is_in_volley (mech_attacker):
-      {mech_attacker} responds
+      #speaker: player
       -> player_turn ->
-    //   -> mech_base.player_volley (mech_attacker, mech_defender) ->
     }
   }
 

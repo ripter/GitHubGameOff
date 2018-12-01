@@ -23,15 +23,18 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = status (who)
-  POWER: {get_value(who, POWER)}; <>
-  HEAT: {get_value(who, HEAT)}; <>
-  REGEN: {get_value(who, REGEN)}; <>
-  HEATSINKS: {get_value(who, HEATSINKS)};
-  Dodge: {get_value(who, DODGE)}%; <>
-  RANGE: {get_value(who, RANGE)};
+  {who} Status:
+  Power generated each round: {get_value(who, REGEN)}
+  <> <br> Heat dissipated each round: {get_value(who, HEATSINKS)}
+  <> <br> Chance to dodge: {get_value(who, DODGE)}% (Reset when Round started)
+  <> <br> Current Power: {get_value(who, POWER)}
+  <> <br> Current Heat: {get_value(who, HEAT)}
   -> DONE
 = status_short (who)
   {get_value(who, POWER)} Power, {get_value(who, HEAT)} Heat, {get_value(who, DODGE)}% Dodge.
+  -> DONE
+= status_volley (who)
+  {who} as a buildup of {get_value (who, HEAT)} HEAT, and {get_value (who, POWER)} POWER.
   -> DONE
 
 = turn_start (who)
@@ -54,14 +57,13 @@ INCLUDE battle_mech_axman.ink
   ~ temp deltaPower = get_value (who, POWER) - prevPower
   ~ temp deltaHeat = prevHeat - get_value (who, HEAT)
 
+  <- status (who)
   {who} recharged {deltaPower} POWER
   {deltaHeat > 0:
     <> and dissipated {deltaHeat} HEAT.
   - else:
     <>.
   }
-  <> Total: <- status_short (who)
-
   -> DONE
 
 
