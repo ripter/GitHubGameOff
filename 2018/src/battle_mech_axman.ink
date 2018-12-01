@@ -10,21 +10,38 @@
   ~ temp level = 1
   ~ temp power = get_value (Axman, POWER)
   ~ temp range = get_value (Axman, RANGE)
+  ~ temp isHurt = get_value (Axman, OVERHEAT) / get_value (Axman, HEAT) <= 2
+  ~ temp canAffordLaser = can_afford (Axman, Laser, level)
+  ~ temp canAffordPunch = can_afford (Axman, Punch, level)
+  ~ temp canAffordCharge = can_afford (Axman, Move_Forward, level)
+  ~ temp canAffordDodge = can_afford (Axman, Evasive_Maneuvers, level) and get_value (Axman, DODGE) <= 50
   ~ temp next_action = Punch
 
   // If we can not use our Ax
   {
   - range == Long:
-    ~ next_action = Move_Forward
-  - range == Medium:
-    {coin_flip():
-      ~ next_action = Laser
-    - else:
+    {canAffordCharge:
       ~ next_action = Move_Forward
+    - else:
+      ~ next_action = Evasive_Maneuvers
+    }
+  - range == Medium:
+    {
+    - isHurt and canAffordDodge:
+      ~ next_action = Evasive_Maneuvers
+    - not isHurt and canAffordCharge:
+      ~ next_action = Move_Forward
+    - canAffordLaser:
+      ~ next_action = Laser
     }
   - range == Melee:
-    {get_value (target, HEATSINKS) == 0:
+    {
+    - not isHurt and canAffordLaser and get_value (target, HEATSINKS) == 0:
       ~ next_action = Laser
+    - isHurt and canAffordCharge:
+      ~ next_action = Move_Back
+    - else:
+      next_action = Punch
     }
   }
 
@@ -44,6 +61,7 @@
   - next_action == Move_Forward:
     <- mech_base.charge_forward (Axman)
   }
+  -
   ->->
 
 

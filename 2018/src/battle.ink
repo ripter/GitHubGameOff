@@ -134,7 +134,7 @@ VAR turn_count = 0
 
 = how_to_play
   #title: How to play
-  The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons damage your opponent's ability to dissipate heat.
+  The goal is to overheat your opponent. Actions like firing weapons and moving cost power. Energy weapons deal heat to your opponent, while physical weapons destroy heatsinks (which are how you dissipate heat each round).
 
   The battle is made of up Rounds and Actions. At the start of each round, both mechs generate POWER and dissipate HEAT. Then, during the round, you and your opponent take turns performing actions.
 
@@ -155,20 +155,20 @@ VAR turn_count = 0
       You are waiting for the next Round.
     }
   }
-  
+
   -
   -> next_section ->
   ->->
-  
+
 = ai_turn
   #title: Axman (Opponent)
-  
+
   {is_in_volley (mech_defender):
     -> mech_base.ai_simple (mech_defender, mech_attacker) ->
   - else:
     {mech_defender} is waiting until the next Round.
   }
-  
+
   -
   -> next_section ->
   ->->

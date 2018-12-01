@@ -35,13 +35,13 @@ INCLUDE battle_mech_axman.ink
   -> DONE
 
 = turn_start (who)
-  // Recharge
-  <- recharge (who)
   // Reset end of turn actions
   ~ set_value (who, DODGE, 0)
   ~ set_value (who, IS_USING_EVASIVE_MANEUVERS, false)
   // Setup state to start with a volley
   ~ set_value (who, TURN_STATE, VOLLEY)
+  // Recharge
+  <- recharge (who)
   -> DONE
 
 = recharge (who)
@@ -60,6 +60,7 @@ INCLUDE battle_mech_axman.ink
   - else:
     <>.
   }
+  <> Total: <- status_short (who)
 
   -> DONE
 
@@ -115,8 +116,8 @@ INCLUDE battle_mech_axman.ink
 
   ~ deal_energy_damage (defender, damage)
   <> dealing {damage} HEAT to {defender}, for a total of {get_value (defender, HEAT)} HEAT.
-  
-  
+
+
   // Apply modifiers
   {
   - range == Melee:
@@ -124,11 +125,11 @@ INCLUDE battle_mech_axman.ink
       ~ bonus = 1
       The close proximity of the {~laser|blast|energy beam} also heats {attacker} for {bonus} HEAT, for a total of {get_value (attacker, HEAT)} HEAT.
     }
-    
+
     ~ bonus = 0
   }
 
-  
+
   -> DONE
 
 
@@ -137,15 +138,15 @@ INCLUDE battle_mech_axman.ink
   ~ temp level = 1
   ~ temp damage = heatsink_damage(Missile, level)
   ~ temp bonus = 0
-  
+
   {attacker} launches a barrage of missiles.
-  
+
   // Pay for the action
   {not able_to_activate (attacker, Missile, level):
     <> did not have enough power.
     -> DONE
   }
-  
+
   <> The missiles attempted to lock on {defender}
 
   // Next, let the defender attempt a dodge.
@@ -155,7 +156,7 @@ INCLUDE battle_mech_axman.ink
   }
 
   <> and they rained down
-  
+
   {get_value (defender, HEATSINKS) == 0:
     {coin_flip():
       bonus = 2
@@ -166,7 +167,7 @@ INCLUDE battle_mech_axman.ink
   - else :
     <> destroying {damage} heatsinks.
   }
-  
+
   // Attack hits
   ~ deal_physical_damage (defender, damage)
   -> DONE
@@ -174,9 +175,9 @@ INCLUDE battle_mech_axman.ink
 = punch (attacker, defender)
   ~ temp level = 1
   ~ temp damage = heatsink_damage (Punch, level)
-  
+
   {attacker} slices at {defender} with a hatchet
-  
+
   // Pay for the action
   {not able_to_activate (attacker, Punch, level):
     <> did not have enough power.

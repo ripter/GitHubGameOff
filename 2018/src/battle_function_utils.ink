@@ -40,7 +40,9 @@
 
 
 == function can_afford (who, weapon, level)
-  ~ return get_value (who, POWER) >= power_cost(weapon, level)
+  ~ temp canAffordPower = get_value (who, POWER) >= power_cost(weapon, level)
+  ~ temp canAffordHeat = get_value (who, HEAT) >= heat_cost(weapon, level)
+  ~ return canAffordPower and canAffordHeat
 
 == function able_to_activate (who, action, level)
   {not can_afford (who, action, level):
@@ -48,7 +50,7 @@
   }
   // Pay the Costs
   ~ update_value (who, POWER, -power_cost (action, level))
-  ~ update_value (who, HEAT,  -heat_cost (action, level))
+  ~ update_value (who, HEAT,  heat_cost (action, level))
   ~ return true
 
 
